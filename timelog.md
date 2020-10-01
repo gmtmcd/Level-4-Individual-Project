@@ -18,8 +18,12 @@
 * *2 hours* Read the project guidance notes
 
 ### 30 Sep 2020
-* *0.5 hour* Created GitLab repository and cloned the cookiecutter for the projects
-* *2 hour* Worked on my mindmap and did some light research to help with it
+* *0.5 hours* Created GitLab repository and cloned the cookiecutter for the projects
+* *2 hours* Worked on my mindmap and did some light research to help with it
+
+### 01 Oct 2020
+* *2 hours* Reseached options for how to code the mobile app (Swift, Kotlin, Dart)
+* *0.5 hours* Updated the mindmap to include the language options
 
 
 ## Week 2
