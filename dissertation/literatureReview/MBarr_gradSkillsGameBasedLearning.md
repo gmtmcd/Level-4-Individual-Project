@@ -1,4 +1,6 @@
-# M.Barr summary
+# Graduate Skills and Game-Based Learning - Using video games for employability in Higher Education
+# M.Barr 
+# Summary
 
 * Need to find a link to this paper so that it can be added to Zotero reference holder
 
@@ -36,5 +38,21 @@ Good - will give a good source to cite in the dissertation of why i am following
 ## Level 2
 
 ### Summary
-*Context*: Read aa a recommendation, what i have learned is as stated above
-*Problem*: 
+*Context*: Read as a recommendation, what i have learned is as stated above
+*Problem*: The difficulty of learning graduate attributes and how video games could be used to help develop them
+*Contribution*: Showed how games can be used to develop graduate attributes
+*Related work*: 
+* Communicative Adaptability Scale (CAS)
+* I-Adapt scale
+* Rosenberg Self esteem scale
+* General self efficacy scale
+*Methods*: Two groups of students were used, the intervention group participated in various video games that were chosen as possible to develop their grad attributes and one was a control group that did not play any games. They were tested in terms of effective communicators, adaptability and resourcefulness and responsibilty before and after the sessions of playing games with the difference being used for the results. 
+*Outcomes*: For every attribute measurement it was seen that the skills had increased, however there was no significant difference in self esteem and self efficacy (the belief that you can succeed-confidence)
+*Conclusions*: These skills can clearly be improved through the use of video games, it has also provided measure to quantify graduate attributes and more examples of what these graduate attributes are.
+So therefore has provided me with further research to go on from.
+
+## Info found about the scales
+* The Communicative Adaptability Scale (CAS) was used - designed to measure ability to see and understand socio-interpersonal relationships and adapt interaction behaviours to match it
+* The I-Adapt scale (Polyhart & Blise 2006) can measure both individual and team adaptability. It is described as  “… an individual’s ability, skill, disposition, willingness, and/or motivation, to change or fit different task, social, and environmental features”
+* Rosenberg Self esteem scale gives a list of statements where someone has to answer from strongly agree to strongly disagree. It gives statements that reflect on how someone feels about themselves, eg whether they have things to be proud of, whether they compare well to other people
+* General self efficacy scale assesses whether or not someone believes in themselves to cope with lifes demands. It gives them 10 statements whihc they rate out of 4 from Not true at all to Exactly true. These statements discuss whether they think they can solve problems or accomplish goals for example. 

@@ -37,5 +37,11 @@
 ### 07 Oct 2020
 * *0.5 hours* Had to convert all the words docs i had created of notes into markdown as word doesnt have version control :(
 * *1 hour* Researched how to do a literature review from the notes given in course RMT
-* *1 hour* Found some papers to examine for future summaries, read recommended pages on M.Barr's paper, completed level 1 review of it
+* *2 hours* Found some papers to examine for future summaries, read recommended pages on M.Barr's paper, completed level 1 review of it
+* *0.5 hours* Further setup of XCode
 
+### 09 Oct 2020
+* *2 hours* Did a level 2 summary for M.Barr paper, read other parts of the paper more thoroughly and took notes on methods. Followed up on some of the attribute scales that were used and researched them further.
+* *1 hour* Researched CBT, this may lead to a good line of questioning and behaviour forming
+* *1 hour* Looked for CBT therapy tools
+* *1.5 hours* Read through another research paper, created a summary
