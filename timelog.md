@@ -45,3 +45,6 @@
 * *1 hour* Researched CBT, this may lead to a good line of questioning and behaviour forming
 * *1 hour* Looked for CBT therapy tools
 * *1.5 hours* Read through another research paper, created a summary
+
+### 11 Oct 2020
+* *1 hour* Spent some time exploring xcode and watching a tutorial of it
