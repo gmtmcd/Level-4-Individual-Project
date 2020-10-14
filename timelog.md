@@ -59,3 +59,11 @@
 
 ### 14 Oct 2020
 * *1.5 hours* Created timeline
+* *2 hours* Read another research paper, highlighted and then created the summary in a file
+* *0.5 hours* Searched for a relevant paper on reflection to examine
+* *0.5 hours* Tried to set up wiki but could not get the links working for github :(
+
+### 15 Oct 2020
+* the plan:
+* *hours* Summarised a research paper on reflection
+* *hours* Created the wiki on my github, transferred all my research files to the wiki, added any documents/images to the wiki
