@@ -11,8 +11,8 @@ Week-by-week plan for the whole project. Update this as you go along.
 
 * **Week 1** Research different languages, plan meeting with supervisor
 * **Week 2** Meet advisor, begin researching papers for literature review
-* **Week 3** Continue to summarise research papers, think of routes for questioning, user personnas
-* **Week 4** Begin writing the literature review, plan the user surveys, dissertation planning, what are my research questions?
+* **Week 3** Continue to summarise research papers, think of routes for reflection based questioning, user personnas
+* **Week 4** Begin writing the literature review in the dissertation, plan the user surveys, dissertation planning, what are my research questions?
 * **Week 5** Start some real development, look into ethics checklist
 * **Week 6** Send out surveys, more development
 * **Week 7** More dev work
