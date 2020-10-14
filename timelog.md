@@ -56,3 +56,6 @@
 * *1.5 hours* Read research paper and highlighted key parts, created notes based on this paper in a file
 * *1.5 hours* Read another research paper and highlighted key parts, created notes based on this paper in a file
 * *0.5 hours* Got github premium for students, started to look into creating a timeline for the project
+
+### 14 Oct 2020
+* *1.5 hours* Created timeline
