@@ -64,6 +64,5 @@
 * *0.5 hours* Tried to set up wiki but could not get the links working for github :(
 
 ### 15 Oct 2020
-* the plan:
-* *hours* Summarised a research paper on reflection
-* *hours* Created the wiki on my github, transferred all my research files to the wiki, added any documents/images to the wiki
+* *1.5 hours* Summarised a research paper on reflection
+* *1 hour* Created the wiki on my github, transferred all my research files to the wiki, added any documents/images to the wiki
