@@ -66,3 +66,16 @@
 ### 15 Oct 2020
 * *1.5 hours* Summarised a research paper on reflection
 * *1 hour* Created the wiki on my github, transferred all my research files to the wiki, added any documents/images to the wiki
+
+### 16 Oct 2020
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Meeting with supervisor
+* *1 hour* Wrote up notes from meeting with supervisor
+* *1 hour* Wrote up on the wiki my user personas and user stories
+
+## Week 4
+
+### 20 Oct 2020
+* *1.5 hours* Read a paper on reflection recommended to me by my supervisor while highlighting relevant parts
+* *0.5 hours* Looked up ethics checklist, made wiki about this
+* *1 hour* Wrote up the summary for the paper and made notes of a potential research question
