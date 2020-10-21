@@ -79,3 +79,7 @@
 * *1.5 hours* Read a paper on reflection recommended to me by my supervisor while highlighting relevant parts
 * *0.5 hours* Looked up ethics checklist, made wiki about this
 * *1 hour* Wrote up the summary for the paper and made notes of a potential research question
+
+### 21 Oct 2020
+* *4 hours* Wrote full level 2 summaries for 3 of my research papers, emailed matthew chalmers about ethics, assimilated ideas for project
+[[7 hours so far]]
