@@ -82,4 +82,9 @@
 
 ### 21 Oct 2020
 * *4 hours* Wrote full level 2 summaries for 3 of my research papers, emailed matthew chalmers about ethics, assimilated ideas for project
-[[7 hours so far]]
+
+### 22 Oct 2020
+* *0.5* Started to create a plan for survey questions
+* *0.5* Looked into finding more CBT tools, found some education material [8 hours so far]
+* *2 hours* Researched into CBT tools and ideas
+* *1 hour* Created initial design for survey questions and CBT styled questions
