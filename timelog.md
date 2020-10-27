@@ -98,3 +98,6 @@
 
 ### 26 Oct 2020
 * *3 hours* Finished resummarising with level 2 summaries for rmt
+
+### 27 Oct 2020
+* *0 hours* 
