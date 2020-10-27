@@ -100,4 +100,4 @@
 * *3 hours* Finished resummarising with level 2 summaries for rmt
 
 ### 27 Oct 2020
-* *0 hours* 
+* *2 hours* Looked up tutorials and explanations on how to build an app using swift and SwiftUI
