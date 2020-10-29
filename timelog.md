@@ -101,3 +101,8 @@
 
 ### 27 Oct 2020
 * *2 hours* Looked up tutorials and explanations on how to build an app using swift and SwiftUI
+
+### 29 Oct 2020
+* *3.5 hours* Spent a while trying to find a tutorial to start with, took a long time as not a lot of resources for new XCode and Swift versions, Began creation of interface
+* *1.5 hours* Made more progress on interface, now have a set of tabs showing only the communication slide
+* *2 hours* Created data model to contain more than one grad attribute, spent time getting the app simulator on my phone working

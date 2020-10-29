@@ -1,0 +1,58 @@
+//
+//  SkillData.swift
+//  GradReflect
+//
+//  Created by Gemma McDonald on 29/10/2020.
+//
+
+//import Foundation
+import SwiftUI
+
+// File containing Skill data
+
+let skillData: [Skill] = [
+    Skill(
+        title: "Communication",
+        headline: "Communication is a very important grad skill etc etc",
+        image: "communication",
+        gradientColours: [Color.blue, Color.purple],
+        description: "Communication description"),
+    Skill(
+        title: "Critical Thinking",
+        headline: "Critical thinking etc etc",
+        image: "critical_thinking",
+        gradientColours: [Color.red, Color.pink],
+        description: "Critical thinking description"),
+    Skill(
+        title: "Adaptability",
+        headline: "Adaptability etc etc",
+        image: "adaptability",
+        gradientColours: [Color.orange, Color.yellow],
+        description: "Adaptability description"),
+    Skill(
+        title: "Teamwork",
+        headline: "Teamwork is a very important grad skill etc etc",
+        image: "teamwork",
+        gradientColours: [Color.primary, Color.secondary],
+        description: "Teamwork description"),
+    Skill(
+        title: "Self-efficacy/application of knowledge",
+        headline: "Self-efficacy/application of knowledge is a very important grad skill etc etc",
+        image: "knowledge",
+        gradientColours: [Color.black, Color.gray],
+        description: "Self-efficacy/application of knowledge description"),
+    Skill(
+        title: "Ethics/Professionalism",
+        headline: "Ethics/Professionalism is a very important grad skill etc etc",
+        image: "ethics",
+        gradientColours: [Color.blue, Color.purple],
+        description: "Ethics/Professionalism description")
+]
+
+
+
+struct SkillData_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
