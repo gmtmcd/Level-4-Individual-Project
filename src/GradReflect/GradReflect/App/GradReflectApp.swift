@@ -9,10 +9,16 @@ import SwiftUI
 
 @main
 struct GradReflectApp: App {
+    @AppStorage("isMenu") var isMenu: Bool = true
+    
+    
     var body: some Scene {
         WindowGroup {
-            MenuView()
-            //ContentView()
+            if isMenu {
+                MenuView()
+            } else {
+                ContentView()
+            }//this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
         }
     }
 }

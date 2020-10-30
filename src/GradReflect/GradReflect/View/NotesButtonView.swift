@@ -9,12 +9,14 @@ import SwiftUI
 
 struct NotesButtonView: View {
     // Properties
+    @AppStorage("isMenu") var isMenu: Bool?
+    
     
     // Body
     
     var body: some View {
         Button(action: {
-            print("Exit")
+            isMenu = false
         }) {
             HStack (spacing: 8){
                 Text("Notes")
