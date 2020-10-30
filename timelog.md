@@ -111,3 +111,4 @@
 * *2.5 hours* Researched how to get a button to work and watched a tutorial on how app storage could potentially work
 * *0.5 hours* Prep for meeting with supervisor
 * *0.5 hours* Had meeting with supervisor, wrote up meeting minutes to the wiki [[15.5 hours]]
+* *0.5 hours* Created first consent form for survey to get general knowledge of grad attributes from people
