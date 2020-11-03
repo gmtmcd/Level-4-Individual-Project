@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct GradReflectApp: App {
+    let persistenceController = PersistenceController.shared
+    
     @AppStorage("isMenu") var isMenu: Bool = true
     
     
@@ -16,8 +19,10 @@ struct GradReflectApp: App {
         WindowGroup {
             if isMenu {
                 MenuView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
             } else {
                 ContentView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
             }//this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
         }
     }
