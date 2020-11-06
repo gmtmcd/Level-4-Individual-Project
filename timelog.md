@@ -115,14 +115,21 @@
 
 ## Week 6
 
-### 2 Nov 2020
-* *1.5 hours* Worked on first draft of my mini lit review for both the prject and RMT
+### 02 Nov 2020
+* *1.5 hours* Worked on first draft of my mini lit review for both the project and RMT
 
-### 3 Nov 2020
+### 03 Nov 2020
 * *1.5 hours* Realised when creating the project i didnt integrate Core Data, so i researched how to integrate it in existing project, need to do further research
 * *0.5 hours* I think i managed to set up core data in my project
 * *2 hours* Spent a long time trying to fix an error as the entity i created was not being recognised in the scope
 * *2.5 hours* Created the note making view, implemented create, retrieve, and delete for notes - i dont know if i will implement update
 
-### 4 Nov 2020
-* *4 hours* Created the consent form for both of my surveys, created the google form for my general survey, group B survey and started group A survey [12 hours so far this week]
+### 04 Nov 2020
+* *4 hours* Created the consent form for both of my surveys, created the google form for my general survey, group B survey and started group A survey
+
+### 06 Nov 2020
+* *0.5 hours* Prepared for meeting with supervisor
+* *0.5 hours* Finished the survey for experimental group for AB Testing
+* *0.5 hours* Reduced RMT lit review to <500 words
+* *0.5 hours* Had meeting with supervisor [14 hours]
+* *0.5 hours* Wrote up notes from meeting and made the changes to the survey i needed to, emailed the consent forms and surveys to supervisor
