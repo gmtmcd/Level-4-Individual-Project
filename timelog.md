@@ -133,3 +133,8 @@
 * *0.5 hours* Reduced RMT lit review to <500 words
 * *0.5 hours* Had meeting with supervisor [14 hours]
 * *0.5 hours* Wrote up notes from meeting and made the changes to the survey i needed to, emailed the consent forms and surveys to supervisor
+
+## Week 7
+
+### 09 Nov 2020
+* *1.5 hours* Decided who my survey participants were going to be and in what groups they were going to be in, sent out and gathered consent forms, sent survey out to two participants
