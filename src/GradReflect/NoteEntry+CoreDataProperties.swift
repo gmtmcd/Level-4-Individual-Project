@@ -20,33 +20,15 @@ extension NoteEntry {
     @NSManaged public var gradAttribute: String
     @NSManaged public var situation: String
     @NSManaged public var thoughts: String
-    @NSManaged public var emotions: String
+    //@NSManaged public var emotions: String //Float
+    @NSManaged public var emotionsScale: Float
     @NSManaged public var behaviour: String
     @NSManaged public var futureAlternate: String
     @NSManaged public var whyEmotions: String
     
-    //this might not be something that is needed?
-//    var attributeGrad: GradAttributeEnum {
-//        set {
-//            gradAttribute = newValue.rawValue
-//        }
-//        get {
-//            GradAttributeEnum(rawValue: gradAttribute) ?? .communication
-//        }
-//    }
 
 }
 
 extension NoteEntry : Identifiable {
 
 }
-
-//This also might not be needed when i turn this into a scroller for these options
-//enum GradAttributeEnum: String {
-//    case communication = "Communication"
-//    case criticalThinking = "CriticalThinking"
-//    case adaptability = "Adaptability"
-//    case teamWork = "Teamwork"
-//    case selfEfficacy = "SelfEfficacy"
-//    case ethics = "ethics"
-//}

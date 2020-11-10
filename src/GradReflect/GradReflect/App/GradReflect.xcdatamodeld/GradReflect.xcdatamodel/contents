@@ -5,7 +5,7 @@
     </entity>
     <entity name="NoteEntry" representedClassName="NoteEntry" syncable="YES">
         <attribute name="behaviour" optional="YES" attributeType="String"/>
-        <attribute name="emotions" optional="YES" attributeType="String"/>
+        <attribute name="emotionsScale" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="futureAlternate" optional="YES" attributeType="String"/>
         <attribute name="gradAttribute" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -14,7 +14,7 @@
         <attribute name="whyEmotions" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="NoteEntry" positionX="-54" positionY="-9" width="128" height="163"/>
         <element name="Item" positionX="-36" positionY="72" width="128" height="58"/>
+        <element name="NoteEntry" positionX="-54" positionY="-9" width="128" height="163"/>
     </elements>
 </model>

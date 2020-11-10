@@ -138,3 +138,9 @@
 
 ### 09 Nov 2020
 * *1.5 hours* Decided who my survey participants were going to be and in what groups they were going to be in, sent out and gathered consent forms, sent survey out to two participants
+
+### 10 Nov 2020
+* *1.5 hours* Sent out some surveys and reviewed responses, attempted to get slider working on note taking interface, did not work, going to have to work on it more and try again :(
+* *1 hour* Fixed the slider for emotions and got it working
+* *1.5 hours* Time spent organising when people are free to do their surveys, emailing the surveys, looking at responses, answering questions participants had during it [5.5 hours]
+* *2 hours* Researched how to be able to view a note thats been made - no progress though

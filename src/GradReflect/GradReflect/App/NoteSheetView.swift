@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NoteSheetView: View {
     let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-Efficacy", "Ethics & Professionalism"]
+    //let emotions: Float = 0.0
     
     @Environment(\.managedObjectContext) private var viewContext
     @Environment (\.presentationMode) var presentationMode
@@ -16,7 +17,8 @@ struct NoteSheetView: View {
     @State var selectedAttribute = 1
     @State var situation = ""
     @State var thoughts = ""
-    @State var emotions = ""
+    //@State var emotions = ""//: Float = 0.0
+    @State var emotionsScale: Float = 0.0
     @State var behaviour = ""
     @State var futureAlternate = ""
     @State var whyEmotions = ""
@@ -44,10 +46,24 @@ struct NoteSheetView: View {
                         .keyboardType(.default)
                 }
                 
-                //This can be change in the future to a sliding scale
                 Section(header: Text("Describe how you felt during this event")) {
-                    TextField("Emotions", text: $emotions)
-                        .keyboardType(.default)
+                    HStack {
+//                        Text("Negative")
+//                            .font(.system(size:15))
+                        Image(systemName: "hand.thumbsdown")
+                            .resizable()
+                            .frame(width:20, height: 20)
+                        Slider(value: $emotionsScale, in: 1.0...5.0)
+                            .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            
+                        Image(systemName: "hand.thumbsup")
+                            .resizable()
+                            .frame(width:20, height: 20)
+//                        Text("Positive")
+//                            .font(.system(size:15))
+                    }
+                    .padding()
+                    //Text("Value: \(Int(emotionsScale))")
                 }
                 
                 Section(header: Text("Describe why you believe you felt this way")) {
@@ -71,7 +87,8 @@ struct NoteSheetView: View {
                     newNote.gradAttribute = self.gradAttribute[self.selectedAttribute]
                     newNote.situation = self.situation
                     newNote.thoughts = self.thoughts
-                    newNote.emotions = self.emotions
+                    //newNote.emotions = self.emotions
+                    newNote.emotionsScale = self.emotionsScale
                     newNote.whyEmotions = self.whyEmotions
                     newNote.behaviour = self.behaviour
                     newNote.futureAlternate = self.futureAlternate

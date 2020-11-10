@@ -29,6 +29,10 @@ struct ContentView: View {
                                 .font(.subheadline)
                         }
                         Spacer()
+                        Button(action: {print("Send data")}) {
+                            Text("Review")
+                                .foregroundColor(.blue)
+                        }
                     }
                     .frame(height:50)
                 }
@@ -56,6 +60,10 @@ struct ContentView: View {
             }
         }
         
+    }
+    
+    func reviewNote(note: NoteEntry) {
+        //let reviewingNote = self.
     }
     
     //******THis is may need to be removed!********
