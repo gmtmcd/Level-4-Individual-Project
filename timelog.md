@@ -131,7 +131,7 @@
 * *0.5 hours* Prepared for meeting with supervisor
 * *0.5 hours* Finished the survey for experimental group for AB Testing
 * *0.5 hours* Reduced RMT lit review to <500 words
-* *0.5 hours* Had meeting with supervisor [14 hours]
+* *0.5 hours* Had meeting with supervisor
 * *0.5 hours* Wrote up notes from meeting and made the changes to the survey i needed to, emailed the consent forms and surveys to supervisor
 
 ## Week 7
@@ -142,5 +142,10 @@
 ### 10 Nov 2020
 * *1.5 hours* Sent out some surveys and reviewed responses, attempted to get slider working on note taking interface, did not work, going to have to work on it more and try again :(
 * *1 hour* Fixed the slider for emotions and got it working
-* *1.5 hours* Time spent organising when people are free to do their surveys, emailing the surveys, looking at responses, answering questions participants had during it [5.5 hours]
-* *2 hours* Researched how to be able to view a note thats been made - no progress though
+* *1.5 hours* Time spent organising when people are free to do their surveys, emailing the surveys, looking at responses, answering questions participants had during it
+* *2 hours* Researched how to be able to view a note thats been made - no implementation progress though
+
+### 11 Nov 2020
+* *1 hour* Downloaded the survey answers as csv files, filled in the readme data file a bit with what the data collected is
+* *1 hour* Researched how i should carry out my qualitative data, tried to create a table in excel, i think making it in word would be easier
+* *1 hour* Created tables on word docs for all three surveys of the open-ended questions [10.5 hours]
