@@ -24,3 +24,15 @@ Keep your data (e.g. from evaluations here)
 * You may need to remove the `data/` folder from version control if the data size is too large or you are bound by confidentiality.
 * If you do so **make sure you have good backups**
 
+
+## Data Collected
+* Data was collected via google form surveys
+* Before completing any surveys, participants were asked to fill out consent forms for the to surveys they would participate in (General Attribute Survey, and one of the AB Test group surveys)
+* The General Attribute Knowledge survey contained information based on what students know already about graduate attributes and how much experience they have with these attributes and reflecting on them
+* The survey followed a format of Yes/No questions, but after every question there was the oppurtunity for participants to give any written feedback on the question and allowed for more input from the participants
+* The AB Surveys involved participants being randomly assigned to group A or B
+* The first group was the experimental group - they were given CBT style questions, aimed at encouraging more reflection from participants
+* The second group was the control group - they were given job interview style question, these styless of questions are intended to provoke some reflection from people during job interviews but do not provide any structure for this to aid participants
+* From these Google Forms - an excel spreadsheet CSV file was created which contained the answers to the surveys
+* This excel spreadsheet does not contain any names of participants and is anonymous 
+* None of the answers were modified from the original answers within the Google Forms
