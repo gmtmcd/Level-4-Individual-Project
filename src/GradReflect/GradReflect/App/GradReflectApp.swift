@@ -14,7 +14,6 @@ struct GradReflectApp: App {
     
     @AppStorage("isMenu") var isMenu: Bool = true
     
-    
     var body: some Scene {
         WindowGroup {
             if isMenu {
@@ -23,7 +22,8 @@ struct GradReflectApp: App {
             } else {
                 ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            }//this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
+            }
+            //this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
         }
     }
 }

@@ -9,13 +9,16 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    //This might be removed?
+
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(entity:NoteEntry.entity(), sortDescriptors: [])
+    @FetchRequest(entity:NoteEntry.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \NoteEntry.entryTime, ascending: true)])
     var notes: FetchedResults<NoteEntry>
 
     @State var showNoteSheet = false
+    @State var showNoteReview = false
+    
+    //@Binding var goToMenuView: Bool
 
     var body: some View{
         NavigationView {
@@ -23,18 +26,20 @@ struct ContentView: View {
                 ForEach(notes) { note in
                     HStack {
                         VStack(alignment: .leading){
-                            Text("\(note.gradAttribute)")
+                            Text("\(note.name)")
                                 .font(.headline)
-                            Text("\(note.situation)")
-                                .font(.subheadline)
+                            Text("\(note.entryTime, formatter: itemFormatter)")
                         }
                         Spacer()
-                        Button(action: {print("Send data")}) {
-                            Text("Review")
-                                .foregroundColor(.blue)
-                        }
                     }
                     .frame(height:50)
+                    .onTapGesture{
+                        showNoteReview = true
+                    }
+                    .sheet(isPresented: $showNoteReview){
+                        NoteReviewView(reviewNote: note)
+                            .environment(\.managedObjectContext, viewContext)
+                    }
                 }
                 .onDelete { indexSet in
                     for index in indexSet {
@@ -49,21 +54,28 @@ struct ContentView: View {
             }
             .listStyle(PlainListStyle())
             .navigationTitle("My Notes")
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(
+//                leading: Button(action: {
+//                    withAnimation {
+//                        self.goToMenuView.toggle()
+//                    }
+//                }, label: {
+//                    Text("Menu")
+//                }),
+                
+                
+                trailing:Button(action: {
                 showNoteSheet = true
-            }, label: {
-                Image(systemName : "plus.circle")
-                    .imageScale(.large)
-            }))
-            .sheet(isPresented: $showNoteSheet){
-                NoteSheetView()
+                }, label: {
+                    Image(systemName : "plus.circle")
+                        .imageScale(.large)
+                }))
+                .sheet(isPresented: $showNoteSheet){
+                    NoteSheetView()
+                        .environment(\.managedObjectContext, viewContext)
             }
         }
         
-    }
-    
-    func reviewNote(note: NoteEntry) {
-        //let reviewingNote = self.
     }
     
     //******THis is may need to be removed!********
@@ -122,15 +134,18 @@ struct ContentView: View {
 //    }
 }
 
-//private let itemFormatter: DateFormatter = {
-//    let formatter = DateFormatter()
-//    formatter.dateStyle = .short
-//    formatter.timeStyle = .medium
-//    return formatter
-//}()
+private let itemFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    formatter.timeStyle = .medium
+    return formatter
+}()
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
+        //goToMenuView = false
+//        ContentView(goToMenuView: goToMenuView).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

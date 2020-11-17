@@ -16,7 +16,7 @@ extension NoteEntry {
         return NSFetchRequest<NoteEntry>(entityName: "NoteEntry")
     }
 
-    @NSManaged public var id: UUID?
+    @NSManaged public var id: UUID
     @NSManaged public var gradAttribute: String
     @NSManaged public var situation: String
     @NSManaged public var thoughts: String
@@ -25,6 +25,8 @@ extension NoteEntry {
     @NSManaged public var behaviour: String
     @NSManaged public var futureAlternate: String
     @NSManaged public var whyEmotions: String
+    @NSManaged public var name: String
+    @NSManaged public var entryTime: Date
     
 
 }

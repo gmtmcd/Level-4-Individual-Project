@@ -19,12 +19,13 @@ struct PersistenceController {
             newItem.id = UUID()
             newItem.situation = "description of situation"
             newItem.thoughts = "description of thoughts"
-            //newItem.emotions = "test"//0.0
             newItem.emotionsScale = 0.0
             newItem.whyEmotions = "description of why they felt the emotions"
             newItem.behaviour = "description of how this made them behave"
             newItem.futureAlternate = "description of how theyd bahave in future"
-            
+            newItem.name = "name of note"
+            newItem.entryTime = Date()
+
         }
         do {
             try viewContext.save()

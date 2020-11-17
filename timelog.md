@@ -148,4 +148,19 @@
 ### 11 Nov 2020
 * *1 hour* Downloaded the survey answers as csv files, filled in the readme data file a bit with what the data collected is
 * *1 hour* Researched how i should carry out my qualitative data, tried to create a table in excel, i think making it in word would be easier
-* *1 hour* Created tables on word docs for all three surveys of the open-ended questions [10.5 hours]
+* *1 hour* Created tables on word docs for all three surveys of the open-ended questions
+
+### 12 Nov 2020
+* *3 hours* Reseaching how to view a saved note - still no progress on implementing it, not alot of resources on how to do it, also prepped for and completed meeting with matthew
+* *1.5 hours* found a way to send the note id to the new view, having issues letting it display this data, been researching about it
+* *1.5 hours* Got the detail view of a note to work in the virtual phone - not yet working in the preview for some reason
+
+## Week 8
+
+### 16 Nov 2020
+* *3 hours* Spent time fixing the issues with viewing a saved note in preview, discovered that you can no longer view the menu screen anymore as the state is saved in persistent storage and so after its closed it no longer works
+
+### 17 Nov 2020
+* *1.5 hours* Added the ability to name a note, added a timestamp for notes, notes are displayed in ascending order now of their date of creation
+* *0.5 hours* Attempted to get buttons to take you between menuview and contentview however this caused errors in the program so i reverted back to what i had :(
+[Goal: 4ish hours on project]

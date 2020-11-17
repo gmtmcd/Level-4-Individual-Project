@@ -11,6 +11,8 @@ struct SkillCardView: View {
     
     // Properties
     @State private var isAnimating: Bool = false
+    @AppStorage("isMenu") var isMenu: Bool?
+    //@State var goToContentView: Bool = false
     
     var skill: Skill
     
@@ -41,7 +43,27 @@ struct SkillCardView: View {
                     .frame(maxWidth:480)
                 
                 //Button: Start
-                NotesButtonView()
+                //NotesButtonView()
+//                if (goToContentView) {
+//                    ContentView(goToMenuView: self.$goToContentView)
+//                } else {
+                    Button(action: {
+                        //self.goToContentView.toggle()
+                        isMenu = false
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Notes")
+                            
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .padding(.horizontal,16)
+                        .padding(.vertical, 10)
+                        .background(Capsule().strokeBorder(Color.white,lineWidth: 2))//creates the line around the button
+                    }// End of button
+                    .accentColor(.white)
+                //}
+                
             }// End of VStack
         } // End of ZStack
         .onAppear {
