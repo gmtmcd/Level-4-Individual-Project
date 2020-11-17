@@ -163,4 +163,5 @@
 ### 17 Nov 2020
 * *1.5 hours* Added the ability to name a note, added a timestamp for notes, notes are displayed in ascending order now of their date of creation
 * *0.5 hours* Attempted to get buttons to take you between menuview and contentview however this caused errors in the program so i reverted back to what i had :(
+* *1.5 hours* Trying to get the views to be able to change, commiting now incase it goes wrong so i can revert
 [Goal: 4ish hours on project]

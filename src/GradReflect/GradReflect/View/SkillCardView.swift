@@ -16,6 +16,8 @@ struct SkillCardView: View {
     
     var skill: Skill
     
+    @StateObject var router: Router
+    
     // Body
     
     var body: some View {
@@ -82,7 +84,7 @@ struct SkillCardView: View {
 
 struct SkillCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillCardView(skill: skillData[0])
+        SkillCardView(skill: skillData[0], router: Router())
             .previewLayout(.fixed(width:320, height: 640))
     }
 }

@@ -14,15 +14,20 @@ struct GradReflectApp: App {
     
     @AppStorage("isMenu") var isMenu: Bool = true
     
+    @StateObject var router = Router()
+    
     var body: some Scene {
         WindowGroup {
-            if isMenu {
-                MenuView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            } else {
-                ContentView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            }
+//            if isMenu {
+//                MenuView()
+//                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            } else {
+//                ContentView()
+//                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            }
+            
+            RootView(router: Router())
+            
             //this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
         }
     }
