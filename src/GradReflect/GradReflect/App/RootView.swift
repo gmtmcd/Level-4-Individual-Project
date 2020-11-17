@@ -9,15 +9,14 @@ import SwiftUI
 
 struct RootView: View {
     
-    //@State var currentPage: Page = .page1
     @StateObject var router: Router
     
     var body: some View {
         switch router.currentPage {
         case .page1:
-            MenuView()
+            MenuView(router: router)
         case .page2:
-            ContentView()
+            ContentView(router: router).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
         }
     }
 }

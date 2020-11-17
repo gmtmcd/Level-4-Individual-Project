@@ -26,7 +26,7 @@ struct GradReflectApp: App {
 //                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //            }
             
-            RootView(router: Router())
+            RootView(router: router)
             
             //this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
         }

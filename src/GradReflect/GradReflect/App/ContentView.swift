@@ -18,6 +18,8 @@ struct ContentView: View {
     @State var showNoteSheet = false
     @State var showNoteReview = false
     
+    @StateObject var router: Router
+    
     //@Binding var goToMenuView: Bool
 
     var body: some View{
@@ -55,14 +57,11 @@ struct ContentView: View {
             .listStyle(PlainListStyle())
             .navigationTitle("My Notes")
             .navigationBarItems(
-//                leading: Button(action: {
-//                    withAnimation {
-//                        self.goToMenuView.toggle()
-//                    }
-//                }, label: {
-//                    Text("Menu")
-//                }),
-                
+                leading: Button(action: {
+                    router.currentPage = .page1
+                }, label: {
+                    Text("Menu")
+                }),
                 
                 trailing:Button(action: {
                 showNoteSheet = true
@@ -73,7 +72,7 @@ struct ContentView: View {
                 .sheet(isPresented: $showNoteSheet){
                     NoteSheetView()
                         .environment(\.managedObjectContext, viewContext)
-            }
+                }
         }
         
     }
@@ -144,8 +143,6 @@ private let itemFormatter: DateFormatter = {
 struct ContentView_Previews: PreviewProvider {
 
     static var previews: some View {
-        //goToMenuView = false
-//        ContentView(goToMenuView: goToMenuView).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView(router: Router()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

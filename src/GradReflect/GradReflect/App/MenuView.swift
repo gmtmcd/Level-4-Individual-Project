@@ -13,7 +13,7 @@ struct MenuView: View {
     //Might be removed
     @State private var isAnimating: Bool = false
     @StateObject var router: Router
-    @AppStorage("isMenu") var isMenu: Bool? //definitely going to be removed
+    //@AppStorage("isMenu") var isMenu: Bool? //definitely going to be removed
     
     var skills: [Skill] = skillData
     
@@ -53,7 +53,8 @@ struct MenuView: View {
         //                } else {
                             Button(action: {
                                 //self.goToContentView.toggle()
-                                isMenu = false
+                                //isMenu = false
+                                router.currentPage = .page2
                             }) {
                                 HStack (spacing: 8){
                                     Text("Notes")
