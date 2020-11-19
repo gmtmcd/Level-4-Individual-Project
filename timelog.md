@@ -164,4 +164,7 @@
 * *1.5 hours* Added the ability to name a note, added a timestamp for notes, notes are displayed in ascending order now of their date of creation
 * *0.5 hours* Attempted to get buttons to take you between menuview and contentview however this caused errors in the program so i reverted back to what i had :(
 * *1.5 hours* Trying to get the views to be able to change, commiting now incase it goes wrong so i can revert
-* *0.5 hours* Changing the views works now, however now there are issues with the persistent storage again, presents dummy data to the screen [7hours]
+* *0.5 hours* Changing the views works now, however now there are issues with the persistent storage again, presents dummy data to the screen
+
+### 19 Nov 2020
+* *2 hours* Went through my three surveys and analysed the results, created a key with colour coding to mark where people had went through each stage of reflection or where people had mentioned a common theme [9 hours so far]
