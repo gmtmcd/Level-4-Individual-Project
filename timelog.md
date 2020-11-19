@@ -168,3 +168,4 @@
 
 ### 19 Nov 2020
 * *2 hours* Went through my three surveys and analysed the results, created a key with colour coding to mark where people had went through each stage of reflection or where people had mentioned a common theme [9 hours so far]
+* *0.5 hours* Created tables for my AB testing surveys
