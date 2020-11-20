@@ -11,6 +11,6 @@ import SwiftUI
 
 class Router: ObservableObject {
     
-    @Published var currentPage: Page = .page1
+    @Published var currentPage: Page = .SkillView
     
 }

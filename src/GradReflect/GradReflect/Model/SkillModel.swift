@@ -17,7 +17,6 @@ struct Skill: Identifiable {
     var image: String
     var gradientColours: [Color]
     var description: String
-    //var nutrition: [String] //not sure if this will be needed, this is the info from the data file
     
 }
 

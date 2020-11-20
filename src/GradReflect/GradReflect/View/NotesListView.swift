@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NotesListView.swift
 //  GradReflect
 //
 //  Created by Gemma McDonald on 29/10/2020.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct NotesListView: View {
 
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -42,9 +42,9 @@ struct ContentView: View {
             .navigationTitle("My Notes")
             .navigationBarItems(
                 leading: Button(action: {
-                    router.currentPage = .page1
+                    router.currentPage = .SkillView
                 }, label: {
-                    Text("Menu")
+                    Text("Skills")
                 }),
                 
                 trailing:Button(action: {
@@ -54,7 +54,7 @@ struct ContentView: View {
                         .imageScale(.large)
                 }))
                 .sheet(isPresented: $showNoteSheet){
-                    NoteSheetView()
+                    NoteAddView()
                         .environment(\.managedObjectContext, viewContext)
                 }
         }
@@ -63,9 +63,9 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct NotesListView_Previews: PreviewProvider {
 
     static var previews: some View {
-        ContentView(router: Router()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        NotesListView(router: Router()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

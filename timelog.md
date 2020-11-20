@@ -171,6 +171,7 @@
 * *0.5 hours* Created tables for my AB testing surveys
 
 ### 20 Nov 2020
-* *1 hour* Screen-recorded the progress of my app through previews as the simulator is not working at the moment, prepped for meeting with matthew [10.5 hours]
+* *1 hour* Screen-recorded the progress of my app through previews as the simulator is not working at the moment, prepped for meeting with matthew
 * *0.5 hour* Fixed the issue with the preview and simulator not showing the right data and errors with switching between views, views not corrently switch between - however, now realised that after clicking one note to review, clicking another note opens the first note
 * *0.5 hours* Fixed it so that the right note was showing upon review, it was previously trying to open every note as it was looping through, moved row to its own view and this fixed it
+* *1 hour* Tidying abd refactoring code, moved button to being outside the tab of skills, Changed the name of the Skill button, attempted to delte within note but doesnt let you, so left delete as is, moved files, renamed files etc [12.5 hours]

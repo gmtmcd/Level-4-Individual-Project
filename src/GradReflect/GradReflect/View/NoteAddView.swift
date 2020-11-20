@@ -1,5 +1,5 @@
 //
-//  NoteSheetView.swift
+//  NoteAddView.swift
 //  GradReflect
 //
 //  Created by Gemma McDonald on 03/11/2020.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct NoteSheetView: View {
+struct NoteAddView: View {
     let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-Efficacy", "Ethics & Professionalism"]
 
     
@@ -40,7 +40,6 @@ struct NoteSheetView: View {
                             Text(self.gradAttribute[$0]).tag($0)
                         }
                     }
-                    //where the stepper would be
                 }
                 
                 Section(header: Text("Describe the situation in which you developed this skill")) {
@@ -113,8 +112,8 @@ struct NoteSheetView: View {
     }
 }
 
-struct NoteSheetView_Previews: PreviewProvider {
+struct NoteAddView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteSheetView()
+        NoteAddView()
     }
 }

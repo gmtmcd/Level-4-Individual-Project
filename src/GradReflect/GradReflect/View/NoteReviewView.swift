@@ -50,7 +50,9 @@ struct NoteReviewView: View {
                 Section(header: Text("How will behave in the future in a similar situation, the same or different, and why?")) {
                     Text("\(reviewNote.futureAlternate)")
                 }
-                Button(action: {presentationMode.wrappedValue.dismiss()}){
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }){
                     Text("Close Note")
                 }
             }

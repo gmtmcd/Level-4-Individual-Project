@@ -14,10 +14,10 @@ struct RootView: View {
     
     var body: some View {
         switch router.currentPage {
-        case .page1:
-            MenuView(router: router)
-        case .page2:
-            ContentView(router: router).environment(\.managedObjectContext, viewContext)
+        case .SkillView:
+            SkillView(router: router)
+        case .NotesListView:
+            NotesListView(router: router).environment(\.managedObjectContext, viewContext)
         }
     }
 }
