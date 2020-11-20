@@ -9,11 +9,9 @@ import SwiftUI
 
 struct MenuView: View {
     //Properties
-    
-    //Might be removed
     @State private var isAnimating: Bool = false
     @StateObject var router: Router
-    //@AppStorage("isMenu") var isMenu: Bool? //definitely going to be removed
+
     
     var skills: [Skill] = skillData
     
@@ -22,7 +20,6 @@ struct MenuView: View {
     var body: some View {
         TabView{
             ForEach(skills[0...5]) { skill in
-                //SkillCardView(skill: item, router: router)
                 ZStack {
                     VStack(spacing:20) {
                         // Skill : Image
@@ -46,14 +43,7 @@ struct MenuView: View {
                             .padding(.horizontal,16)//how much space at the sides
                             .frame(maxWidth:480)
                         
-                        //Button: Start
-                        //NotesButtonView()
-        //                if (goToContentView) {
-        //                    ContentView(goToMenuView: self.$goToContentView)
-        //                } else {
                             Button(action: {
-                                //self.goToContentView.toggle()
-                                //isMenu = false
                                 router.currentPage = .page2
                             }) {
                                 HStack (spacing: 8){

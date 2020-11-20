@@ -10,7 +10,6 @@ import CoreData
 
 struct NoteSheetView: View {
     let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-Efficacy", "Ethics & Professionalism"]
-    //let currentDateTime = Date()
 
     
     @Environment(\.managedObjectContext) private var viewContext
@@ -113,13 +112,6 @@ struct NoteSheetView: View {
         }
     }
 }
-
-//private let itemFormatter: DateFormatter = {
-//    let formatter = DateFormatter()
-//    formatter.dateStyle = .short
-//    formatter.timeStyle = .medium
-//    return formatter
-//}()
 
 struct NoteSheetView_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,7 +13,7 @@ struct NoteReviewView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment (\.presentationMode) var presentationMode
     
-    var reviewNote = NoteEntry()
+    var reviewNote: NoteEntry
 
     
     var body: some View {
@@ -50,9 +50,9 @@ struct NoteReviewView: View {
                 Section(header: Text("How will behave in the future in a similar situation, the same or different, and why?")) {
                     Text("\(reviewNote.futureAlternate)")
                 }
-//                Button(action: {presentationMode.wrappedValue.dismiss()}){
-//                    Text("Close Note")
-//                }
+                Button(action: {presentationMode.wrappedValue.dismiss()}){
+                    Text("Close Note")
+                }
             }
             .navigationTitle("Reviewing Note")
         }

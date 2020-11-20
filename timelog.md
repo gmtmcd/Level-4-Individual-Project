@@ -172,3 +172,5 @@
 
 ### 20 Nov 2020
 * *1 hour* Screen-recorded the progress of my app through previews as the simulator is not working at the moment, prepped for meeting with matthew [10.5 hours]
+* *0.5 hour* Fixed the issue with the preview and simulator not showing the right data and errors with switching between views, views not corrently switch between - however, now realised that after clicking one note to review, clicking another note opens the first note
+* *0.5 hours* Fixed it so that the right note was showing upon review, it was previously trying to open every note as it was looping through, moved row to its own view and this fixed it

@@ -12,23 +12,12 @@ import CoreData
 struct GradReflectApp: App {
     let persistenceController = PersistenceController.shared
     
-    @AppStorage("isMenu") var isMenu: Bool = true
-    
     @StateObject var router = Router()
     
     var body: some Scene {
         WindowGroup {
-//            if isMenu {
-//                MenuView()
-//                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            } else {
-//                ContentView()
-//                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            }
-            
-            RootView(router: router)
-            
-            //this if statement can perhaps be removed, currently just here to show how app storage works and to swicth between a tab view to a list view
+            RootView(router: router).environment(\.managedObjectContext, persistenceController.container.viewContext)
+
         }
     }
 }
