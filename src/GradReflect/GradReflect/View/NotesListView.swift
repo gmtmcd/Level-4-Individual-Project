@@ -44,7 +44,7 @@ struct NotesListView: View {
                 leading: Button(action: {
                     router.currentPage = .SkillView
                 }, label: {
-                    Text("Skills")
+                    Text("Home")
                 }),
                 
                 trailing:Button(action: {

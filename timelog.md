@@ -180,3 +180,5 @@
 
 ### 24 Nov 2020
 * *2.5 hours* Created helper buttons for each question that when clicked give a popup with more information about the question, changed the questions to being the proper questions that were used in the surveys, changed the questions also in the review note
+* *1 hour* Researched how i am going to do the settings page, notification and perhaps voice recordings
+* *2 hours* Created a settings page, include links to github, moodle, myglasgow site on attributes, page can be navigated from home page and back

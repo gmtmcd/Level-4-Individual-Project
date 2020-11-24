@@ -18,6 +18,8 @@ struct RootView: View {
             SkillView(router: router)
         case .NotesListView:
             NotesListView(router: router).environment(\.managedObjectContext, viewContext)
+        case .SettingsView:
+            SettingsView(router: router)
         }
     }
 }

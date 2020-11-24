@@ -17,6 +17,9 @@
 		2A444D13254ADDC700B8EF00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A444D12254ADDC700B8EF00 /* Preview Assets.xcassets */; };
 		2A444D1E254ADDC800B8EF00 /* GradReflectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A444D1D254ADDC800B8EF00 /* GradReflectTests.swift */; };
 		2A444D29254ADDC800B8EF00 /* GradReflectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A444D28254ADDC800B8EF00 /* GradReflectUITests.swift */; };
+		2A475A28256D5A3E005F62CA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A475A27256D5A3E005F62CA /* SettingsView.swift */; };
+		2A475A2D256D609A005F62CA /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A475A2C256D609A005F62CA /* SettingsRowView.swift */; };
+		2A475A32256D6520005F62CA /* SettingsLinksRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A475A31256D6520005F62CA /* SettingsLinksRowView.swift */; };
 		2A56DF41255168A100F7C620 /* GradReflect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A56DF3F255168A100F7C620 /* GradReflect.xcdatamodeld */; };
 		2A56DF9525517A7700F7C620 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56DF9425517A7700F7C620 /* Persistence.swift */; };
 		2A56DFC225519A9400F7C620 /* NoteEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56DFC025519A9400F7C620 /* NoteEntry+CoreDataClass.swift */; };
@@ -62,6 +65,9 @@
 		2A444D24254ADDC800B8EF00 /* GradReflectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradReflectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A444D28254ADDC800B8EF00 /* GradReflectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradReflectUITests.swift; sourceTree = "<group>"; };
 		2A444D2A254ADDC800B8EF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A475A27256D5A3E005F62CA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A475A2C256D609A005F62CA /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		2A475A31256D6520005F62CA /* SettingsLinksRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinksRowView.swift; sourceTree = "<group>"; };
 		2A56DF40255168A100F7C620 /* GradReflect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GradReflect.xcdatamodel; sourceTree = "<group>"; };
 		2A56DF9425517A7700F7C620 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2A56DFC025519A9400F7C620 /* NoteEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 				2A2CC4DF25686941002CEA6F /* NotesRowView.swift */,
 				2A56DFF82551C16A00F7C620 /* NoteAddView.swift */,
 				2AB18167255B084B00433887 /* NoteReviewView.swift */,
+				2A475A27256D5A3E005F62CA /* SettingsView.swift */,
+				2A475A2C256D609A005F62CA /* SettingsRowView.swift */,
+				2A475A31256D6520005F62CA /* SettingsLinksRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +341,7 @@
 			files = (
 				2AB18168255B084B00433887 /* NoteReviewView.swift in Sources */,
 				2A56DFC225519A9400F7C620 /* NoteEntry+CoreDataClass.swift in Sources */,
+				2A475A32256D6520005F62CA /* SettingsLinksRowView.swift in Sources */,
 				2A0ACA8725643015002F2F3B /* PageHelper.swift in Sources */,
 				2A56DFC325519A9400F7C620 /* NoteEntry+CoreDataProperties.swift in Sources */,
 				2A56DF9525517A7700F7C620 /* Persistence.swift in Sources */,
@@ -339,7 +349,9 @@
 				2A0ACA8225642E07002F2F3B /* RootView.swift in Sources */,
 				2AF56B26254B0D0100932DE7 /* SkillView.swift in Sources */,
 				2A56DFF92551C16A00F7C620 /* NoteAddView.swift in Sources */,
+				2A475A28256D5A3E005F62CA /* SettingsView.swift in Sources */,
 				2A0ACA8C2564327D002F2F3B /* Router.swift in Sources */,
+				2A475A2D256D609A005F62CA /* SettingsRowView.swift in Sources */,
 				2A444D0E254ADDB200B8EF00 /* NotesListView.swift in Sources */,
 				2A56DF41255168A100F7C620 /* GradReflect.xcdatamodeld in Sources */,
 				2A444D0C254ADDB200B8EF00 /* GradReflectApp.swift in Sources */,

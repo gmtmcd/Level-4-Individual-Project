@@ -10,4 +10,5 @@ import Foundation
 enum Page {
     case SkillView
     case NotesListView
+    case SettingsView
 }
