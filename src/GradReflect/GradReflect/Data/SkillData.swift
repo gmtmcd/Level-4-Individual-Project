@@ -49,7 +49,8 @@ let skillData: [Skill] = [
         description: "Ethics/Professionalism description")
 ]
 
-
+// ADD THIS TO THE SKILL CARDS SO THERES ONE THAT HAS GENERAL OVERSIGHT
+//Graduate attributes, sometimes referred to as 'soft skills', are skills learned during someone's time at university, that aren't necessarily a direct result of the courses they are doing. These skills are developed primarily through real-world experiences and reflection.
 
 struct SkillData_Previews: PreviewProvider {
     static var previews: some View {

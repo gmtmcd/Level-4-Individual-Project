@@ -23,7 +23,7 @@ struct NoteReviewView: View {
                     Text("\(reviewNote.name)")
                 }
                 
-                Section(header : Text("Choose the applicable soft skill")) {
+                Section(header : Text("What graduate skill did you develop?")) {
                     Text("\(reviewNote.gradAttribute)")
                 }
 
@@ -31,23 +31,23 @@ struct NoteReviewView: View {
                     Text("\(reviewNote.situation)")
                 }
 
-                Section(header: Text("Describe the thoughts you had during this event")) {
+                Section(header: Text("What were your thoughts during this experience?")) {
                     Text("\(reviewNote.thoughts)")
                 }
 
-                Section(header: Text("Describe how you felt during this event")) {
+                Section(header: Text("How did you feel during this situation?")) {
                     Text("Value: \(Int(reviewNote.emotionsScale))")
                 }
 
-                Section(header: Text("Describe why you believe you felt this way")) {
+                Section(header: Text("Why do you think you felt this way?")) {
                     Text("\(reviewNote.whyEmotions)")
                 }
 
-                Section(header: Text("How did this make you behave, examine the cause and effect")) {
+                Section(header: Text("How did you behave in this experience?")) {
                     Text("\(reviewNote.behaviour)")
                 }
 
-                Section(header: Text("How will behave in the future in a similar situation, the same or different, and why?")) {
+                Section(header: Text("How would you want to behave in the future? Would you act the same or differently, and why?")) {
                     Text("\(reviewNote.futureAlternate)")
                 }
                 Button(action: {
