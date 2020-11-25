@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
 
     @StateObject var router: Router
+    @ObservedObject var notifManager = NotificationManager()
     
     var body: some View {
         NavigationView{
@@ -28,6 +29,16 @@ struct SettingsView: View {
                         SettingsRowView(icon: "checkmark.seal", leftTxt: "Compatibility", rightTxt: "iPhone")
                         SettingsRowView(icon: "keyboard", leftTxt: "Developer", rightTxt: "Gemma McDonald")
                         SettingsRowView(icon: "flag", leftTxt: "Version", rightTxt: "1.0.0")
+                    }
+                    
+                    Section(header: Text("Notifications")){
+                        Button(action: {
+                            withAnimation {
+                                self.notifManager.sendNotif(title: "GradReflect", subtitle: nil, body: "Hey! Time to reflect on your skills!", launchIn: 10)
+                            }
+                        }) {
+                            Text("Turn on Notifications")
+                        }
                     }
                     
                 } //End of Form
