@@ -184,4 +184,10 @@
 * *2 hours* Created a settings page, include links to github, moodle, myglasgow site on attributes, page can be navigated from home page and back
 
 ### 25 Nov 2020
-* *1 hour* Implemented notification into the app, triggered by clicking the button in settings, launches notif after 10 seconds for proof of concept
+* *1 hour* Implemented notification into the app, triggered by clicking the button in settings, launches notif after 10 seconds for proof of concept [6.5 hours]
+* *1 hour* Tried to create handling of saving an empty note, had to revert from this
+
+## Week 10
+
+### 30 Nov 2020
+* *1 hour* Reverted back from what changes i had made, added new skill card for the home card, fixed the time and date of notes to beiing british formatting 

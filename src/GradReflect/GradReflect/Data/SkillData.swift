@@ -12,41 +12,54 @@ import SwiftUI
 
 let skillData: [Skill] = [
     Skill(
+        title: "GradReflect",
+        headline: "App description\n Scroll for info on skills ->",
+        image: "communication",
+        gradientColours: [Color.yellow, Color.orange]
+        //description: "Communication description"
+    ),
+    Skill(
         title: "Communication",
         headline: "Communication is a very important grad skill etc etc",
         image: "communication",
-        gradientColours: [Color.blue, Color.purple],
-        description: "Communication description"),
+        gradientColours: [Color.blue, Color.purple]
+        //description: "Communication description"
+    ),
     Skill(
         title: "Critical Thinking",
         headline: "Critical thinking etc etc",
         image: "critical_thinking",
-        gradientColours: [Color.red, Color.pink],
-        description: "Critical thinking description"),
+        gradientColours: [Color.red, Color.pink]
+        //description: "Critical thinking description"
+    ),
     Skill(
         title: "Adaptability",
         headline: "Adaptability etc etc",
         image: "adaptability",
-        gradientColours: [Color.orange, Color.yellow],
-        description: "Adaptability description"),
+        gradientColours: [Color.black, Color.gray]
+        //description: "Adaptability description"
+    ),
     Skill(
         title: "Teamwork",
         headline: "Teamwork is a very important grad skill etc etc",
         image: "teamwork",
-        gradientColours: [Color.primary, Color.secondary],
-        description: "Teamwork description"),
+        gradientColours: [Color.primary, Color.secondary]
+        //description: "Teamwork description"
+    ),
     Skill(
         title: "Self-efficacy/application of knowledge",
         headline: "Self-efficacy/application of knowledge is a very important grad skill etc etc",
         image: "knowledge",
-        gradientColours: [Color.black, Color.gray],
-        description: "Self-efficacy/application of knowledge description"),
+        gradientColours: [Color.black, Color.gray]
+        //description: "Self-efficacy/application of knowledge description"
+    ),
     Skill(
         title: "Ethics/Professionalism",
         headline: "Ethics/Professionalism is a very important grad skill etc etc",
         image: "ethics",
-        gradientColours: [Color.blue, Color.purple],
-        description: "Ethics/Professionalism description")
+        gradientColours: [Color.blue, Color.purple]
+        //description: "Ethics/Professionalism description"
+    )
 ]
 
 // ADD THIS TO THE SKILL CARDS SO THERES ONE THAT HAS GENERAL OVERSIGHT

@@ -12,7 +12,7 @@ struct NotesListView: View {
 
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(entity:NoteEntry.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \NoteEntry.entryTime, ascending: true)])
+    @FetchRequest(entity:NoteEntry.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \NoteEntry.entryTime, ascending:false)])
     var notes: FetchedResults<NoteEntry>
 
     @State var showNoteSheet = false

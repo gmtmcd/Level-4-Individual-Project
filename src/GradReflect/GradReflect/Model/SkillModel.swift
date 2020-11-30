@@ -16,7 +16,7 @@ struct Skill: Identifiable {
     var headline: String
     var image: String
     var gradientColours: [Color]
-    var description: String
+    //var description: String
     
 }
 

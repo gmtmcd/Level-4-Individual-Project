@@ -36,8 +36,8 @@ struct NotesRowView: View {
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
+    formatter.locale = Locale(identifier: "en_GB")
+    formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy H:mm")
     return formatter
 }()
 
