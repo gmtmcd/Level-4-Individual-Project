@@ -13,7 +13,7 @@ import SwiftUI
 let skillData: [Skill] = [
     Skill(
         title: "GradReflect",
-        headline: "App description\n Scroll for info on skills ->",
+        headline: "Grad Reflect is a space for you to reflect on experiences where you've used your graduate soft skills and help you develop them.\n\n Scroll for info on skills ➡️\n Go straight to notes or settings below ⬇️",
         image: "communication",
         gradientColours: [Color.yellow, Color.orange]
         //description: "Communication description"

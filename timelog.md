@@ -191,3 +191,6 @@
 
 ### 30 Nov 2020
 * *1 hour* Reverted back from what changes i had made, added new skill card for the home card, fixed the time and date of notes to beiing british formatting 
+
+### 01 Dec 2020
+* *2.5* Added info to the home card, made logo for the app and added every size to the assets
