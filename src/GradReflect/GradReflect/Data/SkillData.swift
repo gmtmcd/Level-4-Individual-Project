@@ -13,57 +13,50 @@ import SwiftUI
 let skillData: [Skill] = [
     Skill(
         title: "GradReflect",
-        headline: "Grad Reflect is a space for you to reflect on experiences where you've used your graduate soft skills and help you develop them.\n\n Scroll for info on skills ➡️\n Go straight to notes or settings below ⬇️",
-        image: "communication",
+        headline: "Grad Reflect is a space for you to reflect on experiences where you've used your graduate soft skills. Using CBT techniques it will help you to develop them.\n\n Scroll for info on skills ➡️\n Go straight to notes or settings below ⬇️",
+        image: "AppLogo",
         gradientColours: [Color.yellow, Color.orange]
-        //description: "Communication description"
     ),
     Skill(
         title: "Communication",
-        headline: "Communication is a very important grad skill etc etc",
-        image: "communication",
+        headline: "This covers both written and oral communication. You will need to be able to be clear and concise, being able to interrogate ideas and present them persuasively and confidently. In this skill topic you will reflect on situations where you have exercised these abilities.",
+        image: "CommunicationIcon",
         gradientColours: [Color.blue, Color.purple]
-        //description: "Communication description"
     ),
     Skill(
         title: "Critical Thinking",
-        headline: "Critical thinking etc etc",
-        image: "critical_thinking",
+        headline: "This entails situations where you have used your problem solving skills, this will be useful in the workplace when required to create innovative solutions that work for clients. Here, you can reflect on when you have had to overcome obstacles or create solutions to difficult issues.",
+        image: "criticalThinkingIcon",
         gradientColours: [Color.red, Color.pink]
-        //description: "Critical thinking description"
     ),
     Skill(
         title: "Adaptability",
-        headline: "Adaptability etc etc",
-        image: "adaptability",
+        headline: "Adaptability describes situations where you have had to adapt to fit with changing circumstances. ",
+        image: "adaptabilityIcon",
         gradientColours: [Color.black, Color.gray]
-        //description: "Adaptability description"
     ),
     Skill(
         title: "Teamwork",
-        headline: "Teamwork is a very important grad skill etc etc",
-        image: "teamwork",
+        headline: "Teamwork is a critical skills in the workplace. You must be able to collaborate with others and reach a consensus.",
+        image: "teamworkIcon",
         gradientColours: [Color.primary, Color.secondary]
-        //description: "Teamwork description"
     ),
     Skill(
-        title: "Self-efficacy/application of knowledge",
-        headline: "Self-efficacy/application of knowledge is a very important grad skill etc etc",
-        image: "knowledge",
+        title: "Self-efficacy & Applying Knowledge",
+        headline: "Self-efficacy and application of knowledge is when someone takes the technical knowledge they have gained throughout university and apply it to the workplace. Here you will reflect on situations where you have evaluated and synthesised information.",
+        image: "selfEfficacyIcon",
         gradientColours: [Color.black, Color.gray]
-        //description: "Self-efficacy/application of knowledge description"
     ),
     Skill(
-        title: "Ethics/Professionalism",
-        headline: "Ethics/Professionalism is a very important grad skill etc etc",
-        image: "ethics",
+        title: "Ethics & Professionalism",
+        headline: "This is about acting ethically, responsibly and with maturity and integrity. Here you will discuss how you present yourself and your attitude in a work environment, and also reflecting on your interpersonal skills.",
+        image: "ethicsIcon",
         gradientColours: [Color.blue, Color.purple]
-        //description: "Ethics/Professionalism description"
     )
 ]
 
 // ADD THIS TO THE SKILL CARDS SO THERES ONE THAT HAS GENERAL OVERSIGHT
-//Graduate attributes, sometimes referred to as 'soft skills', are skills learned during someone's time at university, that aren't necessarily a direct result of the courses they are doing. These skills are developed primarily through real-world experiences and reflection.
+// Graduate attributes, sometimes referred to as 'soft skills', are skills learned during someone's time at university, that aren't necessarily a direct result of the courses they are doing. These skills are developed primarily through real-world experiences and reflection.
 
 struct SkillData_Previews: PreviewProvider {
     static var previews: some View {

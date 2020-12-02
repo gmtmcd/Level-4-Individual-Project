@@ -194,3 +194,7 @@
 
 ### 01 Dec 2020
 * *2.5* Added info to the home card, made logo for the app and added every size to the assets
+
+### 02 Dec 2020
+* *2 hours* Got new images for the skills cards, made them transparent, fixed their size
+* *1.5 hours* Changed the descriptions for the skill cards
