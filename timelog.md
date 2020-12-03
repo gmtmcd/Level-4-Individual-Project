@@ -174,7 +174,7 @@
 * *1 hour* Screen-recorded the progress of my app through previews as the simulator is not working at the moment, prepped for meeting with matthew
 * *0.5 hour* Fixed the issue with the preview and simulator not showing the right data and errors with switching between views, views not corrently switch between - however, now realised that after clicking one note to review, clicking another note opens the first note
 * *0.5 hours* Fixed it so that the right note was showing upon review, it was previously trying to open every note as it was looping through, moved row to its own view and this fixed it
-* *1 hour* Tidying abd refactoring code, moved button to being outside the tab of skills, Changed the name of the Skill button, attempted to delte within note but doesnt let you, so left delete as is, moved files, renamed files etc [12.5 hours]
+* *1 hour* Tidying abd refactoring code, moved button to being outside the tab of skills, Changed the name of the Skill button, attempted to delete within note but doesnt let you, so left delete as is, moved files, renamed files etc
 
 ## Week 9
 
@@ -184,17 +184,23 @@
 * *2 hours* Created a settings page, include links to github, moodle, myglasgow site on attributes, page can be navigated from home page and back
 
 ### 25 Nov 2020
-* *1 hour* Implemented notification into the app, triggered by clicking the button in settings, launches notif after 10 seconds for proof of concept [6.5 hours]
+* *1 hour* Implemented notification into the app, triggered by clicking the button in settings, launches notif after 10 seconds for proof of concept 
 * *1 hour* Tried to create handling of saving an empty note, had to revert from this
 
 ## Week 10
 
 ### 30 Nov 2020
-* *1 hour* Reverted back from what changes i had made, added new skill card for the home card, fixed the time and date of notes to beiing british formatting 
+* *1 hour* Reverted back from what changes i had made, added new skill card for the home card, fixed the time and date of notes to being british formatting 
 
 ### 01 Dec 2020
 * *2.5* Added info to the home card, made logo for the app and added every size to the assets
 
 ### 02 Dec 2020
 * *2 hours* Got new images for the skills cards, made them transparent, fixed their size
-* *1.5 hours* Changed the descriptions for the skill cards
+* *1.5 hours* Changed the descriptions for the skill cards [6 hours]
+
+### 03 Dec 2020
+* *1.5 hours* Fixed skill descriptions more, made colour combos for the skill cards nicer
+* *0.5 hours* Prepped for meeting with matthew
+* *0.5 hours* Had meeting with matthew
+* *0.5 hours* Wrote up minutes for meeting

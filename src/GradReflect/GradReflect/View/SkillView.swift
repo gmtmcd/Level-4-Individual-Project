@@ -26,7 +26,7 @@ struct SkillView: View {
                             // Skill : Image
                             Image(skill.image)
                                 .resizable()
-                                .frame(width:250, height: 250)
+                                .frame(width:UIScreen.main.bounds.width/1.5, height: UIScreen.main.bounds.height/3.5)
                                 .scaledToFit()
                                 .shadow(color: Color(red: 0, green:0, blue: 0.5, opacity: 0.50), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 6, y: 8)
                                 .scaleEffect(isAnimating ? 1.0 : 0.6)
