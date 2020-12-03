@@ -197,10 +197,11 @@
 
 ### 02 Dec 2020
 * *2 hours* Got new images for the skills cards, made them transparent, fixed their size
-* *1.5 hours* Changed the descriptions for the skill cards [6 hours]
+* *1.5 hours* Changed the descriptions for the skill cards
 
 ### 03 Dec 2020
 * *1.5 hours* Fixed skill descriptions more, made colour combos for the skill cards nicer
 * *0.5 hours* Prepped for meeting with matthew
 * *0.5 hours* Had meeting with matthew
 * *0.5 hours* Wrote up minutes for meeting
+* *1 hour* Started from after first set of instructions on tutorial, created a recordings view, and recordings list view and the functionality to record audio [10 hours]
