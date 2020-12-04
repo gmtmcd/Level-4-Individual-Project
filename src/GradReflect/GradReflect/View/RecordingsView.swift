@@ -23,7 +23,7 @@ struct RecordingsView: View {
                 // Record or stop recording buttons shown depending on whether there is a recording happening
                 if recordAudio.isRecording == false {
                     Button(action: {self.recordAudio.startRecording()}){
-                        Image(systemName: "circle.fill")
+                        Image(systemName: "record.circle.fill")
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 100, height: 100)
@@ -33,7 +33,7 @@ struct RecordingsView: View {
                     }
                 } else {
                     Button(action: {self.recordAudio.stopRecording()}){
-                        Image(systemName: "stop.fill")
+                        Image(systemName: "stop.circle.fill")
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 100, height: 100)

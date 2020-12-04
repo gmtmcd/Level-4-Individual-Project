@@ -205,3 +205,6 @@
 * *0.5 hours* Had meeting with matthew
 * *0.5 hours* Wrote up minutes for meeting
 * *1 hour* Started from after first set of instructions on tutorial, created a recordings view, and recordings list view and the functionality to record audio [10 hours]
+
+### 04 Dec 2020
+* *2 hours* Implemented fetching the recordings and displaying them on the view
