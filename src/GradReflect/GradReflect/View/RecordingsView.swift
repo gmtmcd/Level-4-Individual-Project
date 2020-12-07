@@ -55,7 +55,8 @@ struct RecordingsView: View {
                     router.currentPage = .SkillView
                 }, label: {
                     Text("Home")
-                }))
+                }),
+                trailing: EditButton())
         } // end of nav view
         
         

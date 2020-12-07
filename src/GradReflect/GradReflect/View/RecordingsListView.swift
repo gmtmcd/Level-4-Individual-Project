@@ -16,8 +16,19 @@ struct RecordingsListView: View {
             ForEach(recordAudio.recordings, id: \.dateCreated){ recording in
                 RecordingsRowView(audioURL: recording.fileURL)
             }
+            .onDelete(perform:delete)
         }
     }
+    
+    // Function to add ability to delete a recording using inbuilt delete, offsets represent which row is being deleted
+    func delete(at offsets: IndexSet){
+        var urlsBeingDeleted = [URL]()
+        for index in offsets {
+            urlsBeingDeleted.append(recordAudio.recordings[index].fileURL)
+        }
+        recordAudio.deleteAudios(urlsBeingDeleted: urlsBeingDeleted)
+    }
+    
 }
 
 struct RecordingsRowView: View {

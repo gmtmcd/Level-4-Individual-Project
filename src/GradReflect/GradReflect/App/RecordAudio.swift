@@ -97,6 +97,18 @@ class RecordAudio: NSObject, ObservableObject {
         
     }
     
+    func deleteAudios(urlsBeingDeleted: [URL]){
+        for url in urlsBeingDeleted {
+            do {
+                try FileManager.default.removeItem(at: url)
+            } catch {
+                print("This file couldnt be deleted")
+            }
+        }
+        
+        getRecordings()
+    }
+    
 }
 
 // Used to format the date for the recorded files name
