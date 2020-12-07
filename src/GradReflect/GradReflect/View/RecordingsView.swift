@@ -25,7 +25,6 @@ struct RecordingsView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Spacer()
                 
-                
                 // Record or stop recording buttons shown depending on whether there is a recording happening
                 if recordAudio.isRecording == false {
                     Button(action: {self.recordAudio.startRecording(usersFileName: usersFileName)}){

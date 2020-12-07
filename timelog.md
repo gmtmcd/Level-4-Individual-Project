@@ -213,3 +213,4 @@
 
 ### 07 Dec 2020
 * *1.5 hours* Implemented naming a note and a textfiled to do this, needs to be cleared before making a new one though otherwise there will be two with same name. Also now linked this view to the other views
+* *1 hour* Audios now have a button beside them to playback the audio, audio can be stopped too and once audio is finished the playbutton comes back

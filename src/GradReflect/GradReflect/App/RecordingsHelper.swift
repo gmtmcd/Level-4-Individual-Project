@@ -7,6 +7,8 @@
 
 import Foundation
 
+//RENAME THIS FILE TO GETDATE OR SOMETHING
+
 // Function takes a file paths and returns the date it was created
 func getDateCreated(for file:URL) -> Date {
     if let attributes = try? FileManager.default.attributesOfItem(atPath: file.path) as [FileAttributeKey: Any],

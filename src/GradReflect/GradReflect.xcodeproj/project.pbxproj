@@ -29,9 +29,9 @@
 		2A7C224525795DE600779A44 /* RecordAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C224425795DE600779A44 /* RecordAudio.swift */; };
 		2A7C224A257960C400779A44 /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C2249257960C400779A44 /* RecordingsView.swift */; };
 		2A7C224F257963C000779A44 /* RecordingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C224E257963C000779A44 /* RecordingsListView.swift */; };
-		2A7C2254257968B800779A44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C2253257968B800779A44 /* Extensions.swift */; };
 		2A806554257A4C8F006E34C3 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A806553257A4C8F006E34C3 /* RecordingModel.swift */; };
 		2A806559257A4E2E006E34C3 /* RecordingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A806558257A4E2E006E34C3 /* RecordingsHelper.swift */; };
+		2A8F8370257EA01200A148EC /* PlaybackAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F836F257EA01200A148EC /* PlaybackAudio.swift */; };
 		2AB18168255B084B00433887 /* NoteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB18167255B084B00433887 /* NoteReviewView.swift */; };
 		2AF56B26254B0D0100932DE7 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B25254B0D0100932DE7 /* SkillView.swift */; };
 		2AF56B2C254B17A600932DE7 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B2B254B17A600932DE7 /* SkillModel.swift */; };
@@ -84,9 +84,9 @@
 		2A7C224425795DE600779A44 /* RecordAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudio.swift; sourceTree = "<group>"; };
 		2A7C2249257960C400779A44 /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
 		2A7C224E257963C000779A44 /* RecordingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListView.swift; sourceTree = "<group>"; };
-		2A7C2253257968B800779A44 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2A806553257A4C8F006E34C3 /* RecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
 		2A806558257A4E2E006E34C3 /* RecordingsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsHelper.swift; sourceTree = "<group>"; };
+		2A8F836F257EA01200A148EC /* PlaybackAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackAudio.swift; sourceTree = "<group>"; };
 		2AB18167255B084B00433887 /* NoteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteReviewView.swift; sourceTree = "<group>"; };
 		2AF56B25254B0D0100932DE7 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		2AF56B2B254B17A600932DE7 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 				2A0ACA8B2564327D002F2F3B /* Router.swift */,
 				2A314B91256E813A00DC24E9 /* NotificationManager.swift */,
 				2A7C224425795DE600779A44 /* RecordAudio.swift */,
-				2A7C2253257968B800779A44 /* Extensions.swift */,
 				2A806558257A4E2E006E34C3 /* RecordingsHelper.swift */,
+				2A8F836F257EA01200A148EC /* PlaybackAudio.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7C2254257968B800779A44 /* Extensions.swift in Sources */,
+				2A8F8370257EA01200A148EC /* PlaybackAudio.swift in Sources */,
 				2AB18168255B084B00433887 /* NoteReviewView.swift in Sources */,
 				2A7C224525795DE600779A44 /* RecordAudio.swift in Sources */,
 				2A56DFC225519A9400F7C620 /* NoteEntry+CoreDataClass.swift in Sources */,
