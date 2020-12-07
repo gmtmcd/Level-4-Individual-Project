@@ -62,36 +62,59 @@ struct SkillView: View {
             .tabViewStyle(PageTabViewStyle())
             .padding(.vertical,20)
             
-            HStack {
-                Button(action: {
-                    router.currentPage = .NotesListView
-                }) {
-                    HStack (spacing: 8){
-                        Text("Notes")
-                        
-                        Image(systemName: "arrow.right.circle")
-                            .imageScale(.large)
-                    }
-                    .padding(.horizontal,16)
-                    .padding(.vertical, 10)
-                    .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
-                }// End of button
-                .accentColor(.black)
+            VStack {
+                HStack {
+                    Button(action: {
+                        router.currentPage = .NotesListView
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Notes")
+                            
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .padding(.horizontal,16)
+                        .padding(.vertical, 10)
+                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                    }// End of button
+                    .accentColor(.black)
+                    
+                    Button(action: {
+                        router.currentPage = .RecordingsView
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Recordings")
+                            
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .padding(.horizontal,16)
+                        .padding(.vertical, 10)
+                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                    }// End of button
+                    .accentColor(.black)
+                    
+                } //end of hstack
                 
-                Button(action: {
-                    router.currentPage = .SettingsView
-                }) {
-                    HStack (spacing: 8){
-                        Text("Settings")
-                        
-                        Image(systemName: "arrow.right.circle")
-                            .imageScale(.large)
-                    }
-                    .padding(.horizontal,16)
-                    .padding(.vertical, 10)
-                    .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
-                }// End of button
-                .accentColor(.black)
+                HStack{
+                    Button(action: {
+                        router.currentPage = .SettingsView
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Settings")
+                            
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .padding(.horizontal,16)
+                        .padding(.vertical, 10)
+                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                    }// End of button
+                    .accentColor(.black)
+                    
+                    // Add button soon to take to data/stats analysis???
+                    
+                } //End of Hstack
                 
             }
             

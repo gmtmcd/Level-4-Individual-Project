@@ -20,10 +20,9 @@ struct RootView: View {
             NotesListView(router: router).environment(\.managedObjectContext, viewContext)
         case .SettingsView:
             SettingsView(router: router)
-            
         //This will also need the router sent to it
-//        case .RecordingsView:
-//            RecordingsView(recordAudio: RecordAudio())
+        case .RecordingsView:
+            RecordingsView(recordAudio: RecordAudio(), router: router)
             
         }
     }

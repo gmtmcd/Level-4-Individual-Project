@@ -31,7 +31,7 @@ class RecordAudio: NSObject, ObservableObject {
         }
     }
     
-    func startRecording() {
+    func startRecording(usersFileName: String) {
         // Create recording session
         let recordSession = AVAudioSession.sharedInstance()
         
@@ -46,7 +46,7 @@ class RecordAudio: NSObject, ObservableObject {
         // Set where the file should be saved and the name of the file
         let docPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         // change this to getName()
-        let recordingFileName =  docPath.appendingPathComponent("hello\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm")).m4a")
+        let recordingFileName =  docPath.appendingPathComponent("\(usersFileName)_\(Date().toString(dateFormat: "dd-MM-YY_HH:mm")).m4a")
         
         // Create the settings that the recording will be made at
         let recordingSettings = [
@@ -72,13 +72,16 @@ class RecordAudio: NSObject, ObservableObject {
         return
     }
     
+    
     // Function stops the recording and updates the RecordingsView
     func stopRecording(){
         recordAudio.stop()
         isRecording = false
         
+        
         // MAYBE FIND A WAY TO RENAME FILE ????
         // or create a display name and not mess with the date and time system of the doc path
+        
         
         getRecordings()
         

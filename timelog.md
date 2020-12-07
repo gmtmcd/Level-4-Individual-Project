@@ -207,4 +207,9 @@
 * *1 hour* Started from after first set of instructions on tutorial, created a recordings view, and recordings list view and the functionality to record audio [10 hours]
 
 ### 04 Dec 2020
-* *2 hours* Implemented fetching the recordings and displaying them on the view
+* *2 hours* Implemented fetching the recordings and displaying them on the view [12 hours]
+
+## Week 11
+
+### 07 Dec 2020
+* *1.5 hours* Implemented naming a note and a textfiled to do this, needs to be cleared before making a new one though otherwise there will be two with same name. Also now linked this view to the other views

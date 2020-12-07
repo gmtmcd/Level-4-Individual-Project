@@ -11,4 +11,5 @@ enum Page {
     case SkillView
     case NotesListView
     case SettingsView
+    case RecordingsView
 }
