@@ -44,8 +44,8 @@ class RecordAudio: NSObject, ObservableObject {
         }
         
         // Set where the file should be saved and the name of the file
-        let docPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let recordingFileName =  docPath.appendingPathComponent("\(usersFileName)_\(Date().toString(dateFormat: "dd-MM-YY_HH:mm")).m4a")
+        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let recordingFileName =  url.appendingPathComponent("\(usersFileName)_\(Date().toString(dateFormat: "dd-MM-YY_HH:mm")).m4a")
         
         // Create the settings that the recording will be made at
         let recordingSettings = [
@@ -79,16 +79,16 @@ class RecordAudio: NSObject, ObservableObject {
     
     // Function to get the stored recordings
     func getRecordings(){
+        // Remove the old recordings
         recordings.removeAll()
         
-        let fileManager = FileManager.default
-        let docDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let directoryContents = try! fileManager.contentsOfDirectory(at: docDirectory, includingPropertiesForKeys: nil)
+        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        
+        let directoryContents = try! FileManager.default.contentsOfDirectory(at: url, includingPropertiesForKeys: nil)
         
         // Add each audio file in the contents of the app storage specified and add both the location and the date to the list of recordings to be displayed
         for audio in directoryContents{
-            let recording = Recording(fileURL: audio, dateCreated: getDateCreated(for: audio))
-            recordings.append(recording)
+            recordings.append(Recording(fileURL: audio, dateCreated: getDateCreated(for: audio)))
         }
         
         // Sort recordings and update the view

@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct RecordingsView: View {
-    //add when letting this view be accessed
-    //@StateObject var router: Router
     
     @ObservedObject var recordAudio: RecordAudio
     @State var usersFileName: String = ""
     @StateObject var router: Router
+    
+    @State var alert = false
     
     var body: some View {
         NavigationView {
@@ -57,15 +58,44 @@ struct RecordingsView: View {
                     Text("Home")
                 }),
                 trailing: EditButton())
+            // Alert for when there is no permission for microphone, redirects to skills
+            .alert(isPresented: $alert) { () -> Alert in
+                let button = Alert.Button.default(Text("Go back to skills")){
+                    print("going back to skills")
+                    router.currentPage = .SkillView
+                }
+                return Alert(title: Text("Permissions Required"), message: Text("Go to settings to enable access"), dismissButton: button)
+            }
+            // when this view appears, check that the user has permission for mic
+            .onAppear{
+                do{
+                    let session = AVAudioSession.sharedInstance()
+                    try session.setCategory(.playAndRecord)
+                    
+                    // check permission
+                    session.requestRecordPermission { (granted) in
+                        // If no permission then display the error, redirect to skill page
+                        if !granted{
+                            self.alert.toggle()
+                        }
+                        // otherwise carry on
+                        else{
+                            print("Permissions enabled")
+                        }
+                    }
+                }
+                catch{
+                    print("Error with the permissions checker")
+                }
+            }
         } // end of nav view
-        
         
     }
 }
 
 struct ClearButton: ViewModifier {
     @Binding var text: String
-
+    
     func body(content: Content) -> some View {
         HStack{
             content

@@ -215,3 +215,9 @@
 * *1.5 hours* Implemented naming a note and a textfiled to do this, needs to be cleared before making a new one though otherwise there will be two with same name. Also now linked this view to the other views
 * *1 hour* Audios now have a button beside them to playback the audio, audio can be stopped too and once audio is finished the playbutton comes back
 * *0.5 hours* Audios can now be deleted by the edit button or swiping left
+
+### 08 Dec 2020
+* *2 hours* Lecture on the project
+* *0.5 hours* Lecture
+* *3.5 hours* Realised that my implementation of voice recordings doesnt ask for microphone permission, researched how to do this, couldnt find viable solution
+* *0.5 hours* Got a notification to work to tell the users to change their permissions !! :)
