@@ -227,3 +227,4 @@
 * *0.5 hours* Made more alterations to recordings, stopped user from being able to save a note with no title, and therefore empty notes
 * *1 hour* Made buttons and skill card colour scheme match the logo and more attractive
 * *1 hour* Fixed a bug that when the user clicks on anywhere in the header of each question in adding a note they get the pop up, now they only get the popup from clicking on the question mark
+* *1.5 hours* Created the interface for the statistics view, began creating the functionality of the stats - total entries, entries per skill too

@@ -23,6 +23,8 @@ struct RootView: View {
         //This will also need the router sent to it
         case .RecordingsView:
             RecordingsView(recordAudio: RecordAudio(), router: router)
+        case .DataStatsView:
+            DataStatsView(router: router).environment(\.managedObjectContext, viewContext)
             
         }
     }

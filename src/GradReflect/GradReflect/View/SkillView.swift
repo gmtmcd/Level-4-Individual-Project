@@ -33,10 +33,10 @@ struct SkillView: View {
                             
                             // Skill : Title
                             Text(skill.title)
-                                .foregroundColor(Color.white)//change colour of text
+                                .foregroundColor(Color.white)
                                 .font(.largeTitle)
                                 .fontWeight(.heavy)
-                                .shadow(radius: 2, x:2, y:2)//not always needed to do the colour 0's
+                                .shadow(radius: 2, x:2, y:2)
                             
                             // Skill: Headline
                             Text(skill.headline)
@@ -54,8 +54,8 @@ struct SkillView: View {
                         }
                     }
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)//makes the background extend more than just around the image
-                    .background(LinearGradient(gradient: Gradient(colors: skill.gradientColours), startPoint: .top, endPoint: .bottom)) //this dictates the background
-                    .cornerRadius(20) //this gives the background of image a rounded edge
+                    .background(LinearGradient(gradient: Gradient(colors: skill.gradientColours), startPoint: .top, endPoint: .bottom))
+                    .cornerRadius(20)
                     .padding(.horizontal,20)
                 }
             }//End of tab
@@ -68,7 +68,6 @@ struct SkillView: View {
                     }) {
                         HStack (spacing: 8){
                             Text("Notes")
-                            
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
@@ -78,14 +77,12 @@ struct SkillView: View {
                         .cornerRadius(8)
 
                     }// End of button
-                    .accentColor(.black)
                     
                     Button(action: {
                         router.currentPage = .RecordingsView
                     }) {
                         HStack (spacing: 8){
                             Text("Recordings")
-                            
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
@@ -94,7 +91,6 @@ struct SkillView: View {
                         .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
                         .cornerRadius(8)
                     }// End of button
-                    .accentColor(.black)
                     
                 } //end of hstack
                 
@@ -104,7 +100,6 @@ struct SkillView: View {
                     }) {
                         HStack (spacing: 8){
                             Text("Settings")
-                            
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
@@ -113,9 +108,21 @@ struct SkillView: View {
                         .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
                         .cornerRadius(8)
                     }// End of button
-                    .accentColor(.black)
                     
                     // Add button soon to take to data/stats analysis???
+                    Button(action: {
+                        router.currentPage = .DataStatsView
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Statistics")
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
+                        .cornerRadius(8)
+                    }// End of button
                     
                 } //End of Hstack
                 

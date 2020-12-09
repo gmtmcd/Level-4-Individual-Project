@@ -13,7 +13,7 @@ struct NoteAddView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment (\.presentationMode) var presentationMode
     
-    let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-Efficacy", "Ethics & Professionalism"]
+    let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-efficacy & Applying Knowledge", "Ethics & Professionalism"]
     
     @State var name = ""
     @State var selectedAttribute = 1
