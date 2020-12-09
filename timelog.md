@@ -225,3 +225,4 @@
 ### 09 Dec 2020
 * *1.5 hours* Made alterations to the recording views
 * *0.5 hours* Made more alterations to recordings, stopped user from being able to save a note with no title, and therefore empty notes
+* *1 hour* Made buttons and skill card colour scheme match the logo and more attractive

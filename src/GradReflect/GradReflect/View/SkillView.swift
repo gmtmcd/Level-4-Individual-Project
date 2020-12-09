@@ -60,7 +60,6 @@ struct SkillView: View {
                 }
             }//End of tab
             .tabViewStyle(PageTabViewStyle())
-            .padding(.vertical,20)
             
             VStack {
                 HStack {
@@ -73,9 +72,11 @@ struct SkillView: View {
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
-                        .padding(.horizontal,16)
-                        .padding(.vertical, 10)
-                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
+                        .cornerRadius(8)
+
                     }// End of button
                     .accentColor(.black)
                     
@@ -88,9 +89,10 @@ struct SkillView: View {
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
-                        .padding(.horizontal,16)
-                        .padding(.vertical, 10)
-                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
+                        .cornerRadius(8)
                     }// End of button
                     .accentColor(.black)
                     
@@ -106,9 +108,10 @@ struct SkillView: View {
                             Image(systemName: "arrow.right.circle")
                                 .imageScale(.large)
                         }
-                        .padding(.horizontal,16)
-                        .padding(.vertical, 10)
-                        .background(Capsule().strokeBorder(Color.black,lineWidth: 2))//creates the line around the button
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
+                        .cornerRadius(8)
                     }// End of button
                     .accentColor(.black)
                     

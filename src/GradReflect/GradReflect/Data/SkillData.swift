@@ -15,43 +15,50 @@ let skillData: [Skill] = [
         title: "GradReflect",
         headline: "Grad Reflect is a space for you to reflect on experiences where you've used your graduate soft skills. Using CBT techniques it will help you to develop these skills that are developed primarily through real-world experiences and reflection.\n\n Scroll for info on skills ➡️\n Go straight to notes or settings below ⬇️",
         image: "AppLogo",
-        gradientColours: [Color.yellow, Color.orange]
+        //purple to pink
+        gradientColours: [Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255), Color(red: 235 / 255, green: 186 / 255, blue: 185 / 255)]
     ),
     Skill(
         title: "Communication",
         headline: "This covers both written and oral communication. This involves being clear and concise, and able to interrogate ideas and present them persuasively and confidently. In this skill topic you will reflect on situations where you have exercised these abilities.",
         image: "CommunicationIcon",
-        gradientColours: [Color.blue, Color.green]
+        // navy to green
+        gradientColours: [Color(red: 0 / 255, green: 27 / 255, blue: 46 / 255), Color(red: 56 / 255, green: 119 / 255, blue: 128 / 255)]
     ),
     Skill(
         title: "Critical Thinking",
         headline: "This entails situations where you have used your problem solving skills, this will be useful in the workplace when required to create innovative solutions that work for clients. Here for example, you can reflect on when you have had to overcome obstacles or create solutions to difficult issues.",
         image: "criticalThinkingIcon",
-        gradientColours: [Color.red, Color.pink]
+        // blues
+        gradientColours: [Color(red: 73 / 255, green: 182 / 255, blue: 255 / 255), Color(red: 119 / 255, green: 155 / 255, blue: 231 / 255)]
     ),
     Skill(
         title: "Adaptability",
         headline: "Adaptability describes situations where you have had to adapt to fit with changing circumstances and quickly learn new skills. Demonstrating this skill requires flexibility to respond effectively even when things don't go to plan. ",
         image: "adaptabilityIcon",
-        gradientColours: [Color.pink, Color.yellow]
+        // teal to green
+        gradientColours: [Color(red: 14 / 255, green: 124 / 255, blue: 123 / 255), Color(red: 23 / 255, green: 190 / 255, blue: 187 / 255)]
     ),
     Skill(
         title: "Teamwork",
         headline: "Teamwork is a critical skill in the workplace and allows you to work well with others. It involves collaborating with others and reaching a consensus, promoting strong working relationships and maximising the individual strengths of team members.",
         image: "teamworkIcon",
-        gradientColours: [Color.black, Color.blue]
+        // deep green to blue
+        gradientColours: [Color(red: 22 / 255, green: 37 / 255, blue: 33 / 255), Color(red: 79 / 255, green: 124 / 255, blue: 172 / 255)]
     ),
     Skill(
         title: "Self-efficacy & Applying Knowledge",
         headline: "Self-efficacy and application of knowledge is taking the technical knowledge gained throughout university and applying it to the workplace. Here you will reflect on situations where you have evaluated and synthesised information.",
         image: "selfEfficacyIcon",
-        gradientColours: [Color.blue, Color.purple]
+        // pinks
+        gradientColours: [Color(red: 249 / 255, green: 98 / 255, blue: 125 / 255), Color(red: 242 / 255, green: 131 / 255, blue: 182 / 255)]
     ),
     Skill(
         title: "Ethics & Professionalism",
         headline: "This is about acting ethically, responsibly and with maturity and integrity. Here you will discuss how you present yourself and your attitude in a work environment, and also reflecting on your interpersonal skills.",
         image: "ethicsIcon",
-        gradientColours:[Color.purple, Color.pink]
+        // purpley blues
+        gradientColours:[Color(red: 164 / 255, green: 128 / 255, blue: 207 / 255), Color(red: 119 / 255, green: 155 / 255, blue: 231 / 255)]
     )
 ]
 
