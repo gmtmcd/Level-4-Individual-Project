@@ -45,7 +45,7 @@ class RecordAudio: NSObject, ObservableObject {
         
         // Set where the file should be saved and the name of the file
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let recordingFileName =  url.appendingPathComponent("\(usersFileName)_\(Date().toString(dateFormat: "dd-MM-YY_HH:mm")).m4a")
+        let recordingFileName =  url.appendingPathComponent("\(usersFileName)_\(Date().getFormattedDate(dateFormat: "dd-MM-YY_HH:mm")).m4a")
         
         // Create the settings that the recording will be made at
         let recordingSettings = [
@@ -71,9 +71,7 @@ class RecordAudio: NSObject, ObservableObject {
     func stopRecording(){
         recordAudio.stop()
         isRecording = false
-        
         getRecordings()
-        
     }
     
     
@@ -111,12 +109,23 @@ class RecordAudio: NSObject, ObservableObject {
     
 }
 
+// HELPER FUNCTIONS
+
 // Used to format the date for the recorded files name
 extension Date {
-    func toString(dateFormat format : String) -> String {
+    func getFormattedDate(dateFormat format : String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
 }
 
+// Function takes a file paths and returns the date it was created
+func getDateCreated(for file:URL) -> Date {
+    if let attributes = try? FileManager.default.attributesOfItem(atPath: file.path) as [FileAttributeKey: Any],
+       let dateCreated = attributes[FileAttributeKey.creationDate] as? Date {
+        return dateCreated
+    } else { // If this fails just return todays date
+        return Date()
+    }
+}

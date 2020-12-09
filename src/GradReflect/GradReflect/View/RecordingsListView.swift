@@ -10,14 +10,19 @@ import SwiftUI
 struct RecordingsListView: View {
     
     @ObservedObject var recordAudio: RecordAudio
+    @ObservedObject var playbackAudio = PlaybackAudio()
     
     var body: some View {
         List {
-            ForEach(recordAudio.recordings, id: \.dateCreated){ recording in
-                RecordingsRowView(audioURL: recording.fileURL)
+            Section(header: RecordingsHeader()) {
+                ForEach(recordAudio.recordings, id: \.dateCreated){ recording in
+                    RecordingsRowView(audioURL: recording.fileURL)
+                }
+                .onDelete(perform:delete)
             }
-            .onDelete(perform:delete)
-        }
+            .textCase(nil)
+            
+        }.listStyle(GroupedListStyle())
     }
     
     // Function to add ability to delete a recording using inbuilt delete, offsets represent which row is being deleted
@@ -29,6 +34,15 @@ struct RecordingsListView: View {
         recordAudio.deleteAudios(urlsBeingDeleted: urlsBeingDeleted)
     }
     
+}
+
+struct RecordingsHeader: View {
+    var body: some View{
+        HStack {
+            Image(systemName: "info.circle.fill")
+            Text("Enter filename before recording, clear filename before making new recording")
+        }
+    }
 }
 
 struct RecordingsRowView: View {

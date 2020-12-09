@@ -21,6 +21,8 @@ struct RecordingsView: View {
             VStack {
                 // Present list of recordings
                 RecordingsListView(recordAudio: recordAudio)
+                
+                // Get the filename for a recording
                 TextField("Enter Name for recording", text: $usersFileName)
                     .modifier(ClearButton(text: $usersFileName))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -58,6 +60,7 @@ struct RecordingsView: View {
                     Text("Home")
                 }),
                 trailing: EditButton())
+            
             // Alert for when there is no permission for microphone, redirects to skills
             .alert(isPresented: $alert) { () -> Alert in
                 let button = Alert.Button.default(Text("Go back to skills")){
@@ -66,6 +69,7 @@ struct RecordingsView: View {
                 }
                 return Alert(title: Text("Permissions Required"), message: Text("Go to settings to enable access"), dismissButton: button)
             }
+            
             // when this view appears, check that the user has permission for mic
             .onAppear{
                 do{
@@ -93,6 +97,7 @@ struct RecordingsView: View {
     }
 }
 
+// Button to clear the text field once a user has created a recording and wants to name a new one
 struct ClearButton: ViewModifier {
     @Binding var text: String
     

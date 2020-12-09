@@ -221,3 +221,7 @@
 * *0.5 hours* Lecture
 * *3.5 hours* Realised that my implementation of voice recordings doesnt ask for microphone permission, researched how to do this, couldnt find viable solution
 * *0.5 hours* Got a notification to work to tell the users to change their permissions !! :)
+
+### 09 Dec 2020
+* *1.5 hours* Made alterations to the recording views
+* *0.5 hours* Made more alterations to recordings, stopped user from being able to save a note with no title, and therefore empty notes

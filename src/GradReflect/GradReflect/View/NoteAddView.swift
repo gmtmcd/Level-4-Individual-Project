@@ -34,6 +34,8 @@ struct NoteAddView: View {
     @State private var showingFutureInfo = false
     @State private var showingWhyInfo = false
     
+    @State private var showingEmptyNoteAlert = false
+    
     
     var body: some View {
         NavigationView {
@@ -181,30 +183,39 @@ struct NoteAddView: View {
                         .keyboardType(.default)
                 }
                 
-                
-                Button(action: {
-                    let newNote = NoteEntry(context: viewContext)
-                    newNote.name = self.name
-                    newNote.entryTime = Date()
-                    newNote.gradAttribute = self.gradAttribute[self.selectedAttribute]
-                    newNote.situation = self.situation
-                    newNote.thoughts = self.thoughts
-                    //newNote.emotions = self.emotions
-                    newNote.emotionsScale = self.emotionsScale
-                    newNote.whyEmotions = self.whyEmotions
-                    newNote.behaviour = self.behaviour
-                    newNote.futureAlternate = self.futureAlternate
-                    newNote.id = UUID()
-                    do {
-                        try viewContext.save()
-                        print("Note saved.")
-                        presentationMode.wrappedValue.dismiss()
-                    } catch {
-                        print(error.localizedDescription)
+                // Check that the user is not saving anote with no title and therefore also an empty note
+                if self.name == "" {
+                    Button(action: {self.showingEmptyNoteAlert = true})
+                    {
+                        Text("Save Note")
+                    }.alert(isPresented: $showingEmptyNoteAlert) {
+                            Alert(title: Text("Error"), message: Text("Cannot save note without a title."), dismissButton: .default(Text("OK")))
                     }
-                }) {
-                    Text("Save Note")
+                } else {
+                    Button(action: {
+                        let newNote = NoteEntry(context: viewContext)
+                        newNote.name = self.name
+                        newNote.entryTime = Date()
+                        newNote.gradAttribute = self.gradAttribute[self.selectedAttribute]
+                        newNote.situation = self.situation
+                        newNote.thoughts = self.thoughts
+                        newNote.emotionsScale = self.emotionsScale
+                        newNote.whyEmotions = self.whyEmotions
+                        newNote.behaviour = self.behaviour
+                        newNote.futureAlternate = self.futureAlternate
+                        newNote.id = UUID()
+                        do {
+                            try viewContext.save()
+                            print("Note saved.")
+                            presentationMode.wrappedValue.dismiss()
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                    }) {
+                        Text("Save Note")
+                    }
                 }
+                
             }
             .navigationTitle("Create New Note")
         }
