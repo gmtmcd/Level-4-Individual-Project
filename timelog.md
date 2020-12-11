@@ -235,3 +235,4 @@
 ### 11 Dec 2020
 * *1 hour* Wrote the function to get avg emotion per note skill type, changed the note emotions from being Float to Int which created a lot of errors to go through, changed it so the default emotion is now 1 and not 0
 * *1.5 hours* Added the functionality for getting avg words over each skill and over all notes, created a lot of issues where i had to make everythin floats and redo some of my previous functions a bit, also needed to change how i save notes where i trim any extra spaces at the front and end of the string entries
+* *0.5 hours* Changed the stats page from grey to the corresponding colours for each skill, added a button to toggle the dark/light theme

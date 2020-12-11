@@ -13,10 +13,12 @@ struct GradReflectApp: App {
     let persistenceController = PersistenceController.shared
     
     @StateObject var router = Router()
+    @AppStorage("darkModeOn") private var darkModeOn = false
     
     var body: some Scene {
         WindowGroup {
             RootView(router: router).environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(darkModeOn ? .light : .dark)
 
         }
     }

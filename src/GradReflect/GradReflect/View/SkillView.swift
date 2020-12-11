@@ -95,21 +95,7 @@ struct SkillView: View {
                 } //end of hstack
                 
                 HStack{
-                    Button(action: {
-                        router.currentPage = .SettingsView
-                    }) {
-                        HStack (spacing: 8){
-                            Text("Settings")
-                            Image(systemName: "arrow.right.circle")
-                                .imageScale(.large)
-                        }
-                        .foregroundColor(.white)
-                        .padding(12)
-                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
-                        .cornerRadius(8)
-                    }// End of button
                     
-                    // Add button soon to take to data/stats analysis???
                     Button(action: {
                         router.currentPage = .DataStatsView
                     }) {
@@ -124,6 +110,20 @@ struct SkillView: View {
                         .cornerRadius(8)
                     }// End of button
                     
+                    Button(action: {
+                        router.currentPage = .SettingsView
+                    }) {
+                        HStack (spacing: 8){
+                            Text("Settings")
+                            Image(systemName: "arrow.right.circle")
+                                .imageScale(.large)
+                        }
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
+                        .cornerRadius(8)
+                    }// End of button
+                   
                 } //End of Hstack
                 
             }

@@ -12,6 +12,8 @@ struct SettingsView: View {
     @StateObject var router: Router
     @ObservedObject var notifManager = NotificationManager()
     
+    @AppStorage("darkModeOn") private var darkModeOn = false
+    
     var body: some View {
         NavigationView{
             //I think the extra stuff on this vstack can be removed
@@ -40,6 +42,15 @@ struct SettingsView: View {
                             Text("Turn on Notifications")
                         }
                     }
+                    
+                    Section(header: Text("Appearance")){
+                        Button(action: {
+                            darkModeOn.toggle()
+                        }) {
+                            Text("Switch Theme")
+                        }
+                    }
+                    
                     
                 } //End of Form
                 .listStyle(GroupedListStyle())
