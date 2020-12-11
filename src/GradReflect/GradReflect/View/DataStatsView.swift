@@ -17,6 +17,7 @@ struct DataStatsView: View {
     @StateObject var router: Router
     
     var skills: [Skill] = skillData
+    var formatted: String = ""
     
     var body: some View {
         NavigationView {
@@ -34,10 +35,15 @@ struct DataStatsView: View {
                                 Text("Number of entries for skill: \(getNumberEntries(skill: skill.title))")
                                     .foregroundColor(Color.white)
                                 
-                                Text("Average emotional response to skill: \(getAvgEmotion(skill: skill.title))")
-                                    .foregroundColor(Color.white)
+                                if getNumberEntries(skill: skill.title) == 0 {
+                                    Text("Average number of words per entry: 0")
+                                        .foregroundColor(Color.white)
+                                } else {
+                                    Text("Average number of words per entry: \(String(format: "%.2f", getNumberWords(skill: skill.title)/Float(getNumberEntries(skill: skill.title))))")
+                                        .foregroundColor(Color.white)
+                                }
                                 
-                                Text("Average number of words per entry: ")
+                                Text("Average emotional response to skill: \(getAvgEmotion(skill: skill.title))")
                                     .foregroundColor(Color.white)
                                 
                             }
@@ -61,7 +67,7 @@ struct DataStatsView: View {
                 VStack(spacing: 20) {
                     Text("Total note entries: \(notes.count)")
                         .fontWeight(.bold)
-                    Text("Total words in entries: ")
+                    Text("Average words for all entries:\(String(format: "%.2f",(getNumberWords(skill:"Communication") + getNumberWords(skill:"Critical Thinking") + getNumberWords(skill:"Adaptability") + getNumberWords(skill:"Teamwork") + getNumberWords(skill:"Self-efficacy & Applying Knowledge") + getNumberWords(skill:"Ethics & Professionalism"))/Float(notes.count)))")
                         .fontWeight(.bold)
                     
                 }
@@ -98,7 +104,29 @@ struct DataStatsView: View {
         } else {
             return total/counter
         }
-        
+    }
+    
+    func getNumberWords(skill: String) -> Float {
+        var totalWords: Float = 0.0
+        var words: Int = 0
+        for note in notes {
+            if note.gradAttribute == skill {
+                words = checkEmpty(listStrings: note.situation.components(separatedBy: " "))
+                words += checkEmpty(listStrings: note.thoughts.components(separatedBy: " "))
+                words += checkEmpty(listStrings: note.behaviour.components(separatedBy: " "))
+                words += checkEmpty(listStrings: note.futureAlternate.components(separatedBy: " "))
+                words += checkEmpty(listStrings: note.whyEmotions.components(separatedBy: " "))
+                totalWords += Float(words)
+            }
+        }
+        return totalWords
+    }
+    func checkEmpty(listStrings: [String]) -> Int{
+        if listStrings == [""] {
+            return 0
+        } else {
+            return listStrings.count
+        }
     }
     
 }

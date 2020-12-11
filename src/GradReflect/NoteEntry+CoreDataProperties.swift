@@ -20,7 +20,6 @@ extension NoteEntry {
     @NSManaged public var gradAttribute: String
     @NSManaged public var situation: String
     @NSManaged public var thoughts: String
-    //@NSManaged public var emotions: String //Float
     @NSManaged public var emotionsScale: Int
     @NSManaged public var behaviour: String
     @NSManaged public var futureAlternate: String

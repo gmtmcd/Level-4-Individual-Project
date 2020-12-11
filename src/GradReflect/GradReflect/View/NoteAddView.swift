@@ -218,12 +218,12 @@ struct NoteAddView: View {
                         newNote.name = self.name
                         newNote.entryTime = Date()
                         newNote.gradAttribute = self.gradAttribute[self.selectedAttribute]
-                        newNote.situation = self.situation
-                        newNote.thoughts = self.thoughts
+                        newNote.situation = self.situation.trimmingCharacters(in: .whitespacesAndNewlines)
+                        newNote.thoughts = self.thoughts.trimmingCharacters(in: .whitespacesAndNewlines)
                         newNote.emotionsScale = Int(self.emotionsScale)
-                        newNote.whyEmotions = self.whyEmotions
-                        newNote.behaviour = self.behaviour
-                        newNote.futureAlternate = self.futureAlternate
+                        newNote.whyEmotions = self.whyEmotions.trimmingCharacters(in: .whitespacesAndNewlines)
+                        newNote.behaviour = self.behaviour.trimmingCharacters(in: .whitespacesAndNewlines)
+                        newNote.futureAlternate = self.futureAlternate.trimmingCharacters(in: .whitespacesAndNewlines)
                         newNote.id = UUID()
                         do {
                             try viewContext.save()
