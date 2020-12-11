@@ -237,3 +237,4 @@
 * *1.5 hours* Added the functionality for getting avg words over each skill and over all notes, created a lot of issues where i had to make everythin floats and redo some of my previous functions a bit, also needed to change how i save notes where i trim any extra spaces at the front and end of the string entries
 * *1 hour* Changed the stats page from grey to the corresponding colours for each skill, added a button to toggle the dark/light theme
 * *1 hour* Changed some views to having more icons and being a bit more snazzy, seperated out some structs into seperate views, cleared some excess code that wasnt needed, tried to come up with ways to change the views more
+* *0.5 hours* Downloaded the app to my actual phone and played around with it to make sure that it wouldnt break
