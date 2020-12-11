@@ -19,7 +19,7 @@ struct PersistenceController {
             newItem.id = UUID()
             newItem.situation = "description of situation"
             newItem.thoughts = "description of thoughts"
-            newItem.emotionsScale = 0.0
+            newItem.emotionsScale = 1
             newItem.whyEmotions = "description of why they felt the emotions"
             newItem.behaviour = "description of how this made them behave"
             newItem.futureAlternate = "description of how theyd bahave in future"

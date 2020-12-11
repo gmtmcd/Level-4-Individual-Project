@@ -5,7 +5,7 @@
     </entity>
     <entity name="NoteEntry" representedClassName="NoteEntry" syncable="YES">
         <attribute name="behaviour" optional="YES" attributeType="String"/>
-        <attribute name="emotionsScale" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="emotionsScale" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="entryTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="futureAlternate" optional="YES" attributeType="String"/>
         <attribute name="gradAttribute" optional="YES" attributeType="String"/>

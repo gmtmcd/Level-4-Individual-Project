@@ -19,7 +19,7 @@ struct NoteAddView: View {
     @State var selectedAttribute = 1
     @State var situation = ""
     @State var thoughts = ""
-    @State var emotionsScale: Float = 0.0
+    @State var emotionsScale: Float = 1.0
     @State var behaviour = ""
     @State var futureAlternate = ""
     @State var whyEmotions = ""
@@ -220,7 +220,7 @@ struct NoteAddView: View {
                         newNote.gradAttribute = self.gradAttribute[self.selectedAttribute]
                         newNote.situation = self.situation
                         newNote.thoughts = self.thoughts
-                        newNote.emotionsScale = self.emotionsScale
+                        newNote.emotionsScale = Int(self.emotionsScale)
                         newNote.whyEmotions = self.whyEmotions
                         newNote.behaviour = self.behaviour
                         newNote.futureAlternate = self.futureAlternate

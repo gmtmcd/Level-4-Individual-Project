@@ -34,7 +34,7 @@ struct DataStatsView: View {
                                 Text("Number of entries for skill: \(getNumberEntries(skill: skill.title))")
                                     .foregroundColor(Color.white)
                                 
-                                Text("Average emotional response to skill: ")
+                                Text("Average emotional response to skill: \(getAvgEmotion(skill: skill.title))")
                                     .foregroundColor(Color.white)
                                 
                                 Text("Average number of words per entry: ")
@@ -82,6 +82,23 @@ struct DataStatsView: View {
             }
         }
         return counter
+    }
+    
+    func getAvgEmotion(skill: String) -> Int {
+        var total: Int = 0
+        var counter: Int = 0
+        for note in notes {
+            if note.gradAttribute == skill {
+                counter += 1
+                total += note.emotionsScale
+            }
+        }
+        if counter == 0 {
+            return 0
+        } else {
+            return total/counter
+        }
+        
     }
     
 }

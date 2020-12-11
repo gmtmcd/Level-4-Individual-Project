@@ -228,3 +228,9 @@
 * *1 hour* Made buttons and skill card colour scheme match the logo and more attractive
 * *1 hour* Fixed a bug that when the user clicks on anywhere in the header of each question in adding a note they get the pop up, now they only get the popup from clicking on the question mark
 * *1.5 hours* Created the interface for the statistics view, began creating the functionality of the stats - total entries, entries per skill too
+
+### 10 Dec 2020
+* *0 hours* Had HCI Coursework q&a and PSI exam
+
+### 11 Dec 2020
+* *1 hour* Wrote the function to get avg emotion per note skill type, changed the note emotions from being Float to Int which created a lot of errors to go through, changed it so the default emotion is now 1 and not 0
