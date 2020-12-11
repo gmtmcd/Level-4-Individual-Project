@@ -50,7 +50,7 @@ struct NotesListView: View {
                 trailing:Button(action: {
                 showNoteSheet = true
                 }, label: {
-                    Image(systemName : "plus.circle")
+                    Image(systemName : "note.text.badge.plus")
                         .imageScale(.large)
                 }))
                 .sheet(isPresented: $showNoteSheet){
@@ -58,13 +58,11 @@ struct NotesListView: View {
                         .environment(\.managedObjectContext, viewContext)
                 }
         }
-        
     }
 }
 
 
 struct NotesListView_Previews: PreviewProvider {
-
     static var previews: some View {
         NotesListView(router: Router()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }

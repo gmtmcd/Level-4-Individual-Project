@@ -52,7 +52,7 @@ struct RecordingsView: View {
                 }
                 
             } // end of stack
-            .navigationBarTitle("Reflection Recording")
+            .navigationBarTitle("Reflection Recordings")
             .navigationBarItems(
                 leading: Button(action: {
                     router.currentPage = .SkillView

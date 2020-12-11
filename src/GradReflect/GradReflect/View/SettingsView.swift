@@ -26,11 +26,12 @@ struct SettingsView: View {
                     }
                     
                     
-                    Section(header: Text("About application")){
+                    Section(header: Text("About this app")){
                         SettingsRowView(icon: "gear", leftTxt: "Application", rightTxt: "GradReflect")
                         SettingsRowView(icon: "checkmark.seal", leftTxt: "Compatibility", rightTxt: "iPhone")
                         SettingsRowView(icon: "keyboard", leftTxt: "Developer", rightTxt: "Gemma McDonald")
-                        SettingsRowView(icon: "flag", leftTxt: "Version", rightTxt: "1.0.0")
+                        SettingsRowView(icon: "swift", leftTxt: "Version", rightTxt: "1.0.0")
+                        SettingsRowView(icon: "calendar", leftTxt: "Created", rightTxt: " December 2020/21")
                     }
                     
                     Section(header: Text("Notifications")){
@@ -39,7 +40,11 @@ struct SettingsView: View {
                                 self.notifManager.sendNotif(title: "GradReflect", subtitle: nil, body: "Hey! Time to reflect on your skills!", launchIn: 10)
                             }
                         }) {
-                            Text("Turn on Notifications")
+                            HStack {
+                                Image(systemName: "bell.fill")
+                                Text("Turn on Notifications")
+                            }
+                            
                         }
                     }
                     
@@ -47,7 +52,10 @@ struct SettingsView: View {
                         Button(action: {
                             darkModeOn.toggle()
                         }) {
-                            Text("Switch Theme")
+                            HStack{
+                                Image(systemName: "sun.max.fill")
+                                Text("Switch Theme")
+                            }
                         }
                     }
                     
@@ -55,13 +63,6 @@ struct SettingsView: View {
                 } //End of Form
                 .listStyle(GroupedListStyle())
                 .environment(\.horizontalSizeClass, .regular)
-                
-                // Footer for the form
-                Text("Created by Gemma McDonald")
-                    .multilineTextAlignment(.center)
-                    .font(.footnote)
-                    .padding(10)
-                    .foregroundColor(Color.secondary)
                 
             } // End of VStack
             .navigationBarTitle("Settings", displayMode: .inline)
