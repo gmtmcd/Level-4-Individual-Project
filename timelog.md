@@ -238,3 +238,11 @@
 * *1 hour* Changed the stats page from grey to the corresponding colours for each skill, added a button to toggle the dark/light theme
 * *1 hour* Changed some views to having more icons and being a bit more snazzy, seperated out some structs into seperate views, cleared some excess code that wasnt needed, tried to come up with ways to change the views more
 * *0.5 hours* Downloaded the app to my actual phone and played around with it to make sure that it wouldnt break
+
+
+## Week 12
+
+### 14 Dec 2020
+* *1 hour* Preliminary user evals, sent a demo video of the app on my phone to people and asked them what they thought and got some feedback
+* *2 hours* Researching how i can implement either a search bar or filtering button or both maybe
+* *1.5 hours* Implemented a search bar that can search for either the name of a note or a skill type, it is also now case insensitive

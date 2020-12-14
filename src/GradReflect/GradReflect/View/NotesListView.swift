@@ -19,44 +19,51 @@ struct NotesListView: View {
     
     @StateObject var router: Router
     
+    //should this be here??
+    @State private var searchTerm = ""
+    
 
     var body: some View{
         NavigationView {
-            List {
-                ForEach(notes) { note in
-                    NotesRowView(reviewNote:note)
-                        .environment(\.managedObjectContext, viewContext)
-                }
-                .onDelete { indexSet in
-                    for index in indexSet {
-                        viewContext.delete(notes[index])
+            VStack{
+                SearchBarView(searchTerm: $searchTerm)
+                List {
+                    ForEach((notes.filter({ searchTerm.isEmpty ? true : ($0.name.localizedCaseInsensitiveContains(searchTerm) || $0.gradAttribute.localizedCaseInsensitiveContains(searchTerm)) }))) { note in
+                        NotesRowView(reviewNote:note)
+                            .environment(\.managedObjectContext, viewContext)
                     }
-                    do {
-                        try viewContext.save()
-                    } catch {
-                        print(error.localizedDescription)
+                    .onDelete { indexSet in
+                        for index in indexSet {
+                            viewContext.delete(notes[index])
+                        }
+                        do {
+                            try viewContext.save()
+                        } catch {
+                            print(error.localizedDescription)
+                        }
                     }
                 }
+                .listStyle(PlainListStyle())
+                .navigationTitle("My Notes")
+                .navigationBarItems(
+                    leading: Button(action: {
+                        router.currentPage = .SkillView
+                    }, label: {
+                        Text("Home")
+                    }),
+                    
+                    trailing:Button(action: {
+                    showNoteSheet = true
+                    }, label: {
+                        Image(systemName : "note.text.badge.plus")
+                            .imageScale(.large)
+                    }))
+                    .sheet(isPresented: $showNoteSheet){
+                        NoteAddView()
+                            .environment(\.managedObjectContext, viewContext)
+                    }
             }
-            .listStyle(PlainListStyle())
-            .navigationTitle("My Notes")
-            .navigationBarItems(
-                leading: Button(action: {
-                    router.currentPage = .SkillView
-                }, label: {
-                    Text("Home")
-                }),
-                
-                trailing:Button(action: {
-                showNoteSheet = true
-                }, label: {
-                    Image(systemName : "note.text.badge.plus")
-                        .imageScale(.large)
-                }))
-                .sheet(isPresented: $showNoteSheet){
-                    NoteAddView()
-                        .environment(\.managedObjectContext, viewContext)
-                }
+            
         }
     }
 }

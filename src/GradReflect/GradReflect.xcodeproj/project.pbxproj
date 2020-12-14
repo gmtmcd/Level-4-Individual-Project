@@ -32,6 +32,7 @@
 		2A7C224F257963C000779A44 /* RecordingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C224E257963C000779A44 /* RecordingsListView.swift */; };
 		2A806554257A4C8F006E34C3 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A806553257A4C8F006E34C3 /* RecordingModel.swift */; };
 		2A8F8370257EA01200A148EC /* PlaybackAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F836F257EA01200A148EC /* PlaybackAudio.swift */; };
+		2AA888FA2587916000EF003F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA888F92587916000EF003F /* SearchBarView.swift */; };
 		2AB18168255B084B00433887 /* NoteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB18167255B084B00433887 /* NoteReviewView.swift */; };
 		2AF56B26254B0D0100932DE7 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B25254B0D0100932DE7 /* SkillView.swift */; };
 		2AF56B2C254B17A600932DE7 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B2B254B17A600932DE7 /* SkillModel.swift */; };
@@ -89,6 +90,7 @@
 		2A7C224E257963C000779A44 /* RecordingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListView.swift; sourceTree = "<group>"; };
 		2A806553257A4C8F006E34C3 /* RecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
 		2A8F836F257EA01200A148EC /* PlaybackAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackAudio.swift; sourceTree = "<group>"; };
+		2AA888F92587916000EF003F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		2AB18167255B084B00433887 /* NoteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteReviewView.swift; sourceTree = "<group>"; };
 		2AF56B25254B0D0100932DE7 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		2AF56B2B254B17A600932DE7 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				2A0ACA8125642E07002F2F3B /* RootView.swift */,
 				2AF56B25254B0D0100932DE7 /* SkillView.swift */,
 				2A444D0D254ADDB200B8EF00 /* NotesListView.swift */,
+				2AA888F92587916000EF003F /* SearchBarView.swift */,
 				2A2CC4DF25686941002CEA6F /* NotesRowView.swift */,
 				2A56DFF82551C16A00F7C620 /* NoteAddView.swift */,
 				2AB18167255B084B00433887 /* NoteReviewView.swift */,
@@ -390,6 +393,7 @@
 				2A444D0E254ADDB200B8EF00 /* NotesListView.swift in Sources */,
 				2A56DF41255168A100F7C620 /* GradReflect.xcdatamodeld in Sources */,
 				2A314B92256E813A00DC24E9 /* NotificationManager.swift in Sources */,
+				2AA888FA2587916000EF003F /* SearchBarView.swift in Sources */,
 				2A444D0C254ADDB200B8EF00 /* GradReflectApp.swift in Sources */,
 				2AF56B35254B191400932DE7 /* SkillData.swift in Sources */,
 				2AF56B2C254B17A600932DE7 /* SkillModel.swift in Sources */,

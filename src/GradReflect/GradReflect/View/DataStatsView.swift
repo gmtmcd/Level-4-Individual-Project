@@ -34,17 +34,21 @@ struct DataStatsView: View {
                                 
                                 Text("Number of entries for skill: \(getNumberEntries(skill: skill.title))")
                                     .foregroundColor(Color.white)
+                                    .font(.title3)
                                 
                                 if getNumberEntries(skill: skill.title) == 0 {
-                                    Text("Average number of words per entry: 0")
+                                    Text("Average words per entry: 0")
                                         .foregroundColor(Color.white)
+                                        .font(.title3)
                                 } else {
-                                    Text("Average number of words per entry: \(String(format: "%.2f", getNumberWords(skill: skill.title)/Float(getNumberEntries(skill: skill.title))))")
+                                    Text("Average words per entry: \(String(format: "%.2f", getNumberWords(skill: skill.title)/Float(getNumberEntries(skill: skill.title))))")
                                         .foregroundColor(Color.white)
+                                        .font(.title3)
                                 }
                                 
-                                Text("Average emotional response to skill: \(getAvgEmotion(skill: skill.title))")
+                                Text("Average emotion for skill: \(getAvgEmotion(skill: skill.title))")
                                     .foregroundColor(Color.white)
+                                    .font(.title3)
                                 
                             }
                         }
@@ -66,8 +70,10 @@ struct DataStatsView: View {
                 VStack(spacing: 20) {
                     Text("Total note entries: \(notes.count)")
                         .fontWeight(.bold)
-                    Text("Average words for all entries:\(String(format: "%.2f",(getNumberWords(skill:"Communication") + getNumberWords(skill:"Critical Thinking") + getNumberWords(skill:"Adaptability") + getNumberWords(skill:"Teamwork") + getNumberWords(skill:"Self-efficacy & Applying Knowledge") + getNumberWords(skill:"Ethics & Professionalism"))/Float(notes.count)))")
+                        .font(.title3)
+                    Text("Average words for all entries: \(String(format: "%.2f",(getNumberWords(skill:"Communication") + getNumberWords(skill:"Critical Thinking") + getNumberWords(skill:"Adaptability") + getNumberWords(skill:"Teamwork") + getNumberWords(skill:"Self-efficacy & Applying Knowledge") + getNumberWords(skill:"Ethics & Professionalism"))/Float(notes.count)))")
                         .fontWeight(.bold)
+                        .font(.title3)
                     
                 }
                 .padding(.horizontal, 15)
