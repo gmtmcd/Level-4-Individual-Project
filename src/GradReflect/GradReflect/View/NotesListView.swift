@@ -44,7 +44,7 @@ struct NotesListView: View {
                     }
                 }
                 .listStyle(PlainListStyle())
-                .navigationTitle("My Notes")
+                .navigationBarTitle("My Notes 📘", displayMode: .inline)
                 .navigationBarItems(
                     leading: Button(action: {
                         router.currentPage = .SkillView

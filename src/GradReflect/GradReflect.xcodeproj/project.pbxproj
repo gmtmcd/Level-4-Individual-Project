@@ -37,7 +37,6 @@
 		2AF56B26254B0D0100932DE7 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B25254B0D0100932DE7 /* SkillView.swift */; };
 		2AF56B2C254B17A600932DE7 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B2B254B17A600932DE7 /* SkillModel.swift */; };
 		2AF56B35254B191400932DE7 /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B34254B191400932DE7 /* SkillData.swift */; };
-		2AFD580225838D8D005FCD57 /* forTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD580125838D8D005FCD57 /* forTesting.swift */; };
 		2AFD58162583CE32005FCD57 /* RecordingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD58152583CE32005FCD57 /* RecordingRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +94,6 @@
 		2AF56B25254B0D0100932DE7 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		2AF56B2B254B17A600932DE7 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		2AF56B34254B191400932DE7 /* SkillData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillData.swift; sourceTree = "<group>"; };
-		2AFD580125838D8D005FCD57 /* forTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forTesting.swift; sourceTree = "<group>"; };
 		2AFD58152583CE32005FCD57 /* RecordingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +216,6 @@
 				2A7C224E257963C000779A44 /* RecordingsListView.swift */,
 				2AFD58152583CE32005FCD57 /* RecordingRowView.swift */,
 				2A1186A8258105B600F47C8D /* DataStatsView.swift */,
-				2AFD580125838D8D005FCD57 /* forTesting.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 				2A7C224525795DE600779A44 /* RecordAudio.swift in Sources */,
 				2AFD58162583CE32005FCD57 /* RecordingRowView.swift in Sources */,
 				2A56DFC225519A9400F7C620 /* NoteEntry+CoreDataClass.swift in Sources */,
-				2AFD580225838D8D005FCD57 /* forTesting.swift in Sources */,
 				2A475A32256D6520005F62CA /* SettingsLinksRowView.swift in Sources */,
 				2A1186A9258105B600F47C8D /* DataStatsView.swift in Sources */,
 				2A806554257A4C8F006E34C3 /* RecordingModel.swift in Sources */,

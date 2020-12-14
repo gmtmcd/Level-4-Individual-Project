@@ -135,12 +135,23 @@ struct NoteAddView: View {
                         Image(systemName: "hand.thumbsdown")
                             .resizable()
                             .frame(width:20, height: 20)
-                        Slider(value: $emotionsScale, in: 1.0...5.0)
-                            .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        
+                            .foregroundColor(.red)
+                        ZStack {
+                              LinearGradient(
+                                  gradient: Gradient(colors: [.red, .green]),
+                                  startPoint: .leading,
+                                  endPoint: .trailing
+                              )
+                              .mask(Slider(value: $emotionsScale, in: 1.0...5.0))
+                              Slider(value: $emotionsScale, in: 1.0...5.0)
+                                  .opacity(0.05)
+                        }
+                        //Slider(value: $emotionsScale, in: 1.0...5.0)
+                            //.accentColor(.blue)
                         Image(systemName: "hand.thumbsup")
                             .resizable()
                             .frame(width:20, height: 20)
+                            .foregroundColor(.green)
                     }
                     .padding()
                     Text("Value: \(Int(emotionsScale))")
@@ -238,7 +249,7 @@ struct NoteAddView: View {
                 }
                 
             }
-            .navigationTitle("Create New Note")
+            .navigationTitle("Create New Note 📝")
         }
     }
 }

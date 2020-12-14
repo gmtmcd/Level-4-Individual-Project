@@ -56,7 +56,7 @@ struct NoteReviewView: View {
                     Text("Close Note")
                 }
             }
-            .navigationTitle("Reviewing Note")
+            .navigationTitle("Reviewing Note 📖")
         }
     }
 }

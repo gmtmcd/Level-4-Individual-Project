@@ -59,7 +59,7 @@ struct DataStatsView: View {
                     }
                 }
                 .tabViewStyle(PageTabViewStyle())
-                .navigationTitle("Statistics")
+                .navigationBarTitle("Statistics 📊", displayMode: .inline)
                 .navigationBarItems(
                     leading: Button(action: {
                         router.currentPage = .SkillView

@@ -65,7 +65,7 @@ struct SettingsView: View {
                 .environment(\.horizontalSizeClass, .regular)
                 
             } // End of VStack
-            .navigationBarTitle("Settings", displayMode: .inline)
+            .navigationBarTitle("Settings ⚙️", displayMode: .inline)
             .navigationBarItems(
                 leading: Button(action: {
                     router.currentPage = .SkillView

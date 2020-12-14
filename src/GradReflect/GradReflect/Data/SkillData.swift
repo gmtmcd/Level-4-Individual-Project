@@ -13,7 +13,7 @@ import SwiftUI
 let skillData: [Skill] = [
     Skill(
         title: "GradReflect",
-        headline: "Grad Reflect is a space for you to reflect on experiences where you've used your graduate soft skills. Using CBT techniques it will help you to develop these skills that are developed primarily through real-world experiences and reflection.\n\n Scroll for info on skills ➡️\n Go straight to notes or settings below ⬇️",
+        headline: "Scroll for details about your skills ➡️\n Access your notes and make new ones in the 'Notes' section\n Make a quick recording in 'Recordings'\n For your note stats, head to the 'Statistics' section\n To change settings and get more info about this app, go to 'Settings'",
         image: "AppLogo",
         //purple to pink
         gradientColours: [Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255), Color(red: 235 / 255, green: 186 / 255, blue: 185 / 255)]
