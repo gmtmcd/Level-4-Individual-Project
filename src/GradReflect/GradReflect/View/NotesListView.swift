@@ -47,7 +47,9 @@ struct NotesListView: View {
                 .navigationBarTitle("My Notes 📘", displayMode: .inline)
                 .navigationBarItems(
                     leading: Button(action: {
-                        router.currentPage = .SkillView
+                        withAnimation{
+                            router.currentPage = .SkillView
+                        }
                     }, label: {
                         Text("Home")
                     }),

@@ -64,7 +64,9 @@ struct SkillView: View {
             VStack {
                 HStack {
                     Button(action: {
-                        router.currentPage = .NotesListView
+                        withAnimation {
+                            router.currentPage = .NotesListView
+                        }
                     }) {
                         HStack (spacing: 8){
                             Text("Notes")
@@ -79,7 +81,9 @@ struct SkillView: View {
                     }// End of button
                     
                     Button(action: {
-                        router.currentPage = .RecordingsView
+                        withAnimation{
+                            router.currentPage = .RecordingsView
+                        }
                     }) {
                         HStack (spacing: 8){
                             Text("Recordings")
@@ -97,7 +101,9 @@ struct SkillView: View {
                 HStack{
                     
                     Button(action: {
-                        router.currentPage = .DataStatsView
+                        withAnimation{
+                            router.currentPage = .DataStatsView
+                        }
                     }) {
                         HStack (spacing: 8){
                             Text("Statistics")
@@ -111,7 +117,9 @@ struct SkillView: View {
                     }// End of button
                     
                     Button(action: {
-                        router.currentPage = .SettingsView
+                        withAnimation{
+                            router.currentPage = .SettingsView
+                        }
                     }) {
                         HStack (spacing: 8){
                             Text("Settings")

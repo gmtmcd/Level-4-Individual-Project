@@ -62,7 +62,9 @@ struct DataStatsView: View {
                 .navigationBarTitle("Statistics 📊", displayMode: .inline)
                 .navigationBarItems(
                     leading: Button(action: {
-                        router.currentPage = .SkillView
+                        withAnimation{
+                            router.currentPage = .SkillView
+                        }
                     }, label: {
                         Text("Home")
                     }))

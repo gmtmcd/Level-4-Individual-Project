@@ -55,7 +55,9 @@ struct RecordingsView: View {
             .navigationBarTitle("Recordings 🎙", displayMode: .inline)
             .navigationBarItems(
                 leading: Button(action: {
-                    router.currentPage = .SkillView
+                    withAnimation{
+                        router.currentPage = .SkillView
+                    }
                 }, label: {
                     Text("Home")
                 }),

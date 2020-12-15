@@ -68,7 +68,9 @@ struct SettingsView: View {
             .navigationBarTitle("Settings ⚙️", displayMode: .inline)
             .navigationBarItems(
                 leading: Button(action: {
-                    router.currentPage = .SkillView
+                    withAnimation{
+                        router.currentPage = .SkillView
+                    }
                 }, label: {
                     Text("Home")
                 }))
