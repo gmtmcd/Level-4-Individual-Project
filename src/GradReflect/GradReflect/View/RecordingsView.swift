@@ -8,14 +8,22 @@
 import SwiftUI
 import AVFoundation
 
+/**
+ View to make recordings, name, play them back, and delete them
+ Can be directed to from the home Skill view
+ */
 struct RecordingsView: View {
     
     @ObservedObject var recordAudio: RecordAudio
     @State var usersFileName: String = ""
+    
+    // Router in charge of what view is shown
     @StateObject var router: Router
     
+    // Alert to tell user to change their settings to allow microphone use in app
     @State var alert = false
     
+    // Main body view
     var body: some View {
         NavigationView {
             VStack {
@@ -51,9 +59,10 @@ struct RecordingsView: View {
                     }
                 }
                 
-            } // end of stack
+            } // end of Vstack
             .navigationBarTitle("Recordings 🎙", displayMode: .inline)
             .navigationBarItems(
+                // Button to return to home skill view
                 leading: Button(action: {
                     withAnimation{
                         router.currentPage = .SkillView
@@ -118,6 +127,7 @@ struct ClearButton: ViewModifier {
     }
 }
 
+// Preview
 struct RecordingsView_Previews: PreviewProvider {
     static var previews: some View {
         RecordingsView(recordAudio: RecordAudio(), router: Router())

@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ View to control all other views being shown to user
+ */
 struct RootView: View {
     
     @StateObject var router: Router

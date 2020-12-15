@@ -10,6 +10,10 @@ import SwiftUI
 import Combine
 import AVFoundation
 
+/**
+ Class to handle the functionality for recording audio
+ Used within all Recordings views
+ */
 class RecordAudio: NSObject, ObservableObject {
     
     // Fetch recordings when the app is opened and RecordAudio is ran
@@ -31,6 +35,7 @@ class RecordAudio: NSObject, ObservableObject {
         }
     }
     
+    // Start recording and receive any name for the file the user has entered
     func startRecording(usersFileName: String) {
         // Create recording session
         let recordSession = AVAudioSession.sharedInstance()
@@ -43,7 +48,7 @@ class RecordAudio: NSObject, ObservableObject {
             print("Failed to create recording session")
         }
         
-        // Set where the file should be saved and the name of the file
+        // Set where the file should be saved and the name of the file from user or just the date
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let recordingFileName =  url.appendingPathComponent("\(usersFileName)_\(Date().getFormattedDate(dateFormat: "dd-MM-YY_HH:mm")).m4a")
         
@@ -65,7 +70,6 @@ class RecordAudio: NSObject, ObservableObject {
         }
         
     } // end of start recording function
-
     
     // Function stops the recording and updates the RecordingsView
     func stopRecording(){
@@ -73,7 +77,6 @@ class RecordAudio: NSObject, ObservableObject {
         isRecording = false
         getRecordings()
     }
-    
     
     // Function to get the stored recordings
     func getRecordings(){
@@ -95,6 +98,7 @@ class RecordAudio: NSObject, ObservableObject {
         
     }
     
+    // Function to delete audios
     func deleteAudios(urlsBeingDeleted: [URL]){
         for url in urlsBeingDeleted {
             do {
@@ -103,14 +107,14 @@ class RecordAudio: NSObject, ObservableObject {
                 print("This file couldnt be deleted")
             }
         }
-        
         getRecordings()
     }
     
 }
 
-// HELPER FUNCTIONS
-
+/**
+ FUNCTIONS
+ */
 // Used to format the date for the recorded files name
 extension Date {
     func getFormattedDate(dateFormat format : String) -> String {

@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+/**
+ View to display all the previous recordings made by user
+ Allows user to delete notes
+ Used within RecordingsView
+ */
 struct RecordingsListView: View {
     
     @ObservedObject var recordAudio: RecordAudio
-    @ObservedObject var playbackAudio = PlaybackAudio()
     
+    // Main body view
     var body: some View {
         List {
             Section(header:
@@ -26,7 +31,8 @@ struct RecordingsListView: View {
             }
             .textCase(nil)
             
-        }.listStyle(InsetGroupedListStyle())
+        } // End of list
+        .listStyle(InsetGroupedListStyle())
     }
     
     // Function to add ability to delete a recording using inbuilt delete, offsets represent which row is being deleted
@@ -40,6 +46,7 @@ struct RecordingsListView: View {
     
 }
 
+// Preview
 struct RecordingsListView_Previews: PreviewProvider {
     static var previews: some View {
         RecordingsListView(recordAudio: RecordAudio())

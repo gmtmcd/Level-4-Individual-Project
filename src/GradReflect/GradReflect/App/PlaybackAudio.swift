@@ -10,10 +10,13 @@ import SwiftUI
 import Combine
 import AVFoundation
 
+/**
+ Class to handle the playback of audios created by the user
+ */
 class PlaybackAudio: NSObject, ObservableObject, AVAudioPlayerDelegate {
-    let objectWillChange = PassthroughSubject<PlaybackAudio, Never>()
-    
+        
     // Inform views that there is an audio playing back
+    let objectWillChange = PassthroughSubject<PlaybackAudio, Never>()
     var isPlayingBack = false {
         didSet {
             objectWillChange.send(self)
@@ -33,6 +36,7 @@ class PlaybackAudio: NSObject, ObservableObject, AVAudioPlayerDelegate {
                 print("Can't play over the speakers")
         }
         
+        // Play audio
         do {
             playbackAudio = try AVAudioPlayer(contentsOf: audio)
             playbackAudio.delegate = self
@@ -45,6 +49,7 @@ class PlaybackAudio: NSObject, ObservableObject, AVAudioPlayerDelegate {
         
     }
     
+    // Function to stop any audio that is currently playing
     func stopAudioPlayback() {
         playbackAudio.stop()
         isPlayingBack = false

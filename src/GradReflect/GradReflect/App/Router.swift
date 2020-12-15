@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-
+/**
+ Controls what view is shown as user navigates through app
+ */
 class Router: ObservableObject {
-    
     @Published var currentPage: Page = .SkillView
-    
 }

@@ -5,11 +5,11 @@
 //  Created by Gemma McDonald on 29/10/2020.
 //
 
-//import Foundation
 import SwiftUI
 
-// File containing Skill data
-
+/**
+ File containing Skill data that will dictate what is shown on the Skill Cards
+ */
 let skillData: [Skill] = [
     Skill(
         title: "GradReflect",
@@ -61,9 +61,3 @@ let skillData: [Skill] = [
         gradientColours:[Color(red: 164 / 255, green: 128 / 255, blue: 207 / 255), Color(red: 119 / 255, green: 155 / 255, blue: 231 / 255)]
     )
 ]
-
-struct SkillData_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}

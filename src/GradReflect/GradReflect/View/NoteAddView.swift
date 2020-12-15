@@ -8,13 +8,20 @@
 import SwiftUI
 import CoreData
 
+/**
+ View to handle the entry of a new note
+ Enters the users input into core data
+ Used in NotesListView
+ */
 struct NoteAddView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @Environment (\.presentationMode) var presentationMode
     
+    // Options for picker of grad skills
     let gradAttribute = ["Communication", "Critical Thinking", "Adaptability", "Teamwork", "Self-efficacy & Applying Knowledge", "Ethics & Professionalism"]
     
+    // State holding the users entries
     @State var name = ""
     @State var selectedAttribute = 1
     @State var situation = ""
@@ -33,10 +40,9 @@ struct NoteAddView: View {
     @State private var showingBehaviourInfo = false
     @State private var showingFutureInfo = false
     @State private var showingWhyInfo = false
-    
     @State private var showingEmptyNoteAlert = false
     
-    
+    // Main body view
     var body: some View {
         NavigationView {
             Form {
@@ -74,6 +80,7 @@ struct NoteAddView: View {
                                 }
                             }
                 ) {
+                    // Picker to give user set options to enter for the skill
                     Picker(selection: $selectedAttribute, label: Text("Graduate Attribute")) {
                         ForEach(0 ..< gradAttribute.count){
                             Text(self.gradAttribute[$0]).tag($0)
@@ -131,12 +138,14 @@ struct NoteAddView: View {
                                 }
                             }
                 ) {
+                    // View for the sliding scale for emotions
                     HStack {
                         Image(systemName: "hand.thumbsdown")
                             .resizable()
                             .frame(width:20, height: 20)
                             .foregroundColor(.red)
                         ZStack {
+                            // Shows the slider as a gradient of red to green
                               LinearGradient(
                                   gradient: Gradient(colors: [.red, .green]),
                                   startPoint: .leading,
@@ -146,8 +155,6 @@ struct NoteAddView: View {
                               Slider(value: $emotionsScale, in: 1.0...5.0)
                                   .opacity(0.05)
                         }
-                        //Slider(value: $emotionsScale, in: 1.0...5.0)
-                            //.accentColor(.blue)
                         Image(systemName: "hand.thumbsup")
                             .resizable()
                             .frame(width:20, height: 20)
@@ -217,6 +224,7 @@ struct NoteAddView: View {
                 
                 // Check that the user is not saving a note with no title and therefore also an empty note
                 if self.name == "" {
+                    // If saving a note with no title, show alert to tell user to enter name
                     Button(action: {self.showingEmptyNoteAlert = true})
                     {
                         Text("Save Note")
@@ -224,6 +232,7 @@ struct NoteAddView: View {
                         Alert(title: Text("Error"), message: Text("Cannot save note without a title."), dismissButton: .default(Text("OK")))
                     }
                 } else {
+                    // If note has a title, enter the user inputs into core data and dismiss the view
                     Button(action: {
                         let newNote = NoteEntry(context: viewContext)
                         newNote.name = self.name
@@ -254,6 +263,7 @@ struct NoteAddView: View {
     }
 }
 
+// Preview
 struct NoteAddView_Previews: PreviewProvider {
     static var previews: some View {
         NoteAddView()

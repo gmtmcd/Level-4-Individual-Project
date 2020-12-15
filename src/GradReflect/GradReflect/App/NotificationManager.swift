@@ -8,6 +8,10 @@
 import Foundation
 import SwiftUI
 
+/**
+ Handles the notifications fired by the user
+ Used in Settings View
+ */
 class NotificationManager: ObservableObject {
     
     // Holds notif objects created
@@ -37,13 +41,6 @@ class NotificationManager: ObservableObject {
         }
         content.body = body
         
-        // Attach a media image to the notification
-        // ******Add this back one the app has a logo******
-//        let imageName = "logo"
-//        guard let imageURL = Bundle.main.url(forResource: imageName, withExtension: "png") else {return}
-//        let attachment = try! UNNotificationAttachment(identifier: imageName, url: imageURL, options: .none)
-//        content.attachments = [attachment]
-        
         // Set the trigger for the notif to get fired
         // Here it launches 5 seconds after being launched for proof of concept
         // But could use UNCalendarNotificationTrigger if it was to be at a set day
@@ -53,8 +50,5 @@ class NotificationManager: ObservableObject {
         // Add request to UNNotificationCenter, after 5 seconds notif gets launched
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
-        
-        
     }
-    
 }

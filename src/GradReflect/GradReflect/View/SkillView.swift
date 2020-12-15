@@ -7,23 +7,27 @@
 
 import SwiftUI
 
+/**
+ View that contains the buttons to take user to the other main views
+ View takes the users through each skill and gives details about it
+ Also contains a main card that directs users where to go
+ */
 struct SkillView: View {
-    //Properties
-    @State private var isAnimating: Bool = false
-    @StateObject var router: Router
-
     
+    // Router in charge of controlling what view is shown
+    @StateObject var router: Router
+    
+    @State private var isAnimating: Bool = false
     var skills: [Skill] = skillData
     
-    //Body
-    
+    // Main body view
     var body: some View {
         VStack {
             TabView{
                 ForEach(skills[0...6]) { skill in
                     ZStack {
                         VStack(spacing:20) {
-                            // Skill : Image
+                            // Skill Image
                             Image(skill.image)
                                 .resizable()
                                 .frame(width:UIScreen.main.bounds.width/1.5, height: UIScreen.main.bounds.height/3.5)
@@ -31,22 +35,23 @@ struct SkillView: View {
                                 .shadow(color: Color(red: 0, green:0, blue: 0.5, opacity: 0.50), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 6, y: 8)
                                 .scaleEffect(isAnimating ? 1.0 : 0.6)
                             
-                            // Skill : Title
+                            // Skill Title
                             Text(skill.title)
                                 .foregroundColor(Color.white)
                                 .font(.largeTitle)
                                 .fontWeight(.heavy)
                                 .shadow(radius: 2, x:2, y:2)
                             
-                            // Skill: Headline
+                            // Skill Headline
                             Text(skill.headline)
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
-                                .padding(.horizontal,16)//how much space at the sides
+                                .padding(.horizontal,16)
                                 .frame(maxWidth:480)
                                
                         }// End of VStack
                     } // End of ZStack
+                    // Handles the image zooming in between each skill card
                     .onAppear {
                         withAnimation(.easeOut(duration: 0.5)) {
                             isAnimating = true
@@ -57,11 +62,14 @@ struct SkillView: View {
                     .cornerRadius(20)
                     .padding(.horizontal,10)
                 }
-            }//End of tab
+            } //End of tab
             .tabViewStyle(PageTabViewStyle())
             
+            // Buttons to take user to each of the other apps main functionality pages
             VStack {
                 HStack {
+                    
+                    // Button to direct to Notes
                     Button(action: {
                         withAnimation {
                             router.currentPage = .NotesListView
@@ -76,9 +84,9 @@ struct SkillView: View {
                         .padding(12)
                         .background(Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255))
                         .cornerRadius(8)
-
                     }// End of button
                     
+                    // Button to direct to Recordings
                     Button(action: {
                         withAnimation{
                             router.currentPage = .RecordingsView
@@ -99,6 +107,7 @@ struct SkillView: View {
                 
                 HStack{
                     
+                    // Button to direct to Statistics
                     Button(action: {
                         withAnimation{
                             router.currentPage = .DataStatsView
@@ -115,6 +124,7 @@ struct SkillView: View {
                         .cornerRadius(8)
                     }// End of button
                     
+                    // Button to direct to Settings
                     Button(action: {
                         withAnimation{
                             router.currentPage = .SettingsView
@@ -134,15 +144,11 @@ struct SkillView: View {
                 } //End of Hstack
                 
             }
-            
-            
-            
         }//End of VStack
     }
 }
 
-//Preview
-
+// Preview
 struct SkillView_Previews: PreviewProvider {
     static var previews: some View {
         SkillView(router: Router())

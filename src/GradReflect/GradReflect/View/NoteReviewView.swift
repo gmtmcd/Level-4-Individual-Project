@@ -8,14 +8,18 @@
 import SwiftUI
 import CoreData
 
+/**
+ View to allow the user to look at a previous entry they have made
+ Used in NoteRowView
+ */
 struct NoteReviewView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @Environment (\.presentationMode) var presentationMode
     
     var reviewNote: NoteEntry
-
     
+    // Main body view
     var body: some View {
         NavigationView {
             Form {
@@ -61,8 +65,9 @@ struct NoteReviewView: View {
     }
 }
 
+// Preview
 struct NoteReviewView_Previews: PreviewProvider {
-    
+    // Dummy data to use for preview
     static var previews: some View {
         let reviewNote = NoteEntry(context: PersistenceController.preview.container.viewContext)
         reviewNote.name = "Note name"

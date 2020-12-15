@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+/**
+ View to give the user more information on how to use the app
+ Directed to from SettingsView
+ */
 struct AboutThisAppView: View {
     
+    // Router controls what view is shown
     @StateObject var router: Router
     
+    // Main body view
     var body: some View {
         NavigationView{
             ScrollView{
@@ -65,13 +71,11 @@ struct AboutThisAppView: View {
                 }, label: {
                     Text("Back")
                 }))
-
-            
         }
-        
     }
 }
 
+// Previews
 struct AboutThisAppView_Previews: PreviewProvider {
     static var previews: some View {
         AboutThisAppView(router: Router())

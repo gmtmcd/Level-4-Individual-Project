@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+/**
+ View to present one row of notes
+ Displays the name of the note and the time and date it was created
+ Handles the tapping of a note in list to review the entry
+ Used in NotesListView
+ */
 struct NotesRowView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
@@ -14,6 +20,7 @@ struct NotesRowView: View {
     
     var reviewNote: NoteEntry
     
+    // Main body view
     var body: some View {
         HStack {
             VStack(alignment: .leading){
@@ -22,8 +29,9 @@ struct NotesRowView: View {
                 Text("\(reviewNote.entryTime, formatter: itemFormatter)")
             }
             Spacer()
-        }
+        } // End of HStack
         .frame(height:50)
+        // When user taps on a note, display the note entry on a view
         .onTapGesture{
             showNoteReview = true
         }
@@ -34,6 +42,7 @@ struct NotesRowView: View {
     }
 }
 
+// Formats the date and time of the entry
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.locale = Locale(identifier: "en_GB")
@@ -41,8 +50,9 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-
+// Preview
 struct NotesRowView_Previews: PreviewProvider {
+    // Dummy data to use for the preview
     static var previews: some View {
         let reviewNote = NoteEntry(context: PersistenceController.preview.container.viewContext)
         reviewNote.name = "Note name"

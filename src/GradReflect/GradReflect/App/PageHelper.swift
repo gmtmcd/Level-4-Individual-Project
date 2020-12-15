@@ -7,6 +7,9 @@
 
 import Foundation
 
+/**
+ Controls the cases for which view is shown
+ */
 enum Page {
     case SkillView
     case NotesListView

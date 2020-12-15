@@ -7,11 +7,17 @@
 
 import SwiftUI
 
+/**
+ View for the search bar
+ Allows user to filter the notes displayed
+ Used in NotesListView
+ */
 struct SearchBarView: View {
     
     @Binding var searchTerm: String
     @State private var isEditing = false
     
+    // Main body view
     var body: some View {
         HStack{
             TextField("Search for name or skill type", text: $searchTerm)
@@ -27,6 +33,7 @@ struct SearchBarView: View {
                             .padding(.leading, 6)
                         
                         if isEditing{
+                            // Button to clear the input
                             Button(action: {
                                 self.searchTerm = ""
                             }) {
@@ -35,12 +42,14 @@ struct SearchBarView: View {
                                     .padding(.trailing, 6)
                             }
                         }
-                    }
+                    } // End of HStack
                 )
                 .onTapGesture {
                     self.isEditing = true
                 }
+            
             if isEditing{
+                // Button to clear the search entry and exit the filter
                 Button(action: {
                     self.isEditing = false
                     self.searchTerm = ""
@@ -53,10 +62,11 @@ struct SearchBarView: View {
                 .transition(.move(edge: .trailing))
                 .animation(.default)
             }
-        }
+        } // End of HStack
     }
 }
 
+// Preview
 struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
         SearchBarView(searchTerm: .constant(""))

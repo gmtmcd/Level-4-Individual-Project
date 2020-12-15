@@ -9,7 +9,9 @@
 import Foundation
 import CoreData
 
-
+/**
+ Core data class to hold the details of a note entered
+ */
 extension NoteEntry {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<NoteEntry> {
