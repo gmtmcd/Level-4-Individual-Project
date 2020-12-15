@@ -247,3 +247,9 @@
 * *2 hours* Researching how i can implement either a search bar or filtering button or both maybe
 * *1.5 hours* Implemented a search bar that can search for either the name of a note or a skill type, it is also now case insensitive
 * *0.5 hours* Changed the slider on notes add to be red to green, more intuitive, added emojis to the top sof the views to make it a bit less cold, changing the nav bar titles to being centred and properly at the top so a bit less big and bold
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Meeting with supervisor
+* *0.5 hours* Wrote up meeting with supervisor
+
+### 15 Dec 2020
+* *0.5 hours* Created a launch screen for the app using my logo
