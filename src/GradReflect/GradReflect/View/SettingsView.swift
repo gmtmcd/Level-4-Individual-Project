@@ -27,6 +27,26 @@ struct SettingsView: View {
                     
                     
                     Section(header: Text("About this app")){
+                        Button(action: {
+                            withAnimation{
+                                router.currentPage = .AboutThisAppView
+                            }
+                        }) {
+                            // Manually add this settings row so that the right side can contain a chevron right icon to let the user know they are able to click it
+                            HStack {
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                        .fill(Color.gray)
+                                    Image(systemName: "info.circle")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                
+                                Text("About GradReflect").foregroundColor(Color.gray)
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                            }
+                        }
                         SettingsRowView(icon: "gear", leftTxt: "Application", rightTxt: "GradReflect")
                         SettingsRowView(icon: "checkmark.seal", leftTxt: "Compatibility", rightTxt: "iPhone")
                         SettingsRowView(icon: "keyboard", leftTxt: "Developer", rightTxt: "Gemma McDonald")

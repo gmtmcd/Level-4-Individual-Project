@@ -16,16 +16,22 @@ struct RootView: View {
         switch router.currentPage {
         case .SkillView:
             SkillView(router: router)
+            
         case .NotesListView:
             NotesListView(router: router).environment(\.managedObjectContext, viewContext)
-        case .SettingsView:
-            SettingsView(router: router)
-        //This will also need the router sent to it
+            
         case .RecordingsView:
             RecordingsView(recordAudio: RecordAudio(), router: router)
+            
         case .DataStatsView:
             DataStatsView(router: router).environment(\.managedObjectContext, viewContext)
             
+        case .SettingsView:
+            SettingsView(router: router)
+            
+        case .AboutThisAppView:
+            AboutThisAppView(router: router)
+                .transition(.move(edge: .trailing))
         }
     }
 }

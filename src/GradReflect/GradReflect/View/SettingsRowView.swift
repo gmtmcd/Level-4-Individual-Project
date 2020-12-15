@@ -19,6 +19,7 @@ struct SettingsRowView: View {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                     .fill(Color.gray)
                 Image(systemName: icon)
+                    .foregroundColor(.black)
             }
             .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             

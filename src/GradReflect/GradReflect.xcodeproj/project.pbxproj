@@ -34,6 +34,7 @@
 		2A8F8370257EA01200A148EC /* PlaybackAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F836F257EA01200A148EC /* PlaybackAudio.swift */; };
 		2AA888FA2587916000EF003F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA888F92587916000EF003F /* SearchBarView.swift */; };
 		2AB18168255B084B00433887 /* NoteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB18167255B084B00433887 /* NoteReviewView.swift */; };
+		2AD89ECE2588CA620043BF1F /* AboutThisAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD89ECD2588CA620043BF1F /* AboutThisAppView.swift */; };
 		2AF56B26254B0D0100932DE7 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B25254B0D0100932DE7 /* SkillView.swift */; };
 		2AF56B2C254B17A600932DE7 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B2B254B17A600932DE7 /* SkillModel.swift */; };
 		2AF56B35254B191400932DE7 /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF56B34254B191400932DE7 /* SkillData.swift */; };
@@ -91,6 +92,7 @@
 		2A8F836F257EA01200A148EC /* PlaybackAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackAudio.swift; sourceTree = "<group>"; };
 		2AA888F92587916000EF003F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		2AB18167255B084B00433887 /* NoteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteReviewView.swift; sourceTree = "<group>"; };
+		2AD89ECD2588CA620043BF1F /* AboutThisAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisAppView.swift; sourceTree = "<group>"; };
 		2AF56B25254B0D0100932DE7 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		2AF56B2B254B17A600932DE7 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		2AF56B34254B191400932DE7 /* SkillData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillData.swift; sourceTree = "<group>"; };
@@ -209,13 +211,14 @@
 				2A2CC4DF25686941002CEA6F /* NotesRowView.swift */,
 				2A56DFF82551C16A00F7C620 /* NoteAddView.swift */,
 				2AB18167255B084B00433887 /* NoteReviewView.swift */,
-				2A475A27256D5A3E005F62CA /* SettingsView.swift */,
-				2A475A2C256D609A005F62CA /* SettingsRowView.swift */,
-				2A475A31256D6520005F62CA /* SettingsLinksRowView.swift */,
 				2A7C2249257960C400779A44 /* RecordingsView.swift */,
 				2A7C224E257963C000779A44 /* RecordingsListView.swift */,
 				2AFD58152583CE32005FCD57 /* RecordingRowView.swift */,
 				2A1186A8258105B600F47C8D /* DataStatsView.swift */,
+				2A475A27256D5A3E005F62CA /* SettingsView.swift */,
+				2A475A2C256D609A005F62CA /* SettingsRowView.swift */,
+				2A475A31256D6520005F62CA /* SettingsLinksRowView.swift */,
+				2AD89ECD2588CA620043BF1F /* AboutThisAppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				2A0ACA8725643015002F2F3B /* PageHelper.swift in Sources */,
 				2A7C224A257960C400779A44 /* RecordingsView.swift in Sources */,
 				2A56DFC325519A9400F7C620 /* NoteEntry+CoreDataProperties.swift in Sources */,
+				2AD89ECE2588CA620043BF1F /* AboutThisAppView.swift in Sources */,
 				2A56DF9525517A7700F7C620 /* Persistence.swift in Sources */,
 				2A2CC4E025686941002CEA6F /* NotesRowView.swift in Sources */,
 				2A0ACA8225642E07002F2F3B /* RootView.swift in Sources */,

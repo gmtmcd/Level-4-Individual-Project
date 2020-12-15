@@ -254,3 +254,4 @@
 ### 15 Dec 2020
 * *0.5 hours* Created a launch screen for the app using my logo
 * *0.5 hours* Played around with view transistions and settled on adding a fade between each view
+* *1 hour* Created the template for the About this app page

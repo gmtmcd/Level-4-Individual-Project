@@ -13,4 +13,5 @@ enum Page {
     case SettingsView
     case RecordingsView
     case DataStatsView
+    case AboutThisAppView
 }

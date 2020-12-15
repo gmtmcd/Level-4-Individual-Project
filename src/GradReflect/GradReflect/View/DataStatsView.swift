@@ -59,15 +59,6 @@ struct DataStatsView: View {
                     }
                 }
                 .tabViewStyle(PageTabViewStyle())
-                .navigationBarTitle("Statistics 📊", displayMode: .inline)
-                .navigationBarItems(
-                    leading: Button(action: {
-                        withAnimation{
-                            router.currentPage = .SkillView
-                        }
-                    }, label: {
-                        Text("Home")
-                    }))
                 
                 VStack(spacing: 20) {
                     Text("Total note entries: \(notes.count)")
@@ -82,7 +73,15 @@ struct DataStatsView: View {
                 
                 
             }//end of vstack
-
+            .navigationBarTitle("Statistics 📊", displayMode: .inline)
+            .navigationBarItems(
+                leading: Button(action: {
+                    withAnimation{
+                        router.currentPage = .SkillView
+                    }
+                }, label: {
+                    Text("Home")
+                }))
         }
         
     }
