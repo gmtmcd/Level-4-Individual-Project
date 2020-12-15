@@ -13,7 +13,7 @@ import SwiftUI
 let skillData: [Skill] = [
     Skill(
         title: "GradReflect",
-        headline: "Scroll for details about your skills ➡️\n Access your notes and make new ones in the 'Notes' section\n Make a quick recording in 'Recordings'\n For your note stats, head to the 'Statistics' section\n To change settings and get more info about this app, go to 'Settings'",
+        headline: "Access your notes and make new ones in the 'Notes' section\n Make a quick recording in 'Recordings'\n For your note stats, head to the 'Statistics' section\n To change settings and get more info about this app, go to 'Settings'\nScroll for info about skills ➡️",
         image: "AppLogo",
         //purple to pink
         gradientColours: [Color(red: 139 / 255, green: 30 / 255, blue: 63 / 255), Color(red: 235 / 255, green: 186 / 255, blue: 185 / 255)]

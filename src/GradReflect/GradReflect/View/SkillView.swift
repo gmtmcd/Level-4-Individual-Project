@@ -44,8 +44,7 @@ struct SkillView: View {
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal,16)//how much space at the sides
                                 .frame(maxWidth:480)
-                            
-                                                        
+                               
                         }// End of VStack
                     } // End of ZStack
                     .onAppear {
@@ -56,7 +55,7 @@ struct SkillView: View {
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)//makes the background extend more than just around the image
                     .background(LinearGradient(gradient: Gradient(colors: skill.gradientColours), startPoint: .top, endPoint: .bottom))
                     .cornerRadius(20)
-                    .padding(.horizontal,20)
+                    .padding(.horizontal,10)
                 }
             }//End of tab
             .tabViewStyle(PageTabViewStyle())

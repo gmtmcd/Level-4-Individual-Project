@@ -18,7 +18,7 @@ struct GradReflectApp: App {
     var body: some Scene {
         WindowGroup {
             RootView(router: router).environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .preferredColorScheme(darkModeOn ? .light : .dark)
+                .preferredColorScheme(darkModeOn ? .dark : .light)
 
         }
     }

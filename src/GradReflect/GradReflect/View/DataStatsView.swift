@@ -55,7 +55,7 @@ struct DataStatsView: View {
                         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .background(LinearGradient(gradient: Gradient(colors: skill.gradientColours), startPoint: .top, endPoint: .bottom))
                         .cornerRadius(20)
-                        .padding(.horizontal,20)
+                        .padding(.horizontal,10)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle())

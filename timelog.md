@@ -256,3 +256,4 @@
 * *0.5 hours* Played around with view transistions and settled on adding a fade between each view
 * *1 hour* Created the template for the About this app page
 * *2 hours* Filled in and created the about this app page
+* *0.5 hours* Made little aesthetic adjustments
