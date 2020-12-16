@@ -3,8 +3,8 @@
 \usepackage{times}
     \usepackage{fullpage}
     
-    \title{ {{cookiecutter.project_title}}
-    \author{ {{cookiecutter.student_name}} - {{cookiecutter.student_id}} }
+    \title{A mobile application to capture reflections on graduate attribute development}
+    \author{ {Gemma McDonald} - {2306631m} }
 
     \begin{document}
     \maketitle
@@ -18,51 +18,74 @@
 
 \subsubsection{Motivation}\label{motivation}
 
-\emph{{[}Clearly motivate the purpose of your project; why someone would
-care about what you are doing{]}}
+Graduate attributes are vital for students when joining the workplace, with employers noting that they often look for these skills over technical skills. However, many research papers have identified that students have a gap in their understanding of these skills and universities are reluctant to incorporate them into the curriculum. Finding a solution that makes students more aware of these skills and when they are used will aid in their development and make their integration into the workplace more efficient and enjoyable.
 
 \subsubsection{Aims}\label{aims}
 
-\emph{{[}Clearly state what the project is intended to do. This should
-be something which is measurable; it should be possible to tell if you
-succeeded{]}}
+This project will develop a mobile application to encourage users to reflect, and therefore develop, their graduate skills. Using a Cognitive Behavioural Therapy (CBT) line of questioning users will be encouraged to have deeper reflections. Users will be able to create notes based on their experiences and find new ways to handle situations that further develop their skills. Users will be able to make quick recordings, if they are short of time, that can later be fully reflected on, as well as being able to view statistical analysis of their reflections. Users can use notifications to remind them to reflect consistently. The effectiveness of this app will be evaluated through user surveys.
 
 \subsection{Progress}\label{progress}
 
-\emph{{[}Briefly state your progress so far, as a bulleted list{]}}
+\begin{itemize}
+    \item Language chosen was \textbf{Swift} for iOS mobile application development
+    \item The interface design framework chosen was \textbf{SwiftUI}, with \textbf{SwiftUI App} Life cycle
+    \item Background research done on graduate attributes and how/if they are developed, and created research question to answer: research will revolve around the use of Cognitive Behavioural Therapy (CBT) techniques to help people develop their skills
+    \item Paper summaries and initial literature review completed on the teaching of graduate attributes
+    \item GitHub wiki created to hold all research and paper summaries, project plans and meeting minutes
+    \item Created user personas and stories to assist in design of app
+    \item Conducted two surveys (after checking ethics and gaining signed consent from participants). Data from these surveys was processed into graphs
+    \item Note taking app was created
+    \begin{itemize}
+        \item User can go through skill cards on the \textbf{Home} view that give descriptions of each graduate skill
+        \item User can go to \textbf{Notes} section where they can create a note that asks them to reflect based on a skill and situation, using CBT techniques. There are '?' icons to provide more detail and examples on each question. 
+        \item In this notes section they can search for the name of a note, or search a skill type to filter the notes by skill. 
+        \item Users can click on a note they have previously created and will be able to review all their answers
+        \item Users cannot edit a note to replicate a CBT scenario where participant fill out a paper journal
+        \item From the Home view the user can go to the \textbf{Recordings} section where they can name and create, play and delete a voicenote
+        \item From the Home view users can go to the \textbf{Statistics} section where they are able to review their personalised statistics for each skill
+        \item Stats shown are number of entries per skill, average words per entry for each skill, and average emotion per skill. The users will flick through this in a similar way to going through the skill descriptions, as well as the colours matching to make this cohesive.
+        \item This page also has a consistent view of the total number of entries and average words per entry over all skills to allow the user to make comparisons
+        \item Lastly from the Home view users can navigate to the \textbf{Settings} view, which gives useful links to Moodle, the project GitHub and the MyGlasgow page on graduate attributes
+        \item Settings also contains information about the app as well as a link to a view containing detailed instructions for how to use the app and the motivations
+        \item Users can toggle the dark/light theme here as well as turn on notifications (which fires a notification 10 seconds after clicking as the app is a proof of concept and in a published version the notification would fire once a week)
+    \end{itemize}
+    \item Commented and refactored my code
+\end{itemize}
 
 \subsection{Problems and risks}\label{problems-and-risks}
 
 \subsubsection{Problems}\label{problems}
 
-\emph{{[}What problems have you had so far, that have held up the
-project?{]}}
+\begin{itemize}
+    \item Swift and SwiftUI were not known at all at the beginning of this project, and so lots of time was spent learning the basics of the language/framework during the implementation
+    \item SwiftUI is in early stages as it has just been updated to v2.0, as well as Swift updating to Swift v5.1 in September, with updates to the logic of creating interfaces and the files a project starts with. This meant there was not a lot of material online to research how to design and create my app and created some difficulties
+    \item Core Data was more complicated than originally envisioned to implement
+\end{itemize}
 
 \subsubsection{Risks}\label{risks}
 
-\emph{{[}What problems do you foresee in the future and how will you
-mitigate them?{]}}
+\begin{itemize}
+    \item Unsure how to get users to evaluate the application due to COVID and without a developer license, users would need to be able to access my phone or physically download the app from my Mac to use and test it. \textbf{Mitigation:} I will ask users to go on a Zoom call and either ask them to direct me to use the app simulator, or find a way to give them control of my screen.
+    \item Unsure how to gather relevant data from users as the purpose of my app/research is to develop skills through its use over time, however, this is not possible within the scope of the project. \textbf{Mitigation:} I will request users spend as long as they want in a single session on the app, ask them about their enjoyment and their opinion on whether they could see themselves using this app and its effectiveness
+\end{itemize}
 
 \subsection{Plan}\label{plan}
 
-\emph{{[}Time plan, in roughly weekly to monthly blocks, up until
-submission week{]}}
+\textbf{Semester 2 (Mon 11th Jan - Fri 26th Mar)}
+\begin{itemize}
+    \item Week 1-2: Finalise user evaluation surveys and carry these out. \textbf{Deliverable: Raw data survey results}
+    \item Week 3-4: Analysis of user evaluations and preparation for dissertation write up. \textbf{Deliverable: Processed data}
+    \item Week 5-8: Write up of dissertation. \textbf{Deliverable: First draft of dissertation}
+    \item Week 9-10: Write up of dissertation. \textbf{Deliverable: Final draft of dissertation submitted before deadline}
+\end{itemize}
 
     
 \subsection{Ethics and data}\label{ethics}
-\emph{Specify what ethical approval you need to do your evaluation and how you are approaching it. This is mandatory. 
-Specify what data you expect to collect in your evaluation. Explain how this data will help you evaluate your project.
-}
-
-Options for ethics:
-\item This project does not involve human subjects or data. No approval required.
-\item I have verified that the ethics checklist will apply to any evaluation I need to do. I will sign and complete the checklist.
-\item I have sought ethical guidance from the School's ethics convener and I will:
-\begin{itemize}
-    \item Proceed under specific instructions from the Ethics convener (e.g. modified checklist).
-    \item Apply for College Ethics Board approval.
-    \item Other procedure (give details)
-\end{itemize}    
+I have verified that the ethics checklist will apply to any evaluation I need to do.  I will sign and complete the checklist.
+  
+For the user surveys I have previously carried out during semester one, I verified that the ethics checklist applied and asked users to sign consent forms before participating in any survey. From these surveys I collected quantitative data and qualitative data from users about their experience with graduate attributes, and an A/B test to show effectiveness of CBT style questions. This data will allow me to prove a gap in people's understanding of graduate attributes and to show that using CBT questioning can help people to develop these skills.
+  
+For user evaluation, I expect to receive both quantitative and qualitative data about the effectiveness of my application and whether users enjoy and could see themselves using the app in the future. I will ask users to use my application and question them on this experience.
 
 
 \end{document}
