@@ -64,6 +64,7 @@ struct NoteAddView: View {
                 ) {
                     TextField("Title", text: $name)
                         .keyboardType(.default)
+                        .accessibility(identifier: "noteNameTextField")
                 }
                 
                 // NOTE SKILL
@@ -100,6 +101,7 @@ struct NoteAddView: View {
                                 }).alert(isPresented: $showingSituationInfo) {
                                     Alert(title: Text("Question Info"), message: Text("The situation is the concrete experience, this only covers the facts of what happened with no interpretation. An example could include settling a dispute between peers for Teamwork"), dismissButton: .default(Text("OK")))
                                 }
+                                .accessibility(identifier: "saveNoteButton")
                             }
                 ) {
                     TextField("Situation", text: $situation)
@@ -255,6 +257,7 @@ struct NoteAddView: View {
                     }) {
                         Text("Save Note")
                     }
+                    .accessibility(identifier: "saveNoteButton")
                 }
                 
             }

@@ -261,3 +261,14 @@
 
 ### 16 Dec 2020
 * *3.5 hours* Created status report
+
+### 17 Dec 2020
+* *1 hour* Edited status report, submitted and emailed supervisor
+
+## Winter Holidays
+
+## Week 13
+
+### 11 Jan 2021
+* *3.5 hours* Researching testing and figuring out how to do it, a lot of places say it isnt the best on swift and thats why they have previews, also discovered a new error due to a swiftui update meaning i get warning about the nav bar, this is a problem on apple's end but may need to figure out a work around
+* *2 hours* Sorted out the tests, now tests the ability to save a note and then delete the note

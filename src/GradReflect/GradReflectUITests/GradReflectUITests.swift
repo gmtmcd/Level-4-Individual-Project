@@ -9,34 +9,44 @@ import XCTest
 
 class GradReflectUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    override func setUp() {
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
+    func testAddsNoteToList() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        app.buttons["Notes"].tap()
+        app.navigationBars["My Notes 📘"].buttons["note.text.badge.plus"].tap()
+        
+        let tablesQuery2 = app.tables
+        let tablesQuery = tablesQuery2
+        let noteNameField = tablesQuery.textFields["noteNameTextField"]
+        noteNameField.tap()
+        
+        noteNameField.typeText("Test")
+        tablesQuery2.cells["Situation"].swipeUp()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["saveNoteButton"]/*[[".cells[\"Save Note\"]",".buttons[\"Save Note\"]",".buttons[\"saveNoteButton\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        XCTAssert(app.tables.staticTexts["Test"].exists)
+        
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testDelete() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["Notes"].tap()
+        
+        let tablesQuery = app.tables.cells
+        tablesQuery.element(boundBy: 0).swipeLeft()
+        tablesQuery.element(boundBy: 0).buttons["Delete"].tap()
+              
+        XCTAssertFalse(app.tables.staticTexts["Make cool app"].exists)
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
 }
+
