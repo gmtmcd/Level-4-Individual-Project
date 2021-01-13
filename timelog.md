@@ -272,3 +272,6 @@
 ### 11 Jan 2021
 * *3.5 hours* Researching testing and figuring out how to do it, a lot of places say it isnt the best on swift and thats why they have previews, also discovered a new error due to a swiftui update meaning i get warning about the nav bar, this is a problem on apple's end but may need to figure out a work around
 * *2 hours* Sorted out the tests, now tests the ability to save a note and then delete the note
+
+### 12 Jan 2021
+* *1 hour* Made changes to the wiki, updated the information on there about my surveys
