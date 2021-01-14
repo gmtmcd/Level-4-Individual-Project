@@ -275,3 +275,8 @@
 
 ### 12 Jan 2021
 * *1 hour* Made changes to the wiki, updated the information on there about my surveys
+
+### 13 Jan 2021
+* *2 hours* Made additional changes to the wiki, recreated the piecharts about the general knowledge survey results so that i didnt have to copy the ones from the google forms [8.5 hours]
+
+### 14 Jan 2021
