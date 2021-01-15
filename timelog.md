@@ -282,3 +282,6 @@
 ### 14 Jan 2021
 * *3 hours* Went through lectures about dissertation writing, went through a hall of fame dissertation and used it to start my dissertation plan
 * *3 hours* Attempted to find a good wireframe application and set up account, started to create the tasks that users will complete and plan out how the evaluative surveys will run, also did a test run with a friend of using zoom to give control over to them and see if they are able to use the app
+
+### 15 Jan 2021
+* *3 hours* Created consent forms, intro script, debrief script, ethics checklist for the user surveys. Created wireframes and added them to wiki
