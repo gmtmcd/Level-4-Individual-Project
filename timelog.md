@@ -285,3 +285,4 @@
 
 ### 15 Jan 2021
 * *3 hours* Created consent forms, intro script, debrief script, ethics checklist for the user surveys. Created wireframes and added them to wiki
+* *1 hour* Created the MoSCoW requirements on the wiki
