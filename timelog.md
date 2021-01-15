@@ -277,7 +277,7 @@
 * *1 hour* Made changes to the wiki, updated the information on there about my surveys
 
 ### 13 Jan 2021
-* *2 hours* Made additional changes to the wiki, recreated the piecharts about the general knowledge survey results so that i didnt have to copy the ones from the google forms [8.5 hours]
+* *2 hours* Made additional changes to the wiki, recreated the piecharts about the general knowledge survey results so that i didnt have to copy the ones from the google forms
 
 ### 14 Jan 2021
 * *3 hours* Went through lectures about dissertation writing, went through a hall of fame dissertation and used it to start my dissertation plan
@@ -285,4 +285,5 @@
 
 ### 15 Jan 2021
 * *3 hours* Created consent forms, intro script, debrief script, ethics checklist for the user surveys. Created wireframes and added them to wiki
-* *1 hour* Created the MoSCoW requirements on the wiki
+* *1 hour* Created the MoSCoW requirements on the wiki [18.5 hours]
+* *0.5 hours* Finished creating my user eval surveys
