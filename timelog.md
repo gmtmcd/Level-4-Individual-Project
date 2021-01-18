@@ -287,3 +287,9 @@
 * *3 hours* Created consent forms, intro script, debrief script, ethics checklist for the user surveys. Created wireframes and added them to wiki
 * *1 hour* Created the MoSCoW requirements on the wiki [18.5 hours]
 * *0.5 hours* Finished creating my user eval surveys
+
+## Week 14
+
+### 18 Jan 2021
+* *2.5 hours* Added in a Close note button to when you are making a note, due to navigation bar items being deprecated i had to change all my navigations to being the new method of code, one of the new methods still gave error so had to embed the title into the toolbar items https://stackoverflow.com/questions/65316497/swiftui-navigationview-navigationbartitle-layoutconstraints-issue
+* *0.5 hours* Prepped for meeting with supervisor

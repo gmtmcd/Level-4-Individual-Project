@@ -94,16 +94,29 @@ struct SettingsView: View {
                 .environment(\.horizontalSizeClass, .regular)
                 
             } // End of VStack
-            .navigationBarTitle("Settings ⚙️", displayMode: .inline)
-            .navigationBarItems(
-                // Button to return to settings page
-                leading: Button(action: {
-                    withAnimation{
-                        router.currentPage = .SkillView
+            .navigationBarTitleDisplayMode(.inline )
+            .toolbar(content: {
+                // Nav Bar Title
+                ToolbarItem(placement: .principal, content: {
+                    Text("Settings ⚙️")
+                        .font(.title3)
+                })
+                
+                // Button to return to Skills View
+                ToolbarItem(placement: .navigationBarLeading, content: {
+                    Button(action: {
+                        withAnimation{
+                            router.currentPage = .SkillView
+                        }
+                    }){
+                        HStack{
+                            Image(systemName: "chevron.backward")
+                            Text("Home")
+                        }
+                        
                     }
-                }, label: {
-                    Text("Home")
-                }))
+                })
+            })
         }
         
     }

@@ -56,21 +56,29 @@ struct AboutThisAppView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                // Nav Bar Title
                 ToolbarItem(placement: .principal) {
-                                HStack {
-                                    Text("About This App")
-                                    Image(systemName: "info.circle.fill")
-                                }
-                            }
-            }
-            .navigationBarItems(
-                leading: Button(action: {
-                    withAnimation{
-                        router.currentPage = .SettingsView
+                    HStack {
+                        Text("About This App")
+                        Image(systemName: "info.circle.fill")
                     }
-                }, label: {
-                    Text("Back")
-                }))
+                }
+                
+                // Button to return to Skills View
+                ToolbarItem(placement: .navigationBarLeading, content: {
+                    Button(action: {
+                        withAnimation{
+                            router.currentPage = .SettingsView
+                        }
+                    }){
+                        HStack{
+                            Image(systemName: "chevron.backward")
+                            Text("Settings")
+                        }
+                        
+                    }
+                })
+            }
         }
     }
 }

@@ -84,16 +84,30 @@ struct DataStatsView: View {
                 .padding(.horizontal, 15)
                 
             }//end of vstack
-            .navigationBarTitle("Statistics 📊", displayMode: .inline)
-            .navigationBarItems(
-                // Button to return to home skill view
-                leading: Button(action: {
-                    withAnimation{
-                        router.currentPage = .SkillView
+            .navigationBarTitleDisplayMode(.inline )
+            .toolbar(content: {
+                // Nav Bar Title
+                ToolbarItem(placement: .principal, content: {
+                    Text("Statistics 📊")
+                        .font(.title3)
+                })
+                
+                //Button to return to skills view
+                ToolbarItem(placement: .navigationBarLeading, content: {
+                    // Button to return to Skills View
+                    Button(action: {
+                        withAnimation{
+                            router.currentPage = .SkillView
+                        }
+                    }){
+                        HStack{
+                            Image(systemName: "chevron.backward")
+                            Text("Home")
+                        }
+                        
                     }
-                }, label: {
-                    Text("Home")
-                }))
+                })
+            })
         }
         
     }

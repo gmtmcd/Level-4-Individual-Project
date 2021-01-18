@@ -51,28 +51,42 @@ struct NotesListView: View {
                     }
                 } // End of List
                 .listStyle(PlainListStyle())
-                .navigationBarTitle("My Notes 📘", displayMode: .inline)
-                .navigationBarItems(
-                    // Buttons to return to Skill Cards
-                    leading: Button(action: {
-                        withAnimation{
-                            router.currentPage = .SkillView
+                .navigationBarTitleDisplayMode(.inline )
+                .toolbar(content: {
+                    // Nav Bar title
+                    ToolbarItem(placement: .principal, content: {
+                        Text("My Notes 📘")
+                            .font(.title3)
+                    })
+                    // Button to return to Skills View
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                        Button(action: {
+                            withAnimation{
+                                router.currentPage = .SkillView
+                            }
+                        }){
+                            HStack{
+                                Image(systemName: "chevron.backward")
+                                Text("Home")
+                            }
+                            
                         }
-                    }, label: {
-                        Text("Home")
-                    }),
+                    })
                     
-                    // Button to show view to create a new note
-                    trailing:Button(action: {
-                    showNoteSheet = true
-                    }, label: {
-                        Image(systemName : "note.text.badge.plus")
-                            .imageScale(.large)
-                    }))
-                    .sheet(isPresented: $showNoteSheet){
-                        NoteAddView()
-                            .environment(\.managedObjectContext, viewContext)
-                    }
+                    //Button to show view to create a new note
+                    ToolbarItem(placement: .navigationBarTrailing, content: {
+                        Button(action: {
+                            showNoteSheet = true
+                        }){
+                            Image(systemName : "note.text.badge.plus")
+                                .imageScale(.large)
+                        }
+                        .sheet(isPresented: $showNoteSheet){
+                            NoteAddView()
+                                .environment(\.managedObjectContext, viewContext)
+                        }
+                    })
+                })
             } // End of VStack
         } // End of Nav View
     }

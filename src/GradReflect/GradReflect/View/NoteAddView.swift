@@ -259,6 +259,11 @@ struct NoteAddView: View {
                     }
                     .accessibility(identifier: "saveNoteButton")
                 }
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }){
+                    Text("Close Note")
+                }
                 
             }
             .navigationTitle("Create New Note 📝")

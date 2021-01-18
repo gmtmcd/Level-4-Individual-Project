@@ -60,17 +60,34 @@ struct RecordingsView: View {
                 }
                 
             } // end of Vstack
-            .navigationBarTitle("Recordings 🎙", displayMode: .inline)
-            .navigationBarItems(
-                // Button to return to home skill view
-                leading: Button(action: {
-                    withAnimation{
-                        router.currentPage = .SkillView
+            .navigationBarTitleDisplayMode(.inline )
+            .toolbar(content: {
+                // Nav Bar Title
+                ToolbarItem(placement: .principal, content: {
+                    Text("Recordings 🎙")
+                        .font(.title3)
+                })
+                
+                // Button to return to Skills View
+                ToolbarItem(placement: .navigationBarLeading, content: {
+                    Button(action: {
+                        withAnimation{
+                            router.currentPage = .SkillView
+                        }
+                    }){
+                        HStack{
+                            Image(systemName: "chevron.backward")
+                            Text("Home")
+                        }
+                        
                     }
-                }, label: {
-                    Text("Home")
-                }),
-                trailing: EditButton())
+                })
+                
+                //Button to edit recordings list
+                ToolbarItem(placement: .navigationBarTrailing, content: {
+                    EditButton()
+                })
+            })
             
             // Alert for when there is no permission for microphone, redirects to skills
             .alert(isPresented: $alert) { () -> Alert in
