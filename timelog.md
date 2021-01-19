@@ -293,7 +293,7 @@
 ### 18 Jan 2021
 * *2.5 hours* Added in a Close note button to when you are making a note, due to navigation bar items being deprecated i had to change all my navigations to being the new method of code, one of the new methods still gave error so had to embed the title into the toolbar items https://stackoverflow.com/questions/65316497/swiftui-navigationview-navigationbartitle-layoutconstraints-issue
 * *0.5 hours* Prepped for meeting with supervisor
-* *0.5 hours* Had meeting with supervisor, wrote up notes from meeting and emailed all forms to be signed by supervisor [3.5 hours]
+* *0.5 hours* Had meeting with supervisor, wrote up notes from meeting and emailed all forms to be signed by supervisor
 
 ### 19 Jan 2021
 * *1 hour* Planned who is able to participate in user surveys
@@ -301,3 +301,4 @@
 * *1.5 hours* Added in edit buttons to notes list and recordings list to make it more clear how to delete notes, found an error created by me adding in ability to cancel making a note that has now broken the ability to save a note and have it dismiss
 * *0.5 hours* Fixed that notes werent dismissing on save by changing where the add notes was presented
 * *0.5 hours* Added the cancel note button back in
+* * 0.5 hours* Asked people to participate in survey sent out consent forms [8 hours]
