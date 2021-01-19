@@ -297,4 +297,5 @@
 
 ### 19 Jan 2021
 * *1 hour* Planned who is able to participate in user surveys
-* *0.5 hours* Fixed the issue with only the text being tappable in the notes list, now the whole row is
+* *0.5 hours* Fixed the issue with only the text being tappable in the notes list, now the whole row is tappable
+* *1.5 hours* Added in edit buttons to notes list and recordings list to make it more clear how to delete notes, found an error created by me adding in ability to cancel making a note that has now broken the ability to save a note and have it dismiss

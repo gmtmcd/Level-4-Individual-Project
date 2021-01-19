@@ -84,7 +84,7 @@ struct RecordingsView: View {
                 })
                 
                 //Button to edit recordings list
-                ToolbarItem(placement: .navigationBarTrailing, content: {
+                ToolbarItem(placement: .status, content: {
                     EditButton()
                 })
             })

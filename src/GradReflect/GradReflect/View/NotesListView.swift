@@ -81,12 +81,18 @@ struct NotesListView: View {
                             Image(systemName : "note.text.badge.plus")
                                 .imageScale(.large)
                         }
-                        .sheet(isPresented: $showNoteSheet){
-                            NoteAddView()
-                                .environment(\.managedObjectContext, viewContext)
-                        }
+                        
+                    })
+                    
+                    ToolbarItem(placement: .status, content: {
+                        EditButton()
                     })
                 })
+                .sheet(isPresented: $showNoteSheet){
+                    NoteAddView()
+                        .environment(\.managedObjectContext, viewContext)
+                }
+                
             } // End of VStack
         } // End of Nav View
     }
