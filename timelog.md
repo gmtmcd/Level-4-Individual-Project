@@ -294,3 +294,7 @@
 * *2.5 hours* Added in a Close note button to when you are making a note, due to navigation bar items being deprecated i had to change all my navigations to being the new method of code, one of the new methods still gave error so had to embed the title into the toolbar items https://stackoverflow.com/questions/65316497/swiftui-navigationview-navigationbartitle-layoutconstraints-issue
 * *0.5 hours* Prepped for meeting with supervisor
 * *0.5 hours* Had meeting with supervisor, wrote up notes from meeting and emailed all forms to be signed by supervisor [3.5 hours]
+
+### 19 Jan 2021
+* *1 hour* Planned who is able to participate in user surveys
+* *0.5 hours* Fixed the issue with only the text being tappable in the notes list, now the whole row is

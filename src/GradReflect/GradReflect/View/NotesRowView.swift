@@ -30,6 +30,8 @@ struct NotesRowView: View {
             }
             Spacer()
         } // End of HStack
+        // Make the whole row tappable
+        .contentShape(Rectangle())
         .frame(height:50)
         // When user taps on a note, display the note entry on a view
         .onTapGesture{
