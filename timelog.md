@@ -305,7 +305,8 @@
 
 ### 21 Jan 2021
 * *0.5 hours* Prepped for the user evals, edited the task list and created some example notes on the app for the participants to look at if they want to
-* *3 hours* Carried out 6 user surveys [11.5 hours]
+* *3 hours* Carried out 6 user surveys
 
 ### 22 Jan 2021
-* *1 hour* Carried out two more user evaluations 
+* *1 hour* Carried out two more user evaluations
+* *2 hours* Started processing survey data [14.5 hours]
