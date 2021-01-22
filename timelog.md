@@ -301,4 +301,11 @@
 * *1.5 hours* Added in edit buttons to notes list and recordings list to make it more clear how to delete notes, found an error created by me adding in ability to cancel making a note that has now broken the ability to save a note and have it dismiss
 * *0.5 hours* Fixed that notes werent dismissing on save by changing where the add notes was presented
 * *0.5 hours* Added the cancel note button back in
-* * 0.5 hours* Asked people to participate in survey sent out consent forms [8 hours]
+* * 0.5 hours* Asked people to participate in survey sent out consent forms
+
+### 21 Jan 2021
+* *0.5 hours* Prepped for the user evals, edited the task list and created some example notes on the app for the participants to look at if they want to
+* *3 hours* Carried out 6 user surveys [11.5 hours]
+
+### 22 Jan 2021
+* *1 hour* Carried out two more user evaluations 
