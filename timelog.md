@@ -310,3 +310,14 @@
 ### 22 Jan 2021
 * *1 hour* Carried out two more user evaluations
 * *2 hours* Started processing survey data [14.5 hours]
+
+## Week 15
+
+### 25 Jan 2021
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Had meeting with supervisor
+* *0.5 hours* Wrote up meeting
+
+### 26 Jan 2021
+* *0.5 hours* Finished creating the tables and charts for the surveys
+* *0.5 hours* Tried to get latex set up for the dissertation
