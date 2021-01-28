@@ -309,7 +309,7 @@
 
 ### 22 Jan 2021
 * *1 hour* Carried out two more user evaluations
-* *2 hours* Started processing survey data [14.5 hours]
+* *2 hours* Started processing survey data
 
 ## Week 15
 
@@ -321,3 +321,8 @@
 ### 26 Jan 2021
 * *0.5 hours* Finished creating the tables and charts for the surveys
 * *0.5 hours* Tried to get latex set up for the dissertation
+
+### 28 Jan 2021
+* *3 hours* Uploaded the questions i had asked in survey as a note on my wiki, Went through each of the recordings and created notes on what each of the participants did on each question
+* *0.5 hours* Fixed latex on machine
+* *2 hours* Started planning into the actual dissertation and filling it with ideas for what to say in sections, added the lit review into the background section [8 hours]
