@@ -325,4 +325,8 @@
 ### 28 Jan 2021
 * *3 hours* Uploaded the questions i had asked in survey as a note on my wiki, Went through each of the recordings and created notes on what each of the participants did on each question
 * *0.5 hours* Fixed latex on machine
-* *2 hours* Started planning into the actual dissertation and filling it with ideas for what to say in sections, added the lit review into the background section [8 hours]
+* *2 hours* Started planning into the actual dissertation and filling it with ideas for what to say in sections, added the lit review into the background section 
+
+### 29 Jan 2021
+* *2 hours* Went through the 3 hall of fames that are useful and developed the detailed plan for background and analysis and requirements sections [10 hours]
+* *1 hour* Did further planning for sections of the dissertation
