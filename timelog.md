@@ -337,3 +337,6 @@
 * *0.5 hours* Prepped for meeting
 * *0.5 hours* Supervisor meeting
 * *0.5 hours* Wrote up the meeting and made notes
+
+### 2 Feb 2021
+* *3 hours* Furst draft of the introduction section
