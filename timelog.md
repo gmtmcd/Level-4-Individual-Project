@@ -330,3 +330,10 @@
 ### 29 Jan 2021
 * *2 hours* Went through the 3 hall of fames that are useful and developed the detailed plan for background and analysis and requirements sections [10 hours]
 * *1 hour* Did further planning for sections of the dissertation
+
+## Week 16
+
+### 1 Feb 2021
+* *0.5 hours* Prepped for meeting
+* *0.5 hours* Supervisor meeting
+* *0.5 hours* Wrote up the meeting and made notes

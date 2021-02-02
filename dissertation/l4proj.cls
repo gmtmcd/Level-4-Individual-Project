@@ -45,7 +45,7 @@
 
 \usepackage{microtype} % improve typography
 \usepackage{anyfontsize} % allow any size of font
-%,amssymb
+%,amssymb HAD TO CHANGE THIS TO ALLOW LATEX TO WORK
 \usepackage{amsmath,amsfonts,amsbsy}
 \usepackage[style]{abstract} % abstract styling
 
