@@ -339,4 +339,8 @@
 * *0.5 hours* Wrote up the meeting and made notes
 
 ### 2 Feb 2021
-* *3 hours* Furst draft of the introduction section
+* *3 hours* First draft of the introduction section
+
+### 4 Feb 2021
+* *3 hours* Worked on Evaluation section
+* *2 hours* More work on evaluation section up to the results
