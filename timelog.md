@@ -343,4 +343,4 @@
 
 ### 4 Feb 2021
 * *3 hours* Worked on Evaluation section
-* *2 hours* More work on evaluation section up to the results
+* *4 hours* More work on evaluation section up to the results [11.5 hours]
