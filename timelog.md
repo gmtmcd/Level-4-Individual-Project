@@ -344,3 +344,6 @@
 ### 4 Feb 2021
 * *3 hours* Worked on Evaluation section
 * *4 hours* More work on evaluation section up to the results [11.5 hours]
+
+### 5 Feb 2021
+* *2 hours* Worked more on evaluation section, created some better graphs and looked into more qualitative research techniques
