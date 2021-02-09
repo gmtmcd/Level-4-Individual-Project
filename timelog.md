@@ -328,7 +328,7 @@
 * *2 hours* Started planning into the actual dissertation and filling it with ideas for what to say in sections, added the lit review into the background section 
 
 ### 29 Jan 2021
-* *2 hours* Went through the 3 hall of fames that are useful and developed the detailed plan for background and analysis and requirements sections [10 hours]
+* *2 hours* Went through the 3 hall of fames that are useful and developed the detailed plan for background and analysis and requirements sections
 * *1 hour* Did further planning for sections of the dissertation
 
 ## Week 16
@@ -343,7 +343,17 @@
 
 ### 4 Feb 2021
 * *3 hours* Worked on Evaluation section
-* *4 hours* More work on evaluation section up to the results [11.5 hours]
+* *4 hours* More work on evaluation section up to the results
 
 ### 5 Feb 2021
 * *2 hours* Worked more on evaluation section, created some better graphs and looked into more qualitative research techniques
+
+## Week 17
+
+### 8 Feb 2021
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Had meeting with supervisor and wrote up the notes
+
+### 9 Feb 2021
+* *1.5 hours* Worked on evaluation, attempted to analyse results but i need to rethink analysis
+* *1 hour* Started to rewrite and reformat the evaluation section

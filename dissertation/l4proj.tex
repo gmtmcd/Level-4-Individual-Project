@@ -408,7 +408,7 @@ How did i keep consistency throughtout the app, how did i keep it consistent wit
 
 
 %==================================================================================================================================
-\chapter{Implementation}
+\chapter{Implementation} \label{implementation}
 What did you do to implement this idea, and what technical achievements did you make?
 You can't talk about everything. Cover the high level first, then cover important, relevant or impressive details.
 
@@ -618,14 +618,19 @@ Avoid putting large blocks of code in the report (more than a page in one block,
 \end{lstlisting}
 
 %==================================================================================================================================
-\chapter{Evaluation} 
+\chapter{Evaluation} \label{evaluation}
 
 In this chapter, we outline the procedure used in evaluating the mobile application, 'GradReflect', 
-with the aim of answering the research questions proposed in Chapter 1. We present the results of the 
+with the aim of answering the research questions proposed in Chapter 1, whilst also identifying some 
+potential areas for improvement. Some of these were implemented and can be seen in the program
+as described in section \ref{implementation}. Others are listed in the future work in section (ADD FUTURE WORK SECTION REF)
+either due to time contraints, or because they were seen to be outwith the scope of the project.
+\par 
+We present the results of the 
 usability experiment and the following surveys that were conducted and discuss how these 
-answer the questions and relate to the wider literature of graduate attributes.
+answer the questions and relate to the wider literature of graduate attributes. 
 
-\section{Aims}
+\section{Aims} \label{evalAims}
 
 While our overall aim was to create a mobile application to capture reflections on when and where
 students have exercised their graduate attributes, chapter 1 also outlined the extended aims of creating
@@ -647,45 +652,7 @@ broken down into a series of smaller research areas that will contribute towards
     contribute to this understanding and reflection?
 \end{itemize}
 
-\section{Experimental Design}
-
-While we are studying how students would use this app on their own mobile devices, the decision
-was taken to run these experiments in a controlled setting over a Zoom conference. This was due to a
-number of reasons. 
-\par 
-As this is an iOS application it would require an apple developer license to 
-be able to widely disperse this application through the apple app store. This meant that to test
-this application, users would need to be able to connect their phone to the experimenter's Apple computer, 
-so that the application could be installed on their iPhone for use and testing. However, this project was conducted
-during the COVID-19 pandemic, meaning it would not be safe or ethical to meet with experiment participants
-for testing purposes and to install locally on their device. 
-\par 
-Conducting this study over Zoom conference also meant they were able to be recorded, allowing for review 
-of the experiment to gain further insight into the reactions and comments the participants made.
-\par 
-Additionally, this would allow participants with a device or background of any mobile operating system to 
-be included within the survey. This allowed for insight into whether this application would be intuitive for all 
-users, implying that the same or similar designs could be taken to create an application over other platforms. This
-would benefit any future studies into the use of a mobile application employing CBT techniques to capture graduate attributes 
-reflections. 
-\par 
-The evaluation therefore involved the use of a Zoom conference, in which the participants were given remote control over
-the XCode iPhone simulator and given the opputunity to complete a set of tasks. Following this, each participant was
-asked to complete a survey about the usability of the application and then further questions about their experience
-using the app. 
-\par 
-The participants were all students from various degrees, consisting of both young and mature students. 
-Having participants from degrees other than Computing Science allowed for generalisation of the results to give insight
-over how any student will react and interact with this application. Having a sample made only out of Computing Science
-students may give the results an unfair bias and these students are more likely to be quick to understand and infer meaning
-from various layouts of interfaces and would be quick to navigate through and understand any application. Using students from 
-multiple degrees and mature students also, meant that we could give insight into how this application could be useful to
-any student of any background, as the target demographic for this application is students who will need to develop these
-skills for the workplace.
-\par 
-
-\subsection{Personal Evaluation}
-
+\section{Personal Evaluation}
 Before conducting any evaluations with participants selected from a sample of potential users, a stage of self-evaluation
 was carried out. This was done to identify any usability problems before any participants were asked to evaluate and use 
 the application. 
@@ -694,10 +661,11 @@ To gain an insight into how the users would interact with the application, we in
 and went through each section of the application as a user would, make several of recordings, either audio or written, 
 examining the statistics and making use of the different areas of information on how to reflect and what these skills are.
 \par 
-Following this we conducted an informal heuristic evaluation using Jakob Nielsen’s “Ten Usability Heuristics” (REFERENCE). From this
-we were able to identify last minute changes that should be made to the app before allowing participants to have 
-access for their evaluations.
-\par 
+Following this we conducted an informal heuristic evaluation using Jakob Nielsen’s “Ten Usability Heuristics” (REFERENCE). 
+
+\subsection{Results}
+From analysis made in relation to the usability heuristics we were able to identify changes that should 
+be made to the app before allowing participants to have access for their evaluations. 
 These changes were as follows:
 \begin{itemize}
     \item Addition of a 'Cancel Note' button when creating a note
@@ -707,8 +675,9 @@ These changes were as follows:
 \end{itemize}
 
 
-\subsection{Monitored Evaluation}
+\section{Monitored User Evaluation}
 
+The monitored user test had the aim of allowing users to give feedback on easy it was to use to the interface. 
 After signing consent forms, participants then had the opputunity to interact with the application on the simulated iPhone, 
 prebuilt into the XCode IDE, through a video conference where they were given remote control. This was chosen as it 
 would give the users the chance to get, as close as possible, hands-on experience of the application. This would be 
@@ -719,8 +688,9 @@ is something that without giving the application to actual users would be largel
 The monitored aspect of this evaluation will allow for a better understanding of how the users interacted
 with the application, and not just their final results and opinion. Observing the participants will allow the us to 
 witness any hesitations, difficulties or mistakes that are made during the use of the app that they would 
-perhaps forget when it came to them answering the usability survey. A monitored evaluation also provded the oppurtunity
-for the participants to use a 'Think Aloud' approach as they were encouraged to voice any of their thought processes
+perhaps forget when it came to them answering the usability survey. A monitored evaluation also provided the oppurtunity
+for the participants to ask any questions if they were stuck on any of the tasks, and 
+to use a 'Think Aloud' approach as they were encouraged to voice any of their thought processes
 or difficulties as they used they app, should they wish to. This allowed any points of interest to noted by the 
 experimenter alongside the participants actions. (ADD IN SCHOLAR REFERENCE DISCUSSING THE BENEFITS OF THINK ALOUD)
 \par 
@@ -734,55 +704,13 @@ this time would prevent the participant evaluating on the simulator, rather than
 \par 
 Following this users were then asked to complete a set list of tasks. These tasks were created to make sure that the participants 
 explored through every section of the application and therefore having a better view of the application as a whole, giving the oppurtunity
-to voice any opinions on what they liked or disliked, or what they were struggling with. Participants were given any additional help 
+to voice any opinions on features they liked or disliked, or what they were struggling with. Participants were given any additional help 
 if needed during this evaluation if they had difficulties using the simulated phone.
 \par 
 At the end of the monitored evaluation users were debriefed and given the opputunity to make any comments about their experience
 of the application.
-
-\subsection{Post-study Survey}
-
-Following the completion of the monitored evaluation, participants were then asked to fill in a post-study survey. This
-survey had two sections.
 \par 
-In the first section of the survey we followed Nielsen’s approach of conducting a heuristic evaluation
-utilisaing his approach of identifying and evaluating ten usability areas (REFERENCE from hci project).
-Participants would response to these questions via a series of statements based on whether they agree or disagree on the 
-usability. These ranged from "Strongly disagree' to 'Strongly agree'. These were intended to follow from the personal evaluations
-that were conducted also using neilsons heuristics, and identify if there were any issues that had not been picked up and areas
-that could be further improved on. 
-\par 
-In the second section of this survey we asked questions that related more towards the features of the application. We wanted
-to establish their general feeling towards the application by asking how they found using different features of the app,
-if they found it quick to make a note, if they would be likely to use the app again and if there was enough aids to help
-them reflect. The specfic features we asked about were the audio recordings and the statistics sections. These were sections
-that were added to the requirements of the application to extend it's usage, and so insight into participant reaction to these 
-features would give insight into their necessity or whether they would go unused. 
-
-\subsection{Limitations}
-
-While the design of out evaluation allowed us to answer the reasearch questions we had previously defined, there are a number
-of ways in which the study could be improved.
-\par 
-We discussed earlier that we would be conducting the study through a video conference rather than through in-person experience
-of the application on the experimenter's mobile phone. While this allowed us to test the application during the COVID-19
-pandemic, this may affect the behaviour exhibited by participants. For example, users were not able to use the controls of the 
-phone as easily, instead having to opt for a 'Home' button outside of the simulator to be able to close the application instead
-of the typical 'swiping' from the base of the phone to close an app. This at times created frustration for the participants as 
-they attempted to use to option that they would on a physical phone. This environment also caused issues when a participant was
-not able to access the additional 'Home' button of the simulator as Zoom had a 'Remote control' taskbar display on top of this 
-button, causing confusion and delay as the participant realised they needed to remove this taskbar on their device to view the
-'Home' button. Therefore, further studies should be conducted that allow a participant to be able to install on their device 
-or use an experimental physical device to evaluate the application. This would ensure that the behaviour observed is representative 
-of the behaviour that would be exhibited should the app be usable in-person.
-\par 
-Additionally, the participants came from a convenience sample of friends and family members. Therefore this could have also impacted
-the behaviours exhibited by the participants. Further studies should take care to conduct their experiment using a more representative 
-population of unknown participants, to ensure the results can be generalised.
-
-\section{Results}
-
-A total of 8 participants were gathered from a convenience sample of students.
+For this evaluation a total of 8 participants were gathered from a convenience sample of students.
 \par 
 The majority of participants were in the age range of of 18-24, with this range having 5 participants. There were 
 3 participants in the 25-34 range.
@@ -792,9 +720,45 @@ A total of 4 participants identified as female, and 4 participants identified as
 Most students had a strong technical background. A total of 4 participants are currently studying a university level 
 qualification in computing. The remaining 4 participants has never studied a qualification in computing.
 \par 
-Full breakdowns of the results of these surveys can be seen in the appendix.
 
-\subsection{Monitored Evaluation}
+\subsection{Task explanation}
+
+The tasks that users were given involved exploring the features on each view of the application.
+
+\textbf{Home Page} Users started here as this allowed them to familiarise themselves with the skills that they would need
+to be able to reflect on in the future. 
+\par 
+\textbf{Settings Page} Users were asked to progress to settings as this would allow them to view the background features that would 
+be useful for a first time user. These tasks involved asking the user to explore the Useful Links, About GradReflect, toggling the
+notifications and dark/light theme of the application. This allowed users to view and familiarise themselves with some additional 
+information that could help them in future use of the application and show where they would need to go to customise the app, as well
+as reading about the general purpose of the application.
+\par 
+\textbf{Notes Page} Users were then asked to create a note based on the skill teamwork, and given the option of using any additional
+aids should they need to. This tested the users ability to be able to reflect easily with the aids and prompts given to them on the 
+note taking sheet and whether this was simple for them to carry out. Users here were also asked to review this note and to attempt to
+create a note with no name. This was to allow users to familiarise themselves with the how they would be able to look back on previous
+notes and experience error prevention within the application. Finally, in this section users were asked to use the search functionality
+to allow the user to customise their list view.
+\par 
+\textbf{Statistics Page} In this section of the application users were asked to view the statistics based on the note they had
+just created. This was to allow users to experience this feature of the application and to allow for evaluation on the usefulness
+of this later in the survey. Following this, users were asked to delete the note they had created, testing how intuitive it is
+for a user to be able to remove a note they had made.
+\par 
+\textbf{Recordings Page} Once users had navigated to this section, users were asked to create a note with and without a name.
+This was to show users the different naming options they could follow and allow for evaluation on this by them. The participant
+then had to playback and delete a recording, again testing to see how easily users would be able to do this.
+
+\subsection{Monitoring}
+Participants were observed throughout these tasks. The recordings of the evaluations were then reviewed and notes were taken
+on any difficulties the users encountered or any issues or positive comments they had discussed with the observer about the
+application. 
+\par 
+Following the completion of the tasks, participants were asked for any comments they wanted to make about their 
+experience with the application. These were also taken note of and kept for analysis.
+
+\subsection{Results}
 
 The recorded monitored evaluations with our participants were reviewed and any notable difficulties or 
 comments from the participant were transcribed. To group together and identify major themes each notable 
@@ -922,39 +886,139 @@ thought iOS users would swipe rather than click 'edit', however, this was an opt
 that they liked it, thought it was easy to navigate, they also stated the first time using an app is diffcult, especially 
 virtually, but if they had the app they would continue using it as it did seem really simple.
 
+\subsection{Limitations}
 
-\subsection{Post-study Surveys}
+% COME BACK HERE TO ADD THE LIMITATIONS SPECIFIC TO THIS SECTION MAYBE
 
+\section{Post-study Survey}
+Following the completion of the monitored evaluation, participants were then asked to fill in a post-study survey. This
+survey had two sections.
+\par 
+In the first section of the survey we followed Nielsen’s approach of conducting a heuristic evaluation
+utilisaing his approach of identifying and evaluating ten usability areas (REFERENCE from hci project).
+Participants would response to these questions via a series of statements based on whether they agree or disagree on the 
+usability. These ranged from "Strongly disagree' to 'Strongly agree'. These were intended to follow from the personal evaluations
+that were conducted also using neilsons heuristics, and identify if there were any issues that had not been picked up and areas
+that could be further improved on. 
+\par 
+In the second section of this survey we asked questions that related more towards the features of the application. We wanted
+to establish their general feeling towards the application by asking how they found using different features of the app,
+if they found it quick to make a note, if they would be likely to use the app again and if there was enough aids to help
+them reflect. The specfic features we asked about were the audio recordings and the statistics sections. These were sections
+that were added to the requirements of the application to extend it's usage, and so insight into participant reaction to these 
+features would give insight into their necessity or whether they would go unused. 
+
+\subsection{Task explanation}
+
+% This bit might need removed but can maybe explain here what they needed to do?
+
+\subsection{Results}
 After completion of the monitored evaluations, participants were directed to a usability survey. The first section of this survey
 followed Neilson's 10 usability heuristics. Users were asked to rate their agreement on a five point scale from "Strongly disagree" to 
 "Strongly agree". Following each of these questions users were given the oppurtunity to comment on why they had chosen their 
 answer. 
 \par 
 The average response to each of the usability heuristics was gathered and put into individual graphs, that can be seen in the appendix
-(STATE THE SECTION IN THE APPENDIX), and then processed further by taking the averages of the responses for each question.
+(STATE THE SECTION IN THE APPENDIX), and then processed further by taking the average response to each usability heuristic.
 \par 
 This graph can be seen in figure \ref{fig:heuristicsSurvey}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1.0\linewidth]{images/HeuristicsSurvey.pdf}    
+% I think this should be moved down into the analysis of the results maybe
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{images/HeuristicsEvalGraph.svg}    
 
-    \caption{Average response to the 10 usabilty heuristics questions from the post-study survey. This graph
-    shows that participants scored the application highly on the majority of heuristics, however, consistency 
-    and standards, recognition rather than recall and error prevention did not score as highly.
-    }
+%     \caption{Average response to the 10 usabilty heuristics questions from the post-study survey. This graph
+%     shows that participants scored the application highly on the majority of heuristics, however, consistency 
+%     and standards, recognition rather than recall and error prevention did not score as highly.
+%     }
 
-    % use the notation fig:name to cross reference a figure
-    \label{fig:heuristicsSurvey} 
-\end{figure}
+%     % use the notation fig:name to cross reference a figure
+%     \label{fig:heuristicsSurvey} 
+% \end{figure}
 \par 
 
-Most participants strongly agreed that the system was usable and satisfying. However, 2 participants scored consistency and 
-standards as agreeing, and 1 participant scored recognition rather than recall as agreeing. For error prevention, 1
-participant scored this as agreeing, while another participant scored this as neutral. 
+Most participants strongly agreed that the system was usable and satisfying. For 8 out of the 10 usability
+heuristics, participants all strongly agreed that the app entirely met these standards. 
+However, 2 of these heuristics, consistency and standards, and error prevention, did not score as highly.
 \par 
 From this first section of the survey, participants were also able to explain their motivation behind their scorings. 
-These motivation were then taken into 
+These open-ended questions were analysed using open axial coding. Codes were generated for each piece of information
+from each question and these were grouped together to identify the major themes. 
+\par 
+
+% COME BACK TO HERE TO FINISH THE RESULTS OF THIS
+
+
+
+
+\section{Experimental Design} \label{evalExperimentDesign}
+
+While we are studying how students would use this app on their own mobile devices, the decision
+was taken to run these experiments in a controlled setting over a Zoom conference. This was due to a
+number of reasons. 
+\par 
+As this is an iOS application it would require an apple developer license to 
+be able to widely disperse this application through the apple app store. This meant that to test
+this application, users would need to be able to connect their phone to the experimenter's Apple computer, 
+so that the application could be installed on their iPhone for use and testing. However, this project was conducted
+during the COVID-19 pandemic, meaning it would not be safe or ethical to meet with experiment participants
+for testing purposes and to install locally on their device. 
+\par 
+Conducting this study over Zoom conference also meant they were able to be recorded, allowing for review 
+of the experiment to gain further insight into the reactions and comments the participants made.
+\par 
+Additionally, this would allow participants with a device or background of any mobile operating system to 
+be included within the survey. This allowed for insight into whether this application would be intuitive for all 
+users, implying that the same or similar designs could be taken to create an application over other platforms. This
+would benefit any future studies into the use of a mobile application employing CBT techniques to capture graduate attributes 
+reflections. 
+\par 
+The evaluation therefore involved the use of a Zoom conference, in which the participants were given remote control over
+the XCode iPhone simulator and given the opputunity to complete a set of tasks. Following this, each participant was
+asked to complete a survey about the usability of the application and then further questions about their experience
+using the app. 
+\par 
+The participants were all students from various degrees, consisting of both young and mature students. 
+Having participants from degrees other than Computing Science allowed for generalisation of the results to give insight
+over how any student will react and interact with this application. Having a sample made only out of Computing Science
+students may give the results an unfair bias and these students are more likely to be quick to understand and infer meaning
+from various layouts of interfaces and would be quick to navigate through and understand any application. Using students from 
+multiple degrees and mature students also, meant that we could give insight into how this application could be useful to
+any student of any background, as the target demographic for this application is students who will need to develop these
+skills for the workplace.
+\par 
+
+\subsection{Limitations}
+
+While the design of out evaluation allowed us to answer the reasearch questions we had previously defined, there are a number
+of ways in which the study could be improved.
+\par 
+We discussed earlier that we would be conducting the study through a video conference rather than through in-person experience
+of the application on the experimenter's mobile phone. While this allowed us to test the application during the COVID-19
+pandemic, this may affect the behaviour exhibited by participants. For example, users were not able to use the controls of the 
+phone as easily, instead having to opt for a 'Home' button outside of the simulator to be able to close the application instead
+of the typical 'swiping' from the base of the phone to close an app. This at times created frustration for the participants as 
+they attempted to use to option that they would on a physical phone. This environment also caused issues when a participant was
+not able to access the additional 'Home' button of the simulator as Zoom had a 'Remote control' taskbar display on top of this 
+button, causing confusion and delay as the participant realised they needed to remove this taskbar on their device to view the
+'Home' button. Therefore, further studies should be conducted that allow a participant to be able to install on their device 
+or use an experimental physical device to evaluate the application. This would ensure that the behaviour observed is representative 
+of the behaviour that would be exhibited should the app be usable in-person.
+\par 
+Additionally, the participants came from a convenience sample of friends and family members. Therefore this could have also impacted
+the behaviours exhibited by the participants. Further studies should take care to conduct their experiment using a more representative 
+population of unknown participants, to ensure the results can be generalised.
+
+
+
+
+
+
+
+
+
+
 
 
 
