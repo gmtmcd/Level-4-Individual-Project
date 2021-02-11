@@ -360,3 +360,4 @@
 
 ### 11 Feb 2021
 * *3 hours* Continued work on the evaluation
+* *4 hours* Finished first draft of the evaluation section
