@@ -357,3 +357,6 @@
 ### 9 Feb 2021
 * *1.5 hours* Worked on evaluation, attempted to analyse results but i need to rethink analysis
 * *1 hour* Started to rewrite and reformat the evaluation section
+
+### 11 Feb 2021
+* *3 hours* Continued work on the evaluation
