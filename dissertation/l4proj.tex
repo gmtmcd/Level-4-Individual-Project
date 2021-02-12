@@ -345,16 +345,102 @@ Could potentially be a section to discuss the experiment that answers the resear
 
 %==================================================================================================================================
 \chapter{Analysis/Requirements}
+
+This project was presented by a Univeristy of Glasgow lecturer, Dr. Matthew Barr, who required a mobile application to be made 
+to capture reflections on graduate attributes. A list of requirements was created in weekly meetings with this lecturer.
+This was an agile process where the newest version of the application, experiments, and design documents were presented
+and discussed each week. Dr Barr's paper "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher 
+Education" (REF) provided enough detail to gain an understanding of what graduate attributes were and how they were learned. 
+Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding
+of how to create a usabl and satisfying application for users, as well as how to conduct various evaluations and experiments that would
+be required fo this project.
+Further requirements were gathered through personal heuristic evaluation, this allowed iterative improvements to be made to the
+application to increase the overall usability.
+
+\section{Problem Specification}
+
+The main expectations for the application are listed below. The main aim, as stated in the introduction, was to allow users to capture 
+their reflections on when and where they have used their graduate attributes, to allow them to further develop these skill that 
+are vital in the workplace and increasing employability. It was hypothesised that this could be achieved by allowing users to do this
+quickly and conveniently through the use of a mobile application. As the application will use Cognitive Behavioural Therapy 
+techniques and prompts to encourage the user to reflect more meaningfully, they can in their own time, deepen their understanding  and
+development of these skills, and encourage more frequent reflections. This hypothesis is tested in the user evaluation later in the 
+project. The list of functional requirements below describes actions that users should be able to perform with the application. 
+The list of non-functional requirements are requirements of the applications itself.
+These requirements follow the MoSCoW requirements building format including Must Have (MH), Should Have (SH), Could Have (CH) and Wont
+Have (WH) (REF).
+\par 
+\textbf{Functional requirements}
+\begin{itemize}
+    \item \textbf{MH} Allows for capturing of reflections in either text form OR audio form
+    \item \textbf{MH} Can make a note of how and when they exercised a skill
+    \item \textbf{MH} Must have reminders
+    \item \textbf{MH} Be able to delete notes/audios
+    \item \textbf{MH} Be able to review/playback notes/audios that have been made
+    \item \textbf{SH} Can categorise the skill for each note
+    \item \textbf{SH} Have Helper buttons for each question to tell the user how to answer the question
+    \item \textbf{SH} Be able to name a note
+    \item \textbf{SH} Be able to make BOTH text and audio form notes
+    \item \textbf{SH} Display information about each of the skills
+    \item \textbf{CH} Implement Cognitive Behavioural Therapy techniques to aid the reflection
+    \item \textbf{CH} Be able to view statistics based on the reflections recorded in the app
+    \item \textbf{CH} Have the ability to switch between dark and light theme on the app
+    \item \textbf{CH} Be able to search the notes for either the name or the skill type
+    \item \textbf{CH} Have a Settings page to view information about the app
+    \item \textbf{CH} Have an About Page that tells the user how to use the app correctly to make reflections
+    \item \textbf{CH} Have links in the Settings page that take you to useful pages related to the app and graduate attributes
+    \item \textbf{WH} Be able to upload reflections onto Moodle
+\end{itemize}
+\par
+\textbf{Non-functional requirements}
+\begin{itemize}
+    \item Must be intuitive and easy to use. An application that is easier for new users is more likely to encourage users to continue
+    to use the application and have an interest in it.
+    \item Must help users to to create meaningful reflections about their graduate skills. The ability for the users to reach more 
+    of the stages of reflection will help to develop these skills within students.
+    \item Encourage the users to want to continue using the application for future uses, users should hopefully find the value in an
+    application similar to this. 
+\end{itemize}
+
+
+\section{Chosen Limitations}
+
+Due to this application being designed and created for iOS devices, users would not be able to download this application onto their own 
+devices without the application being uploaded to the Apple app store. This was not able to be done as this would require an Apple 
+developer license, which would cost money and is outwith the scope of this project. However, due to this it meant that some limitations 
+were chosen to create more of a prototype of the application to test and evaluate the value of an application for capturing graduates 
+attributes, that in the future could be taken onto other platforms and for general use by the public.
+
+The reminders set on the device will not be able to be set by the user, instead they will turn on the notifications
+    and a notification will fire after 10 seconds. This was decided due to testing purposes so that the response time of this notification
+    buttons was immediate and as the application will be run on a simulator that is not always open, users and testers will not be running
+    the application for extended periods of time that would allow a notification to be set in the future. In future developments of this
+    application, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their
+    chosen day. 
+
+\section{Changes to the Specification}
+
+The specification was changed due to evaluation and conversation with the customer as described at the beginning of this chapter, as well
+as due to time contraints during development and research paths that opened up during these conversations. The main change to the 
+original specification given was to integrate the use of Cognitive Behavioural Therapy techniques into the application.
+This was chosen during research into reflection and situations where people have had to reflect deeply and meaningfully about
+their real-life experiences. This was taken as a research question into the project to evaluate its possible benefits in aiding the 
+reflection of users about their graduate attributes. 
+\par 
+Each possible feature of the application was also evaluated based on the time it
+was likely to take as well as its usefulness. As a result, the decision was made to remove the ability for users to upload their 
+reflections to Moodle. This was due to the research direction taken with the use of CBT questioning and the encouragement of users
+to include their thoughts and feelings into their reflections of the app, and it becoming more personal than users would perhaps feel 
+comfortable uploading onto Moodle. It was also because upon conversation with peers it was noted that students would be unlikely to use
+this feature and would rather just have these reflections on their personal devices, and this feature would be likely to go unused.
+The decision was then taken to include a link to Moodle on the Useful Links section of the mobile application instead, to still maintain 
+a connection with the university and the application. 
+
 What is the problem that you want to solve, and how did you arrive at it?
 \section{Guidance}
 Make it clear how you derived the constrained form of your problem via a clear and logical process.
 What is the problem that you want to solve, and how did you arrive at that?
 Make it clear how you derived the constrained form of your problem via a clear and logical process. 
-\par
-So discuss who presented this problem, that we decided what was going to be included in this app 
-iteratively throughout the weekly sessions, that i used lecture noes from MHCI and HCI
-Further requirements gathered during a surevy that gained insight inot general understanding of grad attributes
-and knowledge of their uses.
 \par 
 Discuss the user scenarios created and how they helped me decide what i needed to have in the app
 User stories

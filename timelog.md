@@ -360,4 +360,7 @@
 
 ### 11 Feb 2021
 * *3 hours* Continued work on the evaluation
-* *4 hours* Finished first draft of the evaluation section
+* *4 hours* Finished first draft of the evaluation section [10.5 hours]
+
+### 12 Feb 2021
+* *2.5 hours* Created first draft of the requirements section, although this needs more detail and further work on it needed
