@@ -370,3 +370,4 @@
 
 ### 16 Feb 2021
 * *1.5 hours* Figured out how to reference properly and use figures and graphics, implemented some references and graphs
+* *1.5 hours* Worked on background section
