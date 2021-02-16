@@ -363,5 +363,10 @@
 * *4 hours* Finished first draft of the evaluation section
 
 ### 12 Feb 2021
-* *2.5 hours* Created first draft of the requirements section, although this needs more detail and further work on it needed [13 hours]
-* *0.5 hours* Created labels and headings for design,
+* *2.5 hours* Created first draft of the requirements section, although this needs more detail and further work on it needed
+* *0.5 hours* Created labels and headings for design, planned some more [13.5 hours]
+
+## Week 18
+
+### 16 Feb 2021
+* *1.5 hours* Figured out how to reference properly and use figures and graphics, implemented some references and graphs
