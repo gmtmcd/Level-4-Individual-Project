@@ -375,3 +375,4 @@
 
 ### 17 Feb 2021
 * *2 hours* Made progress on reflection section of background
+* *0.5 hours* Made little progress on the background
