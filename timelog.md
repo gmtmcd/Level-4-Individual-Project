@@ -379,3 +379,6 @@
 
 ### 18 Feb 2021
 * *3 hours* More progress with background [9.5 hours]
+
+### 19 Feb 2021
+* *1.5 hours* Finished CBT section, made a bit of progress with exploratory study
