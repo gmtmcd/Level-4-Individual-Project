@@ -378,7 +378,8 @@
 * *0.5 hours* Made little progress on the background
 
 ### 18 Feb 2021
-* *3 hours* More progress with background [9.5 hours]
+* *3 hours* More progress with background
 
 ### 19 Feb 2021
-* *1.5 hours* Finished CBT section, made a bit of progress with exploratory study
+* *1.5 hours* Finished CBT section, made a bit of progress with exploratory study [11 hours]
+* *1.5 hours* Finished the first draft of the background
