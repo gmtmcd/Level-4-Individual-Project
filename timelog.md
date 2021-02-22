@@ -383,3 +383,10 @@
 ### 19 Feb 2021
 * *1.5 hours* Finished CBT section, made a bit of progress with exploratory study [11 hours]
 * *1.5 hours* Finished the first draft of the background
+
+## Week 19
+
+### 22 Feb 2021
+* *0.5 hours* Prep for supervisor meeting
+* *0.5 hours* Supervisor meeting and write up
+
