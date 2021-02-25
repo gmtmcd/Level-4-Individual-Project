@@ -390,3 +390,6 @@
 * *0.5 hours* Prep for supervisor meeting
 * *0.5 hours* Supervisor meeting and write up
 
+### 25 Feb 2021
+* *0.5 hours* Made a start on the exploratory study
+* *4.5 hours* Worked more on exploratory study [6 hours]
