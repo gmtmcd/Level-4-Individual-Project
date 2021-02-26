@@ -393,3 +393,6 @@
 ### 25 Feb 2021
 * *0.5 hours* Made a start on the exploratory study
 * *4.5 hours* Worked more on exploratory study [6 hours]
+
+### 26 Feb 2021
+* *1 hour* Started working on design, created a timetable for when things need to be finished
