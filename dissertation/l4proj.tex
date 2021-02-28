@@ -203,7 +203,7 @@ That student could be encouraged by universities to use an app such as this by t
 
 
 %==================================================================================================================================
-\chapter{Background}
+\chapter{Background} \label{Background}
 
 In this chapter we will discuss a series of research topics, examining how current research in these areas relates to what we aim 
 to achieve, and identify areas to build on and any gaps in current research. (CHANGE WORDING)
@@ -787,25 +787,124 @@ that instead i opted for a link to sign into moodle if you want to go to a forum
  chapter. Finally, the chapter will go on to examine the tools and technologies that were used for the porject. 
 
 \section{Encouraging Reflection}
-here talk about how i did the questions and prompts, talk about everyway this app has been designed to help people reflect
+
+In order to encourage reflection, various use cases and features were designed to give users more reasons to use the application.
+
+\subsection{Written Notes}
+
+Written notes were required to give users the opputunity to reflect using the CBT methods described in chapter \ref{Background}. These questions would be designed
+similarly to the questions used in the experiment described in chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality 
+within the application. 
+
+Each questions must be stated clearly and consisely, giving users the availablity of a helper button to give more insight into how the user can answer this
+question and an example given. This will allow the user to understand what the application is expecting of them and further encourage deep and meaningful 
+reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. 
+
+The question asking about emotional reaction was chosen to be a sliding scale from a clear negative reaction to a positive reaction. This means that 
+users are not required to choose an emotional reaction which can at times be difficult to identify, instead they are given an easier option of 
+gauging how postively they felt. 
+
+Users were also given the opputunity to be able to click on previously made notes to review and reflect on these previous entries, however, users were not
+able to edit or update any of their reflections. This was decided to mimick the CBT behaviours of writing down reflections in a journal where they cannot
+be altered posthumously. This would stop users from using hindsight on their previous experiences and gain an accurate representation of their experiences.
+
+Users are able to delete notes. 
+
+
+\subsection{Recorded Notes}
+
+Users were provided the option of creating a note through a voice recording. This would add further convenience to quickly reflect or record an experience
+that they may want to return to at a later date to further reflect on. There is no framework provided when creating a recorded note to allow users the 
+freedom to reflect however they want, the ability to say what is on their mind without any framework can be easier as it is often easier to speak freely than
+to arrange ones thoughts into a cohesive written sentence. 
+
+Users are able to record, delete and playback a recording with and without a title provided by the user. 
+
+\subsection{Statistics}
+
+Statistics on a users written reflections were also designed. This was created to allow users insight into their own reflections and to assist in 
+focussing their development of skills and reflections. It provides details on both data organsied by skill and over all of the notes taken. The user is able to 
+view how many notes they had made overall and how many words on average in each note, as well as for each skill how many notes they had written, their average
+words per note for that skill and their average emotional response in notes for that skill. These would be useful insights to the user as they will be able to 
+see both their strengths, through the skills with a high number of notes, and their weaknesses, through any skills with a comparitively low number of notes.
+This focusses their goals of what skills need further development. It also shows users where they need to potentially reflect deeper thorugh the word count
+as when the word count is low they are likely not spending enough time thinking about a situation and reflecting on how a skill is being developed. And lastly,
+they gain insight into how they feel about certain skills, if their average emotional response to a skill is low then they can evaluate why they feel this 
+way about this skill and potentially attempt to develop this skill further.
+
+
+\subsection{Additional Assistance}
+
+Additonal assistance to reflection was also designed in the homepage and the settings page. Upon entering the application users should be greeted with 
+descriptions of each skills and an example of where it could be used. Clear descriptions and instructions of the skills will increase a users awareness of these
+skills in their everyday life and help to develop them. 
+
+Further descriptions of how to use the application should be given within the settings page, further increasing the level of clear instructions needed
+to help students be able to reflect effectively \citep{bruno_reflective_2018}.
 
 \section{User Interface}
 
-The user interface was designed to help users quickly learn how to use the application and start reflecting. This section describes
+The user interface was designed to help users quickly learn how to use the application and start reflecting. To do this it was required that the 
+interface was intuitive and easy to use, this would be made possible through an attractive and straightforward design. This section describes
 some of the techniques used during that design process.
 
+\subsection{Initial Prototyping}
 
-\subsection{External Consistency}
-Here, talk about the ways its similar to other iOS devices. Maybe add in some of the wireframes that show how the interface looks 
-similar to the other iOS apps. 
+In order to gain insight into what each page would require and ensure all features had been considered, all designs went through a prototyping process. 
+
+Design of existing note taking applications were considered so that new users to GradReflect could still find the interface familar. Some of these similarities
+are listed below.
+
+\begin{itemize}
+    \item Title of the view stated in bold at the top of the view.
+    \item A search feature at the top of the view.
+    \item Notes in a listed format with a title and date created displayed.
+    \item A return button at the top left corner of the view.
+    \item An edit button, or swiping functionality on a specific note, to delete notes.
+    \item Recordings page with a large recording symbol at the bottom of the screen.
+    \item A settings page containing the creation details, customisation of the application and further information about the application
+\end{itemize}
+
+Some of the applications studied for this were: Apple's Voice Memos \citep{apple_inc_voice_nodate}, Apple's Notes \citep{apple_inc_notes_nodate}, Google's 
+Keep Notes \citep{google_llc_google_nodate} and Collateral \citep{vargas_collateral_nodate}.
+
+Taking inspiration from existing applications was decided as a good starting point as external consistency allows users to understand the application better
+when it is similar to what they have used in the past (ADD REF). 
+
+Figure (ADD REF) shows the initial prototype developed for GradReflect. A homepage design that directed users to each section of the page was first envisioned. 
+This homepage could provide users with descriptions of each skill and how to use the application. Initially, it was considered to have the skills only appear 
+on a users first time using the application, and then would be held within the settings section of the application following this, however this idea was discarded
+instead for the skills being always available on the home page to scroll through. This would help users instantly understand what to do when
+first opening the application, but if users have used the application several times they are able to head quickly to the section they wish to use, whilst also 
+having the easy availability of the skill descriptions if users want to refresh their knowledge. 
+
+Paper prototypes were created for the rest of the views of the application in a similar way to the homepage, as seen in figures (ADD ALL THE REFS). 
+This protyping stage was extremely valuable and assisted in speeding up the implementation stage as the design decisions had already been carried out, 
+giving a clear idea of how the final product should appear. 
+
+These designs were then implemented into high fidelity wireframe prototypes, using iOS design features, which can be seen in the appendix section (ADD APPENDIX
+REF)
+
 
 \section{Technologies}
 Time was taken at the beginning of this project to choose appropriate technologies. The technologies used and the reasons behind those 
 choices are described here.
 
-\subsection{Swift}
-\subsection{SwiftUI}
 \subsection{Mobile Application}
+
+It was decided that this application should be a mobile application and not a web or desktop application. This is due to the personal nature of the reflections
+being carried out by users and the use of CBT, this makes it easier to reflect deeper as it is held on the users personal device instead of on an online account
+or on their desktop. The ability to carry out these reflections on their phone can lead to more intimate and personal reflections from users.
+Additionally, as these reflections are on experiences of the user in their daily lives, it is convenient for the user to be able to carry out a reflection on-the-go
+on the mobile device. This allows the user to be able to instantly reflect on a situation and capture more accurate depictions of events and their thoughts 
+and emotions.
+
+\subsection{iOS Application}
+
+An iOS application was chosen for GradReflect due to appealing interface design that come with Apple applications. 
+COME BACK TO THIS SECTION!!!!!!!!
+Swift was chosen as it is the language used to make iOS applications is an intuitive language for developers. To implement this application 
+XCode IDE needed to be used on an Apple device due to Apple
 
 \section{Guidance}
 Design should cover the abstract design in such a way that someone else might be able to do what you did, 
@@ -827,11 +926,6 @@ Do a section for each of the must haves and could haves that discuss exactly how
 designing and achieving that, they must directly correspond to the moscow requirements to provide proof.
 Basically just going through every important aspect of the app and giving details on how i went about designing 
 it. 
-\par 
-Can add wireframes here i think. Add in the drawing i had for the intial interface designs,
-Talk about the user interface design process, mock up some wireframes of the initial looks that it had. Include
-some of the pics from the old videos i have of the app interface as screenshots
-How did i keep consistency throughtout the app, how did i keep it consistent with regular iOS practices.
 
 
 
