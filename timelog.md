@@ -399,3 +399,10 @@
 
 ### 28 Feb 2021
 * *4 hours* Worked on the design section [11 hours]
+
+## Week 20
+
+### 01 Mar 2021
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Meeting with supervisor and write up of minutes to wiki
+* *0.5 hours* Tried to fix bibliography links with no results
