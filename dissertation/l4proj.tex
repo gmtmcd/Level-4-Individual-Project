@@ -435,7 +435,7 @@ The stages of CBT generally follow the following format:
     \begin{centering}
     \includegraphics[scale=0.5]{images/cognitive-model.png}
     \caption{This image shows the cognitive model framework that CBT is based around \citep{therapist_aid_psychoeducation}.}
-    \label{fig: UserStudyGraph}
+    \label{fig: CognitiveModel}
     \end{centering}
 \end{figure}
 
@@ -454,8 +454,8 @@ Similar existing products were researched and examined before the start of this 
 
 \subsection{Mahara - University of Glasgow}
 
-University of Glasgow's site Mahara, \citep{mahara_dashboard}, was created to allow students to have a space to create a portfolio, and to create a habit of reflecting on the 
-skills they have developed throughout their time at university \citep{glasgow_university_attributes}.
+% University of Glasgow's site Mahara, \citep{mahara_dashboard}, was created to allow students to have a space to create a portfolio, and to create a habit of reflecting on the 
+% skills they have developed throughout their time at university \citep{glasgow_university_attributes}.
 
 \textbf{Advantages}
 \begin{itemize}
@@ -600,7 +600,7 @@ use of CBT.
     \begin{centering}
     \includegraphics[scale=0.75]{images/ABControlGraph.png}
     \caption{This graph show the number of participants in the control group that carried out each stage of reflection. These participants were not given the Cognitive Behavioural Therapy framework to encourage their reflection. It can be seen that most participants went through the first 3 stages, however, none of the participants carried out the final stage of reflection.}
-    \label{fig: UserStudyGraph}
+    \label{fig: ABStudyGraphControl}
     \end{centering}
 \end{figure}
 
@@ -608,7 +608,7 @@ use of CBT.
     \begin{centering}
     \includegraphics[scale=0.75]{images/ABExperimentGraph.png}
     \caption{This graph show the number of participants in the experimental group that carried out each stage of reflection. These participants were given the Cognitive Behavioural Therapy framework to encourage their reflection. It can be seen that all bar one participant went through every stage of reflection in their answers.}
-    \label{fig: UserStudyGraph}
+    \label{fig: ABStudyGraphExperiment}
     \end{centering}
 \end{figure}
 
@@ -901,39 +901,39 @@ and emotions.
 
 \subsection{iOS Application}
 
-An iOS application was chosen for GradReflect due to appealing interface design that come with Apple applications. 
-COME BACK TO THIS SECTION!!!!!!!!
-Swift was chosen as it is the language used to make iOS applications is an intuitive language for developers. To implement this application 
-XCode IDE needed to be used on an Apple device due to Apple
+GradReflect was creating as a mobile application for iOS. A mobile applications was chosen
+due to the goal of the application being for users to create, save and review thir reflections on their graduate attributes and did not require user accounts 
+or external information sharing that is made easier by using web frameworks. These reflections are intended to be carried out easily and conveniently by a user,
+which a mobile application provides. It was decided to create this application using iOS development due to appealing interface design associated with Apple 
+applications, benefiting usability. iOS was also chosen due to it's familiarity and known interface design concepts.
 
-\section{Guidance}
-Design should cover the abstract design in such a way that someone else might be able to do what you did, 
-but with a different language or library or tool.
-How is this problem to be approached, without reference to specific implementation details.
-\par 
-Discuss the stuff from unit 3 and elsewhere of Mobile HCI - Interaction design, talk about the process of 
-design, ie the design funnel, app definition statement, all the different design steps and diagrams
-\par 
-Do an overview, what is the app going to do.
-\par 
-Technical design - i used swift the language with swiftui interface lifecycle in an iOS mobile application.
-For backend data storage i used Core data. THen talk a little bit about how this works too.
-What language am i going to use, talk about why i chose swift. Talk about why swift has good interaction
-as it is famous for having good interfaces, i am familiar with iOS interfaces as i use them myself.
-Can do a page which shows the design of the views and how you naviagte between them in a diagram.
-\par 
-Do a section for each of the must haves and could haves that discuss exactly how i was going to go about 
-designing and achieving that, they must directly correspond to the moscow requirements to provide proof.
-Basically just going through every important aspect of the app and giving details on how i went about designing 
-it. 
+Although Apple keeps iOS development exclusive to other Apple devices, making it difficult for an aspiring iOS developer using another operating system, 
+there are useful advantages to creating an application using Apple developement. Creating an iOS application for any platform, Mac, iPhone, iPad, Apple Watch, 
+or Apple TV, requires the Apple \textbf{XCode IDE}. 
+
+\textbf{Swift} is the language used to create mobile iOS applications. It is a a modern language with inferred types making it less prone to mistakes and syntax 
+that encourages clean and concise syntax. This syntax can appear to be strict at times, but allows for the safeguarding and prevention of errors and improves 
+the readability due to its similarity to natural english \citep{altexsoft_swift_2021}. This allows for easier learning of the language and an easier start 
+to development.
+
+\textbf{SwiftUI} was chosen for the interface lifecycle. SwiftUI is a brand new and innovative way to create interfaces that can allow for entire applications and 
+their functionality to be written using it \citep{apple_developer_xcode_2021}. It uses declarative syntax to allow a developer to simply state what they want 
+the interface to do. A key benefit to using SwiftUI is the preview editor that ajoins the code editor that can display the app with any device and orientation. 
+As code is written it is instantly complied and the preview shows the changes live and allowing the developer to run the current view of the app to interact 
+with the UI elements, giving a clear indication to the developer of how the interface looks and works, and allowing for debugging and editing 
+\citep{apple_swiftui_2021}. These benefits allow for easier creation of the applications interface and it's functionality, and assist in creating a more 
+visually appealing and simple interface that will be easier for users to utilise.
 
 
 
 %==================================================================================================================================
 \chapter{Implementation} \label{implementation}
-May follow these section formats or do it by each page of the application and show how i designed each page 
+
+This chapter describes the steps taken to implement GradReflect, described in previous chapters, and the technical descisions that were made during this process.
 
 \section{User Interface}
+
+The user interface was implemented using SwiftUI with an aim to make it easy to use and visually appealing.
 
 What did you do to implement this idea, and what technical achievements did you make?
 You can't talk about everything. Cover the high level first, then cover important, relevant or impressive details.
@@ -978,7 +978,6 @@ You may include multiple figures in one float, as in Figure \ref{fig:synthetic},
     ``It is notable that there is no activation \emph{at all} below 0, which explains our initial results.'' 
     \textbf{Use vector image formats (.pdf) where possible}. Size figures appropriately, and do not make them over-large or too small to read.
     }
-
     % use the notation fig:name to cross reference a figure
     \label{fig:relu} 
 \end{figure}

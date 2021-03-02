@@ -406,3 +406,7 @@
 * *0.5 hours* Prepped for meeting with supervisor
 * *0.5 hours* Meeting with supervisor and write up of minutes to wiki
 * *0.5 hours* Tried to fix bibliography links with no results
+
+### 02 Mar 2021
+* *1 hour* Got the bibliography links working for the apple apps
+* *2 hours* Went back to design and completed the technology section
