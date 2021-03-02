@@ -410,3 +410,4 @@
 ### 02 Mar 2021
 * *1 hour* Got the bibliography links working for the apple apps
 * *2 hours* Went back to design and completed the technology section
+* *1 hour* Worked on implementation section [5.5 hours]
