@@ -42,12 +42,12 @@ class NotificationManager: ObservableObject {
         content.body = body
         
         // Set the trigger for the notif to get fired
-        // Here it launches 5 seconds after being launched for proof of concept
+        // Here it launches 10 seconds after being launched for proof of concept
         // But could use UNCalendarNotificationTrigger if it was to be at a set day
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: launchIn, repeats: false)
         let request = UNNotificationRequest(identifier: "demoNotif", content: content, trigger: trigger)
         
-        // Add request to UNNotificationCenter, after 5 seconds notif gets launched
+        // Add request to UNNotificationCenter, after 10 seconds notif gets launched
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
     }

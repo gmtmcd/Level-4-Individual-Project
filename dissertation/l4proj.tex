@@ -916,7 +916,7 @@ that encourages clean and concise syntax. This syntax can appear to be strict at
 the readability due to its similarity to natural english \citep{altexsoft_swift_2021}. This allows for easier learning of the language and an easier start 
 to development.
 
-\textbf{SwiftUI} was chosen for the interface lifecycle. SwiftUI is a brand new and innovative way to create interfaces that can allow for entire applications and 
+\textbf{SwiftUI} was chosen for the interface lifecycle. SwiftUI is a new and innovative way to create interfaces that can allow for entire applications and 
 their functionality to be written using it \citep{apple_developer_xcode_2021}. It uses declarative syntax to allow a developer to simply state what they want 
 the interface to do. A key benefit to using SwiftUI is the preview editor that ajoins the code editor that can display the app with any device and orientation. 
 As code is written it is instantly complied and the preview shows the changes live and allowing the developer to run the current view of the app to interact 
@@ -933,7 +933,37 @@ This chapter describes the steps taken to implement GradReflect, described in pr
 
 \section{User Interface}
 
-The user interface was implemented using SwiftUI with an aim to make it easy to use and visually appealing.
+The user interface was implemented using SwiftUI with an aim to make it easy to use and visually appealing. 
+
+\subsection{Model View ViewModel}
+
+SwiftUI presents both very useful features and challenges when creating an application. Instead of the typical Model View Controller design pattern, SwiftUI
+is state-driven and declarative, implementing a Model View ViewModel design pattern built into the framework \citep{naumov_swiftui_architecture_2019}.
+
+\textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that data will be written and fetched from. An example of 
+this is the Skill Model. This model defines that each skill displayed on the skill cards has an id, a title, a headline containing the description of the 
+skill, an image for the card, and gradientColours with defines the colour scheme for that skill card. The model and it's data are also used to display the
+statistics for each skill in the Statistics page. A model is also created to hold the note entries created by the user via CoreData, the permanent storage. This 
+CoreData entry is operated on via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that 
+can change the model and its data. This flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
+
+\textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and 
+pass these to a view model for interpretation \citep{bulavin_modern_2020}. The view is made up of views and controls, each view represents a building block of
+user interface; text, images, shapes, navigation bars and any element that appears on the screen. The controls allow the user to interact with this interface.
+
+\textbf{ViewModel:} The ViewModel is responsible for dictating how data should be represented in the view, as well as interpreting user inputs into actions 
+and updating the UI state and behaviour accordingly. The ViewModel can take form of the @State variables that provide the binding for the view, updating the 
+UI anytime changes are made to the state. These ViewModels can also take the form of a distinct ObservableObject class. As an example the Router class is an 
+ObservableObject that controls which view is displayed on the UI as the user navigates through the application, as the user clicks on a navigation button the 
+StateObject's current page variable will change, updating the view to show the requested page. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{images/MVVMDataFlow.png}    
+    \caption{This diagram shows the data flow between components in the Model View ViewModel (MVVM) design pattern 
+    \citep{bulavin_modern_2020}.}
+    \label{fig:MVVMDataFlow} 
+\end{figure}
 
 \section{Aesthetics}
 
