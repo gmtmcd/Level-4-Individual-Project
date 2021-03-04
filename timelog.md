@@ -204,7 +204,7 @@
 * *0.5 hours* Prepped for meeting with matthew
 * *0.5 hours* Had meeting with matthew
 * *0.5 hours* Wrote up minutes for meeting
-* *1 hour* Started from after first set of instructions on tutorial, created a recordings view, and recordings list view and the functionality to record audio [10 hours]
+* *1 hour* Created a recordings view, and recordings list view and the functionality to record audio [10 hours]
 
 ### 04 Dec 2020
 * *2 hours* Implemented fetching the recordings and displaying them on the view [12 hours]
@@ -212,7 +212,7 @@
 ## Week 11
 
 ### 07 Dec 2020
-* *1.5 hours* Implemented naming a note and a textfiled to do this, needs to be cleared before making a new one though otherwise there will be two with same name. Also now linked this view to the other views
+* *1.5 hours* Implemented naming a recording and a textfiled to do this, needs to be cleared before making a new one though otherwise there will be two with same name. Also now linked this view to the other views
 * *1 hour* Audios now have a button beside them to playback the audio, audio can be stopped too and once audio is finished the playbutton comes back
 * *0.5 hours* Audios can now be deleted by the edit button or swiping left
 
@@ -414,3 +414,4 @@
 
 ### 04 Mar 2021
 * *2.5 hours* Implementation section, worked on MVVM part
+* *1 hour* Wrote about the benefits of Core data

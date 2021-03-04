@@ -943,8 +943,13 @@ is state-driven and declarative, implementing a Model View ViewModel design patt
 \textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that data will be written and fetched from. An example of 
 this is the Skill Model. This model defines that each skill displayed on the skill cards has an id, a title, a headline containing the description of the 
 skill, an image for the card, and gradientColours with defines the colour scheme for that skill card. The model and it's data are also used to display the
-statistics for each skill in the Statistics page. A model is also created to hold the note entries created by the user via CoreData, the permanent storage. This 
-CoreData entry is operated on via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that 
+statistics for each skill in the Statistics page. A model is also created to hold the note entries created by the user via CoreData, the permanent storage 
+organising the data in an entity-attribute relationship. Using Core Data proved to be a steep learning curve during implementation, however, proved to be 
+beneficial due to the ability to manipulate the data within the fetch request which can be done in a single line of code making for greater simplicity
+whilst implementing, and it's ability to track changes through the persistant storage. CoreData is also saved using an NSManagedObject which uses an optimised
+storage and retrieval methods with key-value coding and observing, this is faster than other means of data storage and retrieval including get/set methods 
+\citep{apple_developer_documentation_core_2021}. 
+This CoreData entry is operated on via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that 
 can change the model and its data. This flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
 
 \textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and 
@@ -1741,6 +1746,7 @@ basically go over the intro and the background and problem statement all over ag
 Future work
 Go over how my project could be improved in the future
 If i had more time on the project what i could further accomplish
+https://betterprogramming.pub/swiftui-and-coredata-the-mvvm-way-ab9847cbff0f talk about how i could have fetched data differently.
 Eg : could have further done tests to see whether over time users felt that they had improved on their skills, are they more aware of their skills etc
 Eg : ways i could have made the app more useful, summarise the ways from the eval summaries that i could have made the app itself better
 Could use a tab bar instead of the page navigation
