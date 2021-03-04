@@ -23,7 +23,7 @@ struct NoteAddView: View {
     
     // State holding the users entries
     @State var name = ""
-    @State var selectedAttribute = 1
+    @State var selectedAttribute = 0
     @State var situation = ""
     @State var thoughts = ""
     @State var emotionsScale: Float = 1.0

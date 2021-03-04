@@ -937,27 +937,30 @@ The user interface was implemented using SwiftUI with an aim to make it easy to 
 
 \subsection{Model View ViewModel}
 
-SwiftUI presents both very useful features and challenges when creating an application. Instead of the typical Model View Controller design pattern, SwiftUI
+SwiftUI presents both useful features and challenges when creating an application. Instead of a typical Model View Controller design pattern, SwiftUI
 is state-driven and declarative, implementing a Model View ViewModel design pattern built into the framework \citep{naumov_swiftui_architecture_2019}.
 
-\textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that data will be written and fetched from. An example of 
+\textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that data will be written to and fetched from. An example of 
 this is the Skill Model. This model defines that each skill displayed on the skill cards has an id, a title, a headline containing the description of the 
-skill, an image for the card, and gradientColours with defines the colour scheme for that skill card. The model and it's data are also used to display the
-statistics for each skill in the Statistics page. A model is also created to hold the note entries created by the user via CoreData, the permanent storage 
-organising the data in an entity-attribute relationship. Using Core Data proved to be a steep learning curve during implementation, however, proved to be 
-beneficial due to the ability to manipulate the data within the fetch request which can be done in a single line of code making for greater simplicity
-whilst implementing, and it's ability to track changes through the persistant storage. CoreData is also saved using an NSManagedObject which uses an optimised
-storage and retrieval methods with key-value coding and observing, this is faster than other means of data storage and retrieval including get/set methods 
+skill, an image for the card, and gradientColours with defines the colour scheme for that skill card. The model and it's data are similarly used to display the
+statistics for each skill in the Statistics page. 
+
+A model is also created to hold the note entries created by the user via CoreData, the permanent storage 
+organising the data in an entity-attribute relationship. Using Core Data involved a steep learning curve during implementation, however, proved to be 
+beneficial due to the ability to manipulate the data within the fetch request in a single line of code, making for greater simplicity
+whilst implementing, and it's ability to track changes through the persistant storage. CoreData is also saved using an NSManagedObject which uses optimised
+storage and retrieval methods with key-value coding and observing, this is faster than other means of storage and retrieval, including get/set methods 
 \citep{apple_developer_documentation_core_2021}. 
 This CoreData entry is operated on via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that 
 can change the model and its data. This flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
 
 \textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and 
 pass these to a view model for interpretation \citep{bulavin_modern_2020}. The view is made up of views and controls, each view represents a building block of
-user interface; text, images, shapes, navigation bars and any element that appears on the screen. The controls allow the user to interact with this interface.
+user interface. The controls allow the user to interact with this interface. SwiftUI made it easy to build a UI, allowing the standard building blocks to be 
+altered to fit the needs of the project concisely and simply, making this aspect of implementation quick.
 
 \textbf{ViewModel:} The ViewModel is responsible for dictating how data should be represented in the view, as well as interpreting user inputs into actions 
-and updating the UI state and behaviour accordingly. The ViewModel can take form of the @State variables that provide the binding for the view, updating the 
+and updating the UI state and behaviour accordingly. The ViewModel can take form of the @State variables bind to the view, updating the 
 UI anytime changes are made to the state. These ViewModels can also take the form of a distinct ObservableObject class. As an example the Router class is an 
 ObservableObject that controls which view is displayed on the UI as the user navigates through the application, as the user clicks on a navigation button the 
 StateObject's current page variable will change, updating the view to show the requested page. 
@@ -970,7 +973,58 @@ StateObject's current page variable will change, updating the view to show the r
     \label{fig:MVVMDataFlow} 
 \end{figure}
 
+
 \section{Aesthetics}
+
+SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in 
+the usability study in section \ref{evaluation}, where users attempted to delete a note within the review, instead of using the edit button on their first 
+attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and 
+familiar appearance on iOS phones. This was beneficial as it meant that there were prebuilt buttons with pre-written functionality, however, meant that this code
+was not able to be altered to adjust functionality. Despite this, it was beneficial as it gave the interface a familiar look and features, improving usability. 
+It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. The user interfaces
+for the main views of the application can be seen in figure \ref{fig:appMainViews}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/appHomeScreen.pdf}
+        \caption{Home view}
+        \label{fig:appHomeScreen}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/appNotesScreen.pdf}
+        \caption{Notes view}
+        \label{fig:appNotesScreen}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)    
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/appRecordingsScreen.pdf}
+        \caption{Notes view}
+        \label{fig:appRecordingsScreen}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)  
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/appStatScreen.pdf}
+        \caption{Statistics view}
+        \label{fig:appStatScreen}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)   
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/appSettingsScreen.pdf}
+        \caption{Settings view}
+        \label{fig:appSettingsScreen}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)   
+    \caption{Screenshots showing the main 5 views within the GradReflect application.}
+    \label{fig:appMainViews}
+\end{figure}
+
 
 \section{Features}
 

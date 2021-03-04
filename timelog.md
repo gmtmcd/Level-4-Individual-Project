@@ -410,8 +410,9 @@
 ### 02 Mar 2021
 * *1 hour* Got the bibliography links working for the apple apps
 * *2 hours* Went back to design and completed the technology section
-* *1 hour* Worked on implementation section [5.5 hours]
+* *1 hour* Worked on implementation section 
 
 ### 04 Mar 2021
 * *2.5 hours* Implementation section, worked on MVVM part
 * *1 hour* Wrote about the benefits of Core data
+* *1.5 hours* Added screenshots and aesthetics section [10 hours]
