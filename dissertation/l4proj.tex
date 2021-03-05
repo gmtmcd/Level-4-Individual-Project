@@ -159,7 +159,7 @@ that they will be likely to continue using.
 \par 
 This evaluation will hope to give insight into whether the following goals have been met:
 \begin{itemize}
-    \item \textbf{Create an application to capture reflection on graduate attributes:} The
+    \item \textbf{Create an application to capture reflections on graduate attributes:} The
     main goal of this project is to create an application that provides allows 
     users to make reflections on how they have developed their graduate attributes.
     \item \textbf{Allow users to create a note via written or audio form:} The app must 
@@ -939,15 +939,16 @@ The user interface was implemented using SwiftUI with an aim to make it easy to 
 
 SwiftUI presents both useful features and challenges when creating an application. Instead of a typical Model View Controller design pattern, SwiftUI
 is state-driven and declarative, implementing a Model View ViewModel design pattern built into the framework \citep{naumov_swiftui_architecture_2019}.
+Tutorials from CodeWithChris \citep{ching_codewithchris_2021}, SwiftUI Masterclass Course \citep{petras_swiftui_2021} and Blckbirds \citep{blckbirds_learn_2021} 
+were used to learn the basics of SwiftUI development and begin implementation.
 
-\textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that data will be written to and fetched from. An example of 
-this is the Skill Model. This model defines that each skill displayed on the skill cards has an id, a title, a headline containing the description of the 
-skill, an image for the card, and gradientColours with defines the colour scheme for that skill card. The model and it's data are similarly used to display the
-statistics for each skill in the Statistics page. 
+\textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that will be written to and fetched from. An example of 
+this is the Skill Model. This defines that each skill contains an id, a title, description, an image, and gradientColours with defines the colour scheme for 
+that skill card. This model is also reused for the Statistics view.
 
 A model is also created to hold the note entries created by the user via CoreData, the permanent storage 
-organising the data in an entity-attribute relationship. Using Core Data involved a steep learning curve during implementation, however, proved to be 
-beneficial due to the ability to manipulate the data within the fetch request in a single line of code, making for greater simplicity
+organising the data in an entity-attribute relationship. Core Data involved a steep learning curve, however, proved to be 
+beneficial due to the ability to manipulate the data within the fetch request in a single line of code. This made for greater simplicity
 whilst implementing, and it's ability to track changes through the persistant storage. CoreData is also saved using an NSManagedObject which uses optimised
 storage and retrieval methods with key-value coding and observing, this is faster than other means of storage and retrieval, including get/set methods 
 \citep{apple_developer_documentation_core_2021}. 
@@ -962,7 +963,6 @@ altered to fit the needs of the project concisely and simply, making this aspect
 \textbf{ViewModel:} The ViewModel is responsible for dictating how data should be represented in the view, as well as interpreting user inputs into actions 
 and updating the UI state and behaviour accordingly. The ViewModel can take form of the @State variables bind to the view, updating the 
 UI anytime changes are made to the state. These ViewModels can also take the form of a distinct ObservableObject class. As an example the Router class is an 
-ObservableObject that controls which view is displayed on the UI as the user navigates through the application, as the user clicks on a navigation button the 
 StateObject's current page variable will change, updating the view to show the requested page. 
 
 \begin{figure}
@@ -976,6 +976,8 @@ StateObject's current page variable will change, updating the view to show the r
 
 \section{Aesthetics}
 
+\subsection{OS native appearance}
+
 SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in 
 the usability study in section \ref{evaluation}, where users attempted to delete a note within the review, instead of using the edit button on their first 
 attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and 
@@ -983,6 +985,13 @@ familiar appearance on iOS phones. This was beneficial as it meant that there we
 was not able to be altered to adjust functionality. Despite this, it was beneficial as it gave the interface a familiar look and features, improving usability. 
 It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. The user interfaces
 for the main views of the application can be seen in figure \ref{fig:appMainViews}
+
+\subsection{Additional aesthetics features}
+The loading screen
+the emojis
+the created date in settings
+pictures in the skill cards
+
 
 \begin{figure}
     \centering
@@ -1028,11 +1037,122 @@ for the main views of the application can be seen in figure \ref{fig:appMainView
 
 \section{Features}
 
-\subsection{Creating and saving a note}
+This section describes how the functional requirements for the system were implemented and lists some of the most 
+important and relevant features. 
+% \begin{itemize}
+%     \item \textbf{Create an application to capture reflections on graduate attributes:} The
+%     main goal of this project is to create an application that provides allows 
+%     users to make reflections on how they have developed their graduate attributes.
+%     \item \textbf{Allow users to create a note via written or audio form:} The app must 
+%     allow users be able to quickly make a note of how and when they have used these 
+%     skills in a method that is most quick and convenient for them.
+%     \item \textbf{Capability for reminders:} Reflecting is a vital part of developing these
+%     skills, however, finding the time to do this is difficult. The application therefore
+%     must allow reminders so users know when they need to reflect.
+%     \item \textbf{Create a usable application:} Creating a usable application will 
+%     encourage repeated use by users, if users find the application attractive and satisfying
+%     to use then it increases the usability.
+%     \item \textbf{Aid reflection} The evaluation will also hope to answer whether the 
+%     application aids reflection for the users and encourages deeper reflections. This 
+%     project hopes to encourage users to continue using the application to reflect.
+% \end{itemize}
 
-\subsection{Reviewing and deleting a note}
+% \textbf{Functional requirements}
+% \begin{itemize}
+%     \item \textbf{MH} Allows for capturing of reflections in either text form OR audio form
+%     \item \textbf{MH} Can make a note of how and when they exercised a skill
+%     \item \textbf{MH} Must have reminders
+%     \item \textbf{MH} Be able to delete notes/audios
+%     \item \textbf{MH} Be able to review/playback notes/audios that have been made
+%     \item \textbf{SH} Can categorise the skill for each note
+%     \item \textbf{SH} Have Helper buttons for each question to tell the user how to answer the question
+%     \item \textbf{SH} Be able to name a note
+%     \item \textbf{SH} Be able to make BOTH text and audio form notes
+%     \item \textbf{SH} Display information about each of the skills
+%     \item \textbf{CH} Implement Cognitive Behavioural Therapy techniques to aid the reflection
+%     \item \textbf{CH} Be able to view statistics based on the reflections recorded in the app
+%     \item \textbf{CH} Have the ability to switch between dark and light theme on the app
+%     \item \textbf{CH} Be able to search the notes for either the name or the skill type
+%     \item \textbf{CH} Have a Settings page to view information about the app
+%     \item \textbf{CH} Have an About Page that tells the user how to use the app correctly to make reflections
+%     \item \textbf{CH} Have links in the Settings page that take you to useful pages related to the app and graduate attributes
+%     \item \textbf{WH} Be able to upload reflections onto Moodle
+% \end{itemize}
+% \par
+% \textbf{Non-functional requirements}
+% \begin{itemize}
+%     \item Must be intuitive and easy to use. An application that is easier for new users is more likely to encourage users to continue
+%     to use the application and have an interest in it.
+%     \item Must help users to to create meaningful reflections about their graduate skills. The ability for the users to reach more 
+%     of the stages of reflection will help to develop these skills within students.
+%     \item Encourage the users to want to continue using the application for future uses, users should hopefully find the value in an
+%     application similar to this. 
+% \end{itemize}
 
-\subsection{etc}
+\subsection{Learn about graduate skills}
+
+It is important for those who are wanting to reflect and develop their graduate attributes to learn and understand
+what these skills actually are before reflection. Users are able to swipe through the skill cards on the home 
+section of the application to view a helpful graphic and description of the skill and where someone could potentially 
+use it. An example of one of these skill cards can be seen in figure \ref{fig:AdaptabilitySkillCard}. This was done
+to help users feel more comfortable in their reflections and not feel daunted by having to choose a skill to reflect on
+as they already know and understand what all of these skills are. These skill descriptions were placed on the home section
+of the application so that new users to th application can instantly scroll to familiarise themselves with the skills they can 
+expect to develop through the use of the application, whilst experienced users do not have to scroll anywhere and can
+immediately choose where in the application they want to navigate, however still have the option of a convenient reminder 
+of these skills should they require it. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/AdaptabilitySkillCard.pdf}    
+    \caption{This screenshot shows the Adaptability skill card, one of the 6 skill descriptions available on the Home view of the GradReflect application.}
+    \label{fig:AdaptabilitySkillCard} 
+\end{figure}
+
+\subsection{Saving and deleting a note}
+
+The ability to capture a reflection in written form was a key functional requirement for this project. One thing that makes this project
+stand out from similar existing note or reflective applications is the utilisation of Cognitive Behavioural Therapy (CBT) 
+techniques that are used to provide the scaffolding needed to support users in this reflection. This was implemented through the note creation form,
+users are able to create a new note and carry out their reflection using the question prompts provided for them. This aims to give clear instructions to
+focus the user on reaching all stages of reflection and therefore increasing their likelihood of development of these skills as it increases their situational
+awareness and reflective abilities. 
+
+The user was also supported in their reflection through the use of help buttons. The user is able to click on the '?' 
+button next to any of the questions in the note entry form and an alert will appear that provides further detail on how they are expected to answer the 
+question. Throughout each of the help button alerts, the example of a communication reflection is used where someone has had to settle a dispute in their 
+team. Examples are given in each of the alerts using this situation as an example of the sort of reflections the user could make. This can be seen in figure
+(REF). 
+
+Users can select one of the 6 skills available to reflect on from a picker, ensuring conformity in the skills so that there are no issues when users later are
+able to search for a skill to filter their notes. Users are also able to select their emotional response to a situation using a slider, simplifying this
+reflection for them. 
+
+Users are able to save a note after reflecting, however, this cannot be done without at least a title given. This was intended to give the user freedom
+in how much they did or did not want to write. They are also able to cancel a note at any given time by either click the cancel button or swiping
+from the top down to dismiss the form. 
+
+Users can later delete a note by either selecting the edit button, or through swiping a note in the list to the left. This is a native gesture in iOS used
+frequently 
+
+\subsection{Search and filter}
+
+\subsection{Reviewing a note}
+
+\subsection{Record an audio}
+
+\subsection{Playback and delete recording}
+
+\subsection{Reflect on personal note-taking statistics}
+
+\subsection{Visit useful links}
+
+\subsection{Notifications}
+
+\subsection{About GradReflect page}
+
+\subsection{Toggle dark/light mode}
+
 
 \section{Deployment}
 
@@ -1063,14 +1183,8 @@ to the application.
 What did you do to implement this idea, and what technical achievements did you make?
 You can't talk about everything. Cover the high level first, then cover important, relevant or impressive details.
 \par 
-Discuss the resources used. I used some online tutorials to get started and figure out how to use the design.
-\par 
 Then go on to discuss each component of the application and how it was created and what all the aspects do
 together to create the full app. 
-\par 
-Do a section based on how the user interfaces were designed and created and what they involve and the view 
-controlling and how they are all stored. Discuss views and the other types of code ie- the data models. How 
-views are stored in the @State values. etc 
 \par 
 Do a section on the written note taking and how this works and interacts with core data.
 \par 
@@ -1081,181 +1195,181 @@ Do a section on the statistics
 Do a small section on the aspects of the settings page and whats included in there.
 
 
-\section{General points}
-\subsection{Figures}
-\emph{Always} refer to figures included, like Figure \ref{fig:relu}, in the body of the text. Include full, explanatory captions and make sure the figures look good on the page.
-You may include multiple figures in one float, as in Figure \ref{fig:synthetic}, using \texttt{subcaption}, which is enabled in the template.
+% \section{General points}
+% \subsection{Figures}
+% \emph{Always} refer to figures included, like Figure \ref{fig:relu}, in the body of the text. Include full, explanatory captions and make sure the figures look good on the page.
+% You may include multiple figures in one float, as in Figure \ref{fig:synthetic}, using \texttt{subcaption}, which is enabled in the template.
 
 
 
-% Figures are important. Use them well.
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{images/relu.pdf}    
+% % Figures are important. Use them well.
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.5\linewidth]{images/relu.pdf}    
 
-    \caption{In figure captions, explain what the reader is looking at: ``A schematic of the rectifying linear unit, where $a$ is the output amplitude,
-    $d$ is a configurable dead-zone, and $Z_j$ is the input signal'', as well as why the reader is looking at this: 
-    ``It is notable that there is no activation \emph{at all} below 0, which explains our initial results.'' 
-    \textbf{Use vector image formats (.pdf) where possible}. Size figures appropriately, and do not make them over-large or too small to read.
-    }
-    % use the notation fig:name to cross reference a figure
-    \label{fig:relu} 
-\end{figure}
+%     \caption{In figure captions, explain what the reader is looking at: ``A schematic of the rectifying linear unit, where $a$ is the output amplitude,
+%     $d$ is a configurable dead-zone, and $Z_j$ is the input signal'', as well as why the reader is looking at this: 
+%     ``It is notable that there is no activation \emph{at all} below 0, which explains our initial results.'' 
+%     \textbf{Use vector image formats (.pdf) where possible}. Size figures appropriately, and do not make them over-large or too small to read.
+%     }
+%     % use the notation fig:name to cross reference a figure
+%     \label{fig:relu} 
+% \end{figure}
 
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{images/synthetic.png}
-        \caption{Synthetic image, black on white.}
-        \label{fig:syn1}
-    \end{subfigure}
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{images/synthetic_2.png}
-        \caption{Synthetic image, white on black.}
-        \label{fig:syn2}
-    \end{subfigure}
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-    %(or a blank line to force the subfigure onto a new line)    
-    \caption{Synthetic test images for edge detection algorithms. \subref{fig:syn1} shows various gray levels that require an adaptive algorithm. \subref{fig:syn2}
-    shows more challenging edge detection tests that have crossing lines. Fusing these into full segments typically requires algorithms like the Hough transform.
-    This is an example of using subfigures, with \texttt{subref}s in the caption.
-    }\label{fig:synthetic}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \includegraphics[width=\textwidth]{images/synthetic.png}
+%         \caption{Synthetic image, black on white.}
+%         \label{fig:syn1}
+%     \end{subfigure}
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%       %(or a blank line to force the subfigure onto a new line)
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \includegraphics[width=\textwidth]{images/synthetic_2.png}
+%         \caption{Synthetic image, white on black.}
+%         \label{fig:syn2}
+%     \end{subfigure}
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%     %(or a blank line to force the subfigure onto a new line)    
+%     \caption{Synthetic test images for edge detection algorithms. \subref{fig:syn1} shows various gray levels that require an adaptive algorithm. \subref{fig:syn2}
+%     shows more challenging edge detection tests that have crossing lines. Fusing these into full segments typically requires algorithms like the Hough transform.
+%     This is an example of using subfigures, with \texttt{subref}s in the caption.
+%     }\label{fig:synthetic}
+% \end{figure}
 
-\clearpage
+% \clearpage
 
-\subsection{Equations}
+% \subsection{Equations}
 
-Equations should be typeset correctly and precisely. Make sure you get parenthesis sizing correct, and punctuate equations correctly 
-(the comma is important and goes \textit{inside} the equation block). Explain any symbols used clearly if not defined earlier. 
+% Equations should be typeset correctly and precisely. Make sure you get parenthesis sizing correct, and punctuate equations correctly 
+% (the comma is important and goes \textit{inside} the equation block). Explain any symbols used clearly if not defined earlier. 
 
-For example, we might define:
-\begin{equation}
-    \hat{f}(\xi) = \frac{1}{2}\left[ \int_{-\infty}^{\infty} f(x) e^{2\pi i x \xi} \right],
-\end{equation}    
-where $\hat{f}(\xi)$ is the Fourier transform of the time domain signal $f(x)$.
+% For example, we might define:
+% \begin{equation}
+%     \hat{f}(\xi) = \frac{1}{2}\left[ \int_{-\infty}^{\infty} f(x) e^{2\pi i x \xi} \right],
+% \end{equation}    
+% where $\hat{f}(\xi)$ is the Fourier transform of the time domain signal $f(x)$.
 
-\subsection{Algorithms}
-Algorithms can be set using \texttt{algorithm2e}, as in Algorithm \ref{alg:metropolis}.
+% \subsection{Algorithms}
+% Algorithms can be set using \texttt{algorithm2e}, as in Algorithm \ref{alg:metropolis}.
 
-% NOTE: line ends are denoted by \; in algorithm2e
-\begin{algorithm}
-    \DontPrintSemicolon
-    \KwData{$f_X(x)$, a probability density function returing the density at $x$.\; $\sigma$ a standard deviation specifying the spread of the proposal distribution.\;
-    $x_0$, an initial starting condition.}
-    \KwResult{$s=[x_1, x_2, \dots, x_n]$, $n$ samples approximately drawn from a distribution with PDF $f_X(x)$.}
-    \Begin{
-        $s \longleftarrow []$\;
-        $p \longleftarrow f_X(x)$\;
-        $i \longleftarrow 0$\;
-        \While{$i < n$}
-        {
-            $x^\prime \longleftarrow \mathcal{N}(x, \sigma^2)$\;
-            $p^\prime \longleftarrow f_X(x^\prime)$\;
-            $a \longleftarrow \frac{p^\prime}{p}$\;
-            $r \longleftarrow U(0,1)$\;
-            \If{$r<a$}
-            {
-                $x \longleftarrow x^\prime$\;
-                $p \longleftarrow f_X(x)$\;
-                $i \longleftarrow i+1$\;
-                append $x$ to $s$\;
-            }
-        }
-    }
+% % NOTE: line ends are denoted by \; in algorithm2e
+% \begin{algorithm}
+%     \DontPrintSemicolon
+%     \KwData{$f_X(x)$, a probability density function returing the density at $x$.\; $\sigma$ a standard deviation specifying the spread of the proposal distribution.\;
+%     $x_0$, an initial starting condition.}
+%     \KwResult{$s=[x_1, x_2, \dots, x_n]$, $n$ samples approximately drawn from a distribution with PDF $f_X(x)$.}
+%     \Begin{
+%         $s \longleftarrow []$\;
+%         $p \longleftarrow f_X(x)$\;
+%         $i \longleftarrow 0$\;
+%         \While{$i < n$}
+%         {
+%             $x^\prime \longleftarrow \mathcal{N}(x, \sigma^2)$\;
+%             $p^\prime \longleftarrow f_X(x^\prime)$\;
+%             $a \longleftarrow \frac{p^\prime}{p}$\;
+%             $r \longleftarrow U(0,1)$\;
+%             \If{$r<a$}
+%             {
+%                 $x \longleftarrow x^\prime$\;
+%                 $p \longleftarrow f_X(x)$\;
+%                 $i \longleftarrow i+1$\;
+%                 append $x$ to $s$\;
+%             }
+%         }
+%     }
     
-\caption{The Metropolis-Hastings MCMC algorithm for drawing samples from arbitrary probability distributions, 
-specialised for normal proposal distributions $q(x^\prime|x) = \mathcal{N}(x, \sigma^2)$. The symmetry of the normal distribution means the acceptance rule takes the simplified form.}\label{alg:metropolis}
-\end{algorithm}
+% \caption{The Metropolis-Hastings MCMC algorithm for drawing samples from arbitrary probability distributions, 
+% specialised for normal proposal distributions $q(x^\prime|x) = \mathcal{N}(x, \sigma^2)$. The symmetry of the normal distribution means the acceptance rule takes the simplified form.}\label{alg:metropolis}
+% \end{algorithm}
 
-\subsection{Tables}
+% \subsection{Tables}
 
-If you need to include tables, like Table \ref{tab:operators}, use a tool like https://www.tablesgenerator.com/ to generate the table as it is
-extremely tedious otherwise. 
+% If you need to include tables, like Table \ref{tab:operators}, use a tool like https://www.tablesgenerator.com/ to generate the table as it is
+% extremely tedious otherwise. 
 
-\begin{table}[]
-    \caption{The standard table of operators in Python, along with their functional equivalents from the \texttt{operator} package. Note that table
-    captions go above the table, not below. Do not add additional rules/lines to tables. }\label{tab:operators}
-    %\tt 
-    \rowcolors{2}{}{gray!3}
-    \begin{tabular}{@{}lll@{}}
-    %\toprule
-    \textbf{Operation}    & \textbf{Syntax}                & \textbf{Function}                            \\ %\midrule % optional rule for header
-    Addition              & \texttt{a + b}                          & \texttt{add(a, b)}                                    \\
-    Concatenation         & \texttt{seq1 + seq2}                    & \texttt{concat(seq1, seq2)}                           \\
-    Containment Test      & \texttt{obj in seq}                     & \texttt{contains(seq, obj)}                           \\
-    Division              & \texttt{a / b}                          & \texttt{div(a, b) }  \\
-    Division              & \texttt{a / b}                          & \texttt{truediv(a, b) } \\
-    Division              & \texttt{a // b}                         & \texttt{floordiv(a, b)}                               \\
-    Bitwise And           & \texttt{a \& b}                         & \texttt{and\_(a, b)}                                  \\
-    Bitwise Exclusive Or  & \texttt{a \textasciicircum b}           & \texttt{xor(a, b)}                                    \\
-    Bitwise Inversion     & \texttt{$\sim$a}                        & \texttt{invert(a)}                                    \\
-    Bitwise Or            & \texttt{a | b}                          & \texttt{or\_(a, b)}                                   \\
-    Exponentiation        & \texttt{a ** b}                         & \texttt{pow(a, b)}                                    \\
-    Identity              & \texttt{a is b}                         & \texttt{is\_(a, b)}                                   \\
-    Identity              & \texttt{a is not b}                     & \texttt{is\_not(a, b)}                                \\
-    Indexed Assignment    & \texttt{obj{[}k{]} = v}                 & \texttt{setitem(obj, k, v)}                           \\
-    Indexed Deletion      & \texttt{del obj{[}k{]}}                 & \texttt{delitem(obj, k)}                              \\
-    Indexing              & \texttt{obj{[}k{]}}                     & \texttt{getitem(obj, k)}                              \\
-    Left Shift            & \texttt{a \textless{}\textless b}       & \texttt{lshift(a, b)}                                 \\
-    Modulo                & \texttt{a \% b}                         & \texttt{mod(a, b)}                                    \\
-    Multiplication        & \texttt{a * b}                          & \texttt{mul(a, b)}                                    \\
-    Negation (Arithmetic) & \texttt{- a}                            & \texttt{neg(a)}                                       \\
-    Negation (Logical)    & \texttt{not a}                          & \texttt{not\_(a)}                                     \\
-    Positive              & \texttt{+ a}                            & \texttt{pos(a)}                                       \\
-    Right Shift           & \texttt{a \textgreater{}\textgreater b} & \texttt{rshift(a, b)}                                 \\
-    Sequence Repetition   & \texttt{seq * i}                        & \texttt{repeat(seq, i)}                               \\
-    Slice Assignment      & \texttt{seq{[}i:j{]} = values}          & \texttt{setitem(seq, slice(i, j), values)}            \\
-    Slice Deletion        & \texttt{del seq{[}i:j{]}}               & \texttt{delitem(seq, slice(i, j))}                    \\
-    Slicing               & \texttt{seq{[}i:j{]}}                   & \texttt{getitem(seq, slice(i, j))}                    \\
-    String Formatting     & \texttt{s \% obj}                       & \texttt{mod(s, obj)}                                  \\
-    Subtraction           & \texttt{a - b}                          & \texttt{sub(a, b)}                                    \\
-    Truth Test            & \texttt{obj}                            & \texttt{truth(obj)}                                   \\
-    Ordering              & \texttt{a \textless b}                  & \texttt{lt(a, b)}                                     \\
-    Ordering              & \texttt{a \textless{}= b}               & \texttt{le(a, b)}                                     \\
-    % \bottomrule
-    \end{tabular}
-    \end{table}
-\subsection{Code}
+% \begin{table}[]
+%     \caption{The standard table of operators in Python, along with their functional equivalents from the \texttt{operator} package. Note that table
+%     captions go above the table, not below. Do not add additional rules/lines to tables. }\label{tab:operators}
+%     %\tt 
+%     \rowcolors{2}{}{gray!3}
+%     \begin{tabular}{@{}lll@{}}
+%     %\toprule
+%     \textbf{Operation}    & \textbf{Syntax}                & \textbf{Function}                            \\ %\midrule % optional rule for header
+%     Addition              & \texttt{a + b}                          & \texttt{add(a, b)}                                    \\
+%     Concatenation         & \texttt{seq1 + seq2}                    & \texttt{concat(seq1, seq2)}                           \\
+%     Containment Test      & \texttt{obj in seq}                     & \texttt{contains(seq, obj)}                           \\
+%     Division              & \texttt{a / b}                          & \texttt{div(a, b) }  \\
+%     Division              & \texttt{a / b}                          & \texttt{truediv(a, b) } \\
+%     Division              & \texttt{a // b}                         & \texttt{floordiv(a, b)}                               \\
+%     Bitwise And           & \texttt{a \& b}                         & \texttt{and\_(a, b)}                                  \\
+%     Bitwise Exclusive Or  & \texttt{a \textasciicircum b}           & \texttt{xor(a, b)}                                    \\
+%     Bitwise Inversion     & \texttt{$\sim$a}                        & \texttt{invert(a)}                                    \\
+%     Bitwise Or            & \texttt{a | b}                          & \texttt{or\_(a, b)}                                   \\
+%     Exponentiation        & \texttt{a ** b}                         & \texttt{pow(a, b)}                                    \\
+%     Identity              & \texttt{a is b}                         & \texttt{is\_(a, b)}                                   \\
+%     Identity              & \texttt{a is not b}                     & \texttt{is\_not(a, b)}                                \\
+%     Indexed Assignment    & \texttt{obj{[}k{]} = v}                 & \texttt{setitem(obj, k, v)}                           \\
+%     Indexed Deletion      & \texttt{del obj{[}k{]}}                 & \texttt{delitem(obj, k)}                              \\
+%     Indexing              & \texttt{obj{[}k{]}}                     & \texttt{getitem(obj, k)}                              \\
+%     Left Shift            & \texttt{a \textless{}\textless b}       & \texttt{lshift(a, b)}                                 \\
+%     Modulo                & \texttt{a \% b}                         & \texttt{mod(a, b)}                                    \\
+%     Multiplication        & \texttt{a * b}                          & \texttt{mul(a, b)}                                    \\
+%     Negation (Arithmetic) & \texttt{- a}                            & \texttt{neg(a)}                                       \\
+%     Negation (Logical)    & \texttt{not a}                          & \texttt{not\_(a)}                                     \\
+%     Positive              & \texttt{+ a}                            & \texttt{pos(a)}                                       \\
+%     Right Shift           & \texttt{a \textgreater{}\textgreater b} & \texttt{rshift(a, b)}                                 \\
+%     Sequence Repetition   & \texttt{seq * i}                        & \texttt{repeat(seq, i)}                               \\
+%     Slice Assignment      & \texttt{seq{[}i:j{]} = values}          & \texttt{setitem(seq, slice(i, j), values)}            \\
+%     Slice Deletion        & \texttt{del seq{[}i:j{]}}               & \texttt{delitem(seq, slice(i, j))}                    \\
+%     Slicing               & \texttt{seq{[}i:j{]}}                   & \texttt{getitem(seq, slice(i, j))}                    \\
+%     String Formatting     & \texttt{s \% obj}                       & \texttt{mod(s, obj)}                                  \\
+%     Subtraction           & \texttt{a - b}                          & \texttt{sub(a, b)}                                    \\
+%     Truth Test            & \texttt{obj}                            & \texttt{truth(obj)}                                   \\
+%     Ordering              & \texttt{a \textless b}                  & \texttt{lt(a, b)}                                     \\
+%     Ordering              & \texttt{a \textless{}= b}               & \texttt{le(a, b)}                                     \\
+%     % \bottomrule
+%     \end{tabular}
+%     \end{table}
+% \subsection{Code}
 
-Avoid putting large blocks of code in the report (more than a page in one block, for example). Use syntax highlighting if possible, as in Listing \ref{lst:callahan}.
+% Avoid putting large blocks of code in the report (more than a page in one block, for example). Use syntax highlighting if possible, as in Listing \ref{lst:callahan}.
 
-\begin{lstlisting}[language=python, float, caption={The algorithm for packing the $3\times 3$ outer-totalistic binary CA successor rule into a 
-    $16\times 16\times 16\times 16$ 4 bit lookup table, running an equivalent, notionally 16-state $2\times 2$ CA.}, label=lst:callahan]
-    def create_callahan_table(rule="b3s23"):
-        """Generate the lookup table for the cells."""        
-        s_table = np.zeros((16, 16, 16, 16), dtype=np.uint8)
-        birth, survive = parse_rule(rule)
+% \begin{lstlisting}[language=python, float, caption={The algorithm for packing the $3\times 3$ outer-totalistic binary CA successor rule into a 
+%     $16\times 16\times 16\times 16$ 4 bit lookup table, running an equivalent, notionally 16-state $2\times 2$ CA.}, label=lst:callahan]
+%     def create_callahan_table(rule="b3s23"):
+%         """Generate the lookup table for the cells."""        
+%         s_table = np.zeros((16, 16, 16, 16), dtype=np.uint8)
+%         birth, survive = parse_rule(rule)
 
-        # generate all 16 bit strings
-        for iv in range(65536):
-            bv = [(iv >> z) & 1 for z in range(16)]
-            a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p = bv
+%         # generate all 16 bit strings
+%         for iv in range(65536):
+%             bv = [(iv >> z) & 1 for z in range(16)]
+%             a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p = bv
 
-            # compute next state of the inner 2x2
-            nw = apply_rule(f, a, b, c, e, g, i, j, k)
-            ne = apply_rule(g, b, c, d, f, h, j, k, l)
-            sw = apply_rule(j, e, f, g, i, k, m, n, o)
-            se = apply_rule(k, f, g, h, j, l, n, o, p)
+%             # compute next state of the inner 2x2
+%             nw = apply_rule(f, a, b, c, e, g, i, j, k)
+%             ne = apply_rule(g, b, c, d, f, h, j, k, l)
+%             sw = apply_rule(j, e, f, g, i, k, m, n, o)
+%             se = apply_rule(k, f, g, h, j, l, n, o, p)
 
-            # compute the index of this 4x4
-            nw_code = a | (b << 1) | (e << 2) | (f << 3)
-            ne_code = c | (d << 1) | (g << 2) | (h << 3)
-            sw_code = i | (j << 1) | (m << 2) | (n << 3)
-            se_code = k | (l << 1) | (o << 2) | (p << 3)
+%             # compute the index of this 4x4
+%             nw_code = a | (b << 1) | (e << 2) | (f << 3)
+%             ne_code = c | (d << 1) | (g << 2) | (h << 3)
+%             sw_code = i | (j << 1) | (m << 2) | (n << 3)
+%             se_code = k | (l << 1) | (o << 2) | (p << 3)
 
-            # compute the state for the 2x2
-            next_code = nw | (ne << 1) | (sw << 2) | (se << 3)
+%             # compute the state for the 2x2
+%             next_code = nw | (ne << 1) | (sw << 2) | (se << 3)
 
-            # get the 4x4 index, and write into the table
-            s_table[nw_code, ne_code, sw_code, se_code] = next_code
+%             # get the 4x4 index, and write into the table
+%             s_table[nw_code, ne_code, sw_code, se_code] = next_code
 
-        return s_table
+%         return s_table
 
-\end{lstlisting}
+% \end{lstlisting}
 
 %==================================================================================================================================
 \chapter{Evaluation} \label{evaluation}
@@ -1772,22 +1886,24 @@ In the future the application would require extensive UI and Unit testing to be 
 to the aims of my project only one UI test was created to give a proof of concept idea for the tests that should be created for future
 work. The UI feature that has been tested is the users ability to create and save a written note. This was chosen as this is the 
 basic necessary requirement for the application to run functionally. 
-\par 
-If you visualise, follow the basic rules, as illustrated in Figure \ref{fig:boxplot}:
-\par 
-See the file \texttt{guide\_to\_visualising.pdf} for further information and guidance.
-\begin{figure}
-    \centering
-    \includegraphics[width=1.0\linewidth]{images/boxplot_finger_distance.pdf}    
 
-    \caption{Average number of fingers detected by the touch sensor at different heights above the surface, averaged over all gestures. Dashed lines indicate
-    the true number of fingers present. The Box plots include bootstrapped uncertainty notches for the median. It is clear that the device is biased toward 
-    undercounting fingers, particularly at higher $z$ distances.
-    }
 
-    % use the notation fig:name to cross reference a figure
-    \label{fig:boxplot} 
-\end{figure}
+% \par 
+% If you visualise, follow the basic rules, as illustrated in Figure \ref{fig:boxplot}:
+% \par 
+% See the file \texttt{guide\_to\_visualising.pdf} for further information and guidance.
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{images/boxplot_finger_distance.pdf}    
+
+%     \caption{Average number of fingers detected by the touch sensor at different heights above the surface, averaged over all gestures. Dashed lines indicate
+%     the true number of fingers present. The Box plots include bootstrapped uncertainty notches for the median. It is clear that the device is biased toward 
+%     undercounting fingers, particularly at higher $z$ distances.
+%     }
+
+%     % use the notation fig:name to cross reference a figure
+%     \label{fig:boxplot} 
+% \end{figure}
 
 
 %==================================================================================================================================

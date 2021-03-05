@@ -34,7 +34,7 @@ let skillData: [Skill] = [
     ),
     Skill(
         title: "Adaptability",
-        headline: "Adaptability describes situations where you have had to adapt to fit with changing circumstances and quickly learn new skills. Demonstrating this skill requires flexibility to respond effectively even when things don't go to plan. ",
+        headline: "Adaptability describes situations where you have had to modify behaviour to accommodate changing circumstances and quickly learn new skills. Demonstrating this skill requires flexibility to respond effectively even when things don't go to plan.",
         image: "adaptabilityIcon",
         // teal to green
         gradientColours: [Color(red: 14 / 255, green: 124 / 255, blue: 123 / 255), Color(red: 23 / 255, green: 190 / 255, blue: 187 / 255)]

@@ -416,3 +416,6 @@
 * *2.5 hours* Implementation section, worked on MVVM part
 * *1 hour* Wrote about the benefits of Core data
 * *1.5 hours* Added screenshots and aesthetics section [10 hours]
+
+### 05 Mar 2021
+* *3.5 hours* Implementation features, reviewed marking scheme
