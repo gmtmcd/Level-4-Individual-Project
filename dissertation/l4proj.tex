@@ -986,13 +986,6 @@ was not able to be altered to adjust functionality. Despite this, it was benefic
 It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. The user interfaces
 for the main views of the application can be seen in figure \ref{fig:appMainViews}
 
-\subsection{Additional aesthetics features}
-The loading screen
-the emojis
-the created date in settings
-pictures in the skill cards
-
-
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
@@ -1034,60 +1027,45 @@ pictures in the skill cards
     \label{fig:appMainViews}
 \end{figure}
 
+\subsection{Aesthetic features}
+
+\textbf{Loading Screen:} A loading screen was created using the applications logo and colour scheme. This was to create a more professional and attractive looking application, whilst also performing the function of ensuring to the user that the application is loading, instead of a white screen which may lead the user to believe the application may have crashed.
+
+\textbf{Emojis:} Emojis were implemented throughout the application. This was suggested by a potential user during early stages of development after they had viewed the progress of GradReflect. This was to create a more casual and friendly design to the application whilst also being informative of functionality. These emojis can be seen in the titles for views in figure \ref{fig:appMainViews}.
+
+\textbf{App information in Settings:} Detail about the application such as name, compatibilty, developer, version and created date are provided in the settings section of the application. This is a common feature in iOS applications and gives a more professional design to the settings. These can be seen in figure \ref{fig:appSettingsScreen}
+
+\textbf{Images on skill cards:} Each skill card contains a graphic that summarises the skill. These make the application more attractive and can add to a user's understanding of a skill. Many users pointed out that they enjoyed these images in the user evaluations conducted in chapter \ref{evaluation}. One of these images can be seen in figure \ref{fig:AdaptabilitySkillCard}.
+
+\textbf{Toggle dark/light theme:} Users are able to toggle between dark and light theme within the application, this provides an element of customisability to the application for users, adding to usability and attractiveness. This dark mdoe can be seen in figure \ref{fig:DarkMode}, compared with the light mode that can be seen in figure \ref{fig:appMainViews}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/DarkMode.pdf}    
+    \caption{This screenshot shows the notification the notes view after the user has toggled to dark mode.}
+    \label{fig:DarkMode} 
+\end{figure}
+
 
 \section{Features}
 
 This section describes how the functional requirements for the system were implemented and lists some of the most 
 important and relevant features. 
-% \begin{itemize}
-%     \item \textbf{Create an application to capture reflections on graduate attributes:} The
-%     main goal of this project is to create an application that provides allows 
-%     users to make reflections on how they have developed their graduate attributes.
-%     \item \textbf{Allow users to create a note via written or audio form:} The app must 
-%     allow users be able to quickly make a note of how and when they have used these 
-%     skills in a method that is most quick and convenient for them.
-%     \item \textbf{Capability for reminders:} Reflecting is a vital part of developing these
-%     skills, however, finding the time to do this is difficult. The application therefore
-%     must allow reminders so users know when they need to reflect.
-%     \item \textbf{Create a usable application:} Creating a usable application will 
-%     encourage repeated use by users, if users find the application attractive and satisfying
-%     to use then it increases the usability.
-%     \item \textbf{Aid reflection} The evaluation will also hope to answer whether the 
-%     application aids reflection for the users and encourages deeper reflections. This 
-%     project hopes to encourage users to continue using the application to reflect.
-% \end{itemize}
-
-% \textbf{Functional requirements}
-% \begin{itemize}
 %     \item \textbf{MH} Allows for capturing of reflections in either text form OR audio form
-%     \item \textbf{MH} Can make a note of how and when they exercised a skill
 %     \item \textbf{MH} Must have reminders
 %     \item \textbf{MH} Be able to delete notes/audios
 %     \item \textbf{MH} Be able to review/playback notes/audios that have been made
-%     \item \textbf{SH} Can categorise the skill for each note
-%     \item \textbf{SH} Have Helper buttons for each question to tell the user how to answer the question
-%     \item \textbf{SH} Be able to name a note
 %     \item \textbf{SH} Be able to make BOTH text and audio form notes
-%     \item \textbf{SH} Display information about each of the skills
-%     \item \textbf{CH} Implement Cognitive Behavioural Therapy techniques to aid the reflection
 %     \item \textbf{CH} Be able to view statistics based on the reflections recorded in the app
 %     \item \textbf{CH} Have the ability to switch between dark and light theme on the app
-%     \item \textbf{CH} Be able to search the notes for either the name or the skill type
 %     \item \textbf{CH} Have a Settings page to view information about the app
 %     \item \textbf{CH} Have an About Page that tells the user how to use the app correctly to make reflections
 %     \item \textbf{CH} Have links in the Settings page that take you to useful pages related to the app and graduate attributes
 %     \item \textbf{WH} Be able to upload reflections onto Moodle
-% \end{itemize}
-% \par
-% \textbf{Non-functional requirements}
-% \begin{itemize}
 %     \item Must be intuitive and easy to use. An application that is easier for new users is more likely to encourage users to continue
 %     to use the application and have an interest in it.
-%     \item Must help users to to create meaningful reflections about their graduate skills. The ability for the users to reach more 
-%     of the stages of reflection will help to develop these skills within students.
 %     \item Encourage the users to want to continue using the application for future uses, users should hopefully find the value in an
 %     application similar to this. 
-% \end{itemize}
 
 \subsection{Learn about graduate skills}
 
@@ -1109,18 +1087,18 @@ of these skills should they require it.
     \label{fig:AdaptabilitySkillCard} 
 \end{figure}
 
-\subsection{Saving and deleting a note}
+\subsection{Creating and deleting a note}
 
 The ability to capture a reflection in written form was a key functional requirement for this project. One thing that makes this project
 stand out from similar existing note or reflective applications is the utilisation of Cognitive Behavioural Therapy (CBT) 
 techniques that are used to provide the scaffolding needed to support users in this reflection. This was implemented through the note creation form,
-users are able to create a new note and carry out their reflection using the question prompts provided for them. This aims to give clear instructions to
+users are able to create and save a new note and carry out their reflection using the question prompts provided for them. This form can be seen in figure \ref{fig:CreatingNote}. This aims to give clear instructions to
 focus the user on reaching all stages of reflection and therefore increasing their likelihood of development of these skills as it increases their situational
 awareness and reflective abilities. 
 
 The user was also supported in their reflection through the use of help buttons. The user is able to click on the '?' 
 button next to any of the questions in the note entry form and an alert will appear that provides further detail on how they are expected to answer the 
-question. Throughout each of the help button alerts, the example of a communication reflection is used where someone has had to settle a dispute in their 
+question. An example of this alert can be seen in figure \ref{fig:HelperButtonAlert}. Throughout each of the help button alerts, the example of a communication reflection is used where someone has had to settle a dispute in their 
 team. Examples are given in each of the alerts using this situation as an example of the sort of reflections the user could make. This can be seen in figure
 (REF). 
 
@@ -1132,29 +1110,99 @@ Users are able to save a note after reflecting, however, this cannot be done wit
 in how much they did or did not want to write. They are also able to cancel a note at any given time by either click the cancel button or swiping
 from the top down to dismiss the form. 
 
-Users can later delete a note by either selecting the edit button, or through swiping a note in the list to the left. This is a native gesture in iOS used
-frequently 
+Users can later delete a note by either selecting the edit button, or through swiping a note in the list to the left. The edit mode for notes can be seen in figure \ref{fig:DeleteNote}. This is a native gesture in iOS used
+frequently in other applications. Users are unable to update or edit a note after its creation, however, as this would replicate the CBT practices or writing in a journal, where relfections cannot be edited. 
 
-\subsection{Search and filter}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/CreatingNote.pdf}
+        \caption{Form to create a note.}
+        \label{fig:CreatingNote}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/HelperButtonAlert.pdf}
+        \caption{Alert given from the situation prompt by help button.}
+        \label{fig:HelperButtonAlert}
+    \end{subfigure}   
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/ReviewingNote.pdf}
+        \caption{Reviewing a note}
+        \label{fig:ReviewingNote}
+    \end{subfigure}   
+    \caption{Screenshots showing the views when creating a note and reviewing it.}
+    \label{fig:NoteCreationReview}
+\end{figure}
 
 \subsection{Reviewing a note}
 
+Users are able to click on a previous note they have made, allowing them to reflect on previous events and their reflections. This could enable them to see how they have improved or handled previous similar scenarios. This can be seen in figure \ref{fig:ReviewingNote}.
+
+\subsection{Search and filter}
+
+Users are able to type in the name of a note to filter the list of notes presented, shown in figure \ref{fig:SearchFilter}. They are also able to type in a specific skill to filter the list by that skill. This is a useful feature as it is intended that users would continue to use this application frequently to reflect, and therefore having the ability to filter notes would make it easier for them to find previous notes they have made for a skill. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/SearchFilter.pdf}    
+    \caption{This screenshot shows the list filtered after searching for a term in the name of one of the notes.}
+    \label{fig:SearchFilter} 
+\end{figure}
+
 \subsection{Record an audio}
+
+Users are also able to record an audio of themselves discussing a situation or skill. This provided a more convenient option, with the freedom to discuss anything the user wishes to. An AVAudioRecorder provided the recording capabilities within the application, using the user-built-in microphone and speaker. SwiftUI provides a strict format for creation audio capabilities within an application, this is intended to reduce programming overhead. An AVAudioSession is used to configure the audio session of the application. Each time a recording started a new audio session is created and set to the category playAndRecord, meaning that a user is able to create and recording and play it back. It ensures that the application will conform to typical iOS behaviours, such as muting a record upon locking the device, or silencing other background audio when a recording is played. 
+Users are able to start a recording until they click stop, the recording button can be seen in figure \ref{fig:appRecordingsScreen}. AVAudioRecorder will be given the provided name from the user if they had entered it in the naming field prior to clicking record, or will set the name of the recording to the date and time of creation if the user does not provide a name. 
 
 \subsection{Playback and delete recording}
 
-\subsection{Reflect on personal note-taking statistics}
+Users are able to playback a recording, allowing them to convert this recording into a fully written note, this playback button can be seen in figure \ref{fig:appRecordingsScreen}. They can then delete any notes in the same way as a written note via either the edit button or swiping to the left. Edit mode for this can be seen in figure \ref{fig:DeleteAudio}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/DeleteNote.pdf}
+        \caption{Delete note.}
+        \label{fig:DeleteNote}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/DeleteAudio.pdf}
+        \caption{Delete audio.}
+        \label{fig:DeleteAudio}
+    \end{subfigure}   
+    \caption{Screenshots showing the edit mode allowing deletion.}
+    \label{fig:Deletion}
+\end{figure}
+
+\subsection{Review statistics}
+
+Users are able to view the statistics of their notes, seen in figure \ref{fig:appStatScreen}. Each skill is presented with the same colour scheme used in the skill descriptions to ensure a cohesive look to the application. Each skill card contains the number of notes they have made on the skill, the average words per entry, and their average emotional response for the skill. Users are also able to view their total number of notes and their average word per note over every note. This was to allow the user to make comparisons between each skill and how extensively they had reflected in their notes and how they generally view experiences that engage this skill. The average emotion over all skills was not given as a metric as it was decided that this woud not be useful to users as it is more useful to review how they feel about a specific skill rather than over all experiences. 
 
 \subsection{Visit useful links}
 
+The Settings view also provides users with links that could potentially assist them in their reflections. One of the links given takes the user to the University of Glasgow website on graduate attributes, linking this project to the university and how it expects them to develop these skills throughout htier education. A link was also given to the University of Glasgow's Moodle page. This was as exporting reflections to Moodle had been considered during the requirements gathering stage but had been decided was not useful as users may not have the desire to upload these reflections onto Moodle due to their personal nature of the users experiences and emotions. SwiftUI and iOS development also did not provide a Moodle API to allow users to do this. Instead, a link is now given to users as an option so that they are able to take their reflections to Moodle themselves should they wish to. These links can be seen in figure \ref{fig:appSettingsScreen}.
+
 \subsection{Notifications}
+
+Users are able to turn on notifications through the Settings view. This was implemented using a UNUserNotificationCenter object, which manages all notification related activities for any application. Similarly to enabling recordings, SwiftUI provides a standard structure that notifications are allowed to be set up and enabled. The UNUserNotificationCenter manages the request of permission for GradReflect to send notifications to the user and scheduling when these notifications can occur. In the implemented application, the user is able to click to turn on notifications, this will set a notification to fire 10 seconds after pressing. This is to give the user enough time to close the applciation and wait for the incoming notification. The scheduling of 10 seconds is due to the application not going into real-world deployment, and is so that the ability for notifications can be tested during demonstrations and evaluations. For future deployment, the notifications would fire weekly, as this has been stated as the recommended timescale to regularly reflect \citep{bruno_reflective_2018}. The notification can be seen in figure \ref{fig:Notification}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/Notification.pdf}    
+    \caption{This screenshot shows the notification that fires after the user turns on notifications.}
+    \label{fig:Notification} 
+\end{figure}
 
 \subsection{About GradReflect page}
 
-\subsection{Toggle dark/light mode}
+Users were also able to navigate to an about GradReflect view through the Settings view. This was a simple description in detail of each aspect of the application and how the application was intended to be used. This section also describes to the user about the use of CBT within the application and how this is intended to assist them. The goal of this page is to provide users with further clarifications of how they can use the application to develop their skills and provide greater detailed instructions and support necessary for them to be able to reflect effectively. This page can be seen in figure \ref{fig:AboutApp}.
 
-
-\section{Deployment}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/AboutApp.pdf}    
+    \caption{This screenshot shows the About GradReflect page.}
+    \label{fig:AboutApp} 
+\end{figure}
 
 \section{Maintainability}
 An important goal for the project was to allow future developers to maintain the project and to add new features, eventually taking this application into 
