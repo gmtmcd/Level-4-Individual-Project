@@ -423,3 +423,9 @@
 
 ### 07 Mar 2021
 * *2 hours* Completed conclusion [18.5 hours]
+
+## Week 21
+
+* *0.5 hours* Prepped for meeting with supervisor
+* *0.5 hours* Meeting with supervisor and write up meeting minutes to wiki
+* *1.5 hours* Rewrites of intro and background
