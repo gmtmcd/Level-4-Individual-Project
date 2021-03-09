@@ -426,6 +426,10 @@
 
 ## Week 21
 
+### 08 Mar 2021
 * *0.5 hours* Prepped for meeting with supervisor
 * *0.5 hours* Meeting with supervisor and write up meeting minutes to wiki
-* *1.5 hours* Rewrites of intro and background
+* *1.5 hours* Rewrites of intro and background [2.5 hours]
+
+### 09 Mar 2021
+* *0.5 hours* Went over case study
