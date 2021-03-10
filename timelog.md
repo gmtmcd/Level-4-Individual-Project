@@ -433,4 +433,7 @@
 
 ### 09 Mar 2021
 * *0.5 hours* Went over case study
-* *0.5 hours* Began rewrite of requirements section
+* *0.5 hours* Began rewrite of requirements section [3.5 hours]
+
+### 10 Mar 2021
+* *1.5 hours* Changes to requirements section

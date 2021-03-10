@@ -106,7 +106,7 @@ However, new methodologies have been presented to assist in the development of t
 
 The potential to create an application that encourages users to reflect on their real-world experiences could increase awareness of these skills within students encouraging their development and increasing their likelihood of success within the workplace, which is often a source of concern for students \citep{stevens_industry_2016}.
 
-\section{Aims - further work needed on the aims}
+\section{Aims - further work needed on the aims} \label{IntroAims}
 In light of the above motivations, we will build an iOS mobile application that will enable students to capture their reflections on situations where they have exercised their graduate skills, encouraging the awareness and development of these skills. This application will incorporate Cognitive Behavioural Therapy (CBT) techniques to prompt deeper and more meaningful reflections. 
 
 An initial exploratory study will be carried out to determine whether using CBT techniques are a viable method to encourage reflections within students. The results of this experiment will be analysed to answer the question: Does CBT benefit reflection by students on their graduate skills?
@@ -393,107 +393,60 @@ This would allow conclusive evidence to be given on the benefits that the use of
 %==================================================================================================================================
 \chapter{Analysis/Requirements}
 
-This project was presented by a Univeristy of Glasgow lecturer, Dr. Matthew Barr, who required a mobile application to be made to capture reflections on graduate attributes. A list of requirements was created in weekly meetings. This was an agile process where the newest version of the application, experiments, and design documents were presented and discussed each week. Dr Barr's paper "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher Education" provided enough detail to gain an understanding of what graduate attributes were and how they were learned \citep{barr_2019}. Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding of how to create a usable and satisfying application for users, as well as how to conduct various evaluations and experiments that would be required for this project. Further requirements were gathered through personal heuristic evaluation, this allowed iterative improvements to be made to the application, increasing the overall usability.
+This project was presented by a Univeristy of Glasgow lecturer, Dr. Matthew Barr, who required a mobile application to be made to capture reflections on graduate attributes. A list of requirements was created in weekly meetings. This was an agile process where the newest version of the application, experiments, and design documents were presented and discussed each week. Dr Barr's paper "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher Education" provided enough detail to gain an understanding of what graduate attributes were and how they were learned \citep{barr_2019}. Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding of how to create a usable and satisfying application for users, as well as how to conduct various evaluations and experiments that would be required for this project. Further requirements were gathered through personal heuristic evaluation as the project progressed, this allowed iterative improvements to be made to the application, increasing the overall usability.
 
 \section{Problem Specification}
 
-The main expectations for the application are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have used their graduate attributes, to allow them to further develop these skill that are vital in the workplace and increasing employability. It was hypothesised that this could be achieved by allowing users to do this quickly and conveniently through the use of a mobile application. As the application will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can in their own time, deepen their understanding and development of these skills, and encourage more frequent reflections. This hypothesis is tested in the user evaluation later in the 
-project. The list of functional requirements below describes actions that users should be able to perform with the application. The list of non-functional requirements are requirements of the applications itself. These requirements follow the MoSCoW requirements building format including Must Have (MH), Should Have (SH), Could Have (CH) and Wont Have (WH) \citep{consortium_chapter_2014}.
-\par 
+The main expectations for the application are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have used their graduate attributes. It was decided that the best method to acheive this was to allow users to quickly and conveniently reflect using a mobile application. As the application will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can in their own time, deepen their understanding and development of these skills. The ability for users to make reflection easily was tested in the user evaluations later in the project. 
+
+To begin creating the list of functional requirements of the GradReflect app, multiple user scenarios and user stories were initially created for students, interns/apprentices, recent graduates and experienced members in the workplace, these can be seen in appendix (REFERENCE). However, through discussion with Dr Barr, it was decided the main users of this application would be students, and the application should designed as such. The list of functional requirements below describes actions that users should be able to perform with the application. The list of non-functional requirements are requirements of the applications itself. These requirements follow the MoSCoW requirements building format including Must Have (MH), Should Have (SH), Could Have (CH) and Wont Have (WH) \citep{consortium_chapter_2014}. Requirements marked with * were added throughout the project as different iterations introduced possible new functionalities. 
+
 \textbf{Functional requirements}
 \begin{itemize}
-    \item \textbf{MH} Allows for capturing of reflections in either text form OR audio form
-    \item \textbf{MH} Can make a note of how and when they exercised a skill
-    \item \textbf{MH} Must have reminders
-    \item \textbf{MH} Be able to delete notes/audios
-    \item \textbf{MH} Be able to review/playback notes/audios that have been made
-    \item \textbf{SH} Can categorise the skill for each note
-    \item \textbf{SH} Have Helper buttons for each question to tell the user how to answer the question
-    \item \textbf{SH} Be able to name a note
-    \item \textbf{SH} Be able to make BOTH text and audio form notes
-    \item \textbf{SH} Display information about each of the skills
-    \item \textbf{CH} Implement Cognitive Behavioural Therapy techniques to aid the reflection
-    \item \textbf{CH} Be able to view statistics based on the reflections recorded in the app
-    \item \textbf{CH} Have the ability to switch between dark and light theme on the app
-    \item \textbf{CH} Be able to search the notes for either the name or the skill type
-    \item \textbf{CH} Have a Settings page to view information about the app
-    \item \textbf{CH} Have an About Page that tells the user how to use the app correctly to make reflections
-    \item \textbf{CH} Have links in the Settings page that take you to useful pages related to the app and graduate attributes
-    \item \textbf{WH} Be able to upload reflections onto Moodle
+    \item \textbf{MH} Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills, this can be in either written OR audio form.
+    \item \textbf{MH} Users must be able to delete a reflection created, as well as being able to review it at a later date, however users should not be able to update or edit a note after it's creation. 
+    \item \textbf{MH} Users must be able to turn on notifications.
+
+    \item \textbf{SH} Users should be able to select a skill from a pre-defined list to avoid mistakes and allow for future potential filtering.
+    \item \textbf{SH} When creating a written note, there should be help buttons that explain to the user how they should answer each questions and provide an example, this will give them clear instructions to allow effective reflection.
+    \item \textbf{SH} Users should be able to give their note a title to allow for clear representation of what a note contains, and allow for future potential searching or filtering.
+    \item \textbf{SH*} Users should be able to create a reflection in BOTH written and audio form. This will allow both structured reflections and freeform spoken reflections for convenience. 
+    \item \textbf{SH} The application should contain a description of each of the skills that users are expected to develop and reflect on during the use of the app. 
+    \item \textbf{SH*} Users should be able to search for the name of a note or a skill category to filter the notes in the list by skill.
+    \item \textbf{SH} The application should have a Settings page to view information about the application.
+    \item \textbf{SH} GradReflect should have an About Page within the settings that tells the user how to use the app correctly to make reflections, giving further clear instructions to the user. 
+    \item \textbf{SH*} Users should be able to view statistics based on the reflections written into the application.
+    
+    \item \textbf{CH} The application could implement Cognitive Behavioural Therapy techniques to aid the reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. 
+    \item \textbf{CH*} Users could have the ability to customise their experience of GradReflect and have the ability to switch between dark and light themed interface.
+    \item \textbf{CH} GradReflect could have links in the Settings page that take users to useful pages related to the app and graduate attributes to provide further insight and education on graduate attributes.
+    
+    \item \textbf{WH} It was decided that users will not be able to upload reflections onto Moodle as this is not within the scope and does not provide enough benefit to users in completing the aims discussed in Section \ref{IntroAims}.
 \end{itemize}
-\par
+
 \textbf{Non-functional requirements}
 \begin{itemize}
-    \item Must be intuitive and easy to use. An application that is easier for new users is more likely to encourage users to continue
-    to use the application and have an interest in it.
-    \item Must help users to to create meaningful reflections about their graduate skills. The ability for the users to reach more 
-    of the stages of reflection will help to develop these skills within students.
-    \item Encourage the users to want to continue using the application for future uses, users should hopefully find the value in an
-    application similar to this. 
+    \item \textbf{MH} Must be intuitive and easy to use. An application that is easier for new users is more likely to encourage them to continue to use the application and have an interest in it.
+    \item \textbf{MH} Must help users to to create meaningful reflections about their graduate skills. The ability for the users to reach more of the stages of reflection will help to develop these skills within students.
+    \item \textbf{SH} Users should be able to create quick reflections.
+    \item \textbf{SH} The application should be able to encourage the users to want to continue using the application in the future.
+    \item \textbf{SH} Users should find the features of the application useful and find the value in using an application like this to reflect. 
 \end{itemize}
 
 
 \section{Chosen Limitations}
 
-Due to this application being designed and created for iOS devices, users would not be able to download this application onto their own 
-devices without the application being uploaded to the Apple app store. This was not able to be done as this would require an Apple 
-developer license, which would cost money and is outwith the scope of this project. However, due to this it meant that some limitations 
-were chosen to create more of a prototype of the application to test and evaluate the value of an application for capturing graduates 
-attributes, that in the future could be taken onto other platforms and for general use by the public.
+Due to this application being designed and created for iOS devices, users will not be able to download this application onto their own devices without the application being uploaded to the Apple app store. This was not possible as this would require a paid Apple developer license and is therefore outwith the scope of this project. However, due to this it meant that some limitations were chosen to create more of a prototype of the application to test and evaluate the value of an application for capturing graduates attributes, that in the future could be taken onto other platforms and for general use by the public.
 
-The reminders set on the device will not be able to be set by the user, instead they will turn on the notifications
-    and a notification will fire after 10 seconds. This was decided due to testing purposes so that the response time of this notification
-    buttons was immediate and as the application will be run on a simulator that is not always open, users and testers will not be running
-    the application for extended periods of time that would allow a notification to be set in the future. In future developments of this
-    application, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their
-    chosen day. 
+Reminders will not be able to be set by the user, instead they will turn on the notifications and a notification will fire after 10 seconds. This was decided for ease of testing. The response time of notifications was therefore immediate and as the application will be run on a simulator that is not always running, users and testers will not be able to use GradReflect for extended periods of time that would allow a notification to be set in the future. In future developments of this application, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their chosen day. 
 
 \section{Changes to the Specification}
 
-The specification was changed due to evaluation and conversation with the customer as described at the beginning of this chapter, as well
-as due to time contraints during development and research paths that opened up during these conversations. The main change to the 
-original specification given was to integrate the use of Cognitive Behavioural Therapy techniques into the application.
-This was chosen during research into reflection and situations where people have had to reflect deeply and meaningfully about
-their real-life experiences. This was taken as a research question into the project to evaluate its possible benefits in aiding the 
-reflection of users about their graduate attributes. 
-\par 
-Each possible feature of the application was also evaluated based on the time it
-was likely to take as well as its usefulness. As a result, the decision was made to remove the ability for users to upload their 
-reflections to Moodle. This was due to the research direction taken with the use of CBT questioning and the encouragement of users
-to include their thoughts and feelings into their reflections of the app, and it becoming more personal than users would perhaps feel 
-comfortable uploading onto Moodle. It was also because upon conversation with peers it was noted that students would be unlikely to use
-this feature and would rather just have these reflections on their personal devices, and this feature would be likely to go unused.
-The decision was then taken to include a link to Moodle on the Useful Links section of the mobile application instead, to still maintain 
-a connection with the university and the application. 
+The specification was changed in discussion with the project supervisor as described at the beginning of this chapter, as well as due to time contraints and research paths that opened up during these conversations. The main change to the original specification given was to integrate the use of Cognitive Behavioural Therapy techniques into the application. This was chosen during research into reflection and situations where people have had to reflect deeply and meaningfully about their real-life experiences. This was taken as a research question into the project to evaluate its possible benefits in aiding the reflection of users about their graduate attributes. 
 
-\section{Still to add here}
-Still to add into requirements about the user stories and scenarios!!!
-\par 
-Still to add way more detail about everything and fine tune the requirements and explain them a bit more in relation to the background
-section. Then need to go through the evaluation again and add the relation to the requirements for the evals
-\section{Guidance}
-What is the problem that you want to solve, and how did you arrive at it?
-Make it clear how you derived the constrained form of your problem via a clear and logical process.
-What is the problem that you want to solve, and how did you arrive at that?
-Make it clear how you derived the constrained form of your problem via a clear and logical process. 
-\par 
-Discuss the user scenarios created and how they helped me decide what i needed to have in the app
-User stories
-\par 
-The go onto the actual probelm statement and so use the question from the project options.
-\par 
-Do a section on functional requirements - use the moscow method
-So use must have and Should have
-\par 
-Non functional requirements
-General aspects rather than specific features that help to create and enjoyable experience
-Also use the moscow method
-\par 
-Then discuss the limitations. things i would not be able to do.
-So couldnt do moodle, what do i assume about the users. 
-\par 
-Discuss changes i made to the specification. This here is mainly about the moodle aspect but i can discuss 
-that instead i opted for a link to sign into moodle if you want to go to a forumn to upload the reflections. 
+Each possible feature of the application was also evaluated based on the time it was likely to take as well as its usefulness. As a result, the decision was made to remove the ability for users to upload their reflections to Moodle. This was due to the research direction taken with the use of CBT questioning. The encouragement of users to include their thoughts and feelings into their reflections of the app caused it to be more personal than users would perhaps feel 
+comfortable uploading onto Moodle. Upon conversation with peers it was also noted that students would be unlikely to use this feature and would rather just have these reflections on their personal devices. The decision was then taken to include a link to Moodle on the Useful Links section of the mobile application instead, to still maintain a connection with the university and the application. 
+
 
 %==================================================================================================================================
 \chapter{Design}
