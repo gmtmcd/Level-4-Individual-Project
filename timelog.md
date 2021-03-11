@@ -429,11 +429,16 @@
 ### 08 Mar 2021
 * *0.5 hours* Prepped for meeting with supervisor
 * *0.5 hours* Meeting with supervisor and write up meeting minutes to wiki
-* *1.5 hours* Rewrites of intro and background [2.5 hours]
+* *1.5 hours* Rewrites of intro and background
 
 ### 09 Mar 2021
 * *0.5 hours* Went over case study
-* *0.5 hours* Began rewrite of requirements section [3.5 hours]
+* *0.5 hours* Began rewrite of requirements section
 
 ### 10 Mar 2021
 * *1.5 hours* Changes to requirements section
+* *0.5 hours* Started changes to design section. [5.5 hours]
+
+### 11 Mar 2021
+* *1.5 hours* Rewrote the design section, added in the paper prototypes
+* *1 hour* Rewrote the implementation section a bit
