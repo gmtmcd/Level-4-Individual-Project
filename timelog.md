@@ -437,8 +437,9 @@
 
 ### 10 Mar 2021
 * *1.5 hours* Changes to requirements section
-* *0.5 hours* Started changes to design section. [5.5 hours]
+* *0.5 hours* Started changes to design section.
 
 ### 11 Mar 2021
 * *1.5 hours* Rewrote the design section, added in the paper prototypes
-* *1 hour* Rewrote the implementation section a bit
+* *1 hour* Rewrote the implementation section a bit 
+* *3 hours* Rewrote the evaluation section [11 hours]
