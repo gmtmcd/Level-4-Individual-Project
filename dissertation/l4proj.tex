@@ -5,6 +5,7 @@
     
 %
 % put any additional packages here
+\usepackage{csvsimple}
 %
 
 \begin{document}
@@ -391,7 +392,7 @@ This would allow conclusive evidence to be given on the benefits that the use of
 %-------------------------------------------------------------------
 
 %==================================================================================================================================
-\chapter{Analysis/Requirements}
+\chapter{Analysis/Requirements} \label{analysis/reqs}
 
 This project was presented by a Univeristy of Glasgow lecturer, Dr. Matthew Barr, who required a mobile application to be made to capture reflections on graduate attributes. A list of requirements was created in weekly meetings. This was an agile process where the newest version of the application, experiments, and design documents were presented and discussed each week. Dr Barr's paper "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher Education" provided enough detail to gain an understanding of what graduate attributes were and how they were learned \citep{barr_2019}. Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding of how to create a usable and satisfying application for users, as well as how to conduct various evaluations and experiments that would be required for this project. Further requirements were gathered through personal heuristic evaluation as the project progressed, this allowed iterative improvements to be made to the application, increasing the overall usability.
 
@@ -1074,13 +1075,53 @@ The majority of users also felt that the statistics page was also useful, with 1
 \subsection{Limitations}
 One major limitation of this evaluation was that it could not have been conducted in person due to the COVID-19 pandemic. Future work would be recommended to conduct interviews with particpants as this would allow for the interviewer to enquire further and follow-up on the responses that the participants give. This would allows for further insight into what the participants think about their experience with the application.
 
-\section{Overall}
+\section{Requirement Validation}
+
 \subsection{Verification of functional requirements}
+
+The final stage of evaluation was to determine if the functional and non-functional requirements outlined in section \ref{analysis/reqs} had been successfully met or not. These functional requirements were able to be evidenced by being performed in the user monitored tests as described above. From these evaluation tasks it is clear to see that all of the functional requirements listed in \ref{analysis/reqs} are met by the application.
+
+% \textbf{Functional requirements}
+% \begin{itemize}
+%     \item \textbf{MH} Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills, this can be in either written OR audio form.
+%     \item \textbf{MH} Users must be able to delete a reflection created, as well as being able to review it at a later date, however users should not be able to update or edit a note after it's creation. 
+%     \item \textbf{MH} Users must be able to turn on notifications.
+
+%     \item \textbf{SH} Users should be able to select a skill from a pre-defined list to avoid mistakes and allow for future potential filtering.
+%     \item \textbf{SH} When creating a written note, there should be help buttons that explain to the user how they should answer each questions and provide an example, this will give them clear instructions to allow effective reflection.
+%     \item \textbf{SH} Users should be able to give their note a title to allow for clear representation of what a note contains, and allow for future potential searching or filtering.
+%     \item \textbf{SH*} Users should be able to create a reflection in BOTH written and audio form. This will allow both structured reflections and freeform spoken reflections for convenience. 
+%     \item \textbf{SH} The application should contain a description of each of the skills that users are expected to develop and reflect on during the use of the app. 
+%     \item \textbf{SH*} Users should be able to search for the name of a note or a skill category to filter the notes in the list by skill.
+%     \item \textbf{SH} The application should have a Settings page to view information about the application.
+%     \item \textbf{SH} GradReflect should have an About Page within the settings that tells the user how to use the app correctly to make reflections, giving further clear instructions to the user. 
+%     \item \textbf{SH*} Users should be able to view statistics based on the reflections written into the application.
+    
+%     \item \textbf{CH} The application could implement Cognitive Behavioural Therapy techniques to aid the reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. 
+%     \item \textbf{CH*} Users could have the ability to customise their experience of GradReflect and have the ability to switch between dark and light themed interface.
+%     \item \textbf{CH} GradReflect could have links in the Settings page that take users to useful pages related to the app and graduate attributes to provide further insight and education on graduate attributes.
+    
+%     \item \textbf{WH} It was decided that users will not be able to upload reflections onto Moodle as this is not within the scope and does not provide enough benefit to users in completing the aims discussed in Section \ref{IntroAims}.
+% \end{itemize}
+
+
+
 \subsection{Verification of non-functional requirements}
+
+\textbf{Intuitive and easy to use:} Participants gave clear indication the application easy to use, with several noting they felt that the design was clear and understandable. The usability study conducted showed the application scored very highly, with only three of the heuristics scoring less than perfect in the feedback. 
+
+\textbf{Help to create meaningful reflections:} 87.5\% of participants stated it was very easy to reflect, with 12.5\% stating it was easy to reflect, suggesting the application provides enough support to users to reflect. When asked if there was enough assistance to support their reflection, 100\% of participants stated yes. When commenting on their answer they stated they felt encouraged, that they were able to think deeper about a situation, gave them that time to think about their emotions and reactions, and that generally they felt like the assisting reflective features helped them greatly. However, during the tasks where users had to reflect using the application, users did not deeply reflect, this is possibly due to it being a monitored evaluation and users did not want to spend a lot of time reflecting while being monitored, and instead wanted to carry on with the rest of the tasks.
+
+\textbf{Quick reflections:} 100\% of participants voted that they were able to make quick reflections, stating it was easy and intuitive, and the recordings especially allowed for a fast, convenient way to reflect.
+
+\textbf{Encourage continued use:} Participants were asked if they would continue to use this application, 100\% stated yes. They stated this application could be beneficial for mental health, inspiring for current work, and useful when collecting their skills for future employment. 
+
+\textbf{Useful/valuable features:} 100\% of participants thought the recordings were useful, stating it adds another dimension, increases memorability, and provides a more convenient method. 87.5\% of participants felt the statistics were useful, going on to comment that they would be encouraging, and help to focus where they need further development.
+
 
 \section{UI Tests}
 
-In the future the application would require extensive UI and Unit testing to be released for general use by the public, however, due to the aims of my project only one UI test was created to give a proof of concept idea for the tests that should be created for future work. The UI feature that has been tested is the users ability to create and save a written note. This was chosen as this is the basic necessary requirement for the application to run functionally. 
+In the future the application would require extensive UI and Unit testing to be released for general use by the public, however, due to the aims of my project only one UI test was created to give a proof of concept. The UI feature that has been tested is the users ability to create and save a written note, as this is the basic necessary requirement for the application to run functionally. 
 
 
 %==================================================================================================================================
@@ -1088,16 +1129,15 @@ In the future the application would require extensive UI and Unit testing to be 
 
 \section{Summary}
 
-Graduate attributes are all the abilities developed by students during their time in university that increase their employability, allows them to 
-integrate better into the workplace and creates a better environment within teams. However, there these have been found to be lacking in graduates entering the workplace. This project looked at building an iOS mobile application to capture and encourage reflections on graduate attributes. 
+Graduate attributes are all the abilities developed by students during their time in university that increase their employability, allowing them to integrate better into the workplace and creating a better environment within teams. However, these have been found to be lacking in graduates entering the workplace. This project looked at building an iOS mobile application to capture and encourage reflections on graduate attributes from students. 
 
-Research was conducted into finding a novel way to encourage reflections through the use of Cognitive Behavioural Therapy (CBT) to explore how the use of this app, with the integration of Cognitive Behavioural Therapy (CBT) techniques, could increase the levels of reflection within students. 
+Research was conducted into finding a novel way to encourage reflections through the use of Cognitive Behavioural Therapy (CBT), exploring how the use of this app, with the integration of CBT could increase the levels of reflection within students. 
 
-A case study was carried out to asnwer the question: Does CBT benefit reflection by students on their graduate skills? This case study found that students were able to reach higher levels of reflection more frequently than with non-guiding job interview style questions. This gave an indication that this framework has the potential to assist in students development of these skills, as deeper and more meaningful reflection will benefit students in their awareness of these skills. 
+A case study was carried out to answer the question: Does CBT benefit reflection by students on their graduate skills? This case study found that students were able to reach higher levels of reflection more frequently than with non-guiding job interview style questions. This gave an indication that this framework has the potential to assist in students development of these skills, as deeper and more meaningful reflection will benefit students in their awareness of these skills.
 
-The application created, GradRefelct, allows users to capture their reflection through either written or audio form. Users were given the option of both written and auio format to allow them the opportunity to choose whether the wanted to reflect in depth, or the convenience of creating free-form audio recording. It provides a framework using CBT techniques to encourage users to reach all stages of reflection, and provide the neccesary support and instructions to allow them to reflect effectively. The app gives the user detailed descriptions of each skill they are expected to develop and descriptions of how the application is intended to be used. This makes it clear to the user what is expected of them when using this application and, again, gives them clear instructions to allow them to reflect in a beneficial way. GradReflect also gives users insight into their own reflections, providings statistics based on their written notes. It details to users how many notes have been written, their average lengths overall and for each skill, as well as their average emotional responses to skills. This is intended to give users insight into what skills require further development and reflection. The application also provides notifications to encourage the user to reflect regularly. 
+The application created, GradReflect, allows users to capture their reflection through either written or audio form. Users were given the option of both written and audio format to allow them the opportunity to choose whether they wanted to reflect in depth, or the convenience of creating free-form audio recording. It provides a framework using CBT techniques to encourage users to reach all stages of reflection, and provide the neccesary support and instructions to allow them to reflect effectively. The app gives the user detailed descriptions of each skill they are expected to develop and descriptions, how the application is intended to be used, and how to answer the questions. This makes it clear to the user what is expected of them when using this application and, again, gives them clear instructions to allow them to reflect in a beneficial way. GradReflect also gives users insight into their own reflections, providings statistics based on their written notes. It details to users how many notes have been written, their average lengths overall and for each skill, as well as their average emotional responses to skills. This is intended to focus users on the skills that require further development and reflection. The application also provides notifications to encourage the user to reflect regularly, however, for testing purposes these notifications launch 10 seconds after turning on.
 
-GradReflect was evaluated using monitored and survey-based user evaluations. It was found that GradReflect was easy to use, assited their reflection and that they would continue to use this application in the future, with some participants stating various ways they could see it benefitting them. From these results it was clear that an application such as this has the potential to be beneficial for students in developing their graduate skills.
+GradReflect was evaluated using monitored and survey-based user evaluations. It was found that GradReflect was easy to use, assited their reflection, and that they would continue to use this application in the future, with some participants stating various ways they could see it benefitting them. From these results it was clear that an application such as this has the potential to be greatly beneficial for students in developing their graduate skills.
 
 
 \section{Future Work} \label{Concl_futureWork}
@@ -1106,7 +1146,7 @@ From the case study, implementation and evaluation, there are a number of avenue
 
 The case study conducted at the beginning of the project could be extended into a full experiment where participants answer reflective questions using the CBT framework for an extended period of time. Comparisons between the level of graduate skills before and after the experiment could be used to determine the long-term effects that this proposed method of reflection could have on students. 
 
-The evaluations needed to be conducted in a controlled environment over video conferencing, and so it is possible that some of the participants behaviours were not representative of how they would interact with the application if the app was actually deployed onto their device. Due to this, a reasonable next would be to deploy this application in the future and examine how users would interact in person. It could then also be examined where users skills improve if given access to this application over an extended period of time.
+The evaluations needed to be conducted in a controlled environment over video conferencing, and so it is possible that some of the participants behaviours were not representative of how they would interact with the application if the app was actually deployed onto their device. Due to this, a reasonable next step would be to deploy this application and examine how users would interact in person. It could then also be examined where users skills improve if given access to this application over an extended period of time.
 
 During these evaluations, users presented several ways they would want to see the application itself improved. As well as these improvements from users, there were potential improvements identified personally.
 
@@ -1117,15 +1157,15 @@ During these evaluations, users presented several ways they would want to see th
     \item Filtering the notes by clicking on one of the skill categories on the skill cards.
     \item Ability to set goals for number of reflections on a skill and receiving milestone achievements when these are met.
     \item A tab bar could be used to navigate through the application instead of a home page directing to each section.
-    \item 
 \end{itemize}
 
-If the application were to be deployed to iOS users with an Apple Developer License, futher developments would need to be made such as the extension of notification to fire weekly, and further UI and unite testing to be developed. 
+If the application were to be deployed to iOS users with an Apple Developer License, futher developments would need to be made such as the extension of notification to fire weekly, and further UI and unit testing to be developed. 
 
 
 \section{Reflection}
 
-Overall, this project has taught me a great deal in terms of individually organising and carrying out a large-scale piece of work. It was a useful learning opportunity, particularly in learning a new language and beginning to use it quickly. The ability to learn a new language and frameworks, and apply these in a solo project has greatly improved my confidence and technical skills. It has highlighted the importance of good project management when working under time contraints. 
+Overall, this project has taught me a great deal in terms of individually organising and carrying out a large-scale piece of work. It was a useful learning opportunity, particularly in learning a new language and framework and beginning to use it quickly. The ability to learn a new language and frameworks, and apply these in a solo project has greatly improved my confidence and technical skills. It has also highlighted the importance of good project management when working under time contraints. 
+
 The research into different methodologies to encourage reflection and the benefits reflection can have on a student or person, were particularly insightful and these practices will be taken into my future projects and with me into the workplace. Through this project, I feel I have personally developed the key graduate attributes that have been discussed in this paper.
 
 
@@ -1139,25 +1179,35 @@ The research into different methodologies to encourage reflection and the benefi
 
 \chapter{Appendices}
 
-Typical inclusions in the appendices are:
+% Typical inclusions in the appendices are:
 
-\begin{itemize}
-\item
-  Copies of ethics approvals (required if obtained)
-\item
-  Copies of questionnaires etc. used to gather data from subjects.
-\item
-  Extensive tables or figures that are too bulky to fit in the main body of
-  the report, particularly ones that are repetitive and summarised in the body.
+% \begin{itemize}
+% \item
+%   Copies of ethics approvals (required if obtained)
+% \item
+%   Copies of questionnaires etc. used to gather data from subjects.
+% \item
+%   Extensive tables or figures that are too bulky to fit in the main body of
+%   the report, particularly ones that are repetitive and summarised in the body.
 
-\item Outline of the source code (e.g. directory structure), or other architecture documentation like class diagrams.
+% \item Outline of the source code (e.g. directory structure), or other architecture documentation like class diagrams.
 
-\item User manuals, and any guides to starting/running the software.
+% \item User manuals, and any guides to starting/running the software.
 
-\end{itemize}
+% \end{itemize}
 
-\textbf{Don't include your source code in the appendices}. It will be
-submitted separately.
+% \textbf{Don't include your source code in the appendices}. It will be
+% submitted separately.
+
+\section{GitHub}
+
+\href{https://github.com/gmtmcd/Level-4-Individual-Project}{GradReflect Project GitHub Link}
+
+\section{Graduate Attribute General Knowledge Survey}
+
+
+
+
 
 \end{appendices}
 

@@ -442,4 +442,7 @@
 ### 11 Mar 2021
 * *1.5 hours* Rewrote the design section, added in the paper prototypes
 * *1 hour* Rewrote the implementation section a bit 
-* *3 hours* Rewrote the evaluation section [11 hours]
+* *3 hours* Rewrote the evaluation section
+
+### 12 Mar 2021
+* *2 hours* Added more to eval, rewrote some conclusion, realised that i havent included the general attribute knowledge survey [13 hours]
