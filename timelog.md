@@ -445,6 +445,7 @@
 * *3 hours* Rewrote the evaluation section
 
 ### 12 Mar 2021
-* *2 hours* Added more to eval, rewrote some conclusion, realised that i havent included the general attribute knowledge survey [13 hours]
+* *2 hours* Added more to eval, rewrote some conclusion, realised that i havent included the general attribute knowledge survey 
 * *0.5 hours* Added in information about the graduate attribute study
 * *3 hours* Attempted putting stuff into appendix with issues
+* *1 hour* More appendix [17.5 hours]
