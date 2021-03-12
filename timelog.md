@@ -446,3 +446,4 @@
 
 ### 12 Mar 2021
 * *2 hours* Added more to eval, rewrote some conclusion, realised that i havent included the general attribute knowledge survey [13 hours]
+* *0.5 hours* Added in information about the graduate attribute study
