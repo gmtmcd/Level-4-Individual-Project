@@ -453,3 +453,9 @@
 ### 14 Mar 2021
 * *2 hours* More rewrite of the Intro and background
 * *2 hours* More rewrite of the case study [21.5 hours]
+
+## Week 22
+
+### 15 Mar 2021
+* *1 hour* Prep for meeting with supervisor, meeting and write-up
+* *2.5 hours* More rewriting, Analysis and Design and some implementation
