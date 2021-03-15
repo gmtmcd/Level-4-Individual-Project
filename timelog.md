@@ -448,4 +448,8 @@
 * *2 hours* Added more to eval, rewrote some conclusion, realised that i havent included the general attribute knowledge survey 
 * *0.5 hours* Added in information about the graduate attribute study
 * *3 hours* Attempted putting stuff into appendix with issues
-* *1 hour* More appendix [17.5 hours]
+* *1 hour* More appendix
+
+### 14 Mar 2021
+* *2 hours* More rewrite of the Intro and background
+* *2 hours* More rewrite of the case study [21.5 hours]
