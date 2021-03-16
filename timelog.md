@@ -459,3 +459,4 @@
 ### 15 Mar 2021
 * *1 hour* Prep for meeting with supervisor, meeting and write-up
 * *2.5 hours* More rewriting, Analysis and Design and some implementation
+* *4 hours* Finished rewrite, sent draft to supervisor
