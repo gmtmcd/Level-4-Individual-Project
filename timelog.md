@@ -460,3 +460,16 @@
 * *1 hour* Prep for meeting with supervisor, meeting and write-up
 * *2.5 hours* More rewriting, Analysis and Design and some implementation
 * *4 hours* Finished rewrite, sent draft to supervisor
+
+### 21 Mar 2021
+* *1 hour* Went over feedback from supervisor [8.5 hours]
+
+## Week 23
+
+### 22 Mar 2021
+* *0.5 hours* Prep for meeting with supervisor
+* *0.5 hours* Meeting with supervisor
+* *0.5 hours* Write up notes from meeting with supervisor
+
+### 28 Mar 2021
+* *2 hours* Started presentation (not much time for project this week, been working on courseworks) [3.5 hours]
