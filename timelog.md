@@ -473,3 +473,12 @@
 
 ### 28 Mar 2021
 * *2 hours* Started presentation (not much time for project this week, been working on courseworks) [3.5 hours]
+
+## Week 24
+
+### 29 Mar 2021
+* *0.5 hours* Prep for meeting with supervisor
+* *0.5 hours* Meeting with supervisor and write up of meeting notes
+
+### 30 Mar 2021
+* *7.5 hours* Presentation progress
