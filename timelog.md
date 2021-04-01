@@ -486,8 +486,10 @@
 ### 31 Mar 2021
 * *1.5 hours* Worked on presentation
 * *4 hours* Finished writing the content of the presentation, started recordings, created vids for in the presentation
-* *1 hour* Finished doing recordings and created the final video (videos flicker still) [15 hours]
+* *1 hour* Finished doing recordings and created the final video (videos flicker still)
 
 ### 01 Apr 2021
 * *2 hours* Corrections to the introduction
 * *2 hours* Corrections to the background
+* *1 hour* Corrections to Exploratory study [20 hours]
+* *1 hour* Added items to appendix and references 
