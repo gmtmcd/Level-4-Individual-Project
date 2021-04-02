@@ -491,8 +491,9 @@
 ### 01 Apr 2021
 * *2 hours* Corrections to the introduction
 * *2 hours* Corrections to the background
-* *1 hour* Corrections to Exploratory study [20 hours]
+* *1 hour* Corrections to Exploratory study
 * *1 hour* Added items to appendix and references 
 
 ### 02 Apr 2021
 * *3.5 hours* Corrections to design, additions to appendix and wiki
+* *2.5 hours* Corrections to Implementation, additions to appendix [27 hours]

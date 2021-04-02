@@ -511,7 +511,7 @@ Apple's iOS development is exclusive to Apple devices. Creating an iOS app for a
 %==================================================================================================================================
 \chapter{Implementation} \label{implementation}
 
-This chapter describes the steps taken to implement GradReflect, described in previous chapters, and the technical decisions that were made during this process.
+This chapter describes the steps taken to implement the mobile app GradReflect, and the technical decisions that were made during this process.
 
 \section{User Interface}
 
@@ -523,11 +523,12 @@ SwiftUI presents both useful features and challenges when creating an app. Inste
 
 \textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that will be written to and fetched from. An example of this is the Skill Model. This defines that each skill contains an id, a title, description, an image, and gradientColours which defines the colour scheme for that skill card. This model is also reused for the Statistics view.
 
-A model was also created to hold the note entries created by the user via Core Data, the permanent storage organising the data in an entity-attribute relationship. Core Data involved a steep learning curve, however, it proved to be beneficial. This was due to the ability to manipulate the data within the fetch request in a single line of code, and its ability to track changes through the persistant storage. This made for greater simplicity during implementation. Core Data is saved using an NSManagedObject which uses optimised storage and retrieval methods with key-value coding and observing, this is faster than other means of storage and retrieval, including get/set methods \citep{apple_developer_documentation_core_2021}. Core Data entry is operated via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that can change the model and its data. The flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
+A model was also created to hold the note entries created by the user via Core Data, the permanent storage that organises the data in an entity-attribute relationship. Core Data is an aspect of iOS development that involves a steep learning curve, however, it proved to be beneficial. This was due to the ability to manipulate the data within the fetch request in a single line of code, and its ability to track changes through the persistent storage. This made for greater simplicity during implementation. Core Data is saved using an NSManagedObject which uses optimised storage and retrieval methods with key-value coding and observing. This is faster than other means of storage and retrieval, including get/set methods \citep{apple_developer_documentation_core_2021}. Core Data entry is operated via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that can change the model and its data. The flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
 
-\textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and pass these to a view model for interpretation \citep{bulavin_modern_2020}. The view is made up of views and controls, each view represents a building block of user interface. The controls allow the user to interact with this interface. SwiftUI made it easy to build a UI, allowing the standard building blocks to be altered to fit the needs of the project concisely and simply, making this aspect of implementation rapid.
+\textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and pass these to a view model for interpretation \citep{bulavin_modern_2020}. The view is made up of views and controls; each view represents a building block of user interface. The controls allow the user to interact with this interface. SwiftUI made it straightforward to build a UI, allowing the standard building blocks to be altered to fit the needs of the project concisely and simply, making this aspect of implementation rapid.
 
-\textbf{ViewModel:} The ViewModel is responsible for dictating how data should be represented in the view, as well as interpreting user inputs into actions and updating the UI state and behaviour accordingly. The ViewModel can take the form of the @State variables bound to the view, updating the UI anytime changes are made to the state. These ViewModels can also take the form of a distinct ObservableObject class. As an example the Router class is a ObservableObject class, this handles when a view's StateObject 'current page' variable will change, and updates the view to show the requested page. 
+\textbf{ViewModel:} The ViewModel is responsible for dictating how data should be represented in the view, as well as interpreting user inputs into actions and updating the UI state and behaviour accordingly. The ViewModel can take the form of the @State variables bound to the view, updating the UI anytime changes are made to the state. These ViewModels can also take the form of a distinct ObservableObject class. As an example, the Router class is a ObservableObject class, this handles when a view's StateObject 'current page' variable will change, and updates the view to show the requested page.
+
 
 \begin{figure}
     \centering
@@ -540,32 +541,23 @@ A model was also created to hold the note entries created by the user via Core D
 
 \section{Aesthetics}
 
-\subsection{OS native appearance}
+\subsection{iOS Native Appearance}
 
-SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in the usability study in section \ref{evaluation}, where users attempted to delete a note within the review, instead of using the edit button on their first attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and familiar appearance on iOS devices. This was beneficial as it meant that there were pre-built buttons with pre-written functionality. It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. However, it also meant that this code was not able to be altered to adjust functionality. The user interfaces for the main views of the app can be seen in appendix \ref{fig:appMainViews}.
+SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in the usability study in section \ref{evaluation}, where users attempted to delete a note within the review view, instead of using the edit button on their first attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and familiar appearance on iOS devices. This was beneficial as it meant that there were pre-built buttons with pre-written functionality. It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. However, it also meant that this code was not able to be altered to adjust functionality. The user interfaces for the main views of the app can be seen in Appendix \ref{fig:appMainViews}.
 
-\subsection{Aesthetic features}
+\subsection{Aesthetic Features}
 
-\textbf{App Icon and Logo:} An app icon was created with associated logo for launching the application from the app library. This creates a professional and attractive first contact with the app. This can be seen in appendix (ADD REF HERE).
+\textbf{App Icon and Logo:} An app icon was created with associated logo for launching the application from the app library. This creates a professional and attractive first contact with the app. This can be seen in Appendix Figure \ref{fig:AppLogo}.
 
-\textbf{Loading Screen:} A loading screen was created using the apps logo and colour scheme. This was to create a more professional and attractive looking app, whilst also performing the function of ensuring to the user that the app is loading, instead of a generic white screen which could lead the user to believe the app had crashed.
+\textbf{Loading Screen:} A loading screen was created using the app’s logo and colour scheme. This was to create a more professional and attractive looking app, whilst also performing the function of assuring the user that the app is loading, instead of a generic white screen which could lead the user to believe the app had crashed.
 
-\textbf{Emojis:} Emojis were implemented throughout the app. This was suggested by a potential user during early stages of development. This created a more casual and friendly design to the app whilst also being informative of functionality. These emojis can be seen in the titles for views in appendix \ref{fig:appMainViews}.
+\textbf{Emojis:} Emojis were implemented throughout the app. This was suggested by a potential user during early stages of development. This created a more casual and friendly design to the app whilst also being informative of functionality. These emojis can be seen in the titles for views in Appendix \ref{fig:appMainViews}.
 
-\textbf{App information in Settings:} Detail about the app such as name, compatibilty, developer, version and created date are provided in the settings section of the app. This is a common feature in iOS apps and gives a more professional design, Appendix \ref{fig:appSettingsScreen}.
+\textbf{App information in Settings:} Detail about the app such as name, compatibility, developer, version and created date are provided in the settings section of the app. This is a common feature in iOS apps and gives a more professional design, seen in Appendix \ref{fig:appSettingsScreen}.
 
-\textbf{Images on skill cards:} Each skill card contains a graphic that summarises the skill, Appendix \ref{fig:AdaptabilitySkillCard}. These make the app more attractive and add to a user's understanding of a skill. Many users indicated they enjoyed these images in the user evaluations (Chapter \ref{evaluation}).
+\textbf{Images on skill cards:} Each skill card contains a graphic that summarises the skill, seen in Figure \ref{fig:AdaptabilitySkillCard}. These make the app more attractive and add to a user's understanding of a skill. Many users indicated they enjoyed these images in the user evaluations (Chapter \ref{evaluation}).
 
-\textbf{Toggle dark/light theme:} Users are able to toggle between dark and light theme within the app, this provides an element of customisability to the app for users, adding to usability and attractiveness. This dark mode can be seen in appendix \ref{fig:DarkMode}, compared with the light mode that can be seen in \ref{fig:appMainViews}. 
-
-
-\section{Features}
-
-This section describes how the functional requirements for the system were implemented and lists some of the most important and relevant features. 
-
-\subsection{Learn about graduate skills}
-
-It is important for those who want to reflect and develop their graduate attributes to learn and understand what these skills are. By knowing what these skills are, users are more comfortable in their reflections, and having the skill cards in the home section of the app with a helpful graphic and description of the skill will facilitate this. An example of one of these skill cards can be seen in figure \ref{fig:AdaptabilitySkillCard}. These skills descriptions, on the home section of the app, allow new users to instantly scroll and familiarise themselves with the skills they are looking to develop. Experienced users do not have to scroll and can immediately choose where they want to navigate, while still having the option of a convenient reminder should they require it. 
+\textbf{Toggle dark/light theme:} Users are able to toggle between dark and light theme within the app. This provides an element of customisability to the app for users, adding to usability and attractiveness. This dark mode can be seen in Appendix \ref{fig:DarkMode}, compared with the light mode that can be seen in Appendix \ref{fig:appMainViews}.
 
 \begin{figure}
     \centering
@@ -574,17 +566,26 @@ It is important for those who want to reflect and develop their graduate attribu
     \label{fig:AdaptabilitySkillCard} 
 \end{figure}
 
-\subsection{Creating and deleting a note}
+\section{Features}
 
-The ability to capture a reflection in written form was a key functional requirement for this project. This project stands out from similar existing note or reflective apps with its utilisation of CBT techniques providing the framework needed to support users in this reflection. This was implemented through the note creation form. Users are able to create and save a new note using the question prompts provided for them, figure \ref{fig:CreatingNote}. This aims to give clear instructions to focus the user on reaching all stages of reflection. 
+This section describes how the functional requirements for the system were implemented and lists some of the most important and relevant features. 
 
-The user was also supported in their reflection through the use of help buttons. The user is able to click on the '?' button next to any of the questions in the note entry form and an alert will appear that provides further detail on how they are expected to answer the question. An example of this alert can be seen in figure \ref{fig:HelperButtonAlert}. Throughout each of the help button alerts, the example of a communication skill reflection is used where someone has had to settle a dispute in their team. Examples are given in each of the alerts using this situation to demonstrate the reflections the user could make.
+\subsection{Learn About Graduate Skills}
+
+It is important for those who want to reflect and develop their graduate attributes to learn and understand what these skills are. By knowing what these skills are, users are more comfortable in their reflections, and having the skill cards in the home section of the app with a helpful graphic and description of the skill will facilitate this. Each of these skill cards can be seen in Appendix Figure \ref{fig:AllSkillCards}, the first of which is the Home Card that describes what each area of the app is used for. These skills descriptions, on the home section of the app, allow new users to instantly scroll and familiarise themselves with the skills they are looking to develop. Experienced users do not have to scroll and can immediately choose where they want to navigate, while still having the option of a convenient reminder should they require it. The colours used in each of these skill cards was made to be compatible with the colour scheme used in the app logo using the website Coolers \citep{coolersco_coolors_2021}.
+
+\subsection{Creating and Deleting a Note}
+
+The ability to capture a reflection in written form was a key functional requirement for this project. This project stands out from similar existing note or reflective apps with its utilisation of CBT techniques providing the framework needed to support users in this reflection. This was implemented through the note creation form. Users are able to create and save a new note using the question prompts provided for them, as seen in Figure \ref{fig:CreatingNote}. This aims to give clear instructions to focus the user on reaching all stages of reflection. 
+
+The user is also supported in their reflection through the use of help buttons. The user is able to click on the '?' button next to any of the questions in the note entry form and an alert will appear that provides further detail on how they are expected to answer the question. An example of this alert can be seen in Figure \ref{fig:HelperButtonAlert}. Throughout each of the help button alerts, the example of a communication skill reflection is used where someone has had to settle a dispute in their team. Examples are given in each of the alerts using this situation to demonstrate the reflections the user could make. All CBT-based questions and helpful prompts can be seen in Appendix \ref{Appendix-AppCBTQuestions-Prompts}.
 
 Users can select one of the 6 skills available to reflect from a picker, ensuring conformity in the skills ensuring there are no issues when users later search for a skill to filter their notes list. Users are also able to select their emotional response to a situation using a slider, simplifying this reflection for them. 
 
-Users are able to save a note after reflecting, however, this cannot be done without a title given. This was intended to give the user freedom in how much they did or did not want to write. They are also able to cancel a note at any given time by either clicking the cancel button or swiping from the top down to dismiss the form. 
+Users are able to save a note after reflecting, requiring at least a title. This was intended to give the user freedom in how much they did or did not want to write as they could leave some entry fields empty. They are also able to cancel a note at any given time by either clicking the cancel button or swiping from the top down to dismiss the form. 
 
-Users can later delete a note by either selecting the edit button, or through swiping a note in the list to the left. The edit mode for notes can be seen in Appendix \ref{fig:DeleteNote}. This is a native gesture in iOS used frequently in other apps. Users are unable to update or edit a note after its creation. 
+Users can later delete a note by either selecting the edit button, or through swiping a note in the list to the left. The edit mode for notes can be seen in Appendix \ref{fig:DeleteNote}. This is a native gesture in iOS used frequently in other apps. Users are unable to update or edit a note after its creation.
+
 
 \begin{figure}
     \centering
@@ -607,57 +608,57 @@ Users can later delete a note by either selecting the edit button, or through sw
     \label{fig:NoteCreationReview}
 \end{figure}
 
-\subsection{Reviewing a note}
+\subsection{Reviewing a Note}
 
-Users are able to click on a previous note they have made, allowing them to reflect on previous entries. This could enable them to see how they have improved or handled previous similar scenarios. This can be seen in figure \ref{fig:ReviewingNote}.
+Users are able to click on a previous note they have made, allowing them to reflect on previous entries. This could enable them to see how they have improved or handled previous similar scenarios. This can be seen in Figure \ref{fig:ReviewingNote}.
 
-\subsection{Search and filter}
+\subsection{Search and Filter}
 
-Users are able to type in the name of a note to filter the list of notes presented, shown in figure \ref{fig:SearchFilter}. They are also able to type in a specific skill to filter the list by that skill. This is a useful feature as it is intended that users would continue to use this app frequently to reflect, and therefore having the ability to filter notes would make it easier for them to find previous notes they have made. 
+Users are able to type in the name of a note to filter the list of notes presented, shown in Figure \ref{fig:SearchFilter}. They are also able to type in a specific skill to filter the list by that skill. This is a useful feature as it is intended that users would continue to use this app frequently to reflect, and therefore having the ability to filter notes would make it easier for them to find previous notes they have made.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{images/SearchFilter.pdf}    
     \caption{This screenshot shows the list filtered after searching for a term in the name of one of the notes.}
     \label{fig:SearchFilter} 
 \end{figure}
 
-\subsection{Record an audio}
+\subsection{Record an Audio Reflection}
 
-Users are also able to record an audio of themselves discussing a situation or skill. This provided a more convenient option. An AVAudioRecorder provided the recording capabilities within the app, using the user-built-in microphone and speaker. SwiftUI provides a strict format for allowing audio within an app, this is intended to reduce programming overhead. An AVAudioSession is used to configure the audio session of the app. Each time a recording is started a new audio session is created and set to the category playAndRecord, meaning that a user is able to create a recording and play it back. It ensures that the app will conform to typical iOS behaviours, such as muting audio upon locking the device, or silencing other background audio when a recording is played. 
-Users are able to start a recording until they click stop, the recording button can be seen in Appendix \ref{fig:appRecordingsScreen}. AVAudioRecorder will be provided the file name from the user if they had entered it in the name field on the view prior to clicking record. If no file name is given it will set the name of the recording to the date and time of creation. 
+Users are also able to record an audio of themselves discussing a situation or skill. This provided a more convenient option. An AVAudioRecorder object provided the recording capabilities within the app, using the user-built-in microphone and speaker. SwiftUI provides a strict format for allowing audio within an app, this is intended to reduce programming overhead. An AVAudioSession is used to configure the audio session of the app. Each time a recording is started a new audio session is created and set to the category playAndRecord, meaning that a user is able to create a recording and play it back. It ensures that the app will conform to typical iOS behaviours, such as muting audio upon locking the device, or silencing other background audio when a recording is played. 
+Users are able to start a recording until they click stop; the recording button can be seen in Appendix \ref{fig:appRecordingsScreen}. AVAudioRecorder will be provided the file name from the user if they had entered it in the name field on the view prior to clicking record. If no file name is given it will set the name of the recording to the date and time of creation.
 
-\subsection{Playback and delete recording}
+\subsection{Playback and Delete Recording}
 
 Users are able to playback a recording allowing them to convert this recording into a fully written note, this playback button can be seen in Appendix \ref{fig:appRecordingsScreen}. They can then delete any notes in the same way as a written note via either the edit button or swiping to the left. Edit mode for this can be seen in Appendix \ref{fig:DeleteAudio}.
 
 
-\subsection{Review statistics}
+\subsection{Review Statistics}
 
-Users are able to view the statistics of their notes, seen in Appendix \ref{fig:appStatScreen}. Each skill is presented with the same colour scheme used in the skill descriptions to ensure a cohesive look to the app. Each skill card contains the number of notes they have made on the skill, the average words per entry, and their average emotional response for the skill. Users are also able to view their total number of notes and their average word per note. This was allows the user to make comparisons between each skill, the length of their reflections, and how they generally view experiences that engage this skill. The average emotion over all skills was not given as a metric, as it was decided it is more useful to review how they feel about a specific skill rather than over all experiences. 
+Users are able to view the statistics of their notes, seen in Appendix \ref{fig:appStatScreen}. Each skill is presented with the same colour scheme used in the skill descriptions to ensure a cohesive look to the app. Each skill card contains the number of notes they have made on the skill, the average words per entry, and their average emotional response for the skill. Users are also able to view their total number of notes and their average word per note. This was to allow the user to make comparisons between each skill, the length of their reflections, and how they generally view experiences that engage this skill. The average emotion over all skills was not given as a metric, as it was decided it is more useful to review how they feel about a specific skill rather than overall experiences.
 
-\subsection{Visit useful links}
+\subsection{Visit Useful Links}
 
-The Settings view also provides users with links that could potentially assist them in their reflections. One of the links given takes the user to the University of Glasgow website on graduate attributes, linking this project to the university and how it expects them to develop these skills throughout their education. A link was also given to the University of Glasgow's Moodle page. This was because exporting reflections to Moodle had been considered during the requirements gathering stage but it had been decided that it was not useful. SwiftUI and iOS development also did not provide a Moodle API to allow users to do this. Instead, a link is now given to users, again linking to the University of Glasgow. These links can be seen in Appendix \ref{fig:appSettingsScreen}.
+The Settings view provides users with links that could potentially assist them in their reflections. One of the links provided takes the user to the University of Glasgow website on graduate attributes, linking this project to the university and how it expects them to develop these skills throughout their education. A link was also given to the University of Glasgow's Moodle page. This was because exporting reflections to Moodle had been considered during the requirements gathering stage, but it had been decided that it was not useful. SwiftUI and iOS development also did not provide a Moodle API to allow users to do this. Instead, a link is now given to users, again linking to the University of Glasgow. These links can be seen in Appendix \ref{fig:appSettingsScreen}.
 
 \subsection{Notifications}
 
-Users are able to turn on notifications through the Settings view. This was implemented using a UNUserNotificationCenter object, which manages all notification related activities. Similarly to enabling recordings, SwiftUI provides a standard structure that allows notifications to be set up and enabled. The UNUserNotificationCenter manages permission requests for GradReflect to send notifications to the user and scheduling when these notifications can occur. In the implemented app, the user is able to click to turn on notifications setting a notification to launch after 10 seconds, providing enough time to close the app and wait for the incoming notification. This is allows notifications to be tested during demonstrations and evaluations. For future deployment, the notifications would launch weekly, as this has been stated as the recommended timescale to regularly reflect \citep{bruno_reflective_2018}. The notification can be seen in figure \ref{fig:Notification}.
+Users are able to turn on notifications through the Settings view. This was implemented using a UNUserNotificationCenter object, which manages all notification related activities. Similarly to enabling recordings, SwiftUI provides a standard structure that allows notifications to be set up and enabled. The UNUserNotificationCenter manages permission requests for GradReflect to send notifications to the user and scheduling when these notifications can occur. In the implemented app, the user is able to click to turn on notifications, setting a notification to launch after 10 seconds, providing enough time to close the app and wait for the incoming notification. This allows notifications to be tested during demonstrations and evaluations. For future deployment, the notifications would launch weekly, as this has been stated as the recommended timescale to regularly reflect \citep{bruno_reflective_2018}. The notification can be seen in Figure \ref{fig:Notification}.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{images/Notification.pdf}    
-    \caption{This screenshot shows the notification that fires after the user turns on notifications.}
+    \caption{This screenshot shows the notification that launches after the user turns on notifications.}
     \label{fig:Notification} 
 \end{figure}
 
-\subsection{About GradReflect page}
+\subsection{About GradReflect Page}
 
-Users were also able to navigate to an About GradReflect view through the Settings view, Appendix \ref{fig:AboutApp}. This was a simple description of each aspect of the app and how the app was intended to be used. This section also describes to the user the use of CBT within the app and how this is intended to assist them. The goal of this page is to provide users with further clarifications of how they can use the app to develop their skills and provide greater detailed instructions and support necessary for them to be able to reflect effectively. 
+Users were also able to navigate to an About GradReflect view through the Settings view, seen in Appendix \ref{fig:AboutApp}. This was a simple description of each aspect of the app and how the app was intended to be used. This section also describes to the user the use of CBT within the app and how this is intended to assist them. The goal of this page is to provide users with further clarifications of how they can use the app to develop their skills and provide greater detailed instructions and support necessary for them to be able to reflect effectively. 
 
 
 \section{Maintainability}
-An important goal for the project was to allow future developers to maintain the project and to add new features, eventually taking this app into deployment through the app store and potentially making a cross-platform version to allow use with any mobile operating system. Steps were taken to ensure that the code and documentation were of high enough quality to allow this, these steps are listed below.
+An important goal for the project was to allow future developers to maintain the project and to add new features, eventually taking this app into deployment through the app store and potentially making a cross-platform version to allow use with any mobile operating system. Steps were taken to ensure that the code and documentation were of high enough quality to allow this. These steps are listed below.
 
 \subsection{Documentation}
 
@@ -665,7 +666,7 @@ An important goal for the project was to allow future developers to maintain the
 
 \textbf{GitHub Wiki:} Throughout the course of the project, the GitHub wiki was kept up to date with weekly progress, meetings and research. The wiki also contained the goals and requirements for the project. This means that anyone reading the wiki is easily able to understand the objectives of the app and the research that went into the design of the questions, the intentions behind reflection, and developing user graduate attributes. This understanding would help any future developers carry through these intentions into their own further development of the app, maintaining the key goals at the core of development. 
 
-\textbf{Developer readme} A readme for developers is also included in the project. This explains how to set up the project for continued development and how to run the app both on XCode Simulator and on their own iPhone. This is intended to make it easier for any future developers to create new features to the app. 
+\textbf{Developer Readme} A readme for developers is also included in the project. This explains how to set up the project for continued development and how to run the app both on XCode Simulator and on their own iPhone. This is intended to make it easier for any future developers to create new features to the app. 
 
 %==================================================================================================================================
 \chapter{Evaluation} \label{evaluation}
@@ -1469,7 +1470,19 @@ As a graduate, I want to be fully prepared to join the workplace and have develo
 %==================================================================================================================================
 %
 
-\section{GradReflect Interfaces} \label{Appendix-AppInterfaces}
+\section{App Logo} \label{Appendix-AppLogo}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1]{images/AppLogo.pdf}    
+    \caption{This shows the logo created for the mobile app GradReflect.}
+    \label{fig:AppLogo} 
+\end{figure}
+
+%==================================================================================================================================
+%
+
+\section{GradReflect Main Interfaces} \label{Appendix-AppInterfaces}
 
 \begin{figure}[H]
     \centering
@@ -1509,7 +1522,7 @@ As a graduate, I want to be fully prepared to join the workplace and have develo
     \label{fig:DarkMode} 
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[scale=0.25]{images/DeleteNote.pdf}
@@ -1536,6 +1549,49 @@ As a graduate, I want to be fully prepared to join the workplace and have develo
 %
 
 \section{Skill cards}\label{Appendix-SkillCards}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/HomeCard.pdf}
+        \caption{Skill card for Home}
+        \label{fig:HomeCard}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/CommunicationCard.pdf}
+        \caption{Skill card for Communication}
+        \label{fig:CommunicationCard}
+    \end{subfigure}  
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/CriticalThinkingCard.pdf}
+        \caption{Skill card for Critical Thinking}
+        \label{fig:CriticalThinkingCard}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/AdaptabilityCard.pdf}
+        \caption{Skill card for Adaptability}
+        \label{fig:AdaptabilityCard}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/TeamworkCard.pdf}
+        \caption{Skill card for Teamwork}
+        \label{fig:TeamworkCard}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/SE-AKCard.pdf}
+        \caption{Skill card for Self-efficacy and Applying Knowledge}
+        \label{fig:SE-AKCard}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.25]{images/E-ProCard.pdf}
+        \caption{Skill card for Ethics and Professionalism}
+        \label{fig:E-ProCard}
+    \end{subfigure} 
+    \caption{Screenshots showing the skill cards in the Home View of the app GradReflect.}
+    \label{fig:AllSkillCards}
+\end{figure}
+
+
 
 %==================================================================================================================================
 %
