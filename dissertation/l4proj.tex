@@ -7,6 +7,7 @@
 % put any additional packages here
 \usepackage{pdfpages}
 \usepackage{float}
+\usepackage{array}
 %
 
 \begin{document}
@@ -366,14 +367,15 @@ This project was presented by a University of Glasgow lecturer, Dr Matthew Barr,
 
 \section{Problem Specification}
 
-The main expectations for the app are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have used their graduate attributes. It was decided that the best method to achieve this was to allow users to quickly and conveniently reflect using a mobile app. As the app will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can, in their own time, deepen their understanding and development of these skills. The ability for users to make reflections easily was tested in the user evaluations later in the project. 
+The main expectations for the app are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have exercised their graduate attributes. It was decided that the best method to achieve this was to allow users to quickly and conveniently reflect using a mobile app. As the app will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can, in their own time, deepen their understanding and development of these skills. The ability for users to make reflections easily was tested in the user evaluations in Chapter xx in the project. 
 
-To begin creating the list of functional requirements of the GradReflect app, multiple user scenarios and user stories were initially created for students, interns/apprentices, recent graduates and experienced members in the workplace, these can be seen in appendix (ADD APPENDIX REFERENCE HERE). However, in discussion with Dr Barr, it was decided the main users of this app would be students, and the app should be designed as such. The list of functional requirements below describes actions that users should be able to perform with the app. The list of non-functional requirements are criteria that the app needs to meet. These requirements follow the MoSCoW framework including Must Have (MH), Should Have (SH), Could Have (CH) and Wont Have (WH) \citep{consortium_chapter_2014}. Requirements marked with * were added throughout the project as different iterations introduced possible new functionalities. 
+To begin creating the list of functional requirements of the GradReflect app, multiple user personas and user stories were initially created for students, interns/apprentices, recent graduates and experienced members in the workplace; these can be seen in Appendix \ref{Appendix-userPersonas} and Appendix \ref{Appendix-userStories}. However, in discussion with Dr Barr, it was decided the main users of this app would be students, and the app should be designed as such. The list of functional requirements below describes actions that users should be able to perform with the app. The list of non-functional requirements are criteria that the app needs to meet. These requirements follow the MoSCoW framework including Must Have (MH), Should Have (SH), Could Have (CH) and Won’t Have (WH) \citep{consortium_chapter_2014}. Requirements marked with * were added throughout the project as different iterations introduced possible new functionalities.
+
 
 \textbf{Functional requirements}
 \begin{itemize}
-    \item \textbf{MH} Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills, this can be in either written OR audio form.
-    \item \textbf{MH} Users must be able to delete a reflection created, as well as being able to review it at a later date, however users should not be able to update or edit a note after it's creation. 
+    \item \textbf{MH} Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills; this can be in either written OR audio form.
+    \item \textbf{MH} Users must be able to delete a reflection created, as well as being able to review it at a later date; however users should not be able to update or edit a note after its creation. 
     \item \textbf{MH} Users must be able to turn on notifications.
 
     \item \textbf{SH} Users should be able to select a skill from a pre-defined list to avoid mistakes and allow for future potential filtering.
@@ -386,12 +388,13 @@ To begin creating the list of functional requirements of the GradReflect app, mu
     \item \textbf{SH} GradReflect should have an About Page within the settings that tells the user how to use the app correctly to make reflections, giving further clear instructions to the user. 
     \item \textbf{SH*} Users should be able to view statistics based on the reflections written into the app.
     
-    \item \textbf{CH} The app could implement Cognitive Behavioural Therapy techniques to aid the reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. 
+    \item \textbf{CH} The app could implement Cognitive Behavioural Therapy techniques to aid reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. 
     \item \textbf{CH*} Users could have the ability to customise their experience of GradReflect and have the ability to switch between a dark and light themed interface.
     \item \textbf{CH} GradReflect could have links in the Settings page that take users to useful pages related to the app and graduate attributes to provide further insight and education on graduate attributes.
     
     \item \textbf{WH} It was decided that users will not be able to upload reflections onto Moodle as this does not provide enough benefit to users in completing the aims discussed in Section \ref{IntroAims}. There could also be potential privacy issues, as users may not want to upload personal experiences on a public space.
 \end{itemize}
+
 
 \textbf{Non-functional requirements}
 \begin{itemize}
@@ -405,21 +408,22 @@ To begin creating the list of functional requirements of the GradReflect app, mu
 
 \section{Chosen Limitations}
 
-Due to this app being designed and created for iOS devices, users will not be able to download this app onto their own device without the app being uploaded to the Apple App Store \citep{apple_inc_app_2021}. This would require a paid Apple developer license and is therefore outwith the scope of this project. This meant that some limitations were chosen to create a prototype of the app to test and evaluate the app, that in the future could be taken onto other platforms and for general distribution.
+Due to this app being designed and created for iOS devices, users will not be able to download this app onto their own device without the app being uploaded to the Apple App Store \citep{apple_inc_app_2021}. This would require a paid Apple developer license and is therefore out with the scope of this project. This meant that some limitations were chosen to create a prototype of the app to test and evaluate the app, that in the future could be taken onto other platforms and for general distribution.
 
-Reminders will not be able to be set by the user, instead they will turn on the notifications and a notification will launch after 10 seconds. This was for ease of testing. The response time of notifications was therefore immediate and as the app will be run on a simulator that is not always running, users and testers will not be able to use GradReflect for extended periods of time that would allow a notification to be set in the future. In future developments of this app, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their chosen day. 
+Reminders will not be able to be set by the user, instead they will turn on the notifications and a notification will launch after 10 seconds. This was for ease of testing. The response time of notifications was therefore immediate and as the app will be run on a simulator that is not always running, test users will not be able to use GradReflect for extended periods of time that would allow a notification to be set in the future. In future developments of this app, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their chosen day.
 
-\section{Changes to the specification}
 
-The specification was changed in discussion with the project supervisor, as described at the beginning of this chapter, due to project contraints and novel research paths that opened up during these conversations. The main change to the original specification given was to integrate the use of CBT techniques into the app. This was chosen during research into situations where people reflect deeply and meaningfully about their real-life experiences. This was taken as a research question into the project to evaluate its possible benefits in aiding the reflection of users about their graduate attributes. 
+\section{Changes to the Specification}
 
-Each possible feature of the app was also evaluated based on its usefulness. As a result, the decision was made to remove the ability for users to upload their reflections to Moodle. Due to the research direction of CBT users will include their thoughts and feelings into their reflections, causing it to be more personal. Upon conversation with peers it was also noted that students would be unlikely to use this feature. The decision was then taken to include a link to Moodle on the Useful Links section of the mobile app instead, to maintain a connection with the university and the app. 
+The specification was changed in discussion with the project supervisor, as described at the beginning of this chapter, due to project constraints and novel research paths that opened up during these conversations. The main change to the original specification given was to integrate CBT techniques into the app. This was chosen during research into situations where people reflect deeply and meaningfully about their real-life experiences. This was framed as a research question for the project, to evaluate its possible benefits in aiding the reflection of users about their graduate attributes. 
+
+Each possible feature of the app was also evaluated based on its usefulness. As a result, the decision was made to remove the ability for users to upload their reflections to Moodle. Due to the research direction of CBT users will include their thoughts and feelings into their reflections, causing it to be more personal. Upon conversation with peers, it was also noted that students would be unlikely to use this feature. The decision was then taken to include a link to Moodle on the Useful Links section of the mobile app instead, to maintain a connection with the university and the app.
 
 
 %==================================================================================================================================
 \chapter{Design}
 
-This chapter discusses the design of the product, starting with the design of the CBT modelled reflection techniques. The user interface design will also be discussed, including the reasoning behind a number of key design decisions made to meet the requirements laid out in \ref{analysis/reqs}. Finally, the chapter will examine the tools and technologies used for the project. 
+This chapter discusses the design of the product, starting with the design of the CBT-based reflection techniques. The user interface design will also be discussed, including the reasoning behind a number of key design decisions made to meet the requirements laid out in \ref{analysis/reqs}. Finally, the chapter will examine the tools and technologies used for the project. 
 
 \section{Encouraging Reflection}
 
@@ -427,13 +431,14 @@ In order to encourage reflection, various use cases and features were designed t
 
 \subsection{Written Notes}
 
-Written notes were required to give users the opportunity to reflect using the CBT methods described in chapter \ref{Background}. The questions would be designed similarly to the questions used in the experiment described in chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality within the app. 
+The ability to enter written notes was required to give users the opportunity to reflect using the CBT methods described in Chapter \ref{Background}. The questions would be designed similarly to the questions used in the experiment described in chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality within the app. 
 
-Each question was required to be stated clearly and consisely, giving users the availablity of a helper button providing insight into answering this question with an example. This will allow the user to understand what the app is expecting of them and further encourage deep and meaningful reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. (ADD APPENDIX REFERENCE TO THE APP QUESTIONS AND PROMPTS THAT WERE USED)
+Each question was required to be stated clearly and concisely, with a help button displayed to provide insight into answering this question with an example. This will allow the user to understand what the app is expecting of them and further encourage deep and meaningful reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. This additional explanation of the questions are also in line with Nielsen’s ‘Help and Documentation’ heuristic \citep{Nielsen10}. The CBT-based questions and prompts that were designed and subsequently implemented into the app, can be seen in Appendix \ref{Appendix-AppCBTQuestions-Prompts}.
 
-The question on emotional reaction was chosen to utilise a sliding scale from a clear negative reaction to a positive reaction. This meant that users were not required to label an emotional response, which can at times be difficult to identify. 
+The question on emotional reaction was designed to utilise a sliding scale from a clear negative reaction to a positive reaction. This meant that users were not required to label an emotional response, which can at times be difficult to identify. 
 
-Users were also given the opportunity to be able to click on previously made notes to review, reflect on, and delete these previous entries. However, they were not able to edit or update any of their reflections. This mirrors the CBT behaviours of writing down reflections in a journal where they cannot be altered retrospectively. This prevents hindsight on previous experiences and ensures an accurate contemporaneous representation of experiences. 
+Users were also given the opportunity to be able to click on previously made notes to review, reflect on, and delete. However, they were not able to edit or update any of their reflections. This mirrors the CBT behaviours of writing down reflections in a journal where they cannot be altered retrospectively. This prevents hindsight on previous experiences and ensures an accurate contemporaneous representation of experiences.
+
 
 \subsection{Recorded Notes}
 
@@ -441,19 +446,21 @@ Users were provided the option of creating a note through a voice recording. Thi
 
 \subsection{Statistics}
 
-Statistics on a users' written reflections were designed. This allows users insight into their own reflections, focussing their development of skills. It provides detail on data holistically and organsied by skill. The user is able to view how many notes they have made and the average words per note. They can also scroll through each skill to see how many notes they have written, their average words per note for that skill, and their average emotional response for that skill. 
+Statistics on a user's written reflections were developed, providing detail on data holistically and organised by skill. The user is able to view how many notes they have made and the average words per note. They can also scroll through each skill to see how many notes they have written, their average words per note for that skill, and their average emotional response for that skill. This feature allows users insight into their own reflections, focusing on their development of skills.  
 
-These insights will allow the user to see both their strengths, through the skills with a high number of notes, and their weaknesses, through skills with a comparitively low number of notes. This focusses their goals, showing where future development is required. It also shows users where they may need to reflect more deeply through the word count. If the word count is low it is likely they not spending enough time reflecting, or reflecting in enough detail. And lastly, they will gain insight into how they feel about certain skills. If their average emotional response to a skill is low, they can evaluatethe reasons for this and potentially allow future development of this skill.
+These insights will allow the user to see both their strengths, through the skills with a high number of notes, and their potential weaknesses, through skills with a comparatively low number of notes. This focusses their goals, showing where future development is required. It also shows users where they may need to reflect more deeply through the word count. If the word count is low, it is likely they not spending enough time reflecting or reflecting in enough detail. And lastly, they will gain insight into how they feel about certain skills. If their average emotional response to a skill is low, they can evaluate the reasons for this, potentially allowing for future development of this skill.
 
-\subsection{Additional assistance}
 
-Additional assistance to reflection was also designed in the homepage and the settings page. Upon entering the app users should be greeted with descriptions of each skill and an example of its use. Descriptions of the skills educate the users, due to the gap in the knowledge of these skills identified in the graduate attribute survey conducted at the beginning of the project \ref{Appendix-gradAttributeSurvey}. Clear descriptions and instructions of the skills will increase a users' awareness of these skills in their everyday life.
+\subsection{Additional Assistance}
+
+Additional assistance for reflection was also designed into the homepage and the settings page. Upon entering the app, users should be greeted with descriptions of each skill and an example of its use. Descriptions of the skills help to educate the users, due to the gap in the knowledge of these skills identified in the graduate attribute survey conducted at the beginning of the project, which can be seen in Appendix \ref{Appendix-gradAttributeSurvey}. Clear descriptions and instructions of the skills will increase a user’s awareness of these skills in their everyday life.
 
 Further descriptions of how to use the app are given within the settings page, increasing the level of clear instructions needed to help students be able to reflect effectively \citep{bruno_reflective_2018}.
 
+
 \section{User Interface}
 
-The user interface was designed to help users quickly learn how to use the app and start reflecting. To do this it was required that the interface was intuitive and easy to use, this would be made possible through an attractive and straightforward design. This section describes some of the techniques used during that design process.
+The user interface was designed to help users quickly learn how to use the app and start reflecting. To do this, it was required that the interface was intuitive and easy to use, this would be made possible through an attractive and straightforward design. This section describes some of the techniques used during that design process.
 
 \subsection{Initial Prototyping}
 
@@ -473,14 +480,13 @@ Design of existing note taking apps were considered for interface familiarity. S
 
 Some of the apps referenced for this were: Apple's Voice Memos \citep{apple_inc_voice_2021}, Apple's Notes \citep{apple_inc_notes_2021}, Google's Keep Notes \citep{google_llc_google_2021} and Collateral \citep{vargas_collateral_2021}.
 
-External consistency allows users to feel more comfortable and understand the app better as it is similar to those they have used in the past \citep{schlatter_visual_2013}. This helps to satisfy the requirement that the app be easy to use. 
+External consistency allows users to feel more comfortable and understand the app better as it is similar to those they have used in the past, and follows Nielsen’s heuristic ‘Consistency and Standards’ \citep{schlatter_visual_2013, Nielsen10}. This helps to satisfy the requirement that the app be easy to use. 
 
-Appendix \ref{Appendix-PaperPrototypes} shows the initial prototype developed for GradReflect. A homepage design that directed users to each section of the page was first envisioned. This homepage would provide users with descriptions of each skill and how to use the app. Initially, skills would only appear on a users first time using the app, and then would be held within the settings section of the app. However, it was more helpful if the skills were always available on the home page. This would aid users to instantly understand what to do on first opening the app, but if users have used the app several times they are able to head quickly to the section they wish to use, whilst also having the availabile the skill descriptions if users want to refresh their knowledge. 
+Appendix Figure \ref{fig:PaperPrototype1} shows the initial paper prototype developed for GradReflect. A homepage design that directed users to each section of the page was first envisioned. This homepage would provide users with descriptions of each skill and how to use the app. Initially, skills would only appear on a user’s first time using the app, and then would be held within the settings section of the app. However, prototyping suggested that it was more helpful if the skills were always available on the home page. This would aid users to instantly understand what to do on first opening the app, but if users have used the app several times, they are able to head quickly to the section they wish to use, whilst also having the available the skill descriptions if users want to refresh their knowledge. This meets the standard of Nielsen’s heuristic ‘Flexibility and efficiency of use’ \citep{Nielsen10}.
 
-Paper prototypes were subsequently created for the rest of the views of the app in a similar way to the homepage for consistency, as seen in figure \ref{fig:PaperPrototypes}. This protyping stage was extremely valuable and assisted in speeding up the implementation stage as the design decisions had already been carried out, giving a clear idea of how the final product should appear, ensuring the requirements would be met. However, some alterations from these designs were made for the final implementation.
+Paper prototypes were subsequently created for the remaining views of the app with a similar design to the homepage for consistency, as seen in Appendix Figure \ref{fig:PaperPrototypes}. This prototyping stage was extremely valuable and assisted in speeding up the implementation stage as the design decisions had already been carried out, giving a clear idea of how the final product should appear, ensuring the requirements would be met. However, some alterations were made to these designs for the final implementation. 
 
-These designs were then implemented into high fidelity wireframe prototypes, using iOS design features, appendix (ADD APPENDIX REF).
-
+These designs were then implemented into high fidelity wireframe prototypes, using iOS design features, these can be seen in Appendix \ref{Appendix-highFidelityWireframes}.
 
 
 \section{Technologies}
@@ -489,9 +495,9 @@ The technologies used and the reasons behind those choices are described.
 
 \subsection{iOS Mobile app}
 
-A mobile app was chosen, as the project did not require user accounts or external information sharing that is made easier by using web frameworks. Due to the personal nature of the reflections being carried out by users and the use of CBT, the ability to carry out these reflections on their phone can lead to more intimate and personal reflections. Additionally, as these reflections are on personal experiences, it is convenient for the user to be able to carry out reflection on-the-go on their mobile device, allowing instant reflection to be captured of events, thoughts, and emotions. 
+A mobile app was chosen, as the project did not require user accounts or the external information sharing that is made easier by using web frameworks. Due to the personal nature of the reflections being carried out by users and the use of CBT, the ability to carry out these reflections on their phone can lead to more intimate and personal reflections. Additionally, as these reflections are on personal experiences, it is convenient for the user to be able to carry out reflection on-the-go on their mobile device, allowing instant reflection to be captured of events, thoughts, and emotions. 
 
-iOS was chosen due to its familiar, appealing interface design concepts.
+iOS was chosen due to familiarity with the platform and appealing interface design concepts.
 
 \subsection{iOS Development}
 
@@ -499,8 +505,7 @@ Apple's iOS development is exclusive to Apple devices. Creating an iOS app for a
 
 \textbf{Swift} is the language used to create mobile iOS apps. It is a modern language with inferred types making it less prone to mistakes, and syntax that encourages clean and concise coding. This syntax, although appearing strict at times, allows for safeguarding and prevention of errors, improving readability with its similarity to natural English \citep{altexsoft_swift_2021}, and allows for easier learning of the language and start to development.
 
-\textbf{SwiftUI} was chosen for the interface lifecycle. SwiftUI is a new and innovative way to create interfaces that can allow for entire apps and their functionality to be written using it \citep{apple_developer_xcode_2021}. It uses declarative syntax to allow a developer to simply state what they want the interface to do. A key benefit to using SwiftUI is the preview editor that ajoins the code editor, displaying the app for any device and orientation. As code is written it is instantly compiled and the preview shows live changes \citep{apple_swiftui_2021}. These benefits allow for easier creation of the app's interface and its functionality, assisting in creating a more visually appealing and clean interface.
-
+\textbf{SwiftUI} was chosen for the interface development. SwiftUI is a new and innovative way to create interfaces that can allow for entire apps and their functionality to be written using it \citep{apple_developer_xcode_2021}. It uses declarative syntax to allow a developer to simply state what they want the interface to do. A key benefit to using SwiftUI is the preview editor that adjoins the code editor, displaying the app for any device and orientation. As code is written it is instantly compiled and the preview shows live changes \citep{apple_swiftui_2021}. These benefits allow for easier creation of the app's interface and its functionality, assisting in creating a more visually appealing and clean interface.
 
 
 %==================================================================================================================================
@@ -661,57 +666,6 @@ An important goal for the project was to allow future developers to maintain the
 \textbf{GitHub Wiki:} Throughout the course of the project, the GitHub wiki was kept up to date with weekly progress, meetings and research. The wiki also contained the goals and requirements for the project. This means that anyone reading the wiki is easily able to understand the objectives of the app and the research that went into the design of the questions, the intentions behind reflection, and developing user graduate attributes. This understanding would help any future developers carry through these intentions into their own further development of the app, maintaining the key goals at the core of development. 
 
 \textbf{Developer readme} A readme for developers is also included in the project. This explains how to set up the project for continued development and how to run the app both on XCode Simulator and on their own iPhone. This is intended to make it easier for any future developers to create new features to the app. 
-
-
-% \subsection{Tables}
-
-% If you need to include tables, like Table \ref{tab:operators}, use a tool like https://www.tablesgenerator.com/ to generate the table as it is
-% extremely tedious otherwise. 
-
-% \begin{table}[]
-%     \caption{The standard table of operators in Python, along with their functional equivalents from the \texttt{operator} package. Note that table
-%     captions go above the table, not below. Do not add additional rules/lines to tables. }\label{tab:operators}
-%     %\tt 
-%     \rowcolors{2}{}{gray!3}
-%     \begin{tabular}{@{}lll@{}}
-%     %\toprule
-%     \textbf{Operation}    & \textbf{Syntax}                & \textbf{Function}                            \\ %\midrule % optional rule for header
-%     Addition              & \texttt{a + b}                          & \texttt{add(a, b)}                                    \\
-%     Concatenation         & \texttt{seq1 + seq2}                    & \texttt{concat(seq1, seq2)}                           \\
-%     Containment Test      & \texttt{obj in seq}                     & \texttt{contains(seq, obj)}                           \\
-%     Division              & \texttt{a / b}                          & \texttt{div(a, b) }  \\
-%     Division              & \texttt{a / b}                          & \texttt{truediv(a, b) } \\
-%     Division              & \texttt{a // b}                         & \texttt{floordiv(a, b)}                               \\
-%     Bitwise And           & \texttt{a \& b}                         & \texttt{and\_(a, b)}                                  \\
-%     Bitwise Exclusive Or  & \texttt{a \textasciicircum b}           & \texttt{xor(a, b)}                                    \\
-%     Bitwise Inversion     & \texttt{$\sim$a}                        & \texttt{invert(a)}                                    \\
-%     Bitwise Or            & \texttt{a | b}                          & \texttt{or\_(a, b)}                                   \\
-%     Exponentiation        & \texttt{a ** b}                         & \texttt{pow(a, b)}                                    \\
-%     Identity              & \texttt{a is b}                         & \texttt{is\_(a, b)}                                   \\
-%     Identity              & \texttt{a is not b}                     & \texttt{is\_not(a, b)}                                \\
-%     Indexed Assignment    & \texttt{obj{[}k{]} = v}                 & \texttt{setitem(obj, k, v)}                           \\
-%     Indexed Deletion      & \texttt{del obj{[}k{]}}                 & \texttt{delitem(obj, k)}                              \\
-%     Indexing              & \texttt{obj{[}k{]}}                     & \texttt{getitem(obj, k)}                              \\
-%     Left Shift            & \texttt{a \textless{}\textless b}       & \texttt{lshift(a, b)}                                 \\
-%     Modulo                & \texttt{a \% b}                         & \texttt{mod(a, b)}                                    \\
-%     Multiplication        & \texttt{a * b}                          & \texttt{mul(a, b)}                                    \\
-%     Negation (Arithmetic) & \texttt{- a}                            & \texttt{neg(a)}                                       \\
-%     Negation (Logical)    & \texttt{not a}                          & \texttt{not\_(a)}                                     \\
-%     Positive              & \texttt{+ a}                            & \texttt{pos(a)}                                       \\
-%     Right Shift           & \texttt{a \textgreater{}\textgreater b} & \texttt{rshift(a, b)}                                 \\
-%     Sequence Repetition   & \texttt{seq * i}                        & \texttt{repeat(seq, i)}                               \\
-%     Slice Assignment      & \texttt{seq{[}i:j{]} = values}          & \texttt{setitem(seq, slice(i, j), values)}            \\
-%     Slice Deletion        & \texttt{del seq{[}i:j{]}}               & \texttt{delitem(seq, slice(i, j))}                    \\
-%     Slicing               & \texttt{seq{[}i:j{]}}                   & \texttt{getitem(seq, slice(i, j))}                    \\
-%     String Formatting     & \texttt{s \% obj}                       & \texttt{mod(s, obj)}                                  \\
-%     Subtraction           & \texttt{a - b}                          & \texttt{sub(a, b)}                                    \\
-%     Truth Test            & \texttt{obj}                            & \texttt{truth(obj)}                                   \\
-%     Ordering              & \texttt{a \textless b}                  & \texttt{lt(a, b)}                                     \\
-%     Ordering              & \texttt{a \textless{}= b}               & \texttt{le(a, b)}                                     \\
-%     % \bottomrule
-%     \end{tabular}
-%     \end{table}
-
 
 %==================================================================================================================================
 \chapter{Evaluation} \label{evaluation}
@@ -1089,6 +1043,9 @@ GradReflect Project GitHub Link
 
 \url{https://github.com/gmtmcd/Level-4-Individual-Project}
 
+%==================================================================================================================================
+%
+
 \section{Ethics checklists}
 
 \subsection{Graduate attribute survey}
@@ -1102,6 +1059,9 @@ GradReflect Project GitHub Link
 \subsection{User evaluations}
 
 \includepdf[pages=-,pagecommand={},width=\textwidth]{images/EthicsChecklist-UserEvals.pdf}
+
+%==================================================================================================================================
+%
 
 \section{Graduate Attribute General Knowledge Survey} \label{Appendix-gradAttributeSurvey}
 
@@ -1244,6 +1204,9 @@ Thank you for your help.
 
 \includepdf[pages=-,pagecommand={},width=\textwidth, angle =90]{images/PDF_GeneralAttributeSurvey.pdf}
 
+%==================================================================================================================================
+%
+
 \section{AB Tests} \label{Appendix-ABTests}
 
 \subsection{Intro Script for both groups}
@@ -1366,30 +1329,149 @@ Thank you for your help.
 
 \includepdf[pages=-,pagecommand={},width=\textwidth, angle =90]{images/ProcessedExperimentalGroupCoding.pdf}
 
-\section{CBT questions and Prompts from App}
+%==================================================================================================================================
+%
+\section{User personas} \label{Appendix-userPersonas}
 
+\textbf{Types of users}
+\begin{itemize}
+    \item Student
+    \item Recent graduate
+    \item Experienced member of a workplace
+    \item Intern/Apprentices
+\end{itemize}
+
+\textbf{Personas}
+\begin{itemize}
+    \item \textbf{Steven} Steven is an Intern doing his first ever technology internship. Through different speaker sessions during the internship he has heard all the different skills he needs to work well within the company. He's concerned he hasn't had the opportunity to develop these skills as he has never heard about graduate skills.
+    \item \textbf{Maisie} Maisie is a student currently in her third year of university studying computing science. She has been working on her third year team project with some fellow students and is looking for a way to keep track of the skills she's using throughout the project so she can refer to them in her CV later. She knows these skills will be important for her in the workplace and is keen to start tracking her development early.
+    \item \textbf{Michael} Michael has been working in the same position in his workplace for the last 5 years and is looking to put himself up for promotion soon, however its been a long time since he had an interview and is concerned he will not be able to promote himself well in the interview. He needs a way to gather together the many skills he has gained through years of working in the company and be able to review them before his interview. He wants to make sure he continues to work on his personal development.
+    \item \textbf{Abigail} Abigail has just graduated university and is just about to start her new job. She wants to be able to make sure she stays on top of all the skills she learns on the job as she has aspirations of advancing quickly through the company. She needs to be reminded to journal about her experiences, and continue to grow and develop her skills within the company.
+\end{itemize}
+
+%==================================================================================================================================
+%
+
+\section{User Stories} \label{Appendix-userStories}
+
+As an intern, I want to be able to learn what graduate skills are, so that I can develop on them.
+
+As an intern, I want to be able to keep track of the real-world experiences from my internship, so that I can recognise the skills I am developing.
+
+As student, I want to be able to know how to reflect on the experiences I am having during the team project, so that I can keep up with my CV.
+
+As a student, I want to be able to become more aware of my skills and when I am using them, so that I can perform well in a job interview.
+
+As a student, I want to be able to become more aware of my skills and when I am using them, so that I can work efficiently in my future workplace.
+
+As a student, I want to be able to take convenient and quick recordings of my experiences, so that I can capture them on the go and go back to them later.
+
+As a student, I want to be able to see what skill I have developed and what skills require more development, so that I can focus my attention on seeking opportunities to develop more skills and provide value to my future workplace.
+
+As a student, I want to have an explanation of how to reflect on my skills in a beneficial way, so that I know what I am doing and can reflect effectively.
+
+As an experienced member of the workplace, I want to be able to be able to save journal entries and refresh myself on what my key experiences and skills are, so that I can get my promotion.
+
+As an experienced member of the workplace, I want to continue to work on my skills, so that I can continue to improve my personal growth and provide value to the workplace.
+
+As a graduate, I want to be able to have a reminder to reflect on all my skills, so that I can progress my career.
+
+As a graduate, I want to be fully prepared to join the workplace and have developed my key graduate skills, so that I can feel confident and provide value to my teams.
+
+%==================================================================================================================================
+%
+
+\section{CBT questions and Prompts from App} \label{Appendix-AppCBTQuestions-Prompts}
+
+\begin{center}
+    \begin{tabular}{ | m{8em} | m{10cm}| } 
+    \hline
+    \textbf{Question} & \textbf{Prompt} \\ [0.5ex] 
+    \hline\hline
+    Note Title: & Give your note a title, this is how the note will be stored for reviewing later \\ 
+    \hline
+    What graduate skill did you develop? & You will be asked to reflect based on an experience where you feel you have developed on one of these skills. Throughout the survey, an example of an experience where someone settled a dispute in their team will be used to assist in your own reflection. \\
+    \hline
+    Describe the situation in which you developed this skill & The situation is the concrete experience, this only covers the facts of what happened with no interpretation. An example could include settling a dispute between peers for Teamwork \\
+    \hline
+    What were your thoughts during this experience? & Thoughts help to interpret a situation, there are different ways to interpret a single situation. These thoughts can be positive or negative. For example, thinking that a dispute between your peers could cause delays further down the line, thinking it could damage the overall harmony of the team, etc \\
+    \hline
+    How did you feel during this situation? & These emotions will be based on your thoughts about the experience and can be both negative and positive. This scale does not describe the scenario, but instead your emotional response to the experience. \\
+    \hline
+    Why do you think you felt this way? & The reasons behind your emotions can stem from many things, it could be the result of previous experiences, foreseeable impacts, etc. For example, in a team dispute, a person could feel negative because in a previous team it resulted in a bad working environment. An example of why they could feel positive could be that it gave them the opportunity to take a proactive role in settling the dispute, creating a good environment for their team. \\
+    \hline
+    How did you behave in this experience? & This requires you to examine the cause and effect.  How does the resulting behaviour directly relate to your thoughts and feelings? For example, someone taking two arguing team members aside and discussing how to compromise. This could be because they did not want to ruin the team environment that had been positive up until the dispute, and wanted to create the best product they could as a team. \\
+    \hline
+    How would you want to behave in the future? Would you act the same or differently, and why? & Here we are examining alternate thought. You have to examine all of your previous answers and decide if this is how you would handle a similar situation, and whether your behaviour resulted in the best possible outcome. This will help you to make new connections and create different, more positive experiences in the future. For example, someone might behave in the same way in settling the dispute, however they may act sooner next time to ensure there is no impact on team cohesion. \\ [1ex] 
+    \hline
+   \end{tabular}
+   \end{center}
+
+
+
+%==================================================================================================================================
+%
 
 \section{Paper Prototypes} \label{Appendix-PaperPrototypes}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{1\textwidth}
-        \includegraphics[scale=0.45, angle = 90]{images/PaperWireframes1.pdf}
+        \includegraphics[scale=0.3, angle = 90]{images/PaperWireframes1.pdf}
         \caption{Initial paper prototype designs for the Home, Note and Recordings views.}
-        \label{fig:PaperWireframe1}
+        \label{fig:PaperPrototype1}
     \end{subfigure}
     \begin{subfigure}[b]{1\textwidth}
-        \includegraphics[scale=0.45, angle = 90]{images/PaperWireframes2.pdf}
+        \includegraphics[scale=0.3, angle = 90]{images/PaperWireframes2.pdf}
         \caption{Initial paper prototypes for the Statistics and Settings view.}
-        \label{fig:PaperWireframe2}
+        \label{fig:PaperPrototype2}
     \end{subfigure}     
     \caption{Scanned files showing the paper prototypes that were made in the early stages of design, iterative changes were made to the design for the final product.}
     \label{fig:PaperPrototypes}
 \end{figure}
 
+%==================================================================================================================================
+%
+
+\section{High Fidelity Wireframes}\label{Appendix-highFidelityWireframes}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.3]{images/HomeWireframe.pdf}
+        \caption{High fidelity wireframe prototype design for the Home view.}
+        \label{fig:HomeWireframe}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.3]{images/NotesWireframe.pdf}
+        \caption{High fidelity wireframe prototype design for the Notes view.}
+        \label{fig:NotesWireframe}
+    \end{subfigure}   
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.3]{images/RecordingsWireframe.pdf}
+        \caption{High fidelity wireframe prototype design for the Recordings view.}
+        \label{fig:RecordingsWireframe}
+    \end{subfigure} 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.3]{images/StatsWireframe.pdf}
+        \caption{High fidelity wireframe prototype design for the Statistics view.}
+        \label{fig:StatsWireframe}
+    \end{subfigure} 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.3]{images/SettingsWireframe.pdf}
+        \caption{High fidelity wireframe prototype design for the Settings view.}
+        \label{fig:SettingsWireframe}
+    \end{subfigure}   
+    \caption{High-fideility wireframes that were made following the paper prototype designs, smal changes were made to this design for the final product.}
+    \label{fig:HighFidWireframes}
+\end{figure}
+
+%==================================================================================================================================
+%
+
 \section{GradReflect Interfaces} \label{Appendix-AppInterfaces}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[scale=0.25]{images/appHomeScreen.pdf}
@@ -1420,7 +1502,7 @@ Thank you for your help.
     \label{fig:appMainViews}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{images/DarkMode.pdf}    
     \caption{This screenshot shows the notification the notes view after the user has toggled to dark mode.}
@@ -1443,13 +1525,20 @@ Thank you for your help.
     \label{fig:Deletion}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{images/AboutApp.pdf}    
     \caption{This screenshot shows the About GradReflect page.}
     \label{fig:AboutApp} 
 \end{figure}
 
+%==================================================================================================================================
+%
+
+\section{Skill cards}\label{Appendix-SkillCards}
+
+%==================================================================================================================================
+%
 
 \section{User Evaluations} \label{Appendix-UserEvals}
 
