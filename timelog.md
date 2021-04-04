@@ -498,3 +498,6 @@
 * *3.5 hours* Corrections to design, additions to appendix and wiki
 * *2.5 hours* Corrections to Implementation, additions to appendix
 * *3 hours* Corrections to evaluation and conclusion [30 hours]
+
+### 04 Apr 2021
+* *1.5 hours* Worked on eval summary and corrections to conclusion
