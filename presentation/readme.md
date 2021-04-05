@@ -1,4 +1,5 @@
 # Presentation
 
-Include your presentation slides here. You should include the slides in the original format you authored them in (e.g. PowerPoint, Keynote), *and*
-a `pdf` version of the slides. Any necessary videos, audio, images, figures, etc. should be present.
+This folder includes the powerpoint slides and pdf version of the slides used in the final presentation of the Level 4 Individual Project. 
+
+It also contains copies of the videos used in the presentation.

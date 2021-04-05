@@ -36,5 +36,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 21** Improve dissertation
 * **Week 22** Final unpolished dissertation draft, proof reads
 * **Week 23 [TERM ENDS]** Prep all submittable material, create presentation
-* **Week 24** Dissertation submission deadline and presentations.
+* **Week 24** Dissertation submission deadline and presentations. 
+* **Week 25** Updated due week.
+* **Week 26** Course-wide extension given, new due week. 
 

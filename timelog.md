@@ -497,7 +497,12 @@
 ### 02 Apr 2021
 * *3.5 hours* Corrections to design, additions to appendix and wiki
 * *2.5 hours* Corrections to Implementation, additions to appendix
-* *3 hours* Corrections to evaluation and conclusion [30 hours]
+* *3 hours* Corrections to evaluation and conclusion
 
 ### 04 Apr 2021
-* *1.5 hours* Worked on eval summary and corrections to conclusion
+* *1.5 hours* Worked on eval summary and corrections to conclusion [31.5 hours]
+
+## Week 25 - final week
+
+### 05 Apr 2021
+* *3.5 hours* Filled in readme's and started filling in the readme for the application, discovered the save note UI test isnt working since having to change the nav bars due to the code deprecation
