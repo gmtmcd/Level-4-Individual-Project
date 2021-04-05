@@ -506,3 +506,4 @@
 
 ### 05 Apr 2021
 * *3.5 hours* Filled in readme's and started filling in the readme for the application, discovered the save note UI test isnt working since having to change the nav bars due to the code deprecation
+* *1.5 hours* Fixed issue where if theres were no notes then the avg said NaN, finished read me and manual

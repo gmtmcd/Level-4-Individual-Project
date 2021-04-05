@@ -77,9 +77,17 @@ struct DataStatsView: View {
                     Text("Total note entries: \(notes.count)")
                         .fontWeight(.bold)
                         .font(.title3)
-                    Text("Average words for all entries: \(String(format: "%.2f",(getNumberWords(skill:"Communication") + getNumberWords(skill:"Critical Thinking") + getNumberWords(skill:"Adaptability") + getNumberWords(skill:"Teamwork") + getNumberWords(skill:"Self-efficacy & Applying Knowledge") + getNumberWords(skill:"Ethics & Professionalism"))/Float(notes.count)))")
-                        .fontWeight(.bold)
-                        .font(.title3)
+                    // Check if zero notes, if zero then give avg is 0 to prevent it stating 'NaN'
+                    if notes.count == 0 {
+                        Text("Average words for all entries: 0")
+                            .fontWeight(.bold)
+                            .font(.title3)
+                    // If its not zero then get the avg words
+                    } else {
+                        Text("Average words for all entries: \(String(format: "%.2f",(getNumberWords(skill:"Communication") + getNumberWords(skill:"Critical Thinking") + getNumberWords(skill:"Adaptability") + getNumberWords(skill:"Teamwork") + getNumberWords(skill:"Self-efficacy & Applying Knowledge") + getNumberWords(skill:"Ethics & Professionalism"))/Float(notes.count)))")
+                            .fontWeight(.bold)
+                            .font(.title3)
+                    }
                 }
                 .padding(.horizontal, 15)
                 

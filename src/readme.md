@@ -43,26 +43,27 @@ These tests need to be run in order and are run through clicking the play button
 
 ## Build instructions
 
-**You must** include the instructions necessary to build and deploy this project successfully. If appropriate, also include 
-instructions to run automated tests. 
-
 ### Requirements
 
-Apple Account to build the app on their own device.
+* XCode Version 12.4
+* Swift 5
+* SwiftUI 2
+* Requires an Apple computer to run XCode, either Macbook or iMac
+* macOS Catalina 10.15 or later must be used on the Apple computer for XCode 12.
+* Compatible with iPhones only (not iPods or iPads)
+    - iPhone 8
+    - iPhone 8 Plus
+    - iPhone 11
+    - iPhone 11 Pro
+    - iPhone 11 Pro Max
+    - iPhone 12
+    - iPhone 12 Pro
+    - iPhone 12 Pro Max
+    - iPhone 12 Mini
 
-List the all of the pre-requisites software required to set up your project (e.g. compilers, packages, libraries, OS, hardware)
-
-For example:
-
-* Python 3.7
-* Packages: listed in `requirements.txt` 
-* Tested on Windows 10
-
-or another example:
-
-* Requires Raspberry Pi 3 
-* a Linux host machine with the `arm-none-eabi` toolchain (at least version `x.xx`) installed
-* a working LuaJIT installation > 2.1.0
+To build and install app on their own device:
+* Apple Account to build the app on their own device.
+* An iPhone of the above types
 
 ### Build steps
 
@@ -70,17 +71,13 @@ To build the app, the simulated iPhone can be used. To do this the large Play bu
 The app can then be interacted with as it will build onto the simulated device in the same way it would on a physical device. The app can be interacted with using the mouse and keyboard to type.
 
 To build the app on a physical iPhone, the user must connect their iPhone to the Apple computer being used. 
-The must then request their certificates by going to the preferences tab in XCode and then to Accounts. They must then fill in their Apple ID account information.
+They must then request their certificates by going to the preferences tab in XCode and then to Accounts. They must then fill in their Apple ID account information. They then need to click 'Manage certificates' and the '+' and add a Apple Development certificate.
+Following this they can then select their device from the list of devices in the XCode top toolbar and click the Play button, this will download the app onto their device after they have clicked Trust on the alert asking if the user trusts this computer. 
+Once the app is downloaded onto the physical device, the user can click on the app to use it. If when the app is clicked, an alert states "Untrusted developer" then the user will need to go to Settings > General > Device Management, click on their Apple ID and trust the developer/application. The app should then be usable. 
+If the application still does not work, Apple developer forumns can help figure out the issue, or the user can resort back to using the simulated iPhone on XCode.
 
-
-List the steps required to build software. 
-
-Hopefully something simple like `pip install -e .` or `make` or `cd build; cmake ..`. In
-some cases you may have much more involved setup required.
 
 ### Test steps
-
-List steps needed to show your software works. This might be running a test suite, or just starting the program; but something that could be used to verify your code is working correctly.
 
 The application can be tested through the use of the previews that are provided next to the code for each of the views that can be run through the play button on the preview to use the functionality on a particular view.
 
