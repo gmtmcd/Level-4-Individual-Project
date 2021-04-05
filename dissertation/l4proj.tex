@@ -111,7 +111,7 @@ Nonetheless, these skills have been shown to allow graduates to integrate better
 
 \section{Aims} \label{IntroAims}
 
-\subsection{Development of aims}
+\subsection{Development of Aims}
 
 Considering these motivations, an iOS mobile app was built.  This app aimed to enable students to capture their reflections on situations where graduate skills have been exercised to encourage awareness and development. The app incorporated Cognitive Behavioural Therapy (CBT) techniques to prompt deeper and more meaningful reflections. 
 
@@ -226,7 +226,7 @@ The stages of reflection used for graduate attributes can be compared to the sta
 
 CBT techniques are used to encourage deeper and more meaningful reflections from patients and provide them with alternative strategies to handle situations. These techniques are similar to those discussed to encourage reflections in learners about their graduate attributes. Development and improvement of these soft skills will benefit them in their future careers and improve their employability.
 
-To explore if employing a CBT framework into the mobile app will encourage further stages of reflection, a case study was carried out to compare the results of users who were asked reflective job interview style questions with users who were asked CBT modelled questions. The results of this case study are discussed in chapter \ref{ExploratoryStudy}.
+To explore if employing a CBT framework into the mobile app will encourage further stages of reflection, a case study was carried out to compare the results of users who were asked reflective job interview style questions with users who were asked CBT modelled questions. The results of this case study are discussed in Chapter \ref{ExploratoryStudy}.
 
 \section{Existing Products}
 
@@ -285,7 +285,7 @@ Reflectly is an app intended to capture users’ reflections on their daily live
 
 \textbf{Overall} the app is a useful starting point for design for project app. However, Reflectly does not provide a framework to assist users in creating their own reflections. Further improvements could be made to direct users on the path of each stage of reflection to ensure they are creating meaningful reflections. Therefore, in the case of graduate attributes this would allow them to learn and develop these soft skills. Some features would be useful to implement in the project app, however, many of these features, such as the use of artificial intelligence to analyse trends in users’ entries, is not feasible within the scope of the project.
 
-\subsection{Other products}
+\subsection{Other Similar Products}
 
 Other products that were examined were Catch It by \citet{nhsDigital_catch_2021}, and Daylio Journal by \citet{relaxio_src_daylio_2021}. However, these products focus primarily on mental health and wellbeing, and are generally less-fully featured than Reflectly. These products were therefore examined less thoroughly.
 
@@ -305,7 +305,7 @@ Two important components of CBT are journaling thoughts and activity scheduling.
 It was therefore hypothesised that employing the techniques and questioning style of CBT could assist users in their reflections about their graduate attributes and lead to deeper reflections. This would lead to a greater development and situational awareness of these skills. To test this hypothesis A/B testing was carried out.
 
 
-\section{A/B testing}
+\section{A/B Testing}
 
 A/B testing was conducted in which a control group received job interview style questions, and the experimental group received questions using the CBT framework, these questions can be seen in Appendix \ref{Appendix-ABTests}. 
 
@@ -367,7 +367,7 @@ This project was presented by a University of Glasgow lecturer, Dr Matthew Barr,
 
 \section{Problem Specification}
 
-The main expectations for the app are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have exercised their graduate attributes. It was decided that the best method to achieve this was to allow users to quickly and conveniently reflect using a mobile app. As the app will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can, in their own time, deepen their understanding and development of these skills. The ability for users to make reflections easily was tested in the user evaluations in Chapter xx in the project. 
+The main expectations for the app are listed below. The key requirement, as stated in the introduction, was to allow users to capture their reflections on when and where they have exercised their graduate attributes. It was decided that the best method to achieve this was to allow users to quickly and conveniently reflect using a mobile app. As the app will use Cognitive Behavioural Therapy techniques and prompts to encourage the user to reflect more meaningfully, they can, in their own time, deepen their understanding and development of these skills. The ability for users to make reflections easily was tested in the user evaluations in Chapter \ref{evaluation} in the project. 
 
 To begin creating the list of functional requirements of the GradReflect app, multiple user personas and user stories were initially created for students, interns/apprentices, recent graduates and experienced members in the workplace; these can be seen in Appendix \ref{Appendix-userPersonas} and Appendix \ref{Appendix-userStories}. However, in discussion with Dr Barr, it was decided the main users of this app would be students, and the app should be designed as such. The list of functional requirements below describes actions that users should be able to perform with the app. The list of non-functional requirements are criteria that the app needs to meet. These requirements follow the MoSCoW framework including Must Have (MH), Should Have (SH), Could Have (CH) and Won’t Have (WH) \citep{consortium_chapter_2014}. Requirements marked with * were added throughout the project as different iterations introduced possible new functionalities.
 
@@ -431,7 +431,7 @@ In order to encourage reflection, various use cases and features were designed t
 
 \subsection{Written Notes}
 
-The ability to enter written notes was required to give users the opportunity to reflect using the CBT methods described in Chapter \ref{Background}. The questions would be designed similarly to the questions used in the experiment described in chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality within the app. 
+The ability to enter written notes was required to give users the opportunity to reflect using the CBT methods described in Chapter \ref{Background}. The questions would be designed similarly to the questions used in the experiment described in Chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality within the app. 
 
 Each question was required to be stated clearly and concisely, with a help button displayed to provide insight into answering this question with an example. This will allow the user to understand what the app is expecting of them and further encourage deep and meaningful reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. This additional explanation of the questions are also in line with Nielsen’s ‘Help and Documentation’ heuristic \citep{Nielsen10}. The CBT-based questions and prompts that were designed and subsequently implemented into the app, can be seen in Appendix \ref{Appendix-AppCBTQuestions-Prompts}.
 
@@ -493,7 +493,7 @@ These designs were then implemented into high fidelity wireframe prototypes, usi
 
 The technologies used and the reasons behind those choices are described.
 
-\subsection{iOS Mobile app}
+\subsection{iOS Mobile App}
 
 A mobile app was chosen, as the project did not require user accounts or the external information sharing that is made easier by using web frameworks. Due to the personal nature of the reflections being carried out by users and the use of CBT, the ability to carry out these reflections on their phone can lead to more intimate and personal reflections. Additionally, as these reflections are on personal experiences, it is convenient for the user to be able to carry out reflection on-the-go on their mobile device, allowing instant reflection to be captured of events, thoughts, and emotions. 
 
@@ -523,7 +523,7 @@ SwiftUI presents both useful features and challenges when creating an app. Inste
 
 \textbf{Model:} The model classes within SwiftUI are used as a data container that define a structure that will be written to and fetched from. An example of this is the Skill Model. This defines that each skill contains an id, a title, description, an image, and gradientColours which defines the colour scheme for that skill card. This model is also reused for the Statistics view.
 
-A model was also created to hold the note entries created by the user via Core Data, the permanent storage that organises the data in an entity-attribute relationship. Core Data is an aspect of iOS development that involves a steep learning curve, however, it proved to be beneficial. This was due to the ability to manipulate the data within the fetch request in a single line of code, and its ability to track changes through the persistent storage. This made for greater simplicity during implementation. Core Data is saved using an NSManagedObject which uses optimised storage and retrieval methods with key-value coding and observing. This is faster than other means of storage and retrieval, including get/set methods \citep{apple_developer_documentation_core_2021}. Core Data entry is operated via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that can change the model and its data. The flow of data can be seen in figure \ref{fig:MVVMDataFlow}. 
+A model was also created to hold the note entries created by the user via Core Data, the permanent storage that organises the data in an entity-attribute relationship. Core Data is an aspect of iOS development that involves a steep learning curve, however, it proved to be beneficial. This was due to the ability to manipulate the data within the fetch request in a single line of code, and its ability to track changes through the persistent storage. This made for greater simplicity during implementation. Core Data is saved using an NSManagedObject which uses optimised storage and retrieval methods with key-value coding and observing. This is faster than other means of storage and retrieval, including get/set methods \citep{apple_developer_documentation_core_2021}. Core Data entry is operated via the ViewModel, translating user events received from the view into CRUD (create, read, update, and delete) operations that can change the model and its data. The flow of data can be seen in Figure \ref{fig:MVVMDataFlow}. 
 
 \textbf{View:} The view is responsible for displaying the UI and animations. A secondary responsibility of the view is to receive any user interactions and pass these to a view model for interpretation \citep{bulavin_modern_2020}. The view is made up of views and controls; each view represents a building block of user interface. The controls allow the user to interact with this interface. SwiftUI made it straightforward to build a UI, allowing the standard building blocks to be altered to fit the needs of the project concisely and simply, making this aspect of implementation rapid.
 
@@ -543,7 +543,7 @@ A model was also created to hold the note entries created by the user via Core D
 
 \subsection{iOS Native Appearance}
 
-SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in the usability study in section \ref{evaluation}, where users attempted to delete a note within the review view, instead of using the edit button on their first attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and familiar appearance on iOS devices. This was beneficial as it meant that there were pre-built buttons with pre-written functionality. It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. However, it also meant that this code was not able to be altered to adjust functionality. The user interfaces for the main views of the app can be seen in Appendix \ref{fig:appMainViews}.
+SwiftUI enforces a standard design of common on-screen objects. These were found to be very user-friendly and attractive, with only a minor issue highlighted in the usability study in Section \ref{evaluation}, where users attempted to delete a note within the review view, instead of using the edit button on their first attempt. Another advantage of the SwiftUI framework is that it allows for the creation of existing iOS features, such as the Edit button, to give a cohesive and familiar appearance on iOS devices. This was beneficial as it meant that there were pre-built buttons with pre-written functionality. It also allowed the project to focus on the problems specific to the aims of the project, instead of the detailed aspects of the design. However, it also meant that this code was not able to be altered to adjust functionality. The user interfaces for the main views of the app can be seen in Appendix \ref{fig:appMainViews}.
 
 \subsection{Aesthetic Features}
 
@@ -675,17 +675,6 @@ This chapter outlines the procedure used in evaluating the mobile app, GradRefle
 
 The results from both the usability experiment and subsequent surveys are presented, with a discussion on how the project meets the requirements and relates to the wider literature of graduate attributes.
 
-
-% \section{Aims - maybe take this out?} \label{evalAims}
-
-% While the overall aim was to create a mobile app to capture reflections on when and where students have exercised their graduate attributes, \ref{IntroAims} also outlined the extended aims of creating an app that will assist users in making deeper reflections and developing their skills further using CBT. This is, however, a broad aim that would require a long-term experiment that is outwith the scope of this project to definitely answer it. Instead, this aim has been broken down into a series of smaller research areas that will contribute towards answering the larger topic:
-
-% \begin{itemize}
-%     \item Is the app easily usable and satisfying for students to make reflections and navigate through, making either written or audio formatted reflections?
-%     \item As an extension to the previous aim, can users see themselves using this app again in the long-term? This will give insight into the long-term apps of this project, continued use of this app could result in continued development of these skills and increase the employability of the students.
-%     \item Lastly, do students find it helpful and easy to reflect on their experiences? Does an app like this aid their self-analysis? Does each section of the app contribute to this understanding and reflection?
-% \end{itemize}
-
 \section{Personal Evaluation}
 
 Before conducting any evaluations with participants, a stage of personal evaluation was carried out. This was to identify any usability problems before any participants were asked to evaluate and use the app. 
@@ -727,7 +716,7 @@ Following this, users were then asked to complete a set list of tasks. These tas
 
 \subsection{Task Explanation}
 
-The tasks that users were given involved exploring the features of each view of the app. The tasks users were asked to complete can be seen in Section \ref{Appendix-taskList} of the appendix.
+The tasks that users were given involved exploring the features of each view of the app. The tasks users were asked to complete can be seen in Section \ref{Appendix-taskList} of the Appendix.
 
 \textbf{Home Page} Users started here as this allowed them to familiarise themselves with the graduate attributes they would need for future reflection, as any new user would. 
  
@@ -819,7 +808,7 @@ The following potential changes were identified:
 \begin{itemize}
     \item Allow users to delete a note from within a note review view.
     \item The emotion slider could allow users to click where they want the slider to go, as well as being able to drag it.
-    \item Make the button to delete notes clearer to the users, make it red with a 'delete notes' label next to it. Include in the app description that users are able to both click the edit button, and swipe in the typical iOS app gesture.
+    \item Make the button to delete notes clearer to the users, colouring it red with a 'delete notes' label next to it. Include in the app description that users are able to both click the edit button, and swipe in the typical iOS app gesture.
 \end{itemize}
 
 All of these changes make sense to be added to the app and can be seen as future work.
@@ -915,29 +904,6 @@ The final stage of evaluation was to determine if the functional and non-functio
 
 The functional requirements were evidenced by performance in the user monitored tests, as described above. From these evaluation tasks it is clear to see that all of the functional requirements listed in Section \ref{analysis/reqs} are met by the app. 
 
-% \textbf{Functional requirements}
-% \begin{itemize}
-%     \item \textbf{MH} Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills, this can be in either written OR audio form.
-%     \item \textbf{MH} Users must be able to delete a reflection created, as well as being able to review it at a later date, however users should not be able to update or edit a note after it's creation. 
-%     \item \textbf{MH} Users must be able to turn on notifications.
-
-%     \item \textbf{SH} Users should be able to select a skill from a pre-defined list to avoid mistakes and allow for future potential filtering.
-%     \item \textbf{SH} When creating a written note, there should be help buttons that explain to the user how they should answer each questions and provide an example, this will give them clear instructions to allow effective reflection.
-%     \item \textbf{SH} Users should be able to give their note a title to allow for clear representation of what a note contains, and allow for future potential searching or filtering.
-%     \item \textbf{SH*} Users should be able to create a reflection in BOTH written and audio form. This will allow both structured reflections and freeform spoken reflections for convenience. 
-%     \item \textbf{SH} The app should contain a description of each of the skills that users are expected to develop and reflect on during the use of the app. 
-%     \item \textbf{SH*} Users should be able to search for the name of a note or a skill category to filter the notes in the list by skill.
-%     \item \textbf{SH} The app should have a Settings page to view information about the app.
-%     \item \textbf{SH} GradReflect should have an About Page within the settings that tells the user how to use the app correctly to make reflections, giving further clear instructions to the user. 
-%     \item \textbf{SH*} Users should be able to view statistics based on the reflections written into the app.
-    
-%     \item \textbf{CH} The app could implement Cognitive Behavioural Therapy techniques to aid the reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. 
-%     \item \textbf{CH*} Users could have the ability to customise their experience of GradReflect and have the ability to switch between dark and light themed interface.
-%     \item \textbf{CH} GradReflect could have links in the Settings page that take users to useful pages related to the app and graduate attributes to provide further insight and education on graduate attributes.
-    
-%     \item \textbf{WH} It was decided that users will not be able to upload reflections onto Moodle as this is not within the scope and does not provide enough benefit to users in completing the aims discussed in Section \ref{IntroAims}.
-% \end{itemize}
-
 \subsection{Verification of Non-functional Requirements}
 
 \textbf{Intuitive and easy to use:} Participants gave clear indication that the app was easy to use, with several noting they felt that the design was clear and understandable. The usability study conducted showed the app scored very highly, with only three of the heuristics scoring less than the maximum in the feedback. 
@@ -957,7 +923,7 @@ When asked if there was enough assistance to support their reflection, 100\% of 
 
 In the future the app would require extensive UI and Unit testing to be released for general use by the public. However, due to the aims of the project, only two UI tests were created to give a proof of concept. The UI features that have been tested are the users' ability to create and save a written note, and then subsequently delete a note, as this is the basic necessary requirement for the app to run functionally. These UI tests pass when run, ensuring users will be able to capture a reflection on their graduate attributes and delete this note should they need to.
 
-\section{Summary of results}
+\section{Summary of Results}
 
 The mobile app, GradReflect, was evaluated using three stages: a personal evaluation; a monitored user evaluation; and a post-study survey. After the changes made following a heuristic personal evaluation, the monitored user evaluation demonstrated that the app had met the project’s aims, and stimulated participants to engage with the app, considering it useful and worth utilising in the future. Minor UI details were identified for improvement. The post-study survey demonstrated that users indicated that the app met 8 out of 10 usability heuristics to the maximum level, and conditionally met the other 2. All requirements were met. It was identified that the monitored evaluation and post-study survey were impeded by COVID-19, virtual interface drawbacks, and user group selection.
 
@@ -993,12 +959,15 @@ During these evaluations, users presented several ways they would want to see th
     \item Allow users to delete a note from within a note review view.
     \item The emotion slider could allow users to click where they want the slider to go, as well as being able to drag.
     \item Make the button to delete notes clearer to the users, colouring it red with a 'delete notes' label next to it, include in the app a description that users are able to both click the edit button, and swipe in the typical iOS gesture.
+    \item More descriptions of the questions could be provided within the app description in 'About GradReflect'. This would mean users are potentially more aware and prepared for the note entry questions and can reflect more effectively.
     \item Filtering the notes by clicking on one of the skill categories on the skill cards.
     \item Ability to set goals for the number of reflections on a skill and receiving milestone achievements when these are met.
     \item A tab bar could be used to navigate through the app instead of a home page directing to each section.
 \end{itemize}
 
 If the app were to be deployed to iOS users with an Apple Developer License, further developments would need to be made such as the extension of notifications to launch weekly, and further UI and unit testing to be developed. 
+
+This app could also be made cross-platform or for Android, allowing users with various mobile operating systems to benefit from reflecting on their graduate attributes.
 
 \section{Reflection}
 
@@ -1025,17 +994,17 @@ GradReflect Project GitHub Link
 %==================================================================================================================================
 %
 
-\section{Ethics checklists}
+\section{Ethics Checklists}
 
-\subsection{Graduate attribute survey}
+\subsection{Graduate Attribute Survey}
 
 \includepdf[pages=-,pagecommand={},width=\textwidth]{images/EthicsChecklist-GeneralSurvey.pdf}
 
-\subsection{AB tests}
+\subsection{AB Tests}
 
 \includepdf[pages=-,pagecommand={},width=\textwidth]{images/EthicsChecklist-ABTests.pdf}
 
-\subsection{User evaluations}
+\subsection{User Evaluations}
 
 \includepdf[pages=-,pagecommand={},width=\textwidth]{images/EthicsChecklist-UserEvals.pdf}
 
@@ -1113,7 +1082,7 @@ Gemma McDonald
 Thank you for your help.
 
 
-\subsection{Graphs for each Y/N question}
+\subsection{Graphs for Each Y/N Question}
 
 \begin{figure}[H]
     \begin{centering}
@@ -1214,7 +1183,7 @@ Please remember questions can be asked at any time.
 
 Thank you.
 
-\subsection{Questions for CBT group}
+\subsection{Questions for CBT Group}
 
 You will be asked to reflect based on an experience where you feel you have developed on one of these skills:
 
