@@ -509,3 +509,6 @@
 * *1.5 hours* Fixed issue where if theres were no notes then the avg said NaN, finished read me and manual
 * *0.5 hours* Fixed issue with the UI tests
 * *0.5 hours* Corrected some issues with various little things like capitalisations and future works
+
+### 06 Apr 2021
+* *1 hours* Fixed the issue with the video presentation being flashy and issue with github
