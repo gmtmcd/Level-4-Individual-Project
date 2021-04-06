@@ -516,4 +516,5 @@
 * *0.5 hours* Researched if i could find a way to delete the data from tests and could not find a solution
 * *0.5 hours* Prepped for final meeting with supervisor
 * *0.5 hours* Final meeting with supervisor 
-* *1 hour* Fixed small changes [10 hours]
+* *1 hour* Fixed small changes
+* *1 hour* Requirements verification table in appendix [11 hours]

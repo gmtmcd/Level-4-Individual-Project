@@ -8,6 +8,7 @@
 \usepackage{pdfpages}
 \usepackage{float}
 \usepackage{array}
+\usepackage{longtable}
 %
 
 \begin{document}
@@ -902,7 +903,7 @@ The final stage of evaluation was to determine if the functional and non-functio
 
 \subsection{Verification of Functional Requirements}
 
-The functional requirements were evidenced by performance in the user monitored tests, as described above. From these evaluation tasks it is clear to see that all of the functional requirements listed in Section \ref{analysis/reqs} are met by the app. 
+The functional requirements were evidenced by performance in the user monitored tests, as described above. From these evaluation tasks it is clear to see that all of the functional requirements listed in Section \ref{analysis/reqs} are met by the app. Appendix \ref{Appendix-ReqsValidationEvidence} provides justification of why each requirement is believed to have been met.
 
 \subsection{Verification of Non-functional Requirements}
 
@@ -1279,6 +1280,54 @@ Thank you for your help.
 
 %==================================================================================================================================
 %
+
+\section{Requirements Validation Evidence} \label{Appendix-ReqsValidationEvidence}
+
+\begin{center}
+    \begin{longtable}{| m{0.4\textwidth} | m{0.075\textwidth}| m{0.075\textwidth} | m{0.4\textwidth} |} 
+    \hline
+    Requirement & Priority & Met? & Justification \\ [0.5ex] 
+    \hline\hline
+    Users must be able to capture a reflection of how and when they have exercised and developed their graduate skills; this can be in either written OR audio form. & MH & Yes & Met by ability to create and save a note \\ 
+    \hline
+    Users must be able to delete a reflection created, as well as being able to review it at a later date; however users should not be able to update or edit a note after its creation. & MH & Yes & Met by the 'Edit' button then 'Delete' button, or swiping to delete a note. Also met by ability to click a note to review but no ability to make changes. \\
+    \hline
+    Users must be able to turn on notifications. & MH & Yes & Met in the settings section with the 'Turn on Notifications' button \\
+    \hline
+    Users should be able to select a skill from a pre-defined list to avoid mistakes and allow for future potential filtering. & SH & Yes & Met in the note creation form \\
+    \hline
+    When creating a written note, there should be help buttons that explain to the user how they should answer each questions and provide an example, this will give them clear instructions to allow effective reflection. & SH & Yes & Met through the help '?' buttons on note creation form \\ [1ex] 
+    \hline
+    Users should be able to give their note a title to allow for clear representation of what a note contains, and allow for future potential searching or filtering. & SH & Yes & Met by the 'Title' text field on the note creation form \\ [1ex] 
+    \hline
+    Users should be able to create a reflection in BOTH written and audio form. This will allow both structured reflections and freeform spoken reflections for convenience. & SH & Yes & Met through the notes section and the recordings section \\ [1ex] 
+    \hline
+    The app should contain a description of each of the skills that users are expected to develop and reflect on during the use of the app. & SH & Yes & Met by the home section that displays the skill cards to scroll through with descriptions and images \\ [1ex] 
+    \hline
+    Users should be able to search for the name of a note or a skill category to filter the notes in the list by skill. & SH & Yes & Met through the search bar in the notes section to search for title or skill type \\ [1ex] 
+    \hline
+    The app should have a Settings page to view information about the app. & SH & Yes & Met by the settings section \\ [1ex] 
+    \hline
+    GradReflect should have an About Page within the settings that tells the user how to use the app correctly to make reflections, giving further clear instructions to the user. & SH & Yes & Met by the 'About GradReflect' page within the settings section \\ [1ex] 
+    \hline
+    Users should be able to view statistics based on the reflections written into the app. & SH & Yes & Met by the statistics section where user can scroll through skill statistic cards \\ [1ex] 
+    \hline
+    The app could implement Cognitive Behavioural Therapy techniques to aid reflection and provide users with a suitable framework to support them and provide clear instructions on how to reflect. & CH & Yes & Met through the note creation form that uses CBT style questions, prompts and framework \\ [1ex] 
+    \hline
+    Users could have the ability to customise their experience of GradReflect and have the ability to switch between a dark and light themed interface. & CH & Yes & Met in the settings section through the 'Switch Theme' button \\ [1ex] 
+    \hline
+    GradReflect could have links in the Settings page that take users to useful pages related to the app and graduate attributes to provide further insight and education on graduate attributes. & CH & Yes & Met in the settings section in the 'Useful Links' area at the top \\ [1ex] 
+    \hline
+    It was decided that users will not be able to upload reflections onto Moodle as this does not provide enough benefit to users in completing the aims discussed in Section \ref{IntroAims}. There could also be potential privacy issues, as users may not want to upload personal experiences on a public space. & WH & No & Outwith the project scope \\ [1ex] 
+    \hline
+    \caption{Functional requirement validation evidence} 
+    \label{tab:RequirementsVerificationTable}
+   \end{longtable}
+   \end{center}
+
+
+%==================================================================================================================================
+%
 \section{User personas} \label{Appendix-userPersonas}
 
 \textbf{Types of users}
@@ -1332,7 +1381,7 @@ As a graduate, I want to be fully prepared to join the workplace and have develo
 \section{CBT questions and Prompts from App} \label{Appendix-AppCBTQuestions-Prompts}
 
 \begin{center}
-    \begin{tabular}{ | m{8em} | m{10cm}| } 
+    \begin{longtable}{ | m{8em} | m{10cm}| } 
     \hline
     \textbf{Question} & \textbf{Prompt} \\ [0.5ex] 
     \hline\hline
@@ -1352,8 +1401,10 @@ As a graduate, I want to be fully prepared to join the workplace and have develo
     \hline
     How would you want to behave in the future? Would you act the same or differently, and why? & Here we are examining alternate thought. You have to examine all of your previous answers and decide if this is how you would handle a similar situation, and whether your behaviour resulted in the best possible outcome. This will help you to make new connections and create different, more positive experiences in the future. For example, someone might behave in the same way in settling the dispute, however they may act sooner next time to ensure there is no impact on team cohesion. \\ [1ex] 
     \hline
-   \end{tabular}
-   \end{center}
+    \caption{Questions and prompts used in the GradReflect mobile app} 
+    \label{tab:CBTQuestionsPromptsTable}
+   \end{longtable}
+\end{center}
 
 
 
