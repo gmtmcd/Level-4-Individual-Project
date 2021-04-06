@@ -8,6 +8,12 @@
 import XCTest
 @testable import GradReflect
 
+/*
+ No Unit Tests were created for this application due to the main focus being interaction with the UI
+ and UI display, and very little data manipulation
+ This file contains the automatic examples provided by XCode
+ */
+
 class GradReflectTests: XCTestCase {
 
     override func setUpWithError() throws {
