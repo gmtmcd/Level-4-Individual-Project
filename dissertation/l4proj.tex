@@ -24,21 +24,11 @@
 %==============================================================================
 %% ABSTRACT
 \begin{abstract}
-    Every abstract follows a similar pattern. Motivate; set aims; describe work; explain results.
-    \vskip 0.5em
-    ``XYZ is bad. This project investigated ABC to determine if it was better. 
-    ABC used XXX and YYY to implement ZZZ. This is particularly interesting as XXX and YYY have
-    never been used together. It was found that  
-    ABC was 20\% better than XYZ, though it caused rabies in half of subjects.''
-    \vskip 0.5em
-    Explain a little bit about the background of the subject\newline
-    What is it i have worked on and what i have done for it
-    Graduate attributes and what they are
-    What i made and what effect i think this will have
-    Evaluated
-    What was found
-    Why this is useful
-    What can be done to further improve this research
+    Graduate attributes are the skills developed during a student’s time at university and have been shown to improve employability and working environments. It is recognised that these skills are often underdeveloped within new graduates. In light of this, an iOS mobile application, GradReflect, was created with the integration of Cognitive Behavioural Therapy (CBT) techniques to capture and encourage deeper and more meaningful reflection from students on these skills. 
+
+    A research survey found that students were unaware of the term graduate attributes, with some students not having had experience with reflection. A/B testing found that CBT techniques benefitted reflection on these skills and that students were able to reach further levels of reflection with the CBT framework. User evaluations were carried out on the mobile app, highlighting its usability and that users would enjoy future use of the app. 
+
+    This research and evaluation highlighted the benefits this mobile application and the integration of CBT could have to students in developing their graduate skills.
 \end{abstract}
 
 %==============================================================================
@@ -95,9 +85,9 @@
 
 Graduate attributes, also referred to as 'soft' skills, encompass the abilities developed by students during university studies, not directly related to their chosen degree. These skills increase employability and allow better integration into the workplace, creating better environments within teams. However, due to a lack of understanding of these skills, they are often overlooked by universities. 
 
-Potential exists to encourage development of these skills through the use of a mobile application (app). This project explores the use of an app, with the integration of Cognitive Behavioural Therapy (CBT) techniques, to increase awareness of these skills, their use and development through reflection. The existing relevant research will be presented and an outline of the process of creating a mobile app including the requirements, design and implementation.
+Potential exists to encourage development of these skills through the use of a mobile application (app). This project explores the use of an app, with the integration of Cognitive Behavioural Therapy (CBT) techniques, to increase awareness of these skills, their use and development through reflective practices. The existing relevant research will be presented along with an outline of the process of creating a mobile app, including the requirements, design and implementation.
 
-An evaluation using a prototype iOS app, GradReflect, will be presented. The results and their relationship to current literature will be discussed, followed by conclusions that can be drawn on the impact this app might have on the development of students' 'soft' skills.
+An evaluation using a prototype iOS app, GradReflect, will be presented. The results and their relationship to current literature will be discussed, followed by the conclusions that can be drawn on the impact this app might have on the development of students' 'soft' skills.
 
 This chapter introduces the project, outlining the motivations and aims for creating an app to aid reflection on graduate skills, and presents the research aims that this project will address.
 
@@ -105,9 +95,9 @@ This chapter introduces the project, outlining the motivations and aims for crea
 \section{Motivation}
 The importance of graduate attributes is well-documented within the literature. \citet{litchfield_contextualising_2010} found that industries are less concerned about the technical skills of graduates, and more with their soft skills. The importance of these skills is frequently expressed within research, highlighting that despite the expectation on tertiary education to provide students with these skills, graduates are being found underprepared \citep{stevens_industry_2016}. 
 
-\citet{abernethy_teaching_2009} stated that reflection on real-life experiences is necessary for major personal development, however, these skills are difficult to teach through conventional pedagogies. Additionally, universities believe that the demand for the teaching of these skills by industry professionals is purely a desire to teach what is currently 'fashionable' \citep{stevens_industry_2016}. This gap in understanding of these skills and the misconceptions surrounding them has made universities and their academics resistant to integrate these skills into the teaching model \citep{barr_2019}. 
+\citet{abernethy_teaching_2009} stated that reflection on real-life experiences is necessary for major personal development, however, these skills are difficult to teach through conventional pedagogies. Additionally, universities believe that the demand for the teaching of these skills by industry professionals is purely a desire to teach what is currently 'fashionable' \citep{stevens_industry_2016}. This gap in the understanding of these skills and the misconceptions surrounding them has made universities and their academics resistant to integrate these skills into the teaching model \citep{barr_2019}. 
 
-Nonetheless, these skills have been shown to allow graduates to integrate better into the workplace, creating better working environments \citep{stevens_industry_2016}. New pedagogies have been presented to assist in the development of these students' skills, such as real-world projects and reflection diaries. The potential to create an app that encourages users to reflect on their real-world experiences could increase awareness of these skills within students, encouraging their development and likelihood of success within the workplace, often a source of concern for students \citep{stevens_industry_2016}.
+Nonetheless, these skills have been shown to allow graduates to integrate better into the workplace, creating better working environments \citep{stevens_industry_2016}. New pedagogies have been presented to assist in the development of these students' skills, such as real-world projects and reflection diaries. The potential to create an app that encourages users to reflect on their real-world experiences could increase the awareness of these skills within the student population, encouraging their development and likelihood of success within the workplace, often a source of concern for students \citep{stevens_industry_2016}.
 
 
 \section{Aims} \label{IntroAims}
@@ -116,18 +106,18 @@ Nonetheless, these skills have been shown to allow graduates to integrate better
 
 Considering these motivations, an iOS mobile app was built.  This app aimed to enable students to capture their reflections on situations where graduate skills have been exercised to encourage awareness and development. The app incorporated Cognitive Behavioural Therapy (CBT) techniques to prompt deeper and more meaningful reflections. 
 
-A research survey was conducted to discover students' knowledge of both graduate attributes and reflection to discover how much assistance and explanation would be required within the app. Following this, an exploratory study was carried out to determine whether using CBT techniques are a viable method to encourage reflections within students. These results were analysed to answer the question: Does CBT benefit reflection by students on their graduate skills?
+A research survey was conducted to discover students' knowledge of both graduate attributes and reflection to discover how much assistance and explanation would be required within the app. Following this, an exploratory study was carried out to determine whether using CBT techniques is a viable method to encourage reflections within student cohorts. These results were analysed to answer the question: Does CBT benefit reflection by students on their graduate skills?
 
-An evaluation was conducted on the app that addresses the need for students to capture their reflections in a convenient and simple way, that they would be likely to continue using.
+An evaluation was conducted on the app that addresses the need for students to capture their reflections in a convenient and simple way, and that they would be likely to continue using.
 
 \subsection{Aims:}
 
 \begin{itemize}
     \item \textbf{Create an app to capture reflections on graduate attributes:} The main goal of this project is to create an app that allows users to make reflections on how they have developed their graduate attributes.
     \item \textbf{Allow users to create a note via written or audio form:} The app must allow users to quickly make a note of how and when they have used these skills in a method that is most quick and convenient for them.
-    \item \textbf{Remind users when they should reflect:} Reflecting is a vital part of developing these skills, however, finding the time to do this is difficult. The app therefore must allow reminders, so users know when they need to reflect.
+    \item \textbf{Remind users when they should reflect:} Reflection is a vital part of developing these skills, however, finding the time to do this is difficult. The app therefore must allow reminders, so users know when they need to reflect.
     \item \textbf{Create a usable app:} Creating an accessible app will encourage repeated use as students will find the app attractive and satisfying.
-    \item \textbf{Aid reflection:} The app should enable easy refection for users, aiming to encourage continued reflection.
+    \item \textbf{Aid reflection:} The app should enable easy reflection for users, aiming to encourage continued reflection.
 \end{itemize}
 
 The evaluation described in Chapter \ref{evaluation} will provide insight into how the project meets these aims.
@@ -147,20 +137,20 @@ These skills, as described by \citet{litchfield_contextualising_2010, stevens_in
 \begin{itemize}
     \item \textbf{Ethics and professionalism:} Refers to how a person presents themselves in the workplace. Graduates must act responsibly and with maturity and integrity, as well as managing their time and maintaining an optimistic and willing attitude. A global perspective is also required, allowing them to better understand other’s demands, and to respect and understand wider cultures and environments.
     \item \textbf{Communication:} Applies to both written and oral communication. Graduates must be able to interrogate ideas and present these ideas clearly and concisely.
-    \item \textbf{Teamwork:} Upon leaving university, graduates must integrate within a team. The ability to do this seamlessly will be vital to success within the working environment. Graduates must be able to collaborate with colleagues and reach a consensus. They must be adaptable, fitting in socially within the workplace and remembering names and following social cues.
+    \item \textbf{Teamwork:} Upon leaving university, graduates must integrate within a team. The ability to do this seamlessly will be vital to their success within the working environment. Graduates must be able to collaborate with colleagues and reach a consensus. They must be adaptable, fitting in socially within the workplace, remembering names and following social cues.
     \item \textbf{Self-efficacy and Applying Knowledge:} Graduates will be required to take the technical knowledge gained throughout university and apply it within the workplace, they will need to evaluate and synthesise information quickly.
     \item \textbf{Adaptability:} Graduates will be expected to adapt to changing circumstances, quickly learning new skills. To demonstrate this skill, graduates require the flexibility to respond effectively, even when things do not go to plan. 
     \item \textbf{Critical Thinking:} Problem solving skills are required. Graduates will need to create innovative solutions that work for clients, understand business drivers, and overcome obstacles.
     \item \textbf{Reflection:} Reflection, utilised to develop other soft skills, is itself a graduate attribute. On exit from tertiary education, graduates should have a high standard of reflective skills, and the ability to document them.
 \end{itemize}
 
-The importance of graduate attributes is expressed repeatedly within research illustrating that, despite the expectation on tertiary education to provide students with these skills, graduates are being found underprepared. These skills are difficult to teach through conventional pedagogies, as real-life experience is required for their development, creating difficulties for their integration into teaching models\citep{barr_2019}. However, new pedagogical approaches to the development of these skills utilises real-world projects and reflection.
+The importance of graduate attributes is expressed repeatedly within research illustrating that, despite the expectation on tertiary education to provide students with these skills, graduates are being found underprepared. These skills are difficult to teach through conventional pedagogies, as real-life experience is required for their development, creating difficulties for their integration into teaching models \citep{barr_2019}. However, new pedagogical approaches to the development of these skills utilises real-world projects and reflection.
  
-\citet{barr_2019} discusses graduate attributes and how these skills are developed within tertiary education, stating their importance to increasing a students’ employability. The teaching of these attributes is often neglected due to the gap in understanding of their importance or how they could be taught.
+\citet{barr_2019} discusses graduate attributes and how these skills are developed within tertiary education, stating their importance to increasing students’ employability. The teaching of these attributes is often neglected due to the gap in understanding of their importance or how they could be taught.
 
-A research survey, included in Appendix \ref{Appendix-gradAttributeSurvey}, was conducted at the beginning of the project to determine students' knowledge of graduate attributes and their experience with reflection. This survey found that out of the 10 students involved, 9 of them had never heard the term graduate attribute and were unable to give any examples of these skills. Once these skills were explained, students had a good understanding of their importance to the workplace and were keen to have the opportunity to develop them. 
+A research survey, included in Appendix \ref{Appendix-gradAttributeSurvey}, was conducted at the beginning of the project to determine students' knowledge of graduate attributes and their experience with reflection. This survey found that out of the 10 students involved, 9 of them had never heard the term "graduate attribute" and were unable to give any examples of these skills. Once these skills were explained, students had a good understanding of their importance to the workplace and were keen to have the opportunity to develop them. 
 
-The importance of these soft skills for employability was discussed by \citet{stevens_industry_2016}. Through research surveying job advertisements and interviewing industry representatives, they developed a deeper understanding of why these attributes are desired by employers. Their work refuted claims made by universities that industry was looking for academics to teach what was fashionable. They instead showed that by possessing these skills, graduates integrated better into the workplace, increasing their productivity and creating better team environments. Of the industry representatives interviewed, each was insistent that these soft skills are beneficial to the workplace but often underdeveloped in graduates. New graduates found that their technical skills were insufficient to secure them employment. \citet{stevens_industry_2016} highlight how necessary these skills are and the detrimental effect on students if universities do not develop these skills adequately.
+The importance of these soft skills for employability was discussed by \citet{stevens_industry_2016}. Through research surveying job advertisements and interviewing industry representatives, they developed a deeper understanding of why these attributes are desired by employers. Their work refuted claims made by universities that industry was looking for academics to teach what was fashionable. They instead showed that by possessing these skills, graduates integrated better into the workplace, increasing their productivity and creating better team environments. Of the industry representatives interviewed, each was insistent that these soft skills are beneficial to the workplace but often underdeveloped in graduates. New graduates found that their technical skills were insufficient to secure them employment. \citet{stevens_industry_2016} highlighted how necessary these skills are and the detrimental effect on students if universities do not develop these skills adequately.
 
 \citet{abernethy_teaching_2009} demonstrated that real-world experiences are vital to the development of soft skills. They organised a course with industry customers, giving students the opportunity to be involved in a software development project from beginning to end. During this course, students developed both their communication and interpersonal skills with the client and team. This real-world development of graduate skills was explored further by \citet{mcdermott_developing_nodate}, who used social blogs and reflection to aid the development of students' soft skills. The students' reflections helped to develop their critical thinking and self-sufficiency, as they were required to monitor their own progress. This study found that students struggle to reflect and are not provided the necessary support needed to reflect effectively. 
 
@@ -181,7 +171,7 @@ However, reflection should be formative, not summative. Grading students’ jour
 
 In a study conducted by \citet{mcdermott_developing_nodate}, students were tasked with entering reflections about their learning experiences into a social blog. It was found that students gained confidence in their ability to self-regulate their learning. The students were also found to, overtime, develop their ability to reflect, progressing from initially the descriptive writing stage to further stages of descriptive reflection, dialogic reflection and critical analysis. Analysis of student surveys demonstrated that the students had felt positively about the need for reflection. This study gives a clear indication of the benefits that reflection can have on students and provides evidence that students would be willing to carry out reflective practices in their own time.
 
-These findings are mirrored by \citet{bruno_reflective_2018}, in which they requested students to create weekly reflective entries into an e-journal. They found over the duration of the experiment, student reflections improved and progressed through deeper stages of reflection, and that reflection itself improves the ability to reflect, through learning by doing (actively learning). 
+These findings are mirrored by \citet{bruno_reflective_2018}, in which they requested students to create weekly reflective entries into an e-journal. They found over the duration of the experiment, student reflections improved and progressed through deeper stages of reflection, and that reflection itself improves the ability to reflect, through learning by doing (active learning). 
 
 However, this study also found that students find it difficult to sustain reflection without a framework to support them, and teachers find it difficult to promote. \citet{bruno_reflective_2018} also state that for students to reflect efficiently, they require clear instruction. \citet{thurner_development_2020} states that within technical courses there is a distinct neglect of reflective skills. This identifies the necessity of a tool to support students in their reflection. \citet{thurner_development_2020} further state that through documenting reflections, it is more likely that a person will commit to resolutions that are made.
 
@@ -205,7 +195,7 @@ Through the research conducted into learning and developing students' graduate a
 
 CBT is a form of psychotherapy that is based upon the idea that a person's thoughts on a situation will affect their reaction through both their emotions and their behaviour \citep{whatisCBT_therapistAid}. To effectively use CBT techniques patients require a good understanding of this cognitive model, which may be seen in Figure \ref{fig: CognitiveModel}. 
 
-CBT can be used to improve a person's mindset by breaking down situations into smaller parts to make them manageable and clear. Using cognitive restructuring a therapist will break down a situation into thoughts, feelings, and behaviours in order to understand whether these resulted in beneficial or detrimental outcomes \citep{nhs_cognitive_2017}. The therapist will work with the patients to alter these thoughts and behaviours to ones that will reinforce more positive outcomes, and the patient will be asked to employ these alternative thought processes in their daily lives to explore how it improves their quality of life.
+CBT can be used to improve a person's mindset by breaking down situations into smaller parts to make them manageable and clear. Using cognitive restructuring a therapist will break down a situation into thoughts, feelings, and behaviours in order to understand whether these resulted in beneficial or detrimental outcomes \citep{nhs_cognitive_2017}. The therapist will work with patients to alter these thoughts and behaviours to ones that will reinforce more positive outcomes, and the patient will be asked to employ these alternative thought processes in their daily lives to explore how it improves their quality of life.
 
 
 The stages of reflection used for graduate attributes can be compared to the stages of the cognitive model. The stages of CBT generally follow the format:
@@ -219,7 +209,7 @@ The stages of reflection used for graduate attributes can be compared to the sta
 
 \begin{figure}[h!]
     \begin{centering}
-    \includegraphics[scale=0.5]{images/cognitive-model.png}
+    \includegraphics[scale=0.55]{images/cognitive-model.png}
     \caption{The cognitive model framework around which CBT is based \citep{therapist_aid_psychoeducation}.}
     \label{fig: CognitiveModel}
     \end{centering}
@@ -247,20 +237,17 @@ University of Glasgow's site Mahara, \citep{mahara_dashboard}, was created to al
 \textbf{Disadvantages}
 \begin{itemize}
     \item There are very few pages or posts, suggesting this site is not widely known by students, or students choose not to use it.
-    \item The site is difficult to navigate, there are 'pages' and 'artefacts' but it is not clear how these are intended to be used, even after reading the 
-    description of the site. 
+    \item The site is difficult to navigate, there are 'pages' and 'artefacts' but it is not clear how these are intended to be used, even after reading the description of the site. 
     \item The site has a very basic minimalist design. This can be an advantage but, in this case, it does not have enough content to provoke engagement.
-    \item Although users have freedom to create posts about any topic, this makes it less suitable in this context, where the focus is on graduate attributes, as found in the study by 
-    \citet{mcdermott_developing_nodate}, it can lead to less reflections about students' graduate attributes.
-    \item The site also does not provide the students with any guiding framework with which they can reflect on their learning, making it difficult for students
-    to understand what to write.
+    \item Although users have freedom to create posts about any topic, this makes it less suitable in this context, where the focus is on graduate attributes. As found in the study by \citet{mcdermott_developing_nodate}, it can lead to fewer reflections about students' graduate attributes.
+    \item The site also does not provide the students with any guiding framework with which they can reflect on their learning, making it difficult for students to understand what to write.
 \end{itemize}
 
 \textbf{Overall}, this site has the potential to be used by students as a social blog about their learning and development throughout their time at university. However, there is a lack of novel and interesting design features and guidance to incentivise users to return to the website to make continuous reflections. It has limited use and is not ideal to encourage users to capture their reflections for the development of graduate attributes.
 
 \subsection{Reflectly}
 
-Reflectly is an app intended to capture users’ reflections on their daily lives in order to improve their mental health and wellbeing, through self-care and mindfulness. It makes use of positive psychology and CBT \citep{reflectly_app}. A unique component of the Reflectly app is the use of artificial intelligence to give users personalised questions and trends based on previous entries made. Although not designed to capture reflections on graduate attributes or learning, there are techniques and design features that are useful to analyse why this app is popular and enjoyable to use. 
+Reflectly is an app intended to capture users’ reflections on their daily lives in order to improve their mental health and wellbeing, through self-care and mindfulness. It makes use of positive psychology and CBT \citep{reflectly_app}. A unique component of the Reflectly app is the use of artificial intelligence to give users personalised questions and trends based on previous entries. Although not designed to capture reflections on graduate attributes or learning, there are techniques and design features that are useful to analyse why this app is popular and enjoyable to use. 
 
 \textbf{Advantages}
 \begin{itemize}
@@ -270,7 +257,7 @@ Reflectly is an app intended to capture users’ reflections on their daily live
     \item The site uses conversational language to promote openness from the user.
     \item When inputting emotions, it asks the user to rate their emotions through a slider scale, meaning that the user does not have to identify specific emotions. 
     \item Questions allow users to choose from categories of reflection.
-    \item The voice recording allows users to create a recording on any topic, the voice recording provides complete freedom for the user. This offers a good alternative to the written reflections where the users must choose a topic to reflect on.
+    \item The voice recording allows users to create a recording on any topic, the voice recording provides complete freedom for the user. This offers a good alternative to written reflections where the users must choose a topic to reflect upon.
     \item This voice recording capability uses voice recognition to create a written version of the note.
     \item The site provides motivational quotes to uplift users.
     \item The site uses enjoyable interface features that make the app colourful and interesting to use.
@@ -288,20 +275,20 @@ Reflectly is an app intended to capture users’ reflections on their daily live
 
 \subsection{Other Similar Products}
 
-Other products that were examined were Catch It by \citet{nhsDigital_catch_2021}, and Daylio Journal by \citet{relaxio_src_daylio_2021}. However, these products focus primarily on mental health and wellbeing, and are generally less-fully featured than Reflectly. These products were therefore examined less thoroughly.
+Other products that were examined were Catch It by \citet{nhsDigital_catch_2021}, and Daylio Journal by \citet{relaxio_src_daylio_2021}. However, these products focus primarily on mental health and wellbeing, and are generally less fully featured than Reflectly. These products therefore required no further examination.
 
 %==================================================================================================================================
 \chapter{Exploratory Study} \label{ExploratoryStudy}
 
-Through research into the development of graduate attributes and reflection, similarities were noted between CBT and graduate attribute reflection. The practices of CBT to create healthier and alternative ways to perceive a situation could be applied to graduate attribute reflection, providing a novel but appropriate theoretical framework for the project.
+Through research into the development of graduate attributes and reflection, similarities were noted between CBT and graduate attribute reflection. The practice of CBT to create healthier and alternative ways to perceive a situation could be applied to graduate attribute reflection, providing a novel but appropriate theoretical framework for the project.
 
-CBT could have several areas of application to assist students with their reflections on graduate attributes. CBT asks patients to reflect on previous experiences and to analyse their emotions and thoughts to become more aware of automatic negative thought patterns. Similarly, for students to be able to reflect effectively on their graduate attributes, they must analyse situations where they have exercised these skills in the past to become more aware of when they are using them and enabling positive 'reflection in action'. The questions used to provoke these deep reflections could potentially create a framework to assist students in creating equally meaningful reflections on both positive and negative experiences to help them develop and grow their graduate attributes.
+CBT could have several areas of application to assist students with their reflections on graduate attributes. CBT asks patients to reflect on previous experiences and to analyse their emotions and thoughts to become more aware of ingrained negative thought patterns. Similarly, for students to be able to reflect effectively on their graduate attributes, they must analyse situations where they have exercised these skills in the past to become more aware of when they are using them and enabling positive 'reflection in action'. The questions used to provoke these deep reflections could potentially create a framework to assist students in creating equally meaningful reflections on both positive and negative experiences to help them develop and grow their graduate attributes.
 
-CBT involves cognitive restructuring and reframing. It creates an awareness of negative thought patterns that a person does not realise they are experiencing and enables them to reframe these to be more positive. Similarly, Similarly, if graduates were made more aware of these skills and when they are using them then there is more opportunity to develop them. Furthermore, in any future situations they will be better equipped to understand the skills they require to benefit their work and environment and will be equipped to reframe the situation to be more positive and reflective.
+CBT involves cognitive restructuring and reframing. It creates an awareness of negative thought patterns that a person does not realise they are experiencing and enables them to reframe these to be more positive. Similarly, if graduates are made more aware of these skills and when they are using them then there is an opportunity to develop them. Furthermore, in any future situations they will be better equipped to understand the skills they require in order to benefit their work and environment, and they will be equipped to reframe the situation to be more positive and reflective.
 
 Similarly to \citet{bruno_reflective_2018} stating that learners who work in a reflective environment develop a stronger degree of self-efficacy, people who undergo CBT are able to restructure how they view situations and develop a stronger sense of self-confidence. Employing these CBT techniques could have a similar impact on students and further increase their self-efficacy, restructuring their thinking process to utilise their skills in any given situation. 
 
-Two important components of CBT are journaling thoughts and activity scheduling. Journaling allows the user to record their reflections, thoughts, and feelings, allowing patterns and tendencies to be identified and adapted \citep{ackerman_cbt_2017}. This will be the fundamental concept employed in the mobile app as it requires the user to take note of all of their reflections. Activity scheduling involves a participant noting something in their calendar that gives them anxiety. This cements the activity in their schedule and prevents later avoidance and decision making, helping to create better habits. This technique will be implemented as the app will provide reminders to encourage the users when to reflect, potentially creating a better habit of reflection.
+Two important components of CBT are journaling thoughts and activity scheduling. Journaling allows the user to record their reflections, thoughts, and feelings, allowing patterns and tendencies to be identified and adapted \citep{ackerman_cbt_2017}. This will be the fundamental concept employed in the mobile app as it requires the user to take note of all of their reflections. Activity scheduling requires a participant to note something in their calendar that gives them anxiety, in order to plan for it. This action cements the activity in their schedule and prevents later avoidance and last-minute decision making, helping to create better habits. This technique will be implemented as the app will provide reminders to encourage the users when to reflect, potentially creating a better habit of reflection.
 
 It was therefore hypothesised that employing the techniques and questioning style of CBT could assist users in their reflections about their graduate attributes and lead to deeper reflections. This would lead to a greater development and situational awareness of these skills. To test this hypothesis A/B testing was carried out.
 
@@ -336,17 +323,17 @@ To analyse the results of the A/B tests, the stages of reflection stated in Sect
     \end{centering}
 \end{figure}
 
-The results of the A/B test demonstrated that the participants given the job interview style questions were all able to carry out the first stage of reflection in which the person simply describes the concrete experience. This was also the case for the experimental group. 
+The results of the A/B test demonstrated that both styles of question enabled all participants to carry out the first stage of reflection in which the person simply describes the concrete experience. 
 
 Only 2 of the participants from the control group went through stage 2, in which the person describes the emotional state they were in during the experience, compared to 4 of the experimental group.
 
 Stage 3 involves examining the cause and effect of the situation and how actions and behaviour affected the outcome. 4 out of 5 of the control group reached this level of reflection, whereas all 5 participants in the experimental group reached this stage.
 
-Finally, for stage 4 of reflection, in which participants were expected to suggest alternative thoughts and behaviours and state if they obtained the best outcome, none of the participants in the control group reached this level. This distinctly contrasts with the experimental group in which every participant reached this level of reflection.
+Finally, for stage 4 of reflection, in which participants were expected to suggest alternative thoughts and behaviours and state if they obtained the best outcome, none of the participants in the control group reached this level. This significantly contrasts with the experimental group in which every participant reached this level of reflection.
 
 There is an observable difference within the results of the control and experimental group. These results clearly show that with the framework provided through CBT techniques, students were better equipped to have deeper and more insightful reflections on their graduate attributes. This CBT framework was able to lead students through each stage and encourage them to provide more cognitive analysis on the given situation. Furthermore, students in the experimental group had higher word counts for most answers. Although a higher word count does not provide evidence that further reflection is occurring, it can suggest deeper engagement with the process of reflection. 
 
-Based on this sample of the student population, the results of the A/B test are in agreement with the statements made by \citet{bruno_reflective_2018} that state that students require clear instructions in order to reflect effectively, which the CBT framework can provide. The case study further suggests that CBT can lead to deeper reflections from students and should be integrated into reflective models in which students partake.
+Based on this sample of the student population, the results of the A/B test are in agreement with the statements made by \citet{bruno_reflective_2018} that state that students require clear instructions in order to reflect effectively, which the CBT framework can provide. The case study further suggests that CBT can lead to deeper reflections from students and should be integrated into reflective models in which students participate.
 
 
 \section{Limitations}
@@ -355,7 +342,7 @@ Although this exploratory study was able to indicate that the use of CBT techniq
 
 In future work, participants should be asked to answer these questions on a weekly basis for an extended period of time. Before conducting the experiment, users should be asked to complete survey instruments to assess their level of graduate skills and their confidence in reflection. This should then be compared with the answers they provide at the end of the experiment period to examine whether students had increased their level of development of their graduate skills and whether they felt more confident in their ability to reflect. The answers given on a weekly basis should also be examined to identify whether, over time, students were increasing their level of reflection in their answers. 
 
-Such a longitudinal approach would allow conclusive evidence to be given on the benefits that the use of CBT framework could have on students and their graduate attributes. This, however, was not within the scope of the project due to time and resource constraints.
+Such a longitudinal approach would allow conclusive evidence to be given on the benefits that the use of CBT framework could have on students and their graduate attribute development. This, however, was not within the scope of the project due to time and resource constraints.
  
 
 
@@ -364,7 +351,7 @@ Such a longitudinal approach would allow conclusive evidence to be given on the 
 %==================================================================================================================================
 \chapter{Analysis/Requirements} \label{analysis/reqs}
 
-This project was presented by a University of Glasgow lecturer, Dr Matthew Barr, who required a mobile app to capture reflections on graduate attributes. A list of requirements was created in weekly meetings. This was an agile process where the newest version of the app, experiments, and design documents were presented and discussed each week. Dr Barr's book "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher Education" provided enough detail to gain an understanding of what graduate attributes were and how they were learned \citep{barr_2019}. Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding of how to create a usable and satisfying app for users, as well as how to conduct various evaluations and experiments that would be required for this project. Further requirements were gathered through personal heuristic evaluation as the project progressed, this allowed iterative improvements to be made to the app, increasing the overall usability.
+This project was presented by a University of Glasgow lecturer, Dr Matthew Barr, who required a mobile app to capture reflections on graduate attributes. A list of requirements was created in weekly meetings. This was an agile process where the newest version of the app, experiments, and design documents were presented and discussed each week. Dr Barr's book "Graduate Skills and Game-Based Learning: Using Video Games for Employability in Higher Education" provided enough detail to gain an understanding of what graduate attributes were and how they were learned \citep{barr_2019}. Lecture notes from the classes Mobile Human-Computer Interaction and Human-Computer Interaction were also used to gain understanding of how to create a usable and satisfying app for users, as well as how to conduct various evaluations and experiments that would be required for this project. Further requirements were gathered through personal expert heuristic evaluation as the project progressed, this allowed iterative improvements to be made to the app, increasing the overall usability.
 
 \section{Problem Specification}
 
@@ -409,16 +396,16 @@ To begin creating the list of functional requirements of the GradReflect app, mu
 
 \section{Chosen Limitations}
 
-Due to this app being designed and created for iOS devices, users will not be able to download this app onto their own device without the app being uploaded to the Apple App Store \citep{apple_inc_app_2021}. This would require a paid Apple developer license and is therefore out with the scope of this project. This meant that some limitations were chosen to create a prototype of the app to test and evaluate the app, that in the future could be taken onto other platforms and for general distribution.
+Due to this app being designed and created for iOS devices, users will not be able to download this app onto their own device without the app being uploaded to the Apple App Store \citep{apple_inc_app_2021}. This would require a paid Apple developer license and is therefore outwith the scope of this project. This meant that some limitations were chosen to create a prototype of the app to test and evaluate the app, that in the future could be taken onto other platforms and for general distribution.
 
-Reminders will not be able to be set by the user, instead they will turn on the notifications and a notification will launch after 10 seconds. This was for ease of testing. The response time of notifications was therefore immediate and as the app will be run on a simulator that is not always running, test users will not be able to use GradReflect for extended periods of time that would allow a notification to be set in the future. In future developments of this app, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their chosen day.
+Reminders will not be able to be set by the user, instead they will turn on the notifications and a notification will launch after 10 seconds. This was for ease of testing. The response time of notifications was therefore immediate and as the app will be run on a simulator that is not always running, test users will not be able to use GradReflect for extended periods of time that would allow a notification to be set for the future. In future developments of this app, users would be able to turn on notifications and the notifications would remind the user to reflect once a week on their chosen day.
 
 
 \section{Changes to the Specification}
 
 The specification was changed in discussion with the project supervisor, as described at the beginning of this chapter, due to project constraints and novel research paths that opened up during these conversations. The main change to the original specification given was to integrate CBT techniques into the app. This was chosen during research into situations where people reflect deeply and meaningfully about their real-life experiences. This was framed as a research question for the project, to evaluate its possible benefits in aiding the reflection of users about their graduate attributes. 
 
-Each possible feature of the app was also evaluated based on its usefulness. As a result, the decision was made to remove the ability for users to upload their reflections to Moodle. Due to the research direction of CBT users will include their thoughts and feelings into their reflections, causing it to be more personal. Upon conversation with peers, it was also noted that students would be unlikely to use this feature. The decision was then taken to include a link to Moodle on the Useful Links section of the mobile app instead, to maintain a connection with the university and the app.
+Each possible feature of the app was also evaluated based on its usefulness. As a result, the decision was made to remove the ability for users to upload their reflections to Moodle. Due to the research direction of CBT, users will include their thoughts and feelings into their reflections, causing it to be more personal. Direct feedback from peers noted that students would be unlikely to use this feature. The decision was then taken to include a link to Moodle on the Useful Links section of the mobile app as an alternative, to maintain a connection with the university and the app.
 
 
 %==================================================================================================================================
@@ -434,11 +421,11 @@ In order to encourage reflection, various use cases and features were designed t
 
 The ability to enter written notes was required to give users the opportunity to reflect using the CBT methods described in Chapter \ref{Background}. The questions would be designed similarly to the questions used in the experiment described in Chapter \ref{ExploratoryStudy}, with only minor alterations to allow more functionality within the app. 
 
-Each question was required to be stated clearly and concisely, with a help button displayed to provide insight into answering this question with an example. This will allow the user to understand what the app is expecting of them and further encourage deep and meaningful reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. This additional explanation of the questions are also in line with Nielsen’s ‘Help and Documentation’ heuristic \citep{Nielsen10}. The CBT-based questions and prompts that were designed and subsequently implemented into the app, can be seen in Appendix \ref{Appendix-AppCBTQuestions-Prompts}.
+Each question was required to be clear and concise, with a help button displayed to provide insight into answering this question with an example. This will allow the user to understand what the app is expecting of them and further encourage deep and meaningful reflections as they have been given the required instructions needed to do this \citep{bruno_reflective_2018}. This additional explanation of the questions is also in line with Nielsen’s ‘Help and Documentation’ heuristic \citep{Nielsen10}. The CBT-based questions and prompts that were designed and subsequently implemented into the app, can be seen in Appendix \ref{Appendix-AppCBTQuestions-Prompts}.
 
 The question on emotional reaction was designed to utilise a sliding scale from a clear negative reaction to a positive reaction. This meant that users were not required to label an emotional response, which can at times be difficult to identify. 
 
-Users were also given the opportunity to be able to click on previously made notes to review, reflect on, and delete. However, they were not able to edit or update any of their reflections. This mirrors the CBT behaviours of writing down reflections in a journal where they cannot be altered retrospectively. This prevents hindsight on previous experiences and ensures an accurate contemporaneous representation of experiences.
+Users were also given the opportunity to be able to click on previously made notes to review, reflect on, and delete. However, they were not able to edit or update any of their reflections. This mirrors the CBT behaviours of writing down reflections in a journal where they cannot be altered retrospectively. This prevents the use of hindsight on previous experiences and ensures an accurate contemporaneous representation of experiences.
 
 
 \subsection{Recorded Notes}
@@ -454,7 +441,7 @@ These insights will allow the user to see both their strengths, through the skil
 
 \subsection{Additional Assistance}
 
-Additional assistance for reflection was also designed into the homepage and the settings page. Upon entering the app, users should be greeted with descriptions of each skill and an example of its use. Descriptions of the skills help to educate the users, due to the gap in the knowledge of these skills identified in the graduate attribute survey conducted at the beginning of the project, which can be seen in Appendix \ref{Appendix-gradAttributeSurvey}. Clear descriptions and instructions of the skills will increase a user’s awareness of these skills in their everyday life.
+Additional assistance for reflection was also designed into the homepage and the settings page. Upon entering the app, users would be greeted with descriptions of each skill and an example of its use. Descriptions of the skills help to educate the users, due to the gap in the knowledge of these skills identified in the graduate attribute survey conducted at the beginning of the project, which can be seen in Appendix \ref{Appendix-gradAttributeSurvey}. Clear descriptions and instructions of the skills will increase a user’s awareness of these skills in their everyday life.
 
 Further descriptions of how to use the app are given within the settings page, increasing the level of clear instructions needed to help students be able to reflect effectively \citep{bruno_reflective_2018}.
 
@@ -483,9 +470,9 @@ Some of the apps referenced for this were: Apple's Voice Memos \citep{apple_inc_
 
 External consistency allows users to feel more comfortable and understand the app better as it is similar to those they have used in the past, and follows Nielsen’s heuristic ‘Consistency and Standards’ \citep{schlatter_visual_2013, Nielsen10}. This helps to satisfy the requirement that the app be easy to use. 
 
-Appendix Figure \ref{fig:PaperPrototype1} shows the initial paper prototype developed for GradReflect. A homepage design that directed users to each section of the page was first envisioned. This homepage would provide users with descriptions of each skill and how to use the app. Initially, skills would only appear on a user’s first time using the app, and then would be held within the settings section of the app. However, prototyping suggested that it was more helpful if the skills were always available on the home page. This would aid users to instantly understand what to do on first opening the app, but if users have used the app several times, they are able to head quickly to the section they wish to use, whilst also having the available the skill descriptions if users want to refresh their knowledge. This meets the standard of Nielsen’s heuristic ‘Flexibility and efficiency of use’ \citep{Nielsen10}.
+Appendix Figure \ref{fig:PaperPrototype1} shows the initial paper prototype developed for GradReflect. A homepage design that directed users to each section of the page was first envisioned. This homepage would provide users with descriptions of each skill and how to use the app. Initially, skills would only appear on a user’s first time using the app, and then would be held within the settings section of the app. However, prototyping suggested that it was more helpful if the skills were always available on the home page. This would help users to instantly understand what to do on first opening the app, but if users have used the app several times, they are able to head quickly to the section they wish to use, whilst also having the available the skill descriptions if users want to refresh their knowledge. This meets the standard of Nielsen’s heuristic ‘Flexibility and efficiency of use’ \citep{Nielsen10}.
 
-Paper prototypes were subsequently created for the remaining views of the app with a similar design to the homepage for consistency, as seen in Appendix Figure \ref{fig:PaperPrototypes}. This prototyping stage was extremely valuable and assisted in speeding up the implementation stage as the design decisions had already been carried out, giving a clear idea of how the final product should appear, ensuring the requirements would be met. However, some alterations were made to these designs for the final implementation. 
+Paper prototypes were subsequently created for the remaining views of the app with a similar design to the homepage for consistency, as seen in Appendix Figure \ref{fig:PaperPrototypes}. This prototyping stage was extremely valuable and assisted in accelerating the implementation stage as the design decisions had already been carried out, giving a clear idea of how the final product should appear, ensuring the requirements would be met. However, some alterations were made to these designs for the final implementation. 
 
 These designs were then implemented into high fidelity wireframe prototypes, using iOS design features, these can be seen in Appendix \ref{Appendix-highFidelityWireframes}.
 
@@ -496,7 +483,7 @@ The technologies used and the reasons behind those choices are described.
 
 \subsection{iOS Mobile App}
 
-A mobile app was chosen, as the project did not require user accounts or the external information sharing that is made easier by using web frameworks. Due to the personal nature of the reflections being carried out by users and the use of CBT, the ability to carry out these reflections on their phone can lead to more intimate and personal reflections. Additionally, as these reflections are on personal experiences, it is convenient for the user to be able to carry out reflection on-the-go on their mobile device, allowing instant reflection to be captured of events, thoughts, and emotions. 
+A mobile app was chosen, as the project did not require user accounts or the external information sharing that is made easier by using web frameworks. Due to the personal nature of the reflections being carried out by users and the use of CBT, the ability to carry out these reflections on their phone can lead to more immediate, intimate and personal reflections. Additionally, as these reflections are on personal experiences, it is convenient for the user to be able to carry out reflection on-the-go on their mobile device, allowing instant reflection to be captured of events, thoughts, and emotions. 
 
 iOS was chosen due to familiarity with the platform and appealing interface design concepts.
 
@@ -534,8 +521,7 @@ A model was also created to hold the note entries created by the user via Core D
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{images/MVVMDataFlow.png}    
-    \caption{This diagram shows the data flow between components in the Model View ViewModel (MVVM) design pattern 
-    \citep{bulavin_modern_2020}.}
+    \caption{This diagram shows the data flow between components in the Model View ViewModel (MVVM) design pattern from \citet{bulavin_modern_2020}.}
     \label{fig:MVVMDataFlow} 
 \end{figure}
 
@@ -573,7 +559,7 @@ This section describes how the functional requirements for the system were imple
 
 \subsection{Learn About Graduate Skills}
 
-It is important for those who want to reflect and develop their graduate attributes to learn and understand what these skills are. By knowing what these skills are, users are more comfortable in their reflections, and having the skill cards in the home section of the app with a helpful graphic and description of the skill will facilitate this. Each of these skill cards can be seen in Appendix Figure \ref{fig:AllSkillCards}, the first of which is the Home Card that describes what each area of the app is used for. These skills descriptions, on the home section of the app, allow new users to instantly scroll and familiarise themselves with the skills they are looking to develop. Experienced users do not have to scroll and can immediately choose where they want to navigate, while still having the option of a convenient reminder should they require it. The colours used in each of these skill cards was made to be compatible with the colour scheme used in the app logo using the website Coolers \citep{coolersco_coolors_2021}.
+It is important for those who want to reflect and develop their graduate attributes to learn and understand what these skills are. By knowing what these skills are, users are more comfortable in their reflections, and having the skill cards in the home section of the app with a helpful graphic and description of the skill will facilitate this. Each of these skill cards can be seen in Appendix Figure \ref{fig:AllSkillCards}, the first of which is the Home Card that describes what each area of the app is used for. These skills descriptions, on the home section of the app, allow new users to instantly scroll and familiarise themselves with the skills they are looking to develop. Experienced users do not have to scroll and can immediately choose where they want to navigate, while still having the option of a convenient reminder should they require it. The colours used in each of these skill cards was made to be compatible with the colour scheme used in the app logo using the website \citet{coolersco_coolors_2021}.
 
 \subsection{Creating and Deleting a Note}
 
@@ -640,7 +626,7 @@ Users are able to view the statistics of their notes, seen in Appendix \ref{fig:
 
 \subsection{Visit Useful Links}
 
-The Settings view provides users with links that could potentially assist them in their reflections. One of the links provided takes the user to the University of Glasgow website on graduate attributes, linking this project to the university and how it expects them to develop these skills throughout their education. A link was also given to the University of Glasgow's Moodle page. This was because exporting reflections to Moodle had been considered during the requirements gathering stage, but it had been decided that it was not useful. SwiftUI and iOS development also did not provide a Moodle API to allow users to do this. Instead, a link is now given to users, again linking to the University of Glasgow. These links can be seen in Appendix \ref{fig:appSettingsScreen}.
+The Settings view provides users with links that could potentially assist them in their reflections. One of the links provided takes the user to the University of Glasgow website on graduate attributes, linking this project to the university and how it expects them to develop these skills throughout their education. A link was also given to the University of Glasgow's Moodle page. This was because exporting reflections to Moodle had been considered during the requirements gathering stage, but it had been decided that it was not useful due to direct feedback from peers and their concerns over privacy. SwiftUI and iOS development also did not provide a Moodle API to allow users to do this. Instead, a link is now given to users, again linking to the University of Glasgow. These links can be seen in Appendix \ref{fig:appSettingsScreen}.
 
 \subsection{Notifications}
 
@@ -649,7 +635,7 @@ Users are able to turn on notifications through the Settings view. This was impl
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{images/Notification.pdf}    
-    \caption{This screenshot shows the notification that launches after the user turns on notifications.}
+    \caption{This screenshot shows the notification that launches after the user turns on notifications, indicating it is time to reflect.}
     \label{fig:Notification} 
 \end{figure}
 
@@ -672,7 +658,7 @@ An important goal for the project was to allow future developers to maintain the
 %==================================================================================================================================
 \chapter{Evaluation} \label{evaluation}
 
-This chapter outlines the procedure used in evaluating the mobile app, GradReflect, with the goal of answering the aims stated in Section \ref{IntroAims}, whilst also identifying some potential areas for improvement. These are listed in the future work in Section \ref{Concl_futureWork} due to time constraints, or because they were seen to be out with the scope of the project. 
+This chapter outlines the procedure used in evaluating the mobile app, GradReflect, with the goal of answering the aims stated in Section \ref{IntroAims}, whilst also identifying some potential areas for improvement. These are listed in the future work in Section \ref{Concl_futureWork} due to time constraints, or because they were seen to be outwith the scope of the project. 
 
 The results from both the usability experiment and subsequent surveys are presented, with a discussion on how the project meets the requirements and relates to the wider literature of graduate attributes.
 
@@ -694,7 +680,7 @@ From analysis made in relation to the usability heuristics changes were identifi
 
 \section{Monitored User Evaluation}
 
-The monitored user evaluation aimed to gain feedback on how usable the interface was from selection of potential end users. After signing consent forms, participants then had the opportunity to interact with the app. This was done using the simulated iPhone, built-in to the XCode IDE, through a video conference where they were given remote control. This method was chosen as it would give the users the chance to get, as much as possible, hands-on experience of the app while lockdown measures precluded face-to-face evaluations. This would be more beneficial than users viewing video demonstrations of the app, as it would give more insight into how a user will interact with the app in a real-world environment. Without carrying out a real-time interaction with the app actual user interaction would be largely unpredictable.
+The monitored user evaluation aimed to gain feedback on how usable the interface was from selection of potential end users. After signing consent forms, participants then had the opportunity to interact with the app. This was done using the simulated iPhone, built-in to the XCode IDE, through a video conference where they were given remote control. This method was chosen as it would give the users the chance to get, as much as possible, hands-on experience of the app while lockdown measures precluded face-to-face evaluations. This would be more beneficial than users viewing video demonstrations of the app, as it would give more insight into how a user would interact with the app in a real-world environment. Without carrying out a real-time interaction with the app actual user interaction would be largely unpredictable.
 
 \subsection{User Group Selection}
 
@@ -723,7 +709,7 @@ The tasks that users were given involved exploring the features of each view of 
  
 \textbf{Settings Page} Users were asked use each feature within the settings page. Users were asked to follow links to additional information, customise the app, use notifications and read about the general purpose of GradReflect.
 
-\textbf{Notes Page} Users were then asked to create a note based on the skill of teamwork, and given the option of using the '?' buttons should they need to. This tested the users’ ability to be able to reflect easily with the aids and prompts given to them. Users were also asked to review this note and to attempt to create a note with no name. This was to allow users to familiarise themselves with the reviewing process and test error prevention. Finally, in this section users were asked to search for a note or skill. Users were asked to delete a note, testing how intuitive this is.
+\textbf{Notes Page} Users were then asked to create a note based on the skill of teamwork, and given the option of using the '?' help buttons should they need to. This tested the users’ ability to be able to reflect easily with the aids and prompts given to them. Users were also asked to review this note and to attempt to create a note with no name. This was to allow users to familiarise themselves with the reviewing process and test error prevention. Finally, in this section users were asked to search for a note or skill. Users were asked to delete a note, testing how intuitive this is.
  
 \textbf{Statistics Page} Users were asked to view the statistics based on the note they created. This allowed evaluation on the usefulness of this later in the survey. 
 
@@ -820,9 +806,9 @@ While the design of the evaluation determined whether the project aims had been 
 
 Although this app is intended to be used on student's personal devices, the decision was taken to run these experiments in a controlled setting over a Zoom conference. This was due to this being an iOS app, meaning it would require an Apple developer license to be able to widely distribute this app through the Apple App Store. To test and install this app on their own device, users would need to be able to connect their phone to the experimenter's computer. However, this project was conducted during the COVID-19 pandemic, meaning it would not be safe to meet with experiment participants for testing purposes. 
 
-Conducting this experiment virtually allowed testing of the app during the COVID-19 pandemic, however, this may have affected the behaviour exhibited by participants. For example, users were not able to use the controls of the phone as easily and at times struggled, instead having to opt for a 'Home' button outside of the simulator to be able to close the app instead of the typical 'swiping' from the base of the phone to close an app. This, at times, created frustration for the participants as they attempted to use the option that they would on a physical phone. This environment also caused issues when a participant was not able to access the additional 'Home' button of the simulator as Zoom had a 'Remote control' taskbar display on top of this button, causing confusion and delay as the participant realised they needed to remove this taskbar on their device to view the 'Home' button. Therefore, further studies should be conducted that allow a participant to be able to install on their own device or use an experimental physical device to evaluate the app. This would ensure that the behaviour observed is representative of the behaviour that would be exhibited in-person.
+Conducting this experiment virtually allowed testing of the app during the COVID-19 pandemic. However, this may have affected the behaviour exhibited by participants. For example, users were not able to use the controls of the phone as easily and at times struggled, instead having to opt for a 'Home' button outside of the simulator to be able to close the app instead of the typical 'swiping' from the base of the phone to close an app. This, at times, created frustration for the participants as they attempted to use the option that they would on a physical phone. This environment also caused issues when a participant was not able to access the additional 'Home' button of the simulator as Zoom had a 'Remote control' taskbar display on top of this button, causing confusion and delay as the participant realised they needed to remove this taskbar on their device to view the 'Home' button. Therefore, further studies should be conducted that allow a participant to be able to install on their own device or use an experimental physical device to evaluate the app. This would ensure that the behaviour observed is representative of the behaviour that would be exhibited in-person.
 
-Additionally, the participants came from a convenience sample of friends and family members. Therefore, this could have also impacted the behaviours exhibited by the participants, as a result of social-desirability bias \citep{lavrakas_social_2008}. Further studies should take care to conduct their experiment using a more representative sample of unknown participants, to ensure the results are representative.
+Additionally, the participants came from a convenience sample of friends and family members. Therefore, this could have also impacted the behaviours exhibited by the participants, as a result of social-desirability bias \citep{lavrakas_social_2008}. Further studies should take care to conduct their experiment using a more representative sample of unknown participants.
 
 \section{Post-study Survey}
 
@@ -853,17 +839,17 @@ The response to each of the usability heuristics was gathered and put into indiv
     \end{centering}
 \end{figure}
  
-Most participants strongly agreed that the system was usable and satisfying. For 8 out of the 10 usability heuristics, participants all strongly agreed that the app entirely met these standards. However, 3 of these heuristics, consistency and standards, recognitions rather than recall and error prevention, did not entirely meet these standards but scored very highly.
+Most participants strongly agreed that the system was usable and satisfying. For 8 out of the 10 usability heuristics, participants all strongly agreed that the app entirely met these standards. However, 3 of these heuristics, 'consistency and standards', 'recognition rather than recall' and 'error prevention', did not entirely meet these standards but scored very highly.
  
 From this first section of the survey, participants were also able to explain their motivation behind their scorings. These open-ended answers were all themed around the heuristic question they followed. Therefore, two major themes were used to categorise responses. These themes were ways in which the app was easy to use, and any issues users had with the app.
 
-\textbf{Ease of Use:} When giving comments on their answers many participants stated explicitly how they thought the app was easy to use, intuitive and clearly laid out. One participant stated, "Simple to understand for a technophobe like me". Other participants mentioned that the navigation was clear to follow, with buttons being placed logically so they were easy to find, and the app used features that were very familiar to typical iOS design and other similar apps. Error messages were also stated to be easily identifiable and understandable, with users noting that it was made clear what the issues were and how to solve them. Participants also noted that they appreciated the extra help icons as they gave more direction to the users on how they should be answering the questions. This shows that generally users did not find using the app difficult, making for an enjoyable experience.
+\textbf{Ease of Use:} When giving comments on their answers many participants stated explicitly how they thought the app was easy to use, intuitive and clearly laid out. One participant stated, "Simple to understand for a technophobe like me". Other participants mentioned that the navigation was clear to follow, with buttons being placed logically so they were easy to find, and the app used features that were very familiar to typical iOS design and other similar apps. Error messages were also stated to be easily identifiable and understandable, with users noting that it was made clear what the issues were and how to solve them. Participants also noted that they appreciated the extra help icons as they gave more direction to the users on how they should be answering the questions. This shows that generally users did not find using the app difficult, making for an enjoyable experience. 
 
-\textbf{Issues users had with the app:} For the areas where users did not strongly agree with the heuristic they were able to give explanations for their answer in the comments. The heuristic for consistency was given 2 agree scores. One participant stated "I am an android user" as their explanation. This could be due to the app mostly following native to iOS design practices and not being familiar for someone who has experience in only android phones. This could make it more difficult for a user. The other participant stated as their comment \begin{quotation}"The app used a consistent colour scheme throughout and consistent and intuitive navigation options between and within the apps pages and sections. The settings page was also made to look similar to the operating systems main settings page. This consistency with other systems made it easy to understand its purpose."\end{quotation} This does not give a clear indication of why this participant did not score this heuristic as highly as the other participants.
+\textbf{Issues users had with the app:} For the areas where users did not strongly agree with the heuristic they were able to give explanations for their answer in the comments. The heuristic for 'consistency and standards' was given 2 agree scores. One participant stated "I am an android user" as their explanation. This could be due to the app mostly following native to iOS design practices and not being familiar for someone who has experience in only android phones. This could make it more difficult for a user. The other participant stated as their comment; \begin{quotation}"The app used a consistent colour scheme throughout and consistent and intuitive navigation options between and within the apps pages and sections. The settings page was also made to look similar to the operating systems main settings page. This consistency with other systems made it easy to understand its purpose."\end{quotation} This does not give a clear indication of why this participant did not score the heuristic of 'consistency and standards' as highly as the other participants.
 
-Recognition rather than recall also did not score as highly. One user stated \begin{quotation}"This was easy to understand throughout. On the create note page I scrolled down to understand the full extent of the form and what was required of creating a note before completing it."\end{quotation} This shows that this user was unsure of what would be necessary for them to reflect before they had looked at the entirety of note creation view, meaning that on first viewing of this page the user could potentially not be using this note creation to its full potential. 
+The heuristic 'recognition rather than recall' also did not score as highly. One user stated; \begin{quotation}"This was easy to understand throughout. On the create note page I scrolled down to understand the full extent of the form and what was required of creating a note before completing it."\end{quotation} This shows that this user was unsure of what would be necessary for them to reflect before they had looked at the entirety of note creation view, meaning that on first viewing of this page the user could potentially not be using this note creation to its full potential. 
 
-Another participant scored error prevention as neutral, however, this was not stated to be a negative review of the app as the participant explained "I encountered no errors". This scoring could show that the user did not feel the need to rate this attribute positively or negatively as they had not witnessed any errors within the app.
+Another participant scored 'error prevention' as neutral, however, this was not stated to be a negative review of the app as the participant explained "I encountered no errors". This scoring could show that the user did not feel the need to rate this attribute positively or negatively as they had not witnessed any errors within the app.
 
 \textbf{Survey part 2}
  
@@ -887,15 +873,15 @@ The majority of users also felt that the statistics page was useful, with only 1
 \subsection{Future Work Identified by Participants}
 The following potential changes were identified:
 \begin{itemize}
-    \item In the future, this app could be made cross-platform, meaning it require using less iOS design to make it suitable for a user experienced with any operating system. Additionally, an Android version of this app could be made separately to also fit the needs of those specific users. 
-    \item In the future, more descriptions of the questions users will have to answer could be added, and the depth of reflection needed from them could be made more clear in the About GradReflect section. Allowing users to preview what is expected of them before they begin to reflect helps them be more prepared and leads to better reflections.
+    \item In the future, this app could be made cross-platform, meaning it would require using less iOS design to make it suitable for a user experienced with any operating system. Additionally, an Android version of this app could be made separately to also fit the needs of those specific users. 
+    \item In the future, more descriptions of the questions users would have to answer could be added, and the depth of reflection needed from them could be made more clear in the About GradReflect section. Allowing users to preview what is expected of them before they begin to reflect would help them be more prepared and leads to better reflections.
     \item Filtering the notes by clicking on one of the skill categories on the skill cards.
     \item Ability to set goals for number of reflections on a skill and receiving milestone achievements when these are met.
 
 \end{itemize}
 
 \subsection{Limitations}
-One major limitation of this evaluation was that it could not have been conducted in person due to the COVID-19 pandemic. Future work would be recommended to conduct semi-structured interviews with participants, as this would allow the interviewer to enquire further and follow-up on the responses that the participants give. This would  gain more insight into what the participants think about their experience with the app.
+One major limitation of this evaluation was that it could not have been conducted in person due to the COVID-19 pandemic. Future work would be recommended to conduct semi-structured interviews with participants, as this would allow the interviewer to enquire further and follow-up on the responses that the participants give. This would provide more insight into what the participants think about their experience with the app.
 
 \section{Requirement Validation}
 
@@ -926,7 +912,7 @@ In the future the app would require extensive UI and Unit testing to be released
 
 \section{Summary of Results}
 
-The mobile app, GradReflect, was evaluated using three stages: a personal evaluation; a monitored user evaluation; and a post-study survey. After the changes made following a heuristic personal evaluation, the monitored user evaluation demonstrated that the app had met the project’s aims, and stimulated participants to engage with the app, considering it useful and worth utilising in the future. Minor UI details were identified for improvement. The post-study survey demonstrated that users indicated that the app met 8 out of 10 usability heuristics to the maximum level, and conditionally met the other 2. All requirements were met. It was identified that the monitored evaluation and post-study survey were impeded by COVID-19, virtual interface drawbacks, and user group selection.
+The mobile app, GradReflect, was evaluated using three stages: a personal evaluation; a monitored user evaluation; and a post-study survey. After the changes made following a heuristic personal evaluation, the monitored user evaluation demonstrated that the app had met the project’s aims, and stimulated participants to engage with the app, considering it useful and worth utilising in the future. Minor UI details were identified for improvement. The post-study survey demonstrated that users indicated that the app met 8 out of 10 usability heuristics to the maximum level, and conditionally met the other two. All requirements were met. It was identified that the monitored evaluation and post-study survey were impeded by COVID-19, virtual interface drawbacks, and user group selection.
 
 
 %==================================================================================================================================
@@ -936,23 +922,23 @@ The mobile app, GradReflect, was evaluated using three stages: a personal evalua
 
 Graduate attributes are the abilities developed by students during their time in university that increase their employability, allowing them to integrate better into the workplace and create a better environment within teams. However, it has been noted that graduates, upon entering the workplace, do not often possess these skills. This project involved creating an iOS mobile app to capture and encourage reflections on graduate attributes from students in order to facilitate their development.
 
-A study with 10 participants was conducted to determine whether students were familiar with graduate attributes and how comfortable they are with reflection. This study found that the majority of the students questioned had not heard the term graduate attribute before but knew the importance of these skills in the workplace and were keen to develop them.
+A study with 10 participants was conducted to determine whether students were familiar with graduate attributes and how comfortable they are with reflection. This study found that the majority of the students questioned had not heard of the term graduate attribute before, but knew the importance of these skills in the workplace and were keen to develop them.
 
 Research was conducted into finding a novel way to encourage reflections through the use of Cognitive Behavioural Therapy (CBT), exploring how the use of this app, with the integration of CBT could increase the levels of reflection within students. 
 
-An exploratory study using A/B tests was carried out to answer the question: Does CBT benefit reflection by students on their graduate skills? These tests found that students were able to reach higher levels of reflection more frequently than with non-guiding job interview style questions. This gave an indication that the CBT framework has the potential to assist in students’ development of these skills, as deeper and more meaningful reflection will benefit students in their awareness of these skills.
+An exploratory study using A/B tests was carried out to answer the question: Does CBT benefit reflection by students on their graduate skills? These tests found that students were able to reach higher levels of reflection more frequently than with non-guiding job interview style questions. This gave an indication that the CBT framework has the potential to assist in students’ development of these skills, as deeper and more meaningful reflection would benefit students in their awareness of these skills.
 
-The app created, GradReflect, allows users to capture their reflection in either written or audio form. Users were given the option of both written and audio format to allow them the opportunity to choose whether they wanted to reflect in depth, or the convenience of creating free-form audio recording. It provides a framework using CBT techniques to encourage users to reach all stages of reflection and provide the necessary support and instructions to allow them to reflect effectively. The app gives the user detailed descriptions of each skill they are expected to develop alongside descriptions, how the app is intended to be used, and how to answer the questions. This makes it clear to the user what is expected of them when using this app and, again, gives them clear instructions to allow them to reflect in a beneficial way. GradReflect also gives users insight into their own reflections, providing statistics based on their written notes. It details for users how many notes have been written, their average lengths overall and for each skill, as well as their average emotional responses to skills. This is intended to focus users on the skills that require further development and reflection. The app also provides notifications to encourage the user to reflect regularly; however, for testing purposes these notifications launch 10 seconds after turning on.
+The app created, GradReflect, allows users to capture their reflection in either written or audio form. Users were given the option of both written and audio format to allow them the opportunity to choose whether they wanted to reflect in depth, or the convenience of creating free-form audio recording. It provides a framework using CBT techniques to encourage users to reach all stages of reflection and provide the necessary support and instructions to allow them to reflect effectively. The app gives the user detailed descriptions of each skill they are expected to develop alongside descriptions; how the app is intended to be used; and how to answer the questions. This makes it clear to the user what is expected of them when using this app and, again, gives them clear instructions to allow them to reflect in a beneficial way. GradReflect also gives users insight into their own reflections, providing statistics based on their written notes. It details for users how many notes have been written, their average lengths overall and for each skill, as well as their average emotional responses to skills. This is intended to focus users on the skills that require further development and reflection. The app also provides notifications to encourage the user to reflect regularly; however, for testing purposes these notifications launch 10 seconds after turning on.
 
-GradReflect was evaluated using monitored and survey-based user evaluations. It was found that GradReflect was easy to use, assisted users’ reflection, and that they would continue to use this app in the future. Some participants stated the various ways they would use the app and how it could benefit them. These results demonstrate that an app such as this has the potential to be greatly beneficial for students in developing their graduate skills.
+GradReflect was evaluated using monitored and survey-based user evaluations. It was found that GradReflect was easy to use, assisted users’ reflection, and that they would continue to use this app in the future. Some participants stated the various ways they would use the app and how it could benefit them. These results demonstrate that an app such as this has the potential to be significantly beneficial for students in developing their graduate skills.
 
 \section{Future Work} \label{Concl_futureWork}
 
-From the research, implementation and evaluation, there are a number of avenues for a further full study of this topic, as well as changes that could have been made to improve the app. 
+From the research, implementation and evaluation, there are a number of avenues for a further fuller study of this topic, as well as changes that could be considered to improve the app. 
 
 The exploratory study conducted at the beginning of the project could be extended into a full experimental study where participants answer reflective questions using the CBT framework for an extended period of time. Comparisons between the level of graduate skills before and after the experiment could be used to determine the long-term effects that this proposed method of reflection could have on students. 
 
-The evaluations needed to be conducted in a controlled environment over video conferencing, and so it is possible that some of the participants’ behaviours were not representative of how they would interact with the app if it was actually deployed onto their device. Due to this limitation, a reasonable next step would be to deploy the app and examine how users would interact in person. Additionally, it could be examined whether users’ skills improve if given access to this app over an extended period of time.
+The evaluations needed to be conducted in a controlled environment over video conferencing, and so it is possible that some of the participants’ behaviours were not representative of how they would interact with the app if it was actually deployed onto their device. Due to this limitation, the logical next step would be to deploy the app and examine how users would interact in person. Additionally, it could be examined whether users’ skills improve if given access to this app over an extended period of time.
 
 During these evaluations, users presented several ways they would want to see the app itself improved. As well as these improvements from users, there were potential improvements identified by the author.
 
@@ -961,9 +947,9 @@ During these evaluations, users presented several ways they would want to see th
     \item The emotion slider could allow users to click where they want the slider to go, as well as being able to drag.
     \item Make the button to delete notes clearer to the users, colouring it red with a 'delete notes' label next to it, include in the app a description that users are able to both click the edit button, and swipe in the typical iOS gesture.
     \item More descriptions of the questions could be provided within the app description in 'About GradReflect'. This would mean users are potentially more aware and prepared for the note entry questions and can reflect more effectively.
+    \item A tab bar could be used to navigate through the app instead of a home page directing to each section.
     \item Filtering the notes by clicking on one of the skill categories on the skill cards.
     \item Ability to set goals for the number of reflections on a skill and receiving milestone achievements when these are met.
-    \item A tab bar could be used to navigate through the app instead of a home page directing to each section.
 \end{itemize}
 
 If the app were to be deployed to iOS users with an Apple Developer License, further developments would need to be made such as the extension of notifications to launch weekly, and further UI and unit testing to be developed. 

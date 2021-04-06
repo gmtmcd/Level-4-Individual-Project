@@ -517,4 +517,5 @@
 * *0.5 hours* Prepped for final meeting with supervisor
 * *0.5 hours* Final meeting with supervisor 
 * *1 hour* Fixed small changes
-* *1 hour* Requirements verification table in appendix [11 hours]
+* *1 hour* Requirements verification table in appendix 
+* *1.5 hours* More proof-reading corrections [12.5 hours]
