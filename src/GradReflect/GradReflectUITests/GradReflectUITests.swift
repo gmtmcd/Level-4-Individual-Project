@@ -7,7 +7,6 @@
 
 import XCTest
 
-
 /*
  UI test class to determine that a note can be created and that a note can be deleted
  */

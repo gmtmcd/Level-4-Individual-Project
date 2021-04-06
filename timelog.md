@@ -512,3 +512,8 @@
 
 ### 06 Apr 2021
 * *1 hours* Fixed the issue with the video presentation being flashy and issue with github
+* *0.5 hours* Fixed UI tests
+* *0.5 hours* Researched if i could find a way to delete the data from tests and could not find a solution
+* *0.5 hours* Prepped for final meeting with supervisor
+* *0.5 hours* Final meeting with supervisor 
+* *1 hour* Fixed small changes [10 hours]

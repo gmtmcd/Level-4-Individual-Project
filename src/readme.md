@@ -1,6 +1,5 @@
 # Readme
 
-Put a brief description of your code here. This should at least describe the file structure.
 The GradReflect project code builds an iOS app on either the simulator or a connected iOS mobile device.
 The app take the user to a home page with 
 
@@ -38,7 +37,7 @@ This holds the settings for the application.
 ### UI tests
 Within the UI tests there are two tests.
 The first test creates a new note and saves this.
-The next test then deletes this note.
+The next test then checks the ability to delete a note by creating a note and then deleting it.
 These tests need to be run in order and are run through clicking the play button next to the class declaration "class GradReflectUITests: XCTestCase".
 
 ## Build instructions
