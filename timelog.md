@@ -522,3 +522,4 @@
 
 ### 07 Apr 2021
 * *1.5 hours* Fixed bibliography items and appendix
+* *2 hours* Final proof read of diss
