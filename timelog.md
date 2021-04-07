@@ -519,3 +519,6 @@
 * *1 hour* Fixed small changes
 * *1 hour* Requirements verification table in appendix 
 * *1.5 hours* More proof-reading corrections [12.5 hours]
+
+### 07 Apr 2021
+* *1.5 hours* Fixed bibliography items and appendix
