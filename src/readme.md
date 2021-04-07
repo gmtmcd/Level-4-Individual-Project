@@ -1,7 +1,8 @@
 # Readme
 
-The GradReflect project code builds an iOS app on either the simulator or a connected iOS mobile device.
-The app take the user to a home page with 
+The GradReflect project code builds an iOS app on either the simulator or a connected iOS mobile device. 
+
+The structure of the code is as follows:
 
 ### Model
 The model classes within SwiftUI are used as a data container that define a structure that will be written to and fetched from. 
@@ -49,7 +50,7 @@ These tests need to be run in order and are run through clicking the play button
 * SwiftUI 2
 * Requires an Apple computer to run XCode, either Macbook or iMac
 * macOS Catalina 10.15 or later must be used on the Apple computer for XCode 12.
-* Compatible with iPhones only (not iPods or iPads)
+* Compatible with iPhones only (not iPods or iPads):
     - iPhone 8
     - iPhone 8 Plus
     - iPhone 11
